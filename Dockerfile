@@ -9,13 +9,16 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     python3-dev \
     ffmpeg \
+    build-essential \
+    pkg-config \
+    python3-numpy \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements first to leverage Docker cache
 COPY requirements.txt .
 
 # Install Python dependencies
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu118
 
 # Copy application code
 COPY app/ ./app/

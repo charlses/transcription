@@ -4,4 +4,6 @@ python-multipart==0.0.6
 openai-whisper==20231117
 torch==2.1.1
 requests==2.31.0
-python-dotenv==1.0.0 
+python-dotenv==1.0.0
+numpy>=1.23.5
+ffmpeg-python>=0.2.0 
