@@ -30,21 +30,20 @@ mkdir -p /app/huggingface /app/pyannote_cache\n\
 # Check if model exists to prevent re-downloading on every restart\n\
 if [ ! -d "/app/huggingface/hub/models--pyannote--speaker-diarization-3.1" ]; then\n\
   echo "First run: Downloading diarization model..."\n\
-  python -c "\
-import os\n\
-from huggingface_hub import login\n\
+  # Get token from environment\n\
+  if [ -n "$HF_TOKEN" ]; then\n\
+    # Login with huggingface-cli as recommended\n\
+    echo "$HF_TOKEN" | huggingface-cli login\n\
+    \n\
+    # Download the model using Python\n\
+    python -c "\
 from pyannote.audio import Pipeline\n\
-# Get token\n\
-hf_token = os.environ.get(\"HF_TOKEN\")\n\
-if hf_token:\n\
-    # Login\n\
-    login(token=hf_token)\n\
-    # Download model\n\
-    pipeline = Pipeline.from_pretrained(\"pyannote/speaker-diarization-3.1\", use_auth_token=hf_token)\n\
-    print(\"Diarization model downloaded successfully\")\n\
-else:\n\
-    print(\"WARNING: HF_TOKEN not set. Model download may fail.\")\n\
+pipeline = Pipeline.from_pretrained(\"pyannote/speaker-diarization-3.1\")\n\
+print(\"Diarization model downloaded successfully\")\n\
 "\n\
+  else\n\
+    echo "WARNING: HF_TOKEN not set. Model download will fail."\n\
+  fi\n\
 else\n\
   echo "Diarization model already downloaded."\n\
 fi\n\

@@ -63,13 +63,6 @@ class SpeakerDiarization:
         start_time = time.time()
         
         try:
-            # Get Hugging Face token from environment
-            hf_token = os.environ.get("HF_TOKEN")
-            if not hf_token:
-                logger.warning("HF_TOKEN environment variable not set. Model download may fail.")
-            else:
-                logger.info("Using HF_TOKEN from environment variables")
-                
             # Check HF_HOME directory
             hf_home = os.environ.get("HF_HOME")
             if hf_home:
@@ -119,7 +112,8 @@ class SpeakerDiarization:
             except (ImportError, AttributeError):
                 logger.info("Pyannote version information not available")
             
-            self.pipeline = Pipeline.from_pretrained(DIARIZATION_MODEL, use_auth_token=hf_token)
+            # Using recommended approach from HuggingFace (authentication is handled by huggingface-cli login)
+            self.pipeline = Pipeline.from_pretrained(DIARIZATION_MODEL)
             model_load_time = time.time() - model_load_start
             logger.info(f"Diarization model loaded in {model_load_time:.2f} seconds")
             
