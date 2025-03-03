@@ -1,47 +1,7 @@
-whisper_transcription  | First run: Downloading diarization model...
-whisper_transcription  |     A token is already saved on your machine. Run `huggingface-cli whoami` to get more information or `huggingface-cli logout` if you want to log out.
-whisper_transcription  |     Setting a new token will erase the existing one.
-whisper_transcription  |     To log in, `huggingface_hub` requires a token generated from https://huggingface.co/settings/tokens .
-whisper_transcription  |
-whisper_transcription  |     _|    _|  _|    _|    _|_|_|    _|_|_|  _|_|_|  _|      _|    _|_|_|      _|_|_|_|    _|_|      _|_|_|  _|_|_|_|
-whisper_transcription  |     _|    _|  _|    _|  _|        _|          _|    _|_|    _|  _|            _|        _|    _|  _|        _|
-whisper_transcription  |     _|_|_|_|  _|    _|  _|  _|_|  _|  _|_|    _|    _|  _|  _|  _|  _|_|      _|_|_|    _|_|_|_|  _|        _|_|_|
-whisper_transcription  |     _|    _|  _|    _|  _|    _|  _|    _|    _|    _|    _|_|  _|    _|      _|        _|    _|  _|        _|
-whisper_transcription  |     _|    _|    _|_|      _|_|_|    _|_|_|  _|_|_|  _|      _|    _|_|_|      _|        _|    _|    _|_|_|  _|_|_|_|
-whisper_transcription  |
-whisper_transcription  | /usr/local/lib/python3.10/getpass.py:91: GetPassWarning: Can not control echo on the terminal.
-whisper_transcription  |   passwd = fallback_getpass(prompt, stream)
-whisper_transcription  | Warning: Password input may be echoed.
-whisper_transcription  | Enter your token (input will not be visible):
-whisper_transcription  | Traceback (most recent call last):
-whisper_transcription  |   File "/usr/local/bin/huggingface-cli", line 8, in <module>
-whisper_transcription  |     sys.exit(main())
-whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/commands/huggingface_cli.py", line 57, in main
-whisper_transcription  |     service.run()
-whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/commands/user.py", line 153, in run
-whisper_transcription  |     login(
-whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py", line 101, in inner_f
-whisper_transcription  |     return f(*args, **kwargs)
-whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py", line 31, in inner_f
-whisper_transcription  |     return f(*args, **kwargs)
-whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/_login.py", line 130, in login
-whisper_transcription  |     interpreter_login(new_session=new_session)
-whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py", line 101, in inner_f
-whisper_transcription  |     return f(*args, **kwargs)
-whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py", line 31, in inner_f
-whisper_transcription  |     return f(*args, **kwargs)
-whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/_login.py", line 288, in interpreter_login
-whisper_transcription  |     add_to_git_credential = _ask_for_confirmation_no_tui("Add token as git credential?")
-whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/commands/delete_cache.py", line 330, in _ask_for_confirmation_no_tui
-whisper_transcription  |     answer = input(full_message).lower()
-whisper_transcription  | EOFError: EOF when reading a line
-whisper_transcription  | /usr/local/lib/python3.10/site-packages/transformers/utils/hub.py:106: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-whisper_transcription  |   warnings.warn(
-whisper_transcription  | /usr/local/lib/python3.10/site-packages/pyannote/audio/core/io.py:43: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
-whisper_transcription  |   torchaudio.set_audio_backend("soundfile")
+ription  | INFO:app.diarization:Pyannote version information not available
 whisper_transcription  | /usr/local/lib/python3.10/site-packages/pyannote/audio/pipelines/speaker_verification.py:43: UserWarning: torchaudio._backend.get_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
 whisper_transcription  |   backend = torchaudio.get_audio_backend()
-whisper_transcription  | INFO:speechbrain.utils.quirks:Applied quirks (see `speechbrain.utils.quirks`): [allow_tf32, disable_jit_profiling]
+whisper_transcription  | INFO:speechbrain.utils.quirks:Applied quirks (see `speechbrain.utils.quirks`): [disable_jit_profiling, allow_tf32]
 whisper_transcription  | INFO:speechbrain.utils.quirks:Excluded quirks specified by the `SB_DISABLE_QUIRKS` environment (comma-separated list): []
 whisper_transcription  | /usr/local/lib/python3.10/site-packages/pyannote/audio/pipelines/speaker_verification.py:45: UserWarning: Module 'speechbrain.pretrained' was deprecated, redirecting to 'speechbrain.inference'. Please update your script. This is a change from SpeechBrain 1.0. See: https://github.com/speechbrain/speechbrain/releases/tag/v1.0.0
 whisper_transcription  |   from speechbrain.pretrained import (
@@ -49,34 +9,14 @@ whisper_transcription  | /usr/local/lib/python3.10/site-packages/pyannote/audio/
 whisper_transcription  |   torchaudio.set_audio_backend(backend)
 whisper_transcription  | /usr/local/lib/python3.10/site-packages/pyannote/audio/tasks/segmentation/mixins.py:37: UserWarning: `torchaudio.backend.common.AudioMetaData` has been moved to `torchaudio.AudioMetaData`. Please update the import path.
 whisper_transcription  |   from torchaudio.backend.common import AudioMetaData
-whisper_transcription  | Add token as git credential? (Y/n)
-whisper_transcription  | Could not download 'pyannote/segmentation-3.0' model.
-whisper_transcription  | It might be because the model is private or gated so make
-whisper_transcription  | sure to authenticate. Visit https://hf.co/settings/tokens to
-whisper_transcription  | create your access token and retry with:
-whisper_transcription  |
-whisper_transcription  |    >>> Model.from_pretrained('pyannote/segmentation-3.0',
-whisper_transcription  |    ...                       use_auth_token=YOUR_AUTH_TOKEN)
-whisper_transcription  |
-whisper_transcription  | If this still does not work, it might be because the model is gated:
-whisper_transcription  | visit https://hf.co/pyannote/segmentation-3.0 to accept the user conditions.
+whisper_transcription  | INFO:app.diarization:Diarization model loaded in 2.41 seconds
+whisper_transcription  | INFO:app.diarization:Moving pipeline to device: cuda
+whisper_transcription  | ERROR:app.diarization:Failed to load diarization pipeline after 2.46 seconds: `device` must be an instance of `torch.device`, got `str`
+whisper_transcription  | ERROR:app.diarization:Full traceback:
 whisper_transcription  | Traceback (most recent call last):
-whisper_transcription  |   File "<string>", line 2, in <module>
-whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/pyannote/audio/core/pipeline.py", line 136, in from_pretrained
-whisper_transcription  |     pipeline = Klass(**params)
-whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/pyannote/audio/pipelines/speaker_diarization.py", line 130, in __init__
-whisper_transcription  |     model: Model = get_model(segmentation, use_auth_token=use_auth_token)
-whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/pyannote/audio/pipelines/utils/getter.py", line 89, in get_model
-whisper_transcription  |     model.eval()
-whisper_transcription  | AttributeError: 'NoneType' object has no attribute 'eval'
-whisper_transcription  | INFO:     Will watch for changes in these directories: ['/app/app']
-whisper_transcription  | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-whisper_transcription  | INFO:     Started reloader process [1] using StatReload
-whisper_transcription  | /usr/local/lib/python3.10/site-packages/transformers/utils/hub.py:106: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-whisper_transcription  |   warnings.warn(
-whisper_transcription  | /usr/local/lib/python3.10/site-packages/pyannote/audio/core/io.py:43: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
-whisper_transcription  |   torchaudio.set_audio_backend("soundfile")
-whisper_transcription  | INFO:app.main:CUDA is available. Found device: NVIDIA GeForce RTX 3090
-whisper_transcription  | INFO:     Started server process [55]
-whisper_transcription  | INFO:     Waiting for application startup.
-whisper_transcription  | INFO:     Application startup complete.
+whisper_transcription  |   File "/app/app/diarization.py", line 130, in load_pipeline
+whisper_transcription  |     self.pipeline.to(self.device)
+whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/pyannote/audio/core/pipeline.py", line 331, in to
+whisper_transcription  |     raise TypeError(
+whisper_transcription  | TypeError: `device` must be an instance of `torch.device`, got `str`
+whisper_transcription  | WARNING:app.utils:Diarization attempt 1 failed: `device` must be an instance of `torch.device`, got `str`
