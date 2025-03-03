@@ -1,0 +1,462 @@
+{
+  "lead_id": "123",
+  "call_id": "123",
+  "transcript_full": "Hallo. Einen wunderschönen guten Tag, Dürer mein Name, ich grüße Sie, hi. Hi. Sie waren glaube ich wahrscheinlich gerade mit dem Herr Abbas, ne? Ja, der war nicht da, ich war da wegen diesen Kommentaren, meinst du? Genau, genau, Sie meinten ja... Ja, der war nicht da, ich frage gleich nochmal zu ihm. Hat es dann geklappt mit ihm? Alles ist gelöscht, können Sie ja den anrufen, fragen. Ok. Wann würden Sie denn, weil Sie meinten ja, wenn bei denen alles geklappt hat, machen wir dann mit ihm weiter, ne? Ja, aber ich habe, wie viel habe ich, sechs oder sieben? Sieben Stück. Sieben Stück, was kostet mich das? Insgesamt. Ja. Da muss ich mal gucken, einen Moment bitte. Aber es wird ein Spezialpreis, ich will nicht irgendeinen Preis. 29 Euro ist ein Spezialpreis, das ist eigentlich teurer, da haben wir mit dem Abbas geredet, der hat ein bisschen billiger gemacht, ne? Da habe ich gesagt, wenn Sie mich an einen Kollegen von Ihnen empfehlen können, dann würde ich das machen. Dann machen wir bei Ihnen den gleichen Preis, ne? Und wir haben es auf 29 Euro pro Stück gemacht, also insgesamt 203 Euro. Genau. Ist das netto oder brutto? Die Endsumme. Also brutto? Netto. Ja, und dann kommt noch Steuern drauf. Wie heißt das nochmal? Netto mal brutto oder brutto mal netto? Wie heißt das nochmal? Also da kommt keine Summe noch dazu, heißt 203 Euro glatt. Kein plus 1 Euro. Das ist brutto. Das ist brutto dann. Oder muss ich dann noch Steuern bezahlen? Ne, Sie müssen gar nichts mehr dazu bezahlen. Also sind 203 brutto. Die Endsumme. Ok. Endsumme inklusive Steuern. Ich kenne mich nicht so gut damit aus, wegen Steuern so, aber soweit ich... Ich will Ihnen irgendwas andrehen, ich möchte ja auch was netto und brutto sagen. Ne, ne, was ich auf jeden Fall weiß, dass es die Endsumme ist. Es kommt kein Cent dazu, Sie zahlen gar nichts mehr dazu, heißt nur 203 Euro. Fertig. Ok. Das ist dann die Endsumme inklusive Steuern. Da gibt es doch eine Rechnung für, oder nicht? Genau, Sie kriegen eine Rechnung und da steht 203 Euro dann drin. Ok. 203 inklusive Steuern. Wie meinen Sie mit inklusive Steuern? Ich kenne mich nicht so gut mit den Steuern Sachen aus. Tut mir leid. Ok. Gut. Alles klar. 203, dann mach fertig. Ok. Ich hab's Ihnen geschickt, wie gesagt, aber Sie brauchen sich keinen Kopf machen, dass irgendwie ein Cent drauf kommt. Das passiert auf keinen Fall. Nach der Löschung, wegen alles erfolgreich gelöscht ist, werden Ihnen dann unsere Kontodaten zugeschickt und dann überweisen Sie es einfach darauf. Könnte ich mir eine Rechnung schicken? Wie bitte? Könnte ich mir auch per Post eine Rechnung schicken? Das muss ich gucken, weil bis jetzt hatte ich sowas noch nicht, dass wir jemanden durch Post... Wir haben Ihnen immer das per Mail zugeschickt. Ok. Wir haben unsere Kontodaten alles. Egal, per Mail geht das. Genau. Und da steht alles dann drin. Die Rechnung, alles. Und darauf geht dann überwiesen. Schick mir das einfach per Mail drüber. Sie haben ja unser Angebot, ne? Ja. Ja, genau. Schreiben Sie uns dann einfach darauf. Ja, machen Sie. Das ist diese Auftragsbestätigung. Und dann fangen wir an. Und die Rechnung und alles wird Ihnen erst nach der erfolgreichen Löschung zugeschickt, weil kann ja sein, dass ein Kommentar, zum Beispiel kurz noch nicht gelöscht wird... Ein Angebot? Wie bitte? Pro erfolgreich gelöschte Bewertung... Genau. Genau. Das wollte ich Ihnen ja jetzt erklären. Euro netto. Genau. Brutto kommen da noch Steuern drauf? Nein. Ok. Gucken Sie mal. Sie können ja auch den Herr Abbas fragen. So, was soll ich schreiben? Ok, was? Schreiben Sie einfach Ja. Das reicht schon aus. Die Rechnung und so alles kriegen Sie erst nach der erfolgreichen Löschung. Das erkläre ich Ihnen. Ok. Dann können Sie sich auch noch ein paar Fragen stellen. Ja. Ja. Und dann wäre das auch eine gute Begrüßung. Das erkläre ich Ihnen. Weil wenn wir Ihnen jetzt 230 Euro schreiben, für 7 Kommentare aber es wurden nur 6 gelöscht, dann müssen...dann ist dieses Hin und Her, dieses Wieder-Zurück-Überweisen... Nein, machen wir das alles erst, wenn alles fertig ist. Dann würden wir Ihnen erst die Rechnung schicken. Und das wäre wie gesagt 200 Euro. Ok. Ich habe die E-Mail geschickt. Dann würde ich das meine Chefin gleich fragen. Die wird das dann überprüfen. Ok. Dann bedanke ich mich bei Ihnen. Kein Problem, gerne. Ciao.",
+  "transcript_segments": [
+    {
+      "start": 0.0,
+      "end": 1.0,
+      "text": "Hallo."
+    },
+    {
+      "start": 1.0,
+      "end": 4.0,
+      "text": "Einen wunderschönen guten Tag, Dürer mein Name, ich grüße Sie, hi."
+    },
+    {
+      "start": 4.0,
+      "end": 5.0,
+      "text": "Hi."
+    },
+    {
+      "start": 5.0,
+      "end": 9.0,
+      "text": "Sie waren glaube ich wahrscheinlich gerade mit dem Herr Abbas, ne?"
+    },
+    {
+      "start": 9.0,
+      "end": 13.0,
+      "text": "Ja, der war nicht da, ich war da wegen diesen Kommentaren, meinst du?"
+    },
+    {
+      "start": 13.0,
+      "end": 15.0,
+      "text": "Genau, genau, Sie meinten ja..."
+    },
+    {
+      "start": 15.0,
+      "end": 19.0,
+      "text": "Ja, der war nicht da, ich frage gleich nochmal zu ihm. Hat es dann geklappt mit ihm?"
+    },
+    {
+      "start": 19.0,
+      "end": 22.0,
+      "text": "Alles ist gelöscht, können Sie ja den anrufen, fragen."
+    },
+    {
+      "start": 22.0,
+      "end": 23.0,
+      "text": "Ok."
+    },
+    {
+      "start": 23.0,
+      "end": 30.0,
+      "text": "Wann würden Sie denn, weil Sie meinten ja, wenn bei denen alles geklappt hat, machen wir dann mit ihm weiter, ne?"
+    },
+    {
+      "start": 30.0,
+      "end": 33.0,
+      "text": "Ja, aber ich habe, wie viel habe ich, sechs oder sieben?"
+    },
+    {
+      "start": 33.0,
+      "end": 34.0,
+      "text": "Sieben Stück."
+    },
+    {
+      "start": 34.0,
+      "end": 36.0,
+      "text": "Sieben Stück, was kostet mich das?"
+    },
+    {
+      "start": 36.0,
+      "end": 37.0,
+      "text": "Insgesamt."
+    },
+    {
+      "start": 37.0,
+      "end": 38.0,
+      "text": "Ja."
+    },
+    {
+      "start": 38.0,
+      "end": 40.0,
+      "text": "Da muss ich mal gucken, einen Moment bitte."
+    },
+    {
+      "start": 40.0,
+      "end": 43.0,
+      "text": "Aber es wird ein Spezialpreis, ich will nicht irgendeinen Preis."
+    },
+    {
+      "start": 43.0,
+      "end": 50.0,
+      "text": "29 Euro ist ein Spezialpreis, das ist eigentlich teurer, da haben wir mit dem Abbas geredet, der hat ein bisschen billiger gemacht, ne?"
+    },
+    {
+      "start": 50.0,
+      "end": 53.0,
+      "text": "Da habe ich gesagt, wenn Sie mich an einen Kollegen von Ihnen empfehlen können, dann würde ich das machen."
+    },
+    {
+      "start": 53.0,
+      "end": 55.0,
+      "text": "Dann machen wir bei Ihnen den gleichen Preis, ne?"
+    },
+    {
+      "start": 55.0,
+      "end": 59.0,
+      "text": "Und wir haben es auf 29 Euro pro Stück gemacht, also insgesamt 203 Euro."
+    },
+    {
+      "start": 59.0,
+      "end": 61.0,
+      "text": "Genau."
+    },
+    {
+      "start": 61.0,
+      "end": 63.0,
+      "text": "Ist das netto oder brutto?"
+    },
+    {
+      "start": 63.0,
+      "end": 65.0,
+      "text": "Die Endsumme."
+    },
+    {
+      "start": 65.0,
+      "end": 66.0,
+      "text": "Also brutto?"
+    },
+    {
+      "start": 66.0,
+      "end": 67.0,
+      "text": "Netto."
+    },
+    {
+      "start": 67.0,
+      "end": 70.0,
+      "text": "Ja, und dann kommt noch Steuern drauf."
+    },
+    {
+      "start": 70.0,
+      "end": 76.0,
+      "text": "Wie heißt das nochmal? Netto mal brutto oder brutto mal netto? Wie heißt das nochmal?"
+    },
+    {
+      "start": 76.0,
+      "end": 81.0,
+      "text": "Also da kommt keine Summe noch dazu, heißt 203 Euro glatt."
+    },
+    {
+      "start": 81.0,
+      "end": 83.0,
+      "text": "Kein plus 1 Euro."
+    },
+    {
+      "start": 83.0,
+      "end": 84.0,
+      "text": "Das ist brutto."
+    },
+    {
+      "start": 84.0,
+      "end": 87.0,
+      "text": "Das ist brutto dann. Oder muss ich dann noch Steuern bezahlen?"
+    },
+    {
+      "start": 87.0,
+      "end": 89.0,
+      "text": "Ne, Sie müssen gar nichts mehr dazu bezahlen."
+    },
+    {
+      "start": 89.0,
+      "end": 92.0,
+      "text": "Also sind 203 brutto."
+    },
+    {
+      "start": 92.0,
+      "end": 94.0,
+      "text": "Die Endsumme."
+    },
+    {
+      "start": 94.0,
+      "end": 95.0,
+      "text": "Ok."
+    },
+    {
+      "start": 95.0,
+      "end": 97.0,
+      "text": "Endsumme inklusive Steuern."
+    },
+    {
+      "start": 97.0,
+      "end": 104.0,
+      "text": "Ich kenne mich nicht so gut damit aus, wegen Steuern so, aber soweit ich..."
+    },
+    {
+      "start": 104.0,
+      "end": 106.0,
+      "text": "Ich will Ihnen irgendwas andrehen, ich möchte ja auch was netto und brutto sagen."
+    },
+    {
+      "start": 106.0,
+      "end": 111.0,
+      "text": "Ne, ne, was ich auf jeden Fall weiß, dass es die Endsumme ist."
+    },
+    {
+      "start": 111.0,
+      "end": 117.0,
+      "text": "Es kommt kein Cent dazu, Sie zahlen gar nichts mehr dazu, heißt nur 203 Euro. Fertig."
+    },
+    {
+      "start": 117.0,
+      "end": 123.0,
+      "text": "Ok. Das ist dann die Endsumme inklusive Steuern."
+    },
+    {
+      "start": 123.0,
+      "end": 125.0,
+      "text": "Da gibt es doch eine Rechnung für, oder nicht?"
+    },
+    {
+      "start": 125.0,
+      "end": 128.0,
+      "text": "Genau, Sie kriegen eine Rechnung und da steht 203 Euro dann drin."
+    },
+    {
+      "start": 128.0,
+      "end": 131.0,
+      "text": "Ok. 203 inklusive Steuern."
+    },
+    {
+      "start": 131.0,
+      "end": 135.0,
+      "text": "Wie meinen Sie mit inklusive Steuern? Ich kenne mich nicht so gut mit den Steuern Sachen aus."
+    },
+    {
+      "start": 135.0,
+      "end": 137.0,
+      "text": "Tut mir leid."
+    },
+    {
+      "start": 137.0,
+      "end": 140.0,
+      "text": "Ok. Gut. Alles klar. 203, dann mach fertig."
+    },
+    {
+      "start": 140.0,
+      "end": 146.0,
+      "text": "Ok. Ich hab's Ihnen geschickt, wie gesagt, aber Sie brauchen sich keinen Kopf machen, dass irgendwie ein Cent drauf kommt."
+    },
+    {
+      "start": 146.0,
+      "end": 148.0,
+      "text": "Das passiert auf keinen Fall."
+    },
+    {
+      "start": 148.0,
+      "end": 155.0,
+      "text": "Nach der Löschung, wegen alles erfolgreich gelöscht ist, werden Ihnen dann unsere Kontodaten zugeschickt und dann überweisen Sie es einfach darauf."
+    },
+    {
+      "start": 155.0,
+      "end": 157.0,
+      "text": "Könnte ich mir eine Rechnung schicken?"
+    },
+    {
+      "start": 157.0,
+      "end": 158.0,
+      "text": "Wie bitte?"
+    },
+    {
+      "start": 158.0,
+      "end": 161.0,
+      "text": "Könnte ich mir auch per Post eine Rechnung schicken?"
+    },
+    {
+      "start": 161.0,
+      "end": 167.0,
+      "text": "Das muss ich gucken, weil bis jetzt hatte ich sowas noch nicht, dass wir jemanden durch Post..."
+    },
+    {
+      "start": 167.0,
+      "end": 169.0,
+      "text": "Wir haben Ihnen immer das per Mail zugeschickt."
+    },
+    {
+      "start": 169.0,
+      "end": 170.0,
+      "text": "Ok."
+    },
+    {
+      "start": 170.0,
+      "end": 171.0,
+      "text": "Wir haben unsere Kontodaten alles."
+    },
+    {
+      "start": 171.0,
+      "end": 172.0,
+      "text": "Egal, per Mail geht das."
+    },
+    {
+      "start": 172.0,
+      "end": 177.0,
+      "text": "Genau. Und da steht alles dann drin. Die Rechnung, alles. Und darauf geht dann überwiesen."
+    },
+    {
+      "start": 177.0,
+      "end": 180.0,
+      "text": "Schick mir das einfach per Mail drüber."
+    },
+    {
+      "start": 180.0,
+      "end": 183.0,
+      "text": "Sie haben ja unser Angebot, ne?"
+    },
+    {
+      "start": 183.0,
+      "end": 184.0,
+      "text": "Ja."
+    },
+    {
+      "start": 184.0,
+      "end": 190.0,
+      "text": "Ja, genau. Schreiben Sie uns dann einfach darauf. Ja, machen Sie. Das ist diese Auftragsbestätigung."
+    },
+    {
+      "start": 190.0,
+      "end": 199.0,
+      "text": "Und dann fangen wir an. Und die Rechnung und alles wird Ihnen erst nach der erfolgreichen Löschung zugeschickt, weil kann ja sein, dass ein Kommentar, zum Beispiel kurz noch nicht gelöscht wird..."
+    },
+    {
+      "start": 199.0,
+      "end": 201.0,
+      "text": "Ein Angebot?"
+    },
+    {
+      "start": 201.0,
+      "end": 202.0,
+      "text": "Wie bitte?"
+    },
+    {
+      "start": 202.0,
+      "end": 204.0,
+      "text": "Pro erfolgreich gelöschte Bewertung..."
+    },
+    {
+      "start": 204.0,
+      "end": 207.0,
+      "text": "Genau. Genau. Das wollte ich Ihnen ja jetzt erklären."
+    },
+    {
+      "start": 207.0,
+      "end": 208.0,
+      "text": "Euro netto."
+    },
+    {
+      "start": 208.0,
+      "end": 209.0,
+      "text": "Genau."
+    },
+    {
+      "start": 209.0,
+      "end": 211.0,
+      "text": "Brutto kommen da noch Steuern drauf?"
+    },
+    {
+      "start": 211.0,
+      "end": 212.0,
+      "text": "Nein."
+    },
+    {
+      "start": 212.0,
+      "end": 213.0,
+      "text": "Ok."
+    },
+    {
+      "start": 213.0,
+      "end": 215.0,
+      "text": "Gucken Sie mal. Sie können ja auch den Herr Abbas fragen."
+    },
+    {
+      "start": 215.0,
+      "end": 217.0,
+      "text": "So, was soll ich schreiben? Ok, was?"
+    },
+    {
+      "start": 217.0,
+      "end": 223.0,
+      "text": "Schreiben Sie einfach Ja. Das reicht schon aus. Die Rechnung und so alles kriegen Sie erst nach der erfolgreichen Löschung. Das erkläre ich Ihnen."
+    },
+    {
+      "start": 223.0,
+      "end": 224.0,
+      "text": "Ok."
+    },
+    {
+      "start": 224.0,
+      "end": 226.0,
+      "text": "Dann können Sie sich auch noch ein paar Fragen stellen."
+    },
+    {
+      "start": 226.0,
+      "end": 227.0,
+      "text": "Ja."
+    },
+    {
+      "start": 227.0,
+      "end": 228.0,
+      "text": "Ja."
+    },
+    {
+      "start": 228.0,
+      "end": 231.0,
+      "text": "Und dann wäre das auch eine gute Begrüßung. Das erkläre ich Ihnen."
+    },
+    {
+      "start": 231.0,
+      "end": 243.0,
+      "text": "Weil wenn wir Ihnen jetzt 230 Euro schreiben, für 7 Kommentare aber es wurden nur 6 gelöscht, dann müssen...dann ist dieses Hin und Her, dieses Wieder-Zurück-Überweisen..."
+    },
+    {
+      "start": 243.0,
+      "end": 249.0,
+      "text": "Nein, machen wir das alles erst, wenn alles fertig ist. Dann würden wir Ihnen erst die Rechnung schicken. Und das wäre wie gesagt 200 Euro."
+    },
+    {
+      "start": 249.0,
+      "end": 252.0,
+      "text": "Ok. Ich habe die E-Mail geschickt."
+    },
+    {
+      "start": 252.0,
+      "end": 255.0,
+      "text": "Dann würde ich das meine Chefin gleich fragen. Die wird das dann überprüfen."
+    },
+    {
+      "start": 255.0,
+      "end": 257.0,
+      "text": "Ok."
+    },
+    {
+      "start": 257.0,
+      "end": 258.42,
+      "text": "Dann bedanke ich mich bei Ihnen."
+    },
+    {
+      "start": 258.92,
+      "end": 259.74,
+      "text": "Kein Problem, gerne."
+    },
+    {
+      "start": 260.18,
+      "end": 260.66,
+      "text": "Ciao."
+    }
+  ],
+  "email": "hello@gmail.com",
+  "email_2": "string",
+  "email_3": "string",
+  "email_4": "string",
+  "audio_url": "https://reputationsritter-media-bucket-2.s3.eu-central-1.amazonaws.com/record_for_call_922829_4706c929ef.mp3"
+}
