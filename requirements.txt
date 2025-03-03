@@ -7,7 +7,7 @@ requests==2.31.0
 python-dotenv==1.0.0
 numpy==1.26.2
 ffmpeg-python>=0.2.0
-pyannote.audio==2.1.1
+pyannote.audio==3.1
 transformers>=4.27.0
 huggingface_hub>=0.12.0
 scipy>=1.10.0
