@@ -1,30 +1,52 @@
- => ERROR [whisper-api 4/9] RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates &&     wget -qO - https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub | apt-key add - &&     echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64 /" > /etc/apt/sources.list.d/cud  21.0s
-------
- > [whisper-api 4/9] RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates &&     wget -qO - https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub | apt-key add - &&     echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64 /" > /etc/apt/sources.list.d/cuda.list &&     apt-get update:
-0.416 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
-0.607 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
-0.678 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
-0.764 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8792 kB]
-1.235 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [13.5 kB]
-1.301 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [246 kB]
-1.923 Fetched 9306 kB in 2s (5689 kB/s)
-1.923 Reading package lists...
-2.230 Reading package lists...
-2.553 Building dependency tree...
-2.625 Reading state information...
-2.709 ca-certificates is already the newest version (20230311).
-2.709 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-2.739 Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
-19.09 OK
-19.36 Hit:1 http://deb.debian.org/debian bookworm InRelease
-19.41 Hit:2 http://deb.debian.org/debian bookworm-updates InRelease
-19.49 Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
-20.65 Get:4 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64  InRelease [1581 B]
-20.72 Err:4 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64  InRelease
-20.72   The following signatures couldn't be verified because the public key is not available: NO_PUBKEY A4B469963BF863CC
-20.72 Reading package lists...
-21.02 W: GPG error: https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64  InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY A4B469963BF863CC
-21.02 E: The repository 'https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64  InRelease' is not signed.
-------
-failed to solve: process "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends ca-certificates &&     wget -qO - https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub | apt-key add - &&     echo \"deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64 /\" > /etc/apt/sources.list.d/cuda.list &&     apt-get update" did not complete successfully: exit code: 100
-
+ | ERROR:app.diarization:Failed to load diarization pipeline after 0.00 seconds: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on.
+whisper_transcription  | ERROR:app.diarization:Full traceback:
+whisper_transcription  | Traceback (most recent call last):
+whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1376, in _get_metadata_or_catch_error
+whisper_transcription  |     metadata = get_hf_file_metadata(
+whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+whisper_transcription  |     return fn(*args, **kwargs)
+whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1296, in get_hf_file_metadata
+whisper_transcription  |     r = _request_wrapper(
+whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 280, in _request_wrapper
+whisper_transcription  |     response = _request_wrapper(
+whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 303, in _request_wrapper
+whisper_transcription  |     response = get_session().request(method=method, url=url, **params)
+whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+whisper_transcription  |     resp = self.send(prep, **send_kwargs)
+whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+whisper_transcription  |     r = adapter.send(request, **kwargs)
+whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 107, in send
+whisper_transcription  |     raise OfflineModeIsEnabled(
+whisper_transcription  | huggingface_hub.errors.OfflineModeIsEnabled: Cannot reach https://huggingface.co/pyannote/speaker-diarization-3.1/resolve/main/config.yaml: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.
+whisper_transcription  |
+whisper_transcription  | The above exception was the direct cause of the following exception:
+whisper_transcription  |
+whisper_transcription  | Traceback (most recent call last):
+whisper_transcription  |   File "/app/app/diarization.py", line 122, in load_pipeline
+whisper_transcription  |     self.pipeline = Pipeline.from_pretrained(DIARIZATION_MODEL, use_auth_token=hf_token)
+whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/pyannote/audio/core/pipeline.py", line 88, in from_pretrained
+whisper_transcription  |     config_yml = hf_hub_download(
+whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+whisper_transcription  |     return fn(*args, **kwargs)
+whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 862, in hf_hub_download
+whisper_transcription  |     return _hf_hub_download_to_cache_dir(
+whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 969, in _hf_hub_download_to_cache_dir
+whisper_transcription  |     _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+whisper_transcription  |   File "/usr/local/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1489, in _raise_on_head_call_error
+whisper_transcription  |     raise LocalEntryNotFoundError(
+whisper_transcription  | huggingface_hub.errors.LocalEntryNotFoundError: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on.
+whisper_transcription  | WARNING:app.utils:Diarization attempt 3 failed: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on.
+whisper_transcription  | ERROR:app.utils:All 3 diarization attempts failed, giving up
+whisper_transcription  | ERROR:app.utils:Diarization failed: An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on.
+whisper_transcription  | INFO:app.utils:Continuing without diarization - using generic speaker labels
+whisper_transcription  | INFO:app.utils:Creating fallback speaker segments using basic heuristics
+whisper_transcription  | INFO:app.utils:Created 95 fallback segments in 0.00 seconds
+whisper_transcription  | INFO:app.utils:Cleaning up temporary audio file /tmp/audio_6360260522926182500.mp3
+whisper_transcription  | INFO:app.utils:Temporary audio file /tmp/audio_6360260522926182500.mp3 has been deleted.
+whisper_transcription  | INFO:app.utils:Total transcription process completed in 163.92 seconds
+whisper_transcription  | INFO:app.main:[9c331704] Transcription completed in 163.91s: 95 segments, 4481 characters
+whisper_transcription  | INFO:app.main:[9c331704] Diarization results: 2 speakers detected
+whisper_transcription  | INFO:app.main:[9c331704] Speaker SPEAKER_1: 95 segments (100.0%)
+whisper_transcription  | INFO:app.main:[9c331704] Assembling response
+whisper_transcription  | INFO:app.main:[9c331704] Request successfully processed in 165.13s
+whisper_transcription  | INFO:     172.18.0.1:55662 - "POST /transcribe HTTP/1.1" 200 OK
