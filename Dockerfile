@@ -32,14 +32,25 @@ if [ ! -d "/app/huggingface/hub/models--pyannote--speaker-diarization-3.1" ]; th
   echo "First run: Downloading diarization model..."\n\
   # Get token from environment\n\
   if [ -n "$HF_TOKEN" ]; then\n\
-    # Login with huggingface-cli as recommended\n\
-    echo "$HF_TOKEN" | huggingface-cli login\n\
+    # Create token file for non-interactive auth\n\
+    mkdir -p /root/.cache/huggingface\n\
+    echo $HF_TOKEN > /root/.cache/huggingface/token\n\
     \n\
-    # Download the model using Python\n\
+    # Download the model using explicit token auth to avoid interactive prompts\n\
     python -c "\
+import os\n\
 from pyannote.audio import Pipeline\n\
-pipeline = Pipeline.from_pretrained(\"pyannote/speaker-diarization-3.1\")\n\
-print(\"Diarization model downloaded successfully\")\n\
+print(\"Authenticating with HuggingFace token...\")\n\
+token = os.environ.get(\"HF_TOKEN\")\n\
+try:\n\
+    print(\"Attempting to download speaker diarization model...\")\n\
+    pipeline = Pipeline.from_pretrained(\"pyannote/speaker-diarization-3.1\", use_auth_token=token)\n\
+    print(\"Diarization model downloaded successfully\")\n\
+except Exception as e:\n\
+    print(f\"Error downloading model: {e}\")\n\
+    print(\"Please ensure you have accepted the user conditions at:\")\n\
+    print(\"https://huggingface.co/pyannote/speaker-diarization-3.1\")\n\
+    print(\"https://huggingface.co/pyannote/segmentation-3.0\")\n\
 "\n\
   else\n\
     echo "WARNING: HF_TOKEN not set. Model download will fail."\n\
