@@ -29,8 +29,10 @@ services:
     volumes:
       - whisper_data:/app
       - ./app:/app/app # Mount the app directory for development
+      - pyannote_models:/app/models/pyannote # Mount models directory
     working_dir: /app
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload --reload-dir /app/app
 
 volumes:
   whisper_data:
+  pyannote_models:

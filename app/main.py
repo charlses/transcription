@@ -4,7 +4,7 @@ import torch
 from .utils import download_audio, transcribe_audio
 import logging
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List, Optional, Dict
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -19,17 +19,20 @@ class TranscriptionRequest(BaseModel):
     email_3: Optional[str] = None
     email_4: Optional[str] = None
     audio_url: str
+    diarize: bool = True
+    num_speakers: Optional[int] = None
 
 class TranscriptionResponse(BaseModel):
     lead_id: str
     call_id: str
     transcript_full: str
-    transcript_segments: List[dict]
+    transcript_segments: List[Dict]
     email: str
     email_2: Optional[str] = None
     email_3: Optional[str] = None
     email_4: Optional[str] = None
     audio_url: str
+    num_speakers: Optional[int] = None
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -66,7 +69,11 @@ async def transcribe(request: TranscriptionRequest):
         audio_path = await download_audio(request.audio_url)
         
         # Transcribe the audio
-        transcription_result = await transcribe_audio(audio_path, use_gpu=CUDA_AVAILABLE)
+        transcription_result = await transcribe_audio(
+            audio_path, 
+            use_gpu=CUDA_AVAILABLE,
+            diarize=request.diarize
+        )
         
         # Create response
         response = TranscriptionResponse(
@@ -78,7 +85,8 @@ async def transcribe(request: TranscriptionRequest):
             email_2=request.email_2,
             email_3=request.email_3,
             email_4=request.email_4,
-            audio_url=request.audio_url
+            audio_url=request.audio_url,
+            num_speakers=transcription_result.get("num_speakers")
         )
         
         return response

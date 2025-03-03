@@ -7,6 +7,7 @@ import logging
 import asyncio
 from typing import Optional
 import mimetypes
+from .diarization import SpeakerDiarization, align_transcript_with_speakers
 
 # Set up logging for debugging and error reporting
 logger = logging.getLogger(__name__)
@@ -69,13 +70,14 @@ async def download_audio(url: str) -> str:
         raise Exception(f"Failed to download audio: {str(e)}")
 
 
-async def transcribe_audio(audio_path: str, use_gpu: bool = True) -> dict:
+async def transcribe_audio(audio_path: str, use_gpu: bool = True, diarize: bool = True) -> dict:
     """
     Transcribes the audio file to text using the Whisper model.
 
     Args:
         audio_path (str): Path to the audio file to transcribe.
         use_gpu (bool): Whether to use GPU for transcription. Defaults to True.
+        diarize (bool): Whether to perform speaker diarization. Defaults to True.
 
     Returns:
         dict: A dictionary containing the full transcribed text and detailed segment information.
@@ -108,6 +110,34 @@ async def transcribe_audio(audio_path: str, use_gpu: bool = True) -> dict:
             }
             for segment in result["segments"]
         ]
+
+        # Perform speaker diarization if requested
+        if diarize:
+            try:
+                logger.info("Performing speaker diarization")
+                # Create diarization object
+                diarizer = SpeakerDiarization(use_gpu=use_gpu)
+                
+                # Process audio for speaker diarization
+                diarization_result = await loop.run_in_executor(
+                    None,
+                    lambda: diarizer.process_audio(audio_path)
+                )
+                
+                # Align transcript segments with speaker information
+                speaker_segments = diarization_result["segments"]
+                aligned_segments = align_transcript_with_speakers(processed_segments, speaker_segments)
+                
+                # Return the results with diarization
+                return {
+                    "text": result["text"].strip(),
+                    "segments": aligned_segments,
+                    "num_speakers": diarization_result["num_speakers"]
+                }
+            except Exception as e:
+                # Log the error but continue without diarization
+                logger.error(f"Diarization failed: {str(e)}")
+                logger.info("Continuing without diarization")
 
         # Return the full transcribed text and the processed segments
         return {

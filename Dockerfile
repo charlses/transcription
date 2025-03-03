@@ -26,6 +26,10 @@ COPY app/ ./app/
 ENV PYTHONPATH=/app
 ENV NVIDIA_VISIBLE_DEVICES=all
 ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility
+ENV PYANNOTE_MODELS_DIR=/app/models/pyannote
+
+# Create models directory
+RUN mkdir -p /app/models/pyannote
 
 # Expose FastAPI port
 EXPOSE 8000
