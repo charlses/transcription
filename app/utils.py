@@ -53,7 +53,7 @@ async def transcribe_audio(audio_path: str, use_gpu: bool = True) -> dict:
     try:
         # Load Whisper model
         device = "cuda" if use_gpu else "cpu"
-        model = whisper.load_model("base", device=device)
+        model = whisper.load_model("large", device=device)
         
         # Run transcription in a thread pool to avoid blocking
         loop = asyncio.get_event_loop()
