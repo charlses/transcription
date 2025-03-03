@@ -70,7 +70,7 @@ async def download_audio(url: str) -> str:
         raise Exception(f"Failed to download audio: {str(e)}")
 
 
-async def transcribe_audio(audio_path: str, use_gpu: bool = True, diarize: bool = True) -> dict:
+async def transcribe_audio(audio_path: str, use_gpu: bool = True, diarize: bool = True, num_speakers: Optional[int] = None) -> dict:
     """
     Transcribes the audio file to text using the Whisper model.
 
@@ -78,6 +78,7 @@ async def transcribe_audio(audio_path: str, use_gpu: bool = True, diarize: bool 
         audio_path (str): Path to the audio file to transcribe.
         use_gpu (bool): Whether to use GPU for transcription. Defaults to True.
         diarize (bool): Whether to perform speaker diarization. Defaults to True.
+        num_speakers (Optional[int]): Number of speakers for diarization, if known. Defaults to None.
 
     Returns:
         dict: A dictionary containing the full transcribed text and detailed segment information.
@@ -117,9 +118,6 @@ async def transcribe_audio(audio_path: str, use_gpu: bool = True, diarize: bool 
                 logger.info("Performing speaker diarization")
                 # Create diarization object
                 diarizer = SpeakerDiarization(use_gpu=use_gpu)
-                
-                # Get num_speakers parameter if provided in the request
-                num_speakers = getattr(request, 'num_speakers', None)
                 
                 # Process audio for speaker diarization
                 diarization_result = await loop.run_in_executor(

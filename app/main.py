@@ -72,7 +72,8 @@ async def transcribe(request: TranscriptionRequest):
         transcription_result = await transcribe_audio(
             audio_path, 
             use_gpu=CUDA_AVAILABLE,
-            diarize=request.diarize
+            diarize=request.diarize,
+            num_speakers=request.num_speakers
         )
         
         # Create response
