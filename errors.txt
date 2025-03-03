@@ -1,12 +1,30 @@
- => [whisper-api 3/8] RUN apt-get update && apt-get install -y     ffmpeg     libsndfile1     wget     python3-numpy     build-essential     pkg-config     lsb-release     && rm -rf /var/lib/apt/lists/*                                                                                                                                                           51.9s
- => ERROR [whisper-api 4/8] RUN cd /tmp &&     wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu$(lsb_release -rs | sed 's/\.//')/x86_64/cuda-keyring_1.0-1_all.deb &&     dpkg -i cuda-keyring_1.0-1_all.deb &&     apt-get update &&     apt-get install -y cuda-nvrtc-dev-11-8 &&     rm -rf /var/lib/apt/lists/* &&     rm -f cuda-keyring_1.  2.3s
+ => ERROR [whisper-api 4/9] RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates &&     wget -qO - https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub | apt-key add - &&     echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64 /" > /etc/apt/sources.list.d/cud  21.0s
 ------
- > [whisper-api 4/8] RUN cd /tmp &&     wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu$(lsb_release -rs | sed 's/\.//')/x86_64/cuda-keyring_1.0-1_all.deb &&     dpkg -i cuda-keyring_1.0-1_all.deb &&     apt-get update &&     apt-get install -y cuda-nvrtc-dev-11-8 &&     rm -rf /var/lib/apt/lists/* &&     rm -f cuda-keyring_1.0-1_all.deb:
-0.330 --2025-03-03 15:59:34--  https://developer.download.nvidia.com/compute/cuda/repos/ubuntu12/x86_64/cuda-keyring_1.0-1_all.deb
-0.338 Resolving developer.download.nvidia.com (developer.download.nvidia.com)... 23.58.222.25, 23.58.222.88, 23.58.222.50
-0.579 Connecting to developer.download.nvidia.com (developer.download.nvidia.com)|23.58.222.25|:443... connected.
-0.775 HTTP request sent, awaiting response... 404 Not Found
-2.219 2025-03-03 15:59:35 ERROR 404: Not Found.
-2.219
+ > [whisper-api 4/9] RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates &&     wget -qO - https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub | apt-key add - &&     echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64 /" > /etc/apt/sources.list.d/cuda.list &&     apt-get update:
+0.416 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+0.607 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+0.678 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+0.764 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8792 kB]
+1.235 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [13.5 kB]
+1.301 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [246 kB]
+1.923 Fetched 9306 kB in 2s (5689 kB/s)
+1.923 Reading package lists...
+2.230 Reading package lists...
+2.553 Building dependency tree...
+2.625 Reading state information...
+2.709 ca-certificates is already the newest version (20230311).
+2.709 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+2.739 Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+19.09 OK
+19.36 Hit:1 http://deb.debian.org/debian bookworm InRelease
+19.41 Hit:2 http://deb.debian.org/debian bookworm-updates InRelease
+19.49 Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
+20.65 Get:4 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64  InRelease [1581 B]
+20.72 Err:4 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64  InRelease
+20.72   The following signatures couldn't be verified because the public key is not available: NO_PUBKEY A4B469963BF863CC
+20.72 Reading package lists...
+21.02 W: GPG error: https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64  InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY A4B469963BF863CC
+21.02 E: The repository 'https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64  InRelease' is not signed.
 ------
-failed to solve: process "/bin/sh -c cd /tmp &&     wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu$(lsb_release -rs | sed 's/\\.//')/x86_64/cuda-keyring_1.0-1_all.deb &&     dpkg -i cuda-keyring_1.0-1_all.deb &&     apt-get update &&     apt-get install -y cuda-nvrtc-dev-11-8 &&     rm -rf /var/lib/apt/lists/* &&     rm -f cuda-keyring_1.0-1_all.deb" did not complete successfully: exit code: 8
+failed to solve: process "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends ca-certificates &&     wget -qO - https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub | apt-key add - &&     echo \"deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64 /\" > /etc/apt/sources.list.d/cuda.list &&     apt-get update" did not complete successfully: exit code: 100
+
