@@ -7,7 +7,7 @@ import tempfile
 from typing import List, Dict, Union, Optional
 
 logger = logging.getLogger(__name__)
-
+# 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
 # Define paths for downloaded models
 MODELS_DIR = Path(os.environ.get("PYANNOTE_MODELS_DIR", "/app/models/pyannote"))
 DIARIZATION_MODEL_PATH = MODELS_DIR / "diarization.pt"
