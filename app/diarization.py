@@ -42,7 +42,10 @@ class SpeakerDiarization:
         Args:
             use_gpu: Whether to use GPU for processing
         """
-        self.device = "cuda" if use_gpu and torch.cuda.is_available() else "cpu"
+        # Store device type as string for logging
+        self.device_type = "cuda" if use_gpu and torch.cuda.is_available() else "cpu"
+        # Create proper torch.device object
+        self.device = torch.device(self.device_type)
         self.pipeline = None
         
         # Get configuration from environment variables
@@ -96,7 +99,7 @@ class SpeakerDiarization:
                     logger.warning(f"HF_HOME directory does not exist: {hf_home}")
             
             # Clear CUDA cache if using GPU to prevent memory issues
-            if self.device == "cuda":
+            if self.device_type == "cuda":
                 logger.info("Clearing CUDA cache before loading model")
                 torch.cuda.empty_cache()
                 
@@ -124,7 +127,7 @@ class SpeakerDiarization:
             model_load_time = time.time() - model_load_start
             logger.info(f"Diarization model loaded in {model_load_time:.2f} seconds")
             
-            # Move pipeline to the appropriate device
+            # Move pipeline to the appropriate device using torch.device object
             logger.info(f"Moving pipeline to device: {self.device}")
             device_move_start = time.time()
             self.pipeline.to(self.device)
@@ -184,7 +187,7 @@ class SpeakerDiarization:
         
         try:
             # Clear GPU cache before processing if using GPU
-            if self.device == "cuda":
+            if self.device_type == "cuda":
                 logger.info("Clearing CUDA cache before diarization")
                 torch.cuda.empty_cache()
                 if torch.cuda.is_available():
@@ -215,7 +218,7 @@ class SpeakerDiarization:
             logger.info(f"Diarization pipeline execution completed in {pipeline_time:.2f} seconds")
             
             # Log GPU memory after processing if using CUDA
-            if self.device == "cuda" and torch.cuda.is_available():
+            if self.device_type == "cuda" and torch.cuda.is_available():
                 allocated_mem = torch.cuda.memory_allocated(0) / (1024 ** 3)
                 total_mem = torch.cuda.get_device_properties(0).total_memory / (1024 ** 3)
                 logger.info(f"GPU memory after diarization: {allocated_mem:.2f}GB used / {total_mem:.2f}GB total")
