@@ -14,8 +14,6 @@ services:
       LIBRARY_PATH: /usr/local/lib
       PYTHONUNBUFFERED: 1
       WATCHFILES_FORCE_POLLING: 'true'
-      HF_DATASETS_OFFLINE: '1'
-      TRANSFORMERS_OFFLINE: '1'
       HF_TOKEN: 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
       HF_HOME: /app/huggingface
       TRANSFORMERS_CACHE: /app/huggingface/transformers

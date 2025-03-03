@@ -26,8 +26,9 @@ COPY app/ ./app/
 ENV PYTHONPATH=/app
 ENV NVIDIA_VISIBLE_DEVICES=all
 ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility
-ENV HF_DATASETS_OFFLINE=1
-ENV TRANSFORMERS_OFFLINE=1
+# Remove offline mode to allow model downloads
+# ENV HF_DATASETS_OFFLINE=1
+# ENV TRANSFORMERS_OFFLINE=1
 ENV HF_HOME=/app/huggingface
 ENV TRANSFORMERS_CACHE=/app/huggingface/transformers
 ENV PYANNOTE_CACHE=/app/pyannote_cache
