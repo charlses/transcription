@@ -7,29 +7,8 @@ import tempfile
 from typing import List, Dict, Union, Optional
 
 logger = logging.getLogger(__name__)
-# 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
-# Define paths for downloaded models
-MODELS_DIR = Path(os.environ.get("PYANNOTE_MODELS_DIR", "/app/models/pyannote"))
-DIARIZATION_MODEL_PATH = MODELS_DIR / "diarization.pt"
-
-def ensure_model_available() -> Path:
-    """
-    Ensures the diarization model is available locally.
-    Returns the path to the model.
-    """
-    # Create directories if they don't exist
-    MODELS_DIR.mkdir(parents=True, exist_ok=True)
-    
-    # Check if model file exists
-    if not DIARIZATION_MODEL_PATH.exists():
-        raise FileNotFoundError(
-            f"Diarization model not found at {DIARIZATION_MODEL_PATH}. "
-            "Please download the pyannote/speaker-diarization-3.0 model from "
-            "https://huggingface.co/pyannote/speaker-diarization-3.0 and place "
-            f"it at {DIARIZATION_MODEL_PATH}"
-        )
-    
-    return DIARIZATION_MODEL_PATH
+# Define model ID for diarization
+DIARIZATION_MODEL = "pyannote/speaker-diarization-3.1"
 
 class SpeakerDiarization:
     def __init__(self, use_gpu: bool = True):
@@ -47,15 +26,14 @@ class SpeakerDiarization:
         Load the diarization pipeline.
         """
         try:
-            # Ensure model is available
-            model_path = ensure_model_available()
+            # Get Hugging Face token from environment
+            hf_token = os.environ.get("HF_TOKEN")
+            if not hf_token:
+                logger.warning("HF_TOKEN environment variable not set. Model download may fail.")
             
             # Load the diarization pipeline
-            logger.info(f"Loading diarization model from {model_path}")
-            self.pipeline = Pipeline.from_pretrained(
-                model_path, 
-                use_auth_token=False
-            )
+            logger.info(f"Loading diarization model {DIARIZATION_MODEL}")
+            self.pipeline = Pipeline.from_pretrained(DIARIZATION_MODEL, use_auth_token=hf_token)
             
             # Move pipeline to the appropriate device
             self.pipeline.to(self.device)

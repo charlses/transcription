@@ -26,10 +26,12 @@ COPY app/ ./app/
 ENV PYTHONPATH=/app
 ENV NVIDIA_VISIBLE_DEVICES=all
 ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility
-ENV PYANNOTE_MODELS_DIR=/app/models/pyannote
+ENV HF_HOME=/app/huggingface
+ENV TRANSFORMERS_CACHE=/app/huggingface/transformers
+ENV PYANNOTE_CACHE=/app/huggingface/pyannote
 
-# Create models directory
-RUN mkdir -p /app/models/pyannote
+# Create cache directories
+RUN mkdir -p /app/huggingface/transformers /app/huggingface/pyannote
 
 # Expose FastAPI port
 EXPOSE 8000

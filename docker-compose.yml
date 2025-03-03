@@ -14,8 +14,7 @@ services:
       LIBRARY_PATH: /usr/local/lib
       PYTHONUNBUFFERED: 1
       WATCHFILES_FORCE_POLLING: 'true'
-      HF_DATASETS_OFFLINE: '1'
-      TRANSFORMERS_OFFLINE: '1'
+      HF_TOKEN: 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
       HF_HOME: /app/huggingface
       TRANSFORMERS_CACHE: /app/huggingface/transformers
       PYANNOTE_CACHE: /app/pyannote_cache
@@ -28,11 +27,11 @@ services:
               capabilities: [gpu]
     volumes:
       - whisper_data:/app
+      - huggingface_cache:/app/huggingface
       - ./app:/app/app # Mount the app directory for development
-      - pyannote_models:/app/models/pyannote # Mount models directory
     working_dir: /app
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload --reload-dir /app/app
 
 volumes:
   whisper_data:
-  pyannote_models:
+  huggingface_cache:

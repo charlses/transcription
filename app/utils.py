@@ -118,10 +118,13 @@ async def transcribe_audio(audio_path: str, use_gpu: bool = True, diarize: bool 
                 # Create diarization object
                 diarizer = SpeakerDiarization(use_gpu=use_gpu)
                 
+                # Get num_speakers parameter if provided in the request
+                num_speakers = getattr(request, 'num_speakers', None)
+                
                 # Process audio for speaker diarization
                 diarization_result = await loop.run_in_executor(
                     None,
-                    lambda: diarizer.process_audio(audio_path)
+                    lambda: diarizer.process_audio(audio_path, num_speakers=num_speakers)
                 )
                 
                 # Align transcript segments with speaker information
