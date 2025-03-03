@@ -1,19 +1,12 @@
- ERROR:app.utils:Diarization failed: name 'request' is not defined
-
-
- | INFO:     Will watch for changes in these directories: ['/app/app']
-whisper_transcription  | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-whisper_transcription  | INFO:     Started reloader process [1] using StatReload
-whisper_transcription  | /usr/local/lib/python3.10/site-packages/transformers/utils/hub.py:106: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-whisper_transcription  |   warnings.warn(
-whisper_transcription  | /usr/local/lib/python3.10/site-packages/pyannote/audio/core/io.py:43: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
-whisper_transcription  |   torchaudio.set_audio_backend("soundfile")
-whisper_transcription  | INFO:app.main:CUDA is available. Found device: NVIDIA GeForce RTX 3090
-whisper_transcription  | INFO:     Started server process [8]
-whisper_transcription  | INFO:     Waiting for application startup.
-whisper_transcription  | INFO:     Application startup complete.
-whisper_transcription  | INFO:app.utils:Audio downloaded successfully to /tmp/audio_8547825244386035167.mp3
-100%|█████████████████████████████████████| 2.88G/2.88G [00:47<00:00, 64.4MiB/s]
-whisper_transcription  | /usr/local/lib/python3.10/site-packages/torch/nn/modules/conv.py:306: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
-whisper_transcription  |   return F.conv1d(input, weight, bias, self.stride,
-whisper_transcription  | INFO:app.utils:Performing speaker diarization
+ => [whisper-api 3/8] RUN apt-get update && apt-get install -y     ffmpeg     libsndfile1     wget     python3-numpy     build-essential     pkg-config     lsb-release     && rm -rf /var/lib/apt/lists/*                                                                                                                                                           51.9s
+ => ERROR [whisper-api 4/8] RUN cd /tmp &&     wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu$(lsb_release -rs | sed 's/\.//')/x86_64/cuda-keyring_1.0-1_all.deb &&     dpkg -i cuda-keyring_1.0-1_all.deb &&     apt-get update &&     apt-get install -y cuda-nvrtc-dev-11-8 &&     rm -rf /var/lib/apt/lists/* &&     rm -f cuda-keyring_1.  2.3s
+------
+ > [whisper-api 4/8] RUN cd /tmp &&     wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu$(lsb_release -rs | sed 's/\.//')/x86_64/cuda-keyring_1.0-1_all.deb &&     dpkg -i cuda-keyring_1.0-1_all.deb &&     apt-get update &&     apt-get install -y cuda-nvrtc-dev-11-8 &&     rm -rf /var/lib/apt/lists/* &&     rm -f cuda-keyring_1.0-1_all.deb:
+0.330 --2025-03-03 15:59:34--  https://developer.download.nvidia.com/compute/cuda/repos/ubuntu12/x86_64/cuda-keyring_1.0-1_all.deb
+0.338 Resolving developer.download.nvidia.com (developer.download.nvidia.com)... 23.58.222.25, 23.58.222.88, 23.58.222.50
+0.579 Connecting to developer.download.nvidia.com (developer.download.nvidia.com)|23.58.222.25|:443... connected.
+0.775 HTTP request sent, awaiting response... 404 Not Found
+2.219 2025-03-03 15:59:35 ERROR 404: Not Found.
+2.219
+------
+failed to solve: process "/bin/sh -c cd /tmp &&     wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu$(lsb_release -rs | sed 's/\\.//')/x86_64/cuda-keyring_1.0-1_all.deb &&     dpkg -i cuda-keyring_1.0-1_all.deb &&     apt-get update &&     apt-get install -y cuda-nvrtc-dev-11-8 &&     rm -rf /var/lib/apt/lists/* &&     rm -f cuda-keyring_1.0-1_all.deb" did not complete successfully: exit code: 8
