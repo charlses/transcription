@@ -1,26 +1,25 @@
-# Use NVIDIA CUDA base image
-FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
+# Use a lightweight Python 3.10 base image
+FROM python:3.10-slim AS base
 
 # Set working directory
 WORKDIR /app
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
-    python3-pip \
-    python3-dev \
     ffmpeg \
+    libsndfile1 \
+    wget \
+    python3-numpy \
     build-essential \
     pkg-config \
-    python3-numpy \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements first to leverage Docker cache
-COPY requirements.txt .
-
 # Install Python dependencies
-RUN pip3 install --no-cache-dir -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu118
+COPY requirements.txt .
+RUN pip install --upgrade pip && \
+    pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu118
 
-# Copy application code
+# Copy project files
 COPY app/ ./app/
 
 # Set environment variables
@@ -28,5 +27,8 @@ ENV PYTHONPATH=/app
 ENV NVIDIA_VISIBLE_DEVICES=all
 ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility
 
-# Run the application
+# Expose FastAPI port
+EXPOSE 8000
+
+# Run FastAPI
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"] 

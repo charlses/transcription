@@ -1,10 +1,24 @@
-version: '3.8'
+version: '3.9'
 
 services:
   whisper-api:
     build: .
+    container_name: whisper_transcription
+    restart: always
     ports:
       - '8000:8000'
+    environment:
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility
+      CPATH: /usr/local/include
+      LIBRARY_PATH: /usr/local/lib
+      PYTHONUNBUFFERED: 1
+      WATCHFILES_FORCE_POLLING: 'true'
+      HF_DATASETS_OFFLINE: '1'
+      TRANSFORMERS_OFFLINE: '1'
+      HF_HOME: /app/huggingface
+      TRANSFORMERS_CACHE: /app/huggingface/transformers
+      PYANNOTE_CACHE: /app/pyannote_cache
     deploy:
       resources:
         reservations:
@@ -12,3 +26,11 @@ services:
             - driver: nvidia
               count: all
               capabilities: [gpu]
+    volumes:
+      - whisper_data:/app
+      - ./app:/app/app # Mount the app directory for development
+    working_dir: /app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload --reload-dir /app/app
+
+volumes:
+  whisper_data:
