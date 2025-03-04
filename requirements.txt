@@ -2,6 +2,7 @@ fastapi==0.104.1
 uvicorn==0.24.0
 python-multipart==0.0.6
 openai-whisper==20231117
+whisperx==3.3.1
 torch==2.1.1
 torchaudio==2.1.1
 requests==2.31.0
@@ -15,5 +16,12 @@ scipy>=1.10.0
 omegaconf>=2.3.0
 protobuf>=3.20.0
 torchmetrics>=0.11.4
+# Extra dependencies for WhisperX
+faster-whisper==1.1.0
+deepmultilingualpunctuation
+ctranslate2>=3.17.1
+pyparsing>=3.1.1
+pyannote.core>=5.0.0
+silero-vad>=1.0.0
 
 

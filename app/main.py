@@ -10,6 +10,7 @@ import time
 import platform
 import sys
 import fastapi
+from .whisperx_transcription import WhisperXTranscription
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -46,8 +47,17 @@ app = FastAPI(
     version="1.0.0"
 )
 
+# Initialize WhisperX transcription handler
+cuda_available = torch.cuda.is_available()
+if cuda_available:
+    logger.info("CUDA is available. Initializing WhisperX with GPU acceleration.")
+else:
+    logger.warning("CUDA is not available! WhisperX will run much slower on CPU.")
+    
+whisperx_transcriber = WhisperXTranscription(use_gpu=True)  # Always request GPU, will fallback to CPU if not available
+
 # Verify CUDA availability at startup
-CUDA_AVAILABLE = torch.cuda.is_available()
+CUDA_AVAILABLE = cuda_available
 if CUDA_AVAILABLE:
     logger.info(f"CUDA is available. Found device: {torch.cuda.get_device_name(0)}")
 else:
@@ -196,5 +206,88 @@ async def transcribe(request: TranscriptionRequest):
     except Exception as e:
         total_time = time.time() - start_time
         logger.error(f"[{request_id}] Error during transcription after {total_time:.2f}s: {str(e)}")
+        logger.exception(f"[{request_id}] Full traceback:")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/transcribe/whisperx", response_model=TranscriptionResponse)
+async def transcribe_whisperx(request: TranscriptionRequest):
+    """
+    Transcribe audio using WhisperX, providing improved accuracy and diarization
+    
+    Args:
+        request (TranscriptionRequest): Request containing lead and audio information
+    
+    Returns:
+        TranscriptionResponse: Response containing transcription and original data
+    """
+    request_id = str(uuid.uuid4())[:8]  # Generate a short request ID for tracking
+    logger.info(f"[{request_id}] Received WhisperX transcription request: lead_id={request.lead_id}, call_id={request.call_id}")
+    logger.info(f"[{request_id}] Audio URL: {request.audio_url}")
+    logger.info(f"[{request_id}] Diarization enabled: {request.diarize}, Num speakers: {request.num_speakers}")
+    
+    start_time = time.time()
+    
+    try:
+        # Download the audio file
+        logger.info(f"[{request_id}] Initiating audio download")
+        download_start = time.time()
+        audio_path = await download_audio(request.audio_url)
+        download_time = time.time() - download_start
+        logger.info(f"[{request_id}] Audio downloaded in {download_time:.2f}s: {audio_path}")
+        
+        # Transcribe using WhisperX
+        logger.info(f"[{request_id}] Starting WhisperX transcription process with GPU={CUDA_AVAILABLE}")
+        transcription_start = time.time()
+        transcription_result = await whisperx_transcriber.process_audio(
+            audio_path, 
+            diarize=request.diarize,
+            num_speakers=request.num_speakers
+        )
+        transcription_time = time.time() - transcription_start
+        
+        num_segments = len(transcription_result["segments"])
+        text_length = len(transcription_result["text"])
+        logger.info(f"[{request_id}] WhisperX transcription completed in {transcription_time:.2f}s: {num_segments} segments, {text_length} characters")
+        
+        if request.diarize:
+            num_speakers = transcription_result.get("num_speakers")
+            logger.info(f"[{request_id}] WhisperX diarization results: {num_speakers or 'None'} speakers detected")
+            
+            # Log speaker distribution
+            if num_speakers is not None and num_speakers > 0:
+                speaker_counts = {}
+                for segment in transcription_result["segments"]:
+                    speaker = segment.get("speaker", "unknown")
+                    if speaker not in speaker_counts:
+                        speaker_counts[speaker] = 0
+                    speaker_counts[speaker] += 1
+                
+                for speaker, count in speaker_counts.items():
+                    percentage = count / num_segments * 100
+                    logger.info(f"[{request_id}] Speaker {speaker}: {count} segments ({percentage:.1f}%)")
+        
+        # Create response
+        logger.info(f"[{request_id}] Assembling response")
+        response = TranscriptionResponse(
+            lead_id=request.lead_id,
+            call_id=request.call_id,
+            transcript_full=transcription_result["text"],
+            transcript_segments=transcription_result["segments"],
+            email=request.email,
+            email_2=request.email_2,
+            email_3=request.email_3,
+            email_4=request.email_4,
+            audio_url=request.audio_url,
+            num_speakers=transcription_result.get("num_speakers")
+        )
+        
+        total_time = time.time() - start_time
+        logger.info(f"[{request_id}] WhisperX request successfully processed in {total_time:.2f}s")
+        
+        return response
+        
+    except Exception as e:
+        total_time = time.time() - start_time
+        logger.error(f"[{request_id}] Error during WhisperX transcription after {total_time:.2f}s: {str(e)}")
         logger.exception(f"[{request_id}] Full traceback:")
         raise HTTPException(status_code=500, detail=str(e)) 
