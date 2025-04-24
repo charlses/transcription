@@ -5,8 +5,9 @@ import shutil
 import torch
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from pydantic import BaseModel
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
 from .whisperx_transcription import WhisperXTranscription
+from .whisperx_config_transcription import WhisperXConfigurableTranscription, TranscriptionConfig
 import aiohttp
 import asyncio
 import logging
@@ -38,6 +39,9 @@ else:
     
 whisperx_transcriber = WhisperXTranscription(use_gpu=True)  # Always request GPU, will fallback to CPU if not available
 
+# Initialize configurable WhisperX transcription handler
+configurable_whisperx_transcriber = WhisperXConfigurableTranscription(use_gpu=True)  # Use GPU if available, fallback to CPU
+
 # Load models before starting the server
 logger.info("Loading WhisperX models...")
 try:
@@ -57,6 +61,11 @@ else:
 class TranscriptionRequest(BaseModel):
     recording_remote: str
     recording_local: str
+
+class ConfigurableTranscriptionRequest(BaseModel):
+    recording_remote: str
+    recording_local: str
+    config: TranscriptionConfig
 
 async def download_file(url: str, path: str):
     """Download a file from URL to local path"""
@@ -140,6 +149,57 @@ async def transcribe(
         # Ensure temp directory is cleaned up even if an error occurs
         shutil.rmtree(temp_dir, ignore_errors=True)
         logger.error(f"Error processing audio: {str(e)}", exc_info=True)
+        raise HTTPException(status_code=500, detail=f"Error processing audio: {str(e)}")
+
+@app.post("/transcribe/configurable")
+async def transcribe_configurable(
+    background_tasks: BackgroundTasks,
+    request: ConfigurableTranscriptionRequest
+):
+    """
+    Transcribe two audio files with configurable WhisperX parameters
+    
+    This endpoint allows for customizing the WhisperX transcription parameters
+    including temperature, VAD settings, beam size, and more.
+    """
+    # Create a unique job ID
+    job_id = str(uuid.uuid4())
+    
+    # Create temp directory for this job
+    temp_dir = tempfile.mkdtemp()
+    
+    try:
+        # Define paths for downloaded files
+        remote_path = os.path.join(temp_dir, f"recording_remote_{job_id}.webm")
+        local_path = os.path.join(temp_dir, f"recording_local_{job_id}.webm")
+        
+        # Download files from URLs
+        logger.info(f"Downloading remote recording to {remote_path}")
+        await download_file(request.recording_remote, remote_path)
+        
+        logger.info(f"Downloading local recording to {local_path}")
+        await download_file(request.recording_local, local_path)
+        
+        # Log configuration settings
+        logger.info(f"Using custom transcription configuration: language={request.config.language}, "
+                   f"temperature={request.config.temperature}, vad_filter={request.config.vad_filter}")
+        
+        # Transcribe both recordings with the provided configuration
+        result = await configurable_whisperx_transcriber.transcribe_audio_combined(
+            local_path, 
+            remote_path, 
+            request.config
+        )
+        
+        # Cleanup temp files in the background
+        background_tasks.add_task(lambda: shutil.rmtree(temp_dir, ignore_errors=True))
+        
+        return result
+        
+    except Exception as e:
+        # Ensure temp directory is cleaned up even if an error occurs
+        shutil.rmtree(temp_dir, ignore_errors=True)
+        logger.error(f"Error processing audio with custom configuration: {str(e)}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Error processing audio: {str(e)}")
 
 @app.get("/health")
