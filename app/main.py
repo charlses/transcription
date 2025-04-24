@@ -1,37 +1,26 @@
-from fastapi import FastAPI, HTTPException
-from fastapi.responses import JSONResponse
-import torch
-from .utils import download_audio, transcribe_audio
-import logging
-from pydantic import BaseModel
-from typing import List, Optional, Dict
+import os
 import uuid
+import tempfile
+import shutil
+import torch
+from fastapi import FastAPI, HTTPException, BackgroundTasks
+from pydantic import BaseModel
+from typing import Dict, List, Any
+from .whisperx_transcription import WhisperXTranscription
+import aiohttp
+import asyncio
+import logging
 import time
 import platform
 import sys
 import fastapi
-from .whisperx_transcription import WhisperXTranscription
-import os
 
 # Configure logging
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-
-# Define request and response models
-class TranscriptionRequest(BaseModel):
-    recording_local: str
-    recording_remote: str
-    diarize: bool = True
-    num_speakers: Optional[int] = None
-
-class TranscriptionResponse(BaseModel):
-    transcription_local: str
-    transcription_remote: str
-    transcription_combined: str
-    segments_local: List[Dict]
-    segments_remote: List[Dict]
-    segments_combined: List[Dict]
-    num_speakers: Optional[int] = None
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger("transcription")
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -49,12 +38,113 @@ else:
     
 whisperx_transcriber = WhisperXTranscription(use_gpu=True)  # Always request GPU, will fallback to CPU if not available
 
+# Load models before starting the server
+logger.info("Loading WhisperX models...")
+try:
+    whisperx_transcriber._load_model()  # Call the correct method name
+    logger.info("WhisperX models loaded successfully")
+except Exception as e:
+    logger.error(f"Failed to load WhisperX models: {str(e)}", exc_info=True)
+    raise RuntimeError("Failed to load WhisperX models. Check logs for details.")
+
 # Verify CUDA availability at startup
 CUDA_AVAILABLE = cuda_available
 if CUDA_AVAILABLE:
     logger.info(f"CUDA is available. Found device: {torch.cuda.get_device_name(0)}")
 else:
     logger.warning("CUDA is not available. Running on CPU mode.")
+
+class TranscriptionRequest(BaseModel):
+    recording_remote: str
+    recording_local: str
+
+async def download_file(url: str, path: str):
+    """Download a file from URL to local path"""
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            if response.status != 200:
+                raise HTTPException(status_code=400, detail=f"Failed to download file from {url}")
+            
+            with open(path, 'wb') as f:
+                while True:
+                    chunk = await response.content.read(1024)
+                    if not chunk:
+                        break
+                    f.write(chunk)
+
+@app.post("/transcribe")
+async def transcribe(
+    background_tasks: BackgroundTasks,
+    request: TranscriptionRequest
+):
+    """
+    Transcribe two audio files from provided URLs
+    """
+    # Create a unique job ID
+    job_id = str(uuid.uuid4())
+    
+    # Create temp directory for this job
+    temp_dir = tempfile.mkdtemp()
+    
+    try:
+        # Define paths for downloaded files
+        remote_path = os.path.join(temp_dir, f"recording_remote_{job_id}.webm")
+        local_path = os.path.join(temp_dir, f"recording_local_{job_id}.webm")
+        
+        # Download files from URLs
+        logger.info(f"Downloading remote recording to {remote_path}")
+        await download_file(request.recording_remote, remote_path)
+        
+        logger.info(f"Downloading local recording to {local_path}")
+        await download_file(request.recording_local, local_path)
+        
+        # Transcribe both recordings
+        logger.info("Starting remote recording transcription")
+        transcript_remote = await whisperx_transcriber.transcribe_audio(remote_path, "client")
+        
+        logger.info("Starting local recording transcription")
+        transcript_local = await whisperx_transcriber.transcribe_audio(local_path, "agent")
+        
+        # Combine and sort segments by start time
+        all_segments = []
+        
+        # Add remote segments with client tag
+        for segment in transcript_remote["segments"]:
+            segment["speaker"] = "client"
+            all_segments.append(segment)
+            
+        # Add local segments with agent tag
+        for segment in transcript_local["segments"]:
+            segment["speaker"] = "agent"
+            all_segments.append(segment)
+        
+        # Sort segments by start time
+        all_segments.sort(key=lambda x: x["start"])
+        
+        # Create combined transcript text
+        combined_text = " ".join(segment["text"] for segment in all_segments)
+        
+        # Cleanup temp files in the background
+        background_tasks.add_task(lambda: shutil.rmtree(temp_dir, ignore_errors=True))
+        
+        return {
+            "transcript_remote": transcript_remote,
+            "transcript_local": transcript_local,
+            "transcript_combined": {
+                "segments": all_segments,
+                "text": combined_text
+            }
+        }
+        
+    except Exception as e:
+        # Ensure temp directory is cleaned up even if an error occurs
+        shutil.rmtree(temp_dir, ignore_errors=True)
+        logger.error(f"Error processing audio: {str(e)}", exc_info=True)
+        raise HTTPException(status_code=500, detail=f"Error processing audio: {str(e)}")
+
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
 
 @app.get("/")
 async def root():
@@ -116,180 +206,4 @@ async def root():
         logger.warning(f"Failed to get version information: {e}")
     
     logger.info("Status check completed")
-    return system_info
-
-@app.post("/transcribe", response_model=TranscriptionResponse)
-async def transcribe(request: TranscriptionRequest):
-    """
-    Transcribe audio from the provided request data
-    
-    Args:
-        request (TranscriptionRequest): Request containing lead and audio information
-    
-    Returns:
-        TranscriptionResponse: Response containing transcription and original data
-    """
-    request_id = str(uuid.uuid4())[:8]  # Generate a short request ID for tracking
-    logger.info(f"[{request_id}] Received transcription request: lead_id={request.lead_id}, call_id={request.call_id}")
-    logger.info(f"[{request_id}] Audio URL: {request.audio_url}")
-    logger.info(f"[{request_id}] Diarization enabled: {request.diarize}, Num speakers: {request.num_speakers}")
-    
-    start_time = time.time()
-    
-    try:
-        # Download the audio file
-        logger.info(f"[{request_id}] Initiating audio download")
-        download_start = time.time()
-        audio_path = await download_audio(request.audio_url)
-        download_time = time.time() - download_start
-        logger.info(f"[{request_id}] Audio downloaded in {download_time:.2f}s: {audio_path}")
-        
-        # Transcribe the audio
-        logger.info(f"[{request_id}] Starting transcription process with GPU={CUDA_AVAILABLE}")
-        transcription_start = time.time()
-        transcription_result = await transcribe_audio(
-            audio_path, 
-            use_gpu=CUDA_AVAILABLE,
-            diarize=request.diarize,
-            num_speakers=request.num_speakers
-        )
-        transcription_time = time.time() - transcription_start
-        
-        num_segments = len(transcription_result["segments"])
-        text_length = len(transcription_result["text"])
-        logger.info(f"[{request_id}] Transcription completed in {transcription_time:.2f}s: {num_segments} segments, {text_length} characters")
-        
-        if request.diarize:
-            num_speakers = transcription_result.get("num_speakers", 0)
-            logger.info(f"[{request_id}] Diarization results: {num_speakers} speakers detected")
-            
-            # Log speaker distribution
-            if num_speakers > 0:
-                speaker_counts = {}
-                for segment in transcription_result["segments"]:
-                    speaker = segment.get("speaker", "unknown")
-                    if speaker not in speaker_counts:
-                        speaker_counts[speaker] = 0
-                    speaker_counts[speaker] += 1
-                
-                for speaker, count in speaker_counts.items():
-                    percentage = count / num_segments * 100
-                    logger.info(f"[{request_id}] Speaker {speaker}: {count} segments ({percentage:.1f}%)")
-        
-        # Create response
-        logger.info(f"[{request_id}] Assembling response")
-        response = TranscriptionResponse(
-            transcription_local=transcription_result["text"],
-            transcription_remote=transcription_result["text"],
-            transcription_combined=transcription_result["text"],
-            segments_local=transcription_result["segments"],
-            segments_remote=transcription_result["segments"],
-            segments_combined=transcription_result["segments"],
-            num_speakers=transcription_result.get("num_speakers")
-        )
-        
-        total_time = time.time() - start_time
-        logger.info(f"[{request_id}] Request successfully processed in {total_time:.2f}s")
-        
-        return response
-        
-    except Exception as e:
-        total_time = time.time() - start_time
-        logger.error(f"[{request_id}] Error during transcription after {total_time:.2f}s: {str(e)}")
-        logger.exception(f"[{request_id}] Full traceback:")
-        raise HTTPException(status_code=500, detail=str(e))
-
-@app.post("/transcribe/whisperx", response_model=TranscriptionResponse)
-async def transcribe_whisperx(request: TranscriptionRequest):
-    """
-    Transcribe audio using WhisperX, providing improved accuracy and diarization.
-    Processes both local and remote recordings, tagging segments with appropriate speakers.
-    
-    Args:
-        request (TranscriptionRequest): Request containing local and remote audio URLs
-    
-    Returns:
-        TranscriptionResponse: Response containing separate and combined transcriptions
-    """
-    request_id = str(uuid.uuid4())[:8]  # Generate a short request ID for tracking
-    logger.info(f"[{request_id}] Received WhisperX transcription request")
-    logger.info(f"[{request_id}] Local recording URL: {request.recording_local}")
-    logger.info(f"[{request_id}] Remote recording URL: {request.recording_remote}")
-    
-    start_time = time.time()
-    
-    try:
-        # Download both audio files
-        logger.info(f"[{request_id}] Initiating audio downloads")
-        download_start = time.time()
-        
-        # Download local recording
-        local_audio_path = await download_audio(request.recording_local)
-        logger.info(f"[{request_id}] Local audio downloaded: {local_audio_path}")
-        
-        # Download remote recording
-        remote_audio_path = await download_audio(request.recording_remote)
-        logger.info(f"[{request_id}] Remote audio downloaded: {remote_audio_path}")
-        
-        download_time = time.time() - download_start
-        logger.info(f"[{request_id}] Both audio files downloaded in {download_time:.2f}s")
-        
-        # Transcribe local recording
-        logger.info(f"[{request_id}] Starting local recording transcription")
-        local_result = await whisperx_transcriber.process_audio(
-            local_audio_path,
-            diarize=False  # We don't need diarization since we know it's the agent
-        )
-        
-        # Tag all local segments as "agent"
-        for segment in local_result["segments"]:
-            segment["speaker"] = "agent"
-        
-        # Transcribe remote recording
-        logger.info(f"[{request_id}] Starting remote recording transcription")
-        remote_result = await whisperx_transcriber.process_audio(
-            remote_audio_path,
-            diarize=False  # We don't need diarization since we know it's the client
-        )
-        
-        # Tag all remote segments as "client"
-        for segment in remote_result["segments"]:
-            segment["speaker"] = "client"
-        
-        # Combine segments from both transcriptions
-        combined_segments = local_result["segments"] + remote_result["segments"]
-        
-        # Sort combined segments by start time
-        combined_segments.sort(key=lambda x: x["start"])
-        
-        # Create combined text from sorted segments
-        combined_text = " ".join(segment["text"] for segment in combined_segments)
-        
-        # Create response
-        logger.info(f"[{request_id}] Assembling response")
-        response = TranscriptionResponse(
-            transcription_local=local_result["text"],
-            transcription_remote=remote_result["text"],
-            transcription_combined=combined_text,
-            segments_local=local_result["segments"],
-            segments_remote=remote_result["segments"],
-            segments_combined=combined_segments,
-            num_speakers=2  # We always have 2 speakers: agent and client
-        )
-        
-        total_time = time.time() - start_time
-        logger.info(f"[{request_id}] WhisperX request successfully processed in {total_time:.2f}s")
-        
-        # Clean up temporary files
-        if os.path.exists(local_audio_path):
-            os.remove(local_audio_path)
-        if os.path.exists(remote_audio_path):
-            os.remove(remote_audio_path)
-        
-        return response
-        
-    except Exception as e:
-        total_time = time.time() - start_time
-        logger.error(f"[{request_id}] Error during WhisperX transcription after {total_time:.2f}s: {str(e)}")
-        logger.exception(f"[{request_id}] Full traceback:")
-        raise HTTPException(status_code=500, detail=str(e)) 
+    return system_info 

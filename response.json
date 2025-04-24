@@ -1,0 +1,3211 @@
+{
+    "transcript_remote.json": {
+        "segments": [
+            {
+                "start": 2.942,
+                "end": 7.907,
+                "text": " Guten Tag, Sie sprechen mit der Braun und Röth Gastronomie in Bad Kreuznach.",
+                "words": [
+                    {
+                        "word": "Guten",
+                        "start": 2.942,
+                        "end": 3.082,
+                        "score": 0.653
+                    },
+                    {
+                        "word": "Tag,",
+                        "start": 3.102,
+                        "end": 3.883,
+                        "score": 0.911
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 3.903,
+                        "end": 4.003,
+                        "score": 0.895
+                    },
+                    {
+                        "word": "sprechen",
+                        "start": 4.043,
+                        "end": 4.444,
+                        "score": 0.843
+                    },
+                    {
+                        "word": "mit",
+                        "start": 4.464,
+                        "end": 4.584,
+                        "score": 0.955
+                    },
+                    {
+                        "word": "der",
+                        "start": 4.604,
+                        "end": 4.744,
+                        "score": 0.911
+                    },
+                    {
+                        "word": "Braun",
+                        "start": 4.764,
+                        "end": 5.044,
+                        "score": 0.813
+                    },
+                    {
+                        "word": "und",
+                        "start": 5.084,
+                        "end": 5.184,
+                        "score": 0.816
+                    },
+                    {
+                        "word": "Röth",
+                        "start": 5.284,
+                        "end": 5.505,
+                        "score": 0.561
+                    },
+                    {
+                        "word": "Gastronomie",
+                        "start": 5.525,
+                        "end": 6.185,
+                        "score": 0.866
+                    },
+                    {
+                        "word": "in",
+                        "start": 6.225,
+                        "end": 6.345,
+                        "score": 0.861
+                    },
+                    {
+                        "word": "Bad",
+                        "start": 6.365,
+                        "end": 6.546,
+                        "score": 0.83
+                    },
+                    {
+                        "word": "Kreuznach.",
+                        "start": 6.566,
+                        "end": 7.907,
+                        "score": 0.793
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 7.947,
+                "end": 29.706,
+                "text": "Um Reservierungen zu tätigen, gehen Sie entweder unter www.braunundröthgastronomie.com, dann können Sie direkt online buchen oder Sie drücken am Telefon die Taste 1 für das Brauwerk, die Taste 2 für das Salinas und die Taste 3 für Fritz die Schemba.",
+                "words": [
+                    {
+                        "word": "Um",
+                        "start": 7.947,
+                        "end": 8.087,
+                        "score": 0.995
+                    },
+                    {
+                        "word": "Reservierungen",
+                        "start": 8.127,
+                        "end": 8.848,
+                        "score": 0.833
+                    },
+                    {
+                        "word": "zu",
+                        "start": 8.868,
+                        "end": 9.008,
+                        "score": 0.999
+                    },
+                    {
+                        "word": "tätigen,",
+                        "start": 9.068,
+                        "end": 10.109,
+                        "score": 0.889
+                    },
+                    {
+                        "word": "gehen",
+                        "start": 10.149,
+                        "end": 10.369,
+                        "score": 0.549
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 10.409,
+                        "end": 10.549,
+                        "score": 0.989
+                    },
+                    {
+                        "word": "entweder",
+                        "start": 10.589,
+                        "end": 11.19,
+                        "score": 0.941
+                    },
+                    {
+                        "word": "unter",
+                        "start": 11.23,
+                        "end": 11.73,
+                        "score": 0.903
+                    },
+                    {
+                        "word": "www.braunundröthgastronomie.com,",
+                        "start": 11.77,
+                        "end": 16.614,
+                        "score": 0.875
+                    },
+                    {
+                        "word": "dann",
+                        "start": 16.654,
+                        "end": 16.915,
+                        "score": 0.858
+                    },
+                    {
+                        "word": "können",
+                        "start": 16.935,
+                        "end": 17.215,
+                        "score": 0.906
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 17.235,
+                        "end": 17.415,
+                        "score": 0.932
+                    },
+                    {
+                        "word": "direkt",
+                        "start": 17.515,
+                        "end": 17.956,
+                        "score": 0.829
+                    },
+                    {
+                        "word": "online",
+                        "start": 18.016,
+                        "end": 18.436,
+                        "score": 0.767
+                    },
+                    {
+                        "word": "buchen",
+                        "start": 18.456,
+                        "end": 19.657,
+                        "score": 0.783
+                    },
+                    {
+                        "word": "oder",
+                        "start": 19.717,
+                        "end": 19.997,
+                        "score": 0.955
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 20.037,
+                        "end": 20.157,
+                        "score": 0.717
+                    },
+                    {
+                        "word": "drücken",
+                        "start": 20.198,
+                        "end": 20.538,
+                        "score": 0.918
+                    },
+                    {
+                        "word": "am",
+                        "start": 20.578,
+                        "end": 20.738,
+                        "score": 0.915
+                    },
+                    {
+                        "word": "Telefon",
+                        "start": 20.778,
+                        "end": 21.318,
+                        "score": 0.925
+                    },
+                    {
+                        "word": "die",
+                        "start": 21.359,
+                        "end": 21.479,
+                        "score": 0.876
+                    },
+                    {
+                        "word": "Taste",
+                        "start": 21.519,
+                        "end": 21.919,
+                        "score": 0.916
+                    },
+                    {
+                        "word": "1"
+                    },
+                    {
+                        "word": "für",
+                        "start": 22.439,
+                        "end": 22.56,
+                        "score": 0.98
+                    },
+                    {
+                        "word": "das",
+                        "start": 22.6,
+                        "end": 22.76,
+                        "score": 0.976
+                    },
+                    {
+                        "word": "Brauwerk,",
+                        "start": 22.82,
+                        "end": 23.961,
+                        "score": 0.905
+                    },
+                    {
+                        "word": "die",
+                        "start": 24.001,
+                        "end": 24.141,
+                        "score": 0.914
+                    },
+                    {
+                        "word": "Taste",
+                        "start": 24.201,
+                        "end": 24.701,
+                        "score": 0.933
+                    },
+                    {
+                        "word": "2"
+                    },
+                    {
+                        "word": "für",
+                        "start": 25.322,
+                        "end": 25.442,
+                        "score": 0.961
+                    },
+                    {
+                        "word": "das",
+                        "start": 25.482,
+                        "end": 25.622,
+                        "score": 0.851
+                    },
+                    {
+                        "word": "Salinas",
+                        "start": 25.662,
+                        "end": 27.264,
+                        "score": 0.955
+                    },
+                    {
+                        "word": "und",
+                        "start": 27.284,
+                        "end": 27.464,
+                        "score": 0.956
+                    },
+                    {
+                        "word": "die",
+                        "start": 27.504,
+                        "end": 27.624,
+                        "score": 0.823
+                    },
+                    {
+                        "word": "Taste",
+                        "start": 27.684,
+                        "end": 28.084,
+                        "score": 0.943
+                    },
+                    {
+                        "word": "3"
+                    },
+                    {
+                        "word": "für",
+                        "start": 28.685,
+                        "end": 28.885,
+                        "score": 0.918
+                    },
+                    {
+                        "word": "Fritz",
+                        "start": 28.905,
+                        "end": 29.205,
+                        "score": 0.755
+                    },
+                    {
+                        "word": "die",
+                        "start": 29.225,
+                        "end": 29.386,
+                        "score": 0.604
+                    },
+                    {
+                        "word": "Schemba.",
+                        "start": 29.406,
+                        "end": 29.706,
+                        "score": 0.598
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 31.275,
+                "end": 35.817,
+                "text": " Sollten Sie mit dem Büro verbunden werden wollen, drücken Sie bitte einfach die Taste 4.",
+                "words": [
+                    {
+                        "word": "Sollten",
+                        "start": 31.275,
+                        "end": 31.535,
+                        "score": 0.85
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 31.555,
+                        "end": 31.655,
+                        "score": 0.988
+                    },
+                    {
+                        "word": "mit",
+                        "start": 31.695,
+                        "end": 31.775,
+                        "score": 0.985
+                    },
+                    {
+                        "word": "dem",
+                        "start": 31.815,
+                        "end": 31.955,
+                        "score": 0.899
+                    },
+                    {
+                        "word": "Büro",
+                        "start": 31.975,
+                        "end": 32.696,
+                        "score": 0.919
+                    },
+                    {
+                        "word": "verbunden",
+                        "start": 32.716,
+                        "end": 33.156,
+                        "score": 0.896
+                    },
+                    {
+                        "word": "werden",
+                        "start": 33.176,
+                        "end": 33.436,
+                        "score": 0.9
+                    },
+                    {
+                        "word": "wollen,",
+                        "start": 33.476,
+                        "end": 33.976,
+                        "score": 0.93
+                    },
+                    {
+                        "word": "drücken",
+                        "start": 34.016,
+                        "end": 34.277,
+                        "score": 0.834
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 34.317,
+                        "end": 34.417,
+                        "score": 0.746
+                    },
+                    {
+                        "word": "bitte",
+                        "start": 34.437,
+                        "end": 34.817,
+                        "score": 0.982
+                    },
+                    {
+                        "word": "einfach",
+                        "start": 34.857,
+                        "end": 35.237,
+                        "score": 0.856
+                    },
+                    {
+                        "word": "die",
+                        "start": 35.277,
+                        "end": 35.377,
+                        "score": 0.886
+                    },
+                    {
+                        "word": "Taste",
+                        "start": 35.437,
+                        "end": 35.817,
+                        "score": 0.79
+                    },
+                    {
+                        "word": "4."
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 41.44,
+                "end": 48.423,
+                "text": "Frauen und Weltgastronomie Klein, guten Tag.",
+                "words": [
+                    {
+                        "word": "Frauen",
+                        "start": 41.44,
+                        "end": 41.6,
+                        "score": 0.647
+                    },
+                    {
+                        "word": "und",
+                        "start": 41.66,
+                        "end": 41.74,
+                        "score": 0.36
+                    },
+                    {
+                        "word": "Weltgastronomie",
+                        "start": 41.78,
+                        "end": 42.44,
+                        "score": 0.484
+                    },
+                    {
+                        "word": "Klein,",
+                        "start": 42.46,
+                        "end": 42.841,
+                        "score": 0.655
+                    },
+                    {
+                        "word": "guten",
+                        "start": 42.861,
+                        "end": 43.141,
+                        "score": 0.766
+                    },
+                    {
+                        "word": "Tag.",
+                        "start": 43.161,
+                        "end": 48.423,
+                        "score": 0.333
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 48.483,
+                "end": 51.965,
+                "text": "Ja.",
+                "words": [
+                    {
+                        "word": "Ja.",
+                        "start": 48.483,
+                        "end": 51.965,
+                        "score": 0.843
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 52.065,
+                "end": 56.907,
+                "text": "Richtig, jawohl.",
+                "words": [
+                    {
+                        "word": "Richtig,",
+                        "start": 52.065,
+                        "end": 52.445,
+                        "score": 0.729
+                    },
+                    {
+                        "word": "jawohl.",
+                        "start": 52.505,
+                        "end": 56.907,
+                        "score": 0.557
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 56.927,
+                "end": 58.348,
+                "text": "Das, da haben wir kein Interesse.",
+                "words": [
+                    {
+                        "word": "Das,",
+                        "start": 56.927,
+                        "end": 57.307,
+                        "score": 0.876
+                    },
+                    {
+                        "word": "da",
+                        "start": 57.328,
+                        "end": 57.488,
+                        "score": 0.855
+                    },
+                    {
+                        "word": "haben",
+                        "start": 57.528,
+                        "end": 57.648,
+                        "score": 0.854
+                    },
+                    {
+                        "word": "wir",
+                        "start": 57.668,
+                        "end": 57.788,
+                        "score": 0.694
+                    },
+                    {
+                        "word": "kein",
+                        "start": 57.808,
+                        "end": 57.928,
+                        "score": 0.927
+                    },
+                    {
+                        "word": "Interesse.",
+                        "start": 57.968,
+                        "end": 58.348,
+                        "score": 0.102
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 60.573,
+                "end": 61.534,
+                "text": " Da haben wir kein Interesse.",
+                "words": [
+                    {
+                        "word": "Da",
+                        "start": 60.573,
+                        "end": 60.673,
+                        "score": 0.826
+                    },
+                    {
+                        "word": "haben",
+                        "start": 60.713,
+                        "end": 60.853,
+                        "score": 0.724
+                    },
+                    {
+                        "word": "wir",
+                        "start": 60.893,
+                        "end": 60.993,
+                        "score": 0.72
+                    },
+                    {
+                        "word": "kein",
+                        "start": 61.013,
+                        "end": 61.173,
+                        "score": 0.592
+                    },
+                    {
+                        "word": "Interesse.",
+                        "start": 61.213,
+                        "end": 61.534,
+                        "score": 0.779
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 61.554,
+                "end": 62.654,
+                "text": "Dankeschön.",
+                "words": [
+                    {
+                        "word": "Dankeschön.",
+                        "start": 61.554,
+                        "end": 62.654,
+                        "score": 0.446
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 62.674,
+                "end": 68.998,
+                "text": "Wenn Sie es uns kostenlos machen, können wir weiterreden und sonst nicht.",
+                "words": [
+                    {
+                        "word": "Wenn",
+                        "start": 62.674,
+                        "end": 62.814,
+                        "score": 0.92
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 62.854,
+                        "end": 62.934,
+                        "score": 0.793
+                    },
+                    {
+                        "word": "es",
+                        "start": 62.974,
+                        "end": 63.054,
+                        "score": 0.382
+                    },
+                    {
+                        "word": "uns",
+                        "start": 63.074,
+                        "end": 63.214,
+                        "score": 0.838
+                    },
+                    {
+                        "word": "kostenlos",
+                        "start": 63.255,
+                        "end": 63.755,
+                        "score": 0.894
+                    },
+                    {
+                        "word": "machen,",
+                        "start": 63.775,
+                        "end": 64.055,
+                        "score": 0.724
+                    },
+                    {
+                        "word": "können",
+                        "start": 64.075,
+                        "end": 64.235,
+                        "score": 0.886
+                    },
+                    {
+                        "word": "wir",
+                        "start": 64.275,
+                        "end": 64.395,
+                        "score": 0.81
+                    },
+                    {
+                        "word": "weiterreden",
+                        "start": 64.415,
+                        "end": 64.875,
+                        "score": 0.84
+                    },
+                    {
+                        "word": "und",
+                        "start": 64.895,
+                        "end": 65.055,
+                        "score": 0.843
+                    },
+                    {
+                        "word": "sonst",
+                        "start": 65.095,
+                        "end": 65.316,
+                        "score": 0.875
+                    },
+                    {
+                        "word": "nicht.",
+                        "start": 65.376,
+                        "end": 68.998,
+                        "score": 0.704
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 69.038,
+                "end": 70.058,
+                "text": "Ganz genau.",
+                "words": [
+                    {
+                        "word": "Ganz",
+                        "start": 69.038,
+                        "end": 69.238,
+                        "score": 0.562
+                    },
+                    {
+                        "word": "genau.",
+                        "start": 69.258,
+                        "end": 70.058,
+                        "score": 0.518
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 70.138,
+                "end": 71.319,
+                "text": "Okay.",
+                "words": [
+                    {
+                        "word": "Okay.",
+                        "start": 70.138,
+                        "end": 71.319,
+                        "score": 0.48
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 71.359,
+                "end": 72.78,
+                "text": "Da haben wir wirklich kein Interesse.",
+                "words": [
+                    {
+                        "word": "Da",
+                        "start": 71.359,
+                        "end": 71.739,
+                        "score": 0.532
+                    },
+                    {
+                        "word": "haben",
+                        "start": 71.759,
+                        "end": 71.919,
+                        "score": 0.298
+                    },
+                    {
+                        "word": "wir",
+                        "start": 71.939,
+                        "end": 72.059,
+                        "score": 0.283
+                    },
+                    {
+                        "word": "wirklich",
+                        "start": 72.099,
+                        "end": 72.339,
+                        "score": 0.915
+                    },
+                    {
+                        "word": "kein",
+                        "start": 72.359,
+                        "end": 72.519,
+                        "score": 0.719
+                    },
+                    {
+                        "word": "Interesse.",
+                        "start": 72.559,
+                        "end": 72.78,
+                        "score": 0.931
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 72.82,
+                "end": 75.661,
+                "text": "Da brauchen wir gar nicht weiterzureden.",
+                "words": [
+                    {
+                        "word": "Da",
+                        "start": 72.82,
+                        "end": 72.88,
+                        "score": 0.508
+                    },
+                    {
+                        "word": "brauchen",
+                        "start": 72.9,
+                        "end": 73.06,
+                        "score": 0.242
+                    },
+                    {
+                        "word": "wir",
+                        "start": 73.08,
+                        "end": 73.18,
+                        "score": 0.226
+                    },
+                    {
+                        "word": "gar",
+                        "start": 73.2,
+                        "end": 73.3,
+                        "score": 0.724
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 73.32,
+                        "end": 73.42,
+                        "score": 0.806
+                    },
+                    {
+                        "word": "weiterzureden.",
+                        "start": 73.46,
+                        "end": 75.661,
+                        "score": 0.709
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 75.701,
+                "end": 77.302,
+                "text": "Weil wir das einfach nicht möchten.",
+                "words": [
+                    {
+                        "word": "Weil",
+                        "start": 75.701,
+                        "end": 75.781,
+                        "score": 0.556
+                    },
+                    {
+                        "word": "wir",
+                        "start": 75.861,
+                        "end": 75.921,
+                        "score": 0.292
+                    },
+                    {
+                        "word": "das",
+                        "start": 75.941,
+                        "end": 76.081,
+                        "score": 0.307
+                    },
+                    {
+                        "word": "einfach",
+                        "start": 76.121,
+                        "end": 76.341,
+                        "score": 0.556
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 76.361,
+                        "end": 76.541,
+                        "score": 0.449
+                    },
+                    {
+                        "word": "möchten.",
+                        "start": 76.561,
+                        "end": 77.302,
+                        "score": 0.9
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 77.342,
+                "end": 80.023,
+                "text": "Ja, genau.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 77.342,
+                        "end": 77.462,
+                        "score": 0.3
+                    },
+                    {
+                        "word": "genau.",
+                        "start": 77.582,
+                        "end": 80.023,
+                        "score": 0.503
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 80.043,
+                "end": 85.526,
+                "text": "Wir brauchen das nicht.",
+                "words": [
+                    {
+                        "word": "Wir",
+                        "start": 80.043,
+                        "end": 80.163,
+                        "score": 0.645
+                    },
+                    {
+                        "word": "brauchen",
+                        "start": 80.604,
+                        "end": 84.886,
+                        "score": 0.557
+                    },
+                    {
+                        "word": "das",
+                        "start": 84.926,
+                        "end": 85.066,
+                        "score": 0.404
+                    },
+                    {
+                        "word": "nicht.",
+                        "start": 85.186,
+                        "end": 85.526,
+                        "score": 0.525
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 85.566,
+                "end": 87.507,
+                "text": "Wir möchten das nicht.",
+                "words": [
+                    {
+                        "word": "Wir",
+                        "start": 85.566,
+                        "end": 85.686,
+                        "score": 0.626
+                    },
+                    {
+                        "word": "möchten",
+                        "start": 85.726,
+                        "end": 86.026,
+                        "score": 0.863
+                    },
+                    {
+                        "word": "das",
+                        "start": 86.066,
+                        "end": 86.247,
+                        "score": 0.803
+                    },
+                    {
+                        "word": "nicht.",
+                        "start": 86.267,
+                        "end": 87.507,
+                        "score": 0.878
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 87.547,
+                "end": 88.888,
+                "text": "Entschuldigung, wir möchten das nicht.",
+                "words": [
+                    {
+                        "word": "Entschuldigung,",
+                        "start": 87.547,
+                        "end": 88.088,
+                        "score": 0.834
+                    },
+                    {
+                        "word": "wir",
+                        "start": 88.108,
+                        "end": 88.248,
+                        "score": 0.649
+                    },
+                    {
+                        "word": "möchten",
+                        "start": 88.268,
+                        "end": 88.508,
+                        "score": 0.773
+                    },
+                    {
+                        "word": "das",
+                        "start": 88.548,
+                        "end": 88.688,
+                        "score": 0.414
+                    },
+                    {
+                        "word": "nicht.",
+                        "start": 88.708,
+                        "end": 88.888,
+                        "score": 0.249
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 89.669,
+                "end": 90.314,
+                "text": " Ja, bitte.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 89.669,
+                        "end": 89.972,
+                        "score": 0.819
+                    },
+                    {
+                        "word": "bitte.",
+                        "start": 90.032,
+                        "end": 90.314,
+                        "score": 0.613
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 90.334,
+                "end": 90.657,
+                "text": "Tschüss.",
+                "words": [
+                    {
+                        "word": "Tschüss.",
+                        "start": 90.334,
+                        "end": 90.657,
+                        "score": 0.277
+                    }
+                ],
+                "speaker": "client"
+            }
+        ],
+        "text": "Guten Tag, Sie sprechen mit der Braun und Röth Gastronomie in Bad Kreuznach. Um Reservierungen zu tätigen, gehen Sie entweder unter www.braunundröthgastronomie.com, dann können Sie direkt online buchen oder Sie drücken am Telefon die Taste 1 für das Brauwerk, die Taste 2 für das Salinas und die Taste 3 für Fritz die Schemba.  Sollten Sie mit dem Büro verbunden werden wollen, drücken Sie bitte einfach die Taste 4. Frauen und Weltgastronomie Klein, guten Tag. Ja. Richtig, jawohl. Das, da haben wir kein Interesse.  Da haben wir kein Interesse. Dankeschön. Wenn Sie es uns kostenlos machen, können wir weiterreden und sonst nicht. Ganz genau. Okay. Da haben wir wirklich kein Interesse. Da brauchen wir gar nicht weiterzureden. Weil wir das einfach nicht möchten. Ja, genau. Wir brauchen das nicht. Wir möchten das nicht. Entschuldigung, wir möchten das nicht.  Ja, bitte. Tschüss."
+    },
+    "transcript_local.json": {
+        "segments": [
+            {
+                "start": 43.99,
+                "end": 45.15,
+                "text": " Hallo, einen wunderschönen guten Tag.",
+                "words": [
+                    {
+                        "word": "Hallo,",
+                        "start": 43.99,
+                        "end": 44.23,
+                        "score": 0.213
+                    },
+                    {
+                        "word": "einen",
+                        "start": 44.25,
+                        "end": 44.35,
+                        "score": 0.054
+                    },
+                    {
+                        "word": "wunderschönen",
+                        "start": 44.37,
+                        "end": 44.77,
+                        "score": 0.555
+                    },
+                    {
+                        "word": "guten",
+                        "start": 44.79,
+                        "end": 44.95,
+                        "score": 0.328
+                    },
+                    {
+                        "word": "Tag.",
+                        "start": 44.97,
+                        "end": 45.15,
+                        "score": 0.568
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 45.19,
+                "end": 46.33,
+                "text": "Dürra, mein Name ist von RepoVox.",
+                "words": [
+                    {
+                        "word": "Dürra,",
+                        "start": 45.19,
+                        "end": 45.41,
+                        "score": 0.474
+                    },
+                    {
+                        "word": "mein",
+                        "start": 45.43,
+                        "end": 45.53,
+                        "score": 0.788
+                    },
+                    {
+                        "word": "Name",
+                        "start": 45.55,
+                        "end": 45.63,
+                        "score": 0.044
+                    },
+                    {
+                        "word": "ist",
+                        "start": 45.65,
+                        "end": 45.71,
+                        "score": 0.004
+                    },
+                    {
+                        "word": "von",
+                        "start": 45.75,
+                        "end": 45.87,
+                        "score": 0.456
+                    },
+                    {
+                        "word": "RepoVox.",
+                        "start": 45.89,
+                        "end": 46.33,
+                        "score": 0.677
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 46.43,
+                "end": 46.971,
+                "text": "Grüße Sie.",
+                "words": [
+                    {
+                        "word": "Grüße",
+                        "start": 46.43,
+                        "end": 46.771,
+                        "score": 0.729
+                    },
+                    {
+                        "word": "Sie.",
+                        "start": 46.811,
+                        "end": 46.971,
+                        "score": 0.721
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 47.011,
+                "end": 47.111,
+                "text": "Hi.",
+                "words": [
+                    {
+                        "word": "Hi.",
+                        "start": 47.011,
+                        "end": 47.111,
+                        "score": 0.54
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 47.131,
+                "end": 53.812,
+                "text": "Ich bin gerade mit dem Büro verbunden, korrekt?",
+                "words": [
+                    {
+                        "word": "Ich",
+                        "start": 47.131,
+                        "end": 49.871,
+                        "score": 0.657
+                    },
+                    {
+                        "word": "bin",
+                        "start": 49.911,
+                        "end": 50.051,
+                        "score": 0.293
+                    },
+                    {
+                        "word": "gerade",
+                        "start": 50.071,
+                        "end": 50.331,
+                        "score": 0.706
+                    },
+                    {
+                        "word": "mit",
+                        "start": 50.351,
+                        "end": 50.471,
+                        "score": 0.863
+                    },
+                    {
+                        "word": "dem",
+                        "start": 50.511,
+                        "end": 50.631,
+                        "score": 0.879
+                    },
+                    {
+                        "word": "Büro",
+                        "start": 50.651,
+                        "end": 51.471,
+                        "score": 0.93
+                    },
+                    {
+                        "word": "verbunden,",
+                        "start": 51.491,
+                        "end": 52.011,
+                        "score": 0.914
+                    },
+                    {
+                        "word": "korrekt?",
+                        "start": 52.052,
+                        "end": 53.812,
+                        "score": 0.901
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 53.832,
+                "end": 54.172,
+                "text": "Super.",
+                "words": [
+                    {
+                        "word": "Super.",
+                        "start": 53.832,
+                        "end": 54.172,
+                        "score": 0.576
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 54.192,
+                "end": 59.333,
+                "text": "Es geht um die 80 negativen Google-Bewertungen und Beschwerden der Kunden.",
+                "words": [
+                    {
+                        "word": "Es",
+                        "start": 54.192,
+                        "end": 54.272,
+                        "score": 0.78
+                    },
+                    {
+                        "word": "geht",
+                        "start": 54.292,
+                        "end": 54.452,
+                        "score": 0.975
+                    },
+                    {
+                        "word": "um",
+                        "start": 54.492,
+                        "end": 54.612,
+                        "score": 0.985
+                    },
+                    {
+                        "word": "die",
+                        "start": 54.632,
+                        "end": 54.712,
+                        "score": 0.833
+                    },
+                    {
+                        "word": "80"
+                    },
+                    {
+                        "word": "negativen",
+                        "start": 55.052,
+                        "end": 55.452,
+                        "score": 0.823
+                    },
+                    {
+                        "word": "Google-Bewertungen",
+                        "start": 55.492,
+                        "end": 56.292,
+                        "score": 0.808
+                    },
+                    {
+                        "word": "und",
+                        "start": 56.332,
+                        "end": 56.452,
+                        "score": 0.812
+                    },
+                    {
+                        "word": "Beschwerden",
+                        "start": 56.472,
+                        "end": 56.872,
+                        "score": 0.842
+                    },
+                    {
+                        "word": "der",
+                        "start": 56.912,
+                        "end": 57.052,
+                        "score": 0.844
+                    },
+                    {
+                        "word": "Kunden.",
+                        "start": 57.072,
+                        "end": 59.333,
+                        "score": 0.958
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 59.393,
+                "end": 60.813,
+                "text": "An was haben Sie denn kein Interesse?",
+                "words": [
+                    {
+                        "word": "An",
+                        "start": 59.393,
+                        "end": 59.533,
+                        "score": 0.712
+                    },
+                    {
+                        "word": "was",
+                        "start": 59.573,
+                        "end": 59.673,
+                        "score": 0.607
+                    },
+                    {
+                        "word": "haben",
+                        "start": 59.693,
+                        "end": 59.853,
+                        "score": 0.922
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 59.893,
+                        "end": 59.973,
+                        "score": 0.864
+                    },
+                    {
+                        "word": "denn",
+                        "start": 60.013,
+                        "end": 60.153,
+                        "score": 0.882
+                    },
+                    {
+                        "word": "kein",
+                        "start": 60.193,
+                        "end": 60.393,
+                        "score": 0.731
+                    },
+                    {
+                        "word": "Interesse?",
+                        "start": 60.433,
+                        "end": 60.813,
+                        "score": 0.981
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 65.594,
+                "end": 69.455,
+                "text": "Na, es ist ja nichts mehr auf der Welt kostenlos, wie Sie wissen.",
+                "words": [
+                    {
+                        "word": "Na,",
+                        "start": 65.594,
+                        "end": 66.994,
+                        "score": 0.868
+                    },
+                    {
+                        "word": "es",
+                        "start": 67.034,
+                        "end": 67.154,
+                        "score": 0.425
+                    },
+                    {
+                        "word": "ist",
+                        "start": 67.194,
+                        "end": 67.314,
+                        "score": 0.734
+                    },
+                    {
+                        "word": "ja",
+                        "start": 67.334,
+                        "end": 67.494,
+                        "score": 0.966
+                    },
+                    {
+                        "word": "nichts",
+                        "start": 67.514,
+                        "end": 67.674,
+                        "score": 0.831
+                    },
+                    {
+                        "word": "mehr",
+                        "start": 67.734,
+                        "end": 67.834,
+                        "score": 0.721
+                    },
+                    {
+                        "word": "auf",
+                        "start": 67.874,
+                        "end": 67.974,
+                        "score": 0.906
+                    },
+                    {
+                        "word": "der",
+                        "start": 67.994,
+                        "end": 68.094,
+                        "score": 0.926
+                    },
+                    {
+                        "word": "Welt",
+                        "start": 68.134,
+                        "end": 68.315,
+                        "score": 0.942
+                    },
+                    {
+                        "word": "kostenlos,",
+                        "start": 68.335,
+                        "end": 68.855,
+                        "score": 0.694
+                    },
+                    {
+                        "word": "wie",
+                        "start": 68.895,
+                        "end": 69.075,
+                        "score": 0.511
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 69.115,
+                        "end": 69.235,
+                        "score": 0.87
+                    },
+                    {
+                        "word": "wissen.",
+                        "start": 69.275,
+                        "end": 69.455,
+                        "score": 0.938
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 70.535,
+                "end": 70.575,
+                "text": "Ja.",
+                "words": [
+                    {
+                        "word": "Ja.",
+                        "start": 70.535,
+                        "end": 70.575,
+                        "score": 0.026
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 74.461,
+                "end": 78.324,
+                "text": " Aber wieso denn, wenn ich fragen darf?",
+                "words": [
+                    {
+                        "word": "Aber",
+                        "start": 74.461,
+                        "end": 74.621,
+                        "score": 0.602
+                    },
+                    {
+                        "word": "wieso",
+                        "start": 74.681,
+                        "end": 74.881,
+                        "score": 0.353
+                    },
+                    {
+                        "word": "denn,",
+                        "start": 74.901,
+                        "end": 75.062,
+                        "score": 0.36
+                    },
+                    {
+                        "word": "wenn",
+                        "start": 75.082,
+                        "end": 75.182,
+                        "score": 0.252
+                    },
+                    {
+                        "word": "ich",
+                        "start": 75.242,
+                        "end": 75.322,
+                        "score": 0.481
+                    },
+                    {
+                        "word": "fragen",
+                        "start": 75.342,
+                        "end": 75.882,
+                        "score": 0.714
+                    },
+                    {
+                        "word": "darf?",
+                        "start": 75.902,
+                        "end": 78.324,
+                        "score": 0.563
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 78.364,
+                "end": 80.866,
+                "text": "Weil es kostet.",
+                "words": [
+                    {
+                        "word": "Weil",
+                        "start": 78.364,
+                        "end": 78.544,
+                        "score": 0.507
+                    },
+                    {
+                        "word": "es",
+                        "start": 78.584,
+                        "end": 78.724,
+                        "score": 0.722
+                    },
+                    {
+                        "word": "kostet.",
+                        "start": 78.764,
+                        "end": 80.866,
+                        "score": 0.87
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 80.926,
+                "end": 86.11,
+                "text": "Aber sie investieren und sie können ja daraus wieder profitieren, weil ihr Deutschland oder nicht.",
+                "words": [
+                    {
+                        "word": "Aber",
+                        "start": 80.926,
+                        "end": 81.086,
+                        "score": 0.857
+                    },
+                    {
+                        "word": "sie",
+                        "start": 81.126,
+                        "end": 81.286,
+                        "score": 0.816
+                    },
+                    {
+                        "word": "investieren",
+                        "start": 81.326,
+                        "end": 81.746,
+                        "score": 0.849
+                    },
+                    {
+                        "word": "und",
+                        "start": 81.786,
+                        "end": 81.906,
+                        "score": 0.84
+                    },
+                    {
+                        "word": "sie",
+                        "start": 81.927,
+                        "end": 82.027,
+                        "score": 0.813
+                    },
+                    {
+                        "word": "können",
+                        "start": 82.047,
+                        "end": 82.227,
+                        "score": 0.884
+                    },
+                    {
+                        "word": "ja",
+                        "start": 82.247,
+                        "end": 82.367,
+                        "score": 0.885
+                    },
+                    {
+                        "word": "daraus",
+                        "start": 82.407,
+                        "end": 82.687,
+                        "score": 0.751
+                    },
+                    {
+                        "word": "wieder",
+                        "start": 82.707,
+                        "end": 83.328,
+                        "score": 0.82
+                    },
+                    {
+                        "word": "profitieren,",
+                        "start": 84.268,
+                        "end": 84.869,
+                        "score": 0.823
+                    },
+                    {
+                        "word": "weil",
+                        "start": 84.909,
+                        "end": 85.209,
+                        "score": 0.536
+                    },
+                    {
+                        "word": "ihr",
+                        "start": 85.249,
+                        "end": 85.369,
+                        "score": 0.334
+                    },
+                    {
+                        "word": "Deutschland",
+                        "start": 85.389,
+                        "end": 85.709,
+                        "score": 0.201
+                    },
+                    {
+                        "word": "oder",
+                        "start": 85.749,
+                        "end": 85.949,
+                        "score": 0.368
+                    },
+                    {
+                        "word": "nicht.",
+                        "start": 85.969,
+                        "end": 86.11,
+                        "score": 0.117
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 86.13,
+                "end": 86.31,
+                "text": "Okay, ciao.",
+                "words": [
+                    {
+                        "word": "Okay,",
+                        "start": 86.13,
+                        "end": 86.21,
+                        "score": 0.007
+                    },
+                    {
+                        "word": "ciao.",
+                        "start": 86.23,
+                        "end": 86.31,
+                        "score": 0.026
+                    }
+                ],
+                "speaker": "agent"
+            }
+        ],
+        "text": "Hallo, einen wunderschönen guten Tag. Dürra, mein Name ist von RepoVox. Grüße Sie. Hi. Ich bin gerade mit dem Büro verbunden, korrekt? Super. Es geht um die 80 negativen Google-Bewertungen und Beschwerden der Kunden. An was haben Sie denn kein Interesse? Na, es ist ja nichts mehr auf der Welt kostenlos, wie Sie wissen. Ja.  Aber wieso denn, wenn ich fragen darf? Weil es kostet. Aber sie investieren und sie können ja daraus wieder profitieren, weil ihr Deutschland oder nicht. Okay, ciao."
+    },
+    "transcript_combined.json": {
+        "segments": [
+            {
+                "start": 2.942,
+                "end": 7.907,
+                "text": " Guten Tag, Sie sprechen mit der Braun und Röth Gastronomie in Bad Kreuznach.",
+                "words": [
+                    {
+                        "word": "Guten",
+                        "start": 2.942,
+                        "end": 3.082,
+                        "score": 0.653
+                    },
+                    {
+                        "word": "Tag,",
+                        "start": 3.102,
+                        "end": 3.883,
+                        "score": 0.911
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 3.903,
+                        "end": 4.003,
+                        "score": 0.895
+                    },
+                    {
+                        "word": "sprechen",
+                        "start": 4.043,
+                        "end": 4.444,
+                        "score": 0.843
+                    },
+                    {
+                        "word": "mit",
+                        "start": 4.464,
+                        "end": 4.584,
+                        "score": 0.955
+                    },
+                    {
+                        "word": "der",
+                        "start": 4.604,
+                        "end": 4.744,
+                        "score": 0.911
+                    },
+                    {
+                        "word": "Braun",
+                        "start": 4.764,
+                        "end": 5.044,
+                        "score": 0.813
+                    },
+                    {
+                        "word": "und",
+                        "start": 5.084,
+                        "end": 5.184,
+                        "score": 0.816
+                    },
+                    {
+                        "word": "Röth",
+                        "start": 5.284,
+                        "end": 5.505,
+                        "score": 0.561
+                    },
+                    {
+                        "word": "Gastronomie",
+                        "start": 5.525,
+                        "end": 6.185,
+                        "score": 0.866
+                    },
+                    {
+                        "word": "in",
+                        "start": 6.225,
+                        "end": 6.345,
+                        "score": 0.861
+                    },
+                    {
+                        "word": "Bad",
+                        "start": 6.365,
+                        "end": 6.546,
+                        "score": 0.83
+                    },
+                    {
+                        "word": "Kreuznach.",
+                        "start": 6.566,
+                        "end": 7.907,
+                        "score": 0.793
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 7.947,
+                "end": 29.706,
+                "text": "Um Reservierungen zu tätigen, gehen Sie entweder unter www.braunundröthgastronomie.com, dann können Sie direkt online buchen oder Sie drücken am Telefon die Taste 1 für das Brauwerk, die Taste 2 für das Salinas und die Taste 3 für Fritz die Schemba.",
+                "words": [
+                    {
+                        "word": "Um",
+                        "start": 7.947,
+                        "end": 8.087,
+                        "score": 0.995
+                    },
+                    {
+                        "word": "Reservierungen",
+                        "start": 8.127,
+                        "end": 8.848,
+                        "score": 0.833
+                    },
+                    {
+                        "word": "zu",
+                        "start": 8.868,
+                        "end": 9.008,
+                        "score": 0.999
+                    },
+                    {
+                        "word": "tätigen,",
+                        "start": 9.068,
+                        "end": 10.109,
+                        "score": 0.889
+                    },
+                    {
+                        "word": "gehen",
+                        "start": 10.149,
+                        "end": 10.369,
+                        "score": 0.549
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 10.409,
+                        "end": 10.549,
+                        "score": 0.989
+                    },
+                    {
+                        "word": "entweder",
+                        "start": 10.589,
+                        "end": 11.19,
+                        "score": 0.941
+                    },
+                    {
+                        "word": "unter",
+                        "start": 11.23,
+                        "end": 11.73,
+                        "score": 0.903
+                    },
+                    {
+                        "word": "www.braunundröthgastronomie.com,",
+                        "start": 11.77,
+                        "end": 16.614,
+                        "score": 0.875
+                    },
+                    {
+                        "word": "dann",
+                        "start": 16.654,
+                        "end": 16.915,
+                        "score": 0.858
+                    },
+                    {
+                        "word": "können",
+                        "start": 16.935,
+                        "end": 17.215,
+                        "score": 0.906
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 17.235,
+                        "end": 17.415,
+                        "score": 0.932
+                    },
+                    {
+                        "word": "direkt",
+                        "start": 17.515,
+                        "end": 17.956,
+                        "score": 0.829
+                    },
+                    {
+                        "word": "online",
+                        "start": 18.016,
+                        "end": 18.436,
+                        "score": 0.767
+                    },
+                    {
+                        "word": "buchen",
+                        "start": 18.456,
+                        "end": 19.657,
+                        "score": 0.783
+                    },
+                    {
+                        "word": "oder",
+                        "start": 19.717,
+                        "end": 19.997,
+                        "score": 0.955
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 20.037,
+                        "end": 20.157,
+                        "score": 0.717
+                    },
+                    {
+                        "word": "drücken",
+                        "start": 20.198,
+                        "end": 20.538,
+                        "score": 0.918
+                    },
+                    {
+                        "word": "am",
+                        "start": 20.578,
+                        "end": 20.738,
+                        "score": 0.915
+                    },
+                    {
+                        "word": "Telefon",
+                        "start": 20.778,
+                        "end": 21.318,
+                        "score": 0.925
+                    },
+                    {
+                        "word": "die",
+                        "start": 21.359,
+                        "end": 21.479,
+                        "score": 0.876
+                    },
+                    {
+                        "word": "Taste",
+                        "start": 21.519,
+                        "end": 21.919,
+                        "score": 0.916
+                    },
+                    {
+                        "word": "1"
+                    },
+                    {
+                        "word": "für",
+                        "start": 22.439,
+                        "end": 22.56,
+                        "score": 0.98
+                    },
+                    {
+                        "word": "das",
+                        "start": 22.6,
+                        "end": 22.76,
+                        "score": 0.976
+                    },
+                    {
+                        "word": "Brauwerk,",
+                        "start": 22.82,
+                        "end": 23.961,
+                        "score": 0.905
+                    },
+                    {
+                        "word": "die",
+                        "start": 24.001,
+                        "end": 24.141,
+                        "score": 0.914
+                    },
+                    {
+                        "word": "Taste",
+                        "start": 24.201,
+                        "end": 24.701,
+                        "score": 0.933
+                    },
+                    {
+                        "word": "2"
+                    },
+                    {
+                        "word": "für",
+                        "start": 25.322,
+                        "end": 25.442,
+                        "score": 0.961
+                    },
+                    {
+                        "word": "das",
+                        "start": 25.482,
+                        "end": 25.622,
+                        "score": 0.851
+                    },
+                    {
+                        "word": "Salinas",
+                        "start": 25.662,
+                        "end": 27.264,
+                        "score": 0.955
+                    },
+                    {
+                        "word": "und",
+                        "start": 27.284,
+                        "end": 27.464,
+                        "score": 0.956
+                    },
+                    {
+                        "word": "die",
+                        "start": 27.504,
+                        "end": 27.624,
+                        "score": 0.823
+                    },
+                    {
+                        "word": "Taste",
+                        "start": 27.684,
+                        "end": 28.084,
+                        "score": 0.943
+                    },
+                    {
+                        "word": "3"
+                    },
+                    {
+                        "word": "für",
+                        "start": 28.685,
+                        "end": 28.885,
+                        "score": 0.918
+                    },
+                    {
+                        "word": "Fritz",
+                        "start": 28.905,
+                        "end": 29.205,
+                        "score": 0.755
+                    },
+                    {
+                        "word": "die",
+                        "start": 29.225,
+                        "end": 29.386,
+                        "score": 0.604
+                    },
+                    {
+                        "word": "Schemba.",
+                        "start": 29.406,
+                        "end": 29.706,
+                        "score": 0.598
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 31.275,
+                "end": 35.817,
+                "text": " Sollten Sie mit dem Büro verbunden werden wollen, drücken Sie bitte einfach die Taste 4.",
+                "words": [
+                    {
+                        "word": "Sollten",
+                        "start": 31.275,
+                        "end": 31.535,
+                        "score": 0.85
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 31.555,
+                        "end": 31.655,
+                        "score": 0.988
+                    },
+                    {
+                        "word": "mit",
+                        "start": 31.695,
+                        "end": 31.775,
+                        "score": 0.985
+                    },
+                    {
+                        "word": "dem",
+                        "start": 31.815,
+                        "end": 31.955,
+                        "score": 0.899
+                    },
+                    {
+                        "word": "Büro",
+                        "start": 31.975,
+                        "end": 32.696,
+                        "score": 0.919
+                    },
+                    {
+                        "word": "verbunden",
+                        "start": 32.716,
+                        "end": 33.156,
+                        "score": 0.896
+                    },
+                    {
+                        "word": "werden",
+                        "start": 33.176,
+                        "end": 33.436,
+                        "score": 0.9
+                    },
+                    {
+                        "word": "wollen,",
+                        "start": 33.476,
+                        "end": 33.976,
+                        "score": 0.93
+                    },
+                    {
+                        "word": "drücken",
+                        "start": 34.016,
+                        "end": 34.277,
+                        "score": 0.834
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 34.317,
+                        "end": 34.417,
+                        "score": 0.746
+                    },
+                    {
+                        "word": "bitte",
+                        "start": 34.437,
+                        "end": 34.817,
+                        "score": 0.982
+                    },
+                    {
+                        "word": "einfach",
+                        "start": 34.857,
+                        "end": 35.237,
+                        "score": 0.856
+                    },
+                    {
+                        "word": "die",
+                        "start": 35.277,
+                        "end": 35.377,
+                        "score": 0.886
+                    },
+                    {
+                        "word": "Taste",
+                        "start": 35.437,
+                        "end": 35.817,
+                        "score": 0.79
+                    },
+                    {
+                        "word": "4."
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 41.44,
+                "end": 48.423,
+                "text": "Frauen und Weltgastronomie Klein, guten Tag.",
+                "words": [
+                    {
+                        "word": "Frauen",
+                        "start": 41.44,
+                        "end": 41.6,
+                        "score": 0.647
+                    },
+                    {
+                        "word": "und",
+                        "start": 41.66,
+                        "end": 41.74,
+                        "score": 0.36
+                    },
+                    {
+                        "word": "Weltgastronomie",
+                        "start": 41.78,
+                        "end": 42.44,
+                        "score": 0.484
+                    },
+                    {
+                        "word": "Klein,",
+                        "start": 42.46,
+                        "end": 42.841,
+                        "score": 0.655
+                    },
+                    {
+                        "word": "guten",
+                        "start": 42.861,
+                        "end": 43.141,
+                        "score": 0.766
+                    },
+                    {
+                        "word": "Tag.",
+                        "start": 43.161,
+                        "end": 48.423,
+                        "score": 0.333
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 43.99,
+                "end": 45.15,
+                "text": " Hallo, einen wunderschönen guten Tag.",
+                "words": [
+                    {
+                        "word": "Hallo,",
+                        "start": 43.99,
+                        "end": 44.23,
+                        "score": 0.213
+                    },
+                    {
+                        "word": "einen",
+                        "start": 44.25,
+                        "end": 44.35,
+                        "score": 0.054
+                    },
+                    {
+                        "word": "wunderschönen",
+                        "start": 44.37,
+                        "end": 44.77,
+                        "score": 0.555
+                    },
+                    {
+                        "word": "guten",
+                        "start": 44.79,
+                        "end": 44.95,
+                        "score": 0.328
+                    },
+                    {
+                        "word": "Tag.",
+                        "start": 44.97,
+                        "end": 45.15,
+                        "score": 0.568
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 45.19,
+                "end": 46.33,
+                "text": "Dürra, mein Name ist von RepoVox.",
+                "words": [
+                    {
+                        "word": "Dürra,",
+                        "start": 45.19,
+                        "end": 45.41,
+                        "score": 0.474
+                    },
+                    {
+                        "word": "mein",
+                        "start": 45.43,
+                        "end": 45.53,
+                        "score": 0.788
+                    },
+                    {
+                        "word": "Name",
+                        "start": 45.55,
+                        "end": 45.63,
+                        "score": 0.044
+                    },
+                    {
+                        "word": "ist",
+                        "start": 45.65,
+                        "end": 45.71,
+                        "score": 0.004
+                    },
+                    {
+                        "word": "von",
+                        "start": 45.75,
+                        "end": 45.87,
+                        "score": 0.456
+                    },
+                    {
+                        "word": "RepoVox.",
+                        "start": 45.89,
+                        "end": 46.33,
+                        "score": 0.677
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 46.43,
+                "end": 46.971,
+                "text": "Grüße Sie.",
+                "words": [
+                    {
+                        "word": "Grüße",
+                        "start": 46.43,
+                        "end": 46.771,
+                        "score": 0.729
+                    },
+                    {
+                        "word": "Sie.",
+                        "start": 46.811,
+                        "end": 46.971,
+                        "score": 0.721
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 47.011,
+                "end": 47.111,
+                "text": "Hi.",
+                "words": [
+                    {
+                        "word": "Hi.",
+                        "start": 47.011,
+                        "end": 47.111,
+                        "score": 0.54
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 47.131,
+                "end": 53.812,
+                "text": "Ich bin gerade mit dem Büro verbunden, korrekt?",
+                "words": [
+                    {
+                        "word": "Ich",
+                        "start": 47.131,
+                        "end": 49.871,
+                        "score": 0.657
+                    },
+                    {
+                        "word": "bin",
+                        "start": 49.911,
+                        "end": 50.051,
+                        "score": 0.293
+                    },
+                    {
+                        "word": "gerade",
+                        "start": 50.071,
+                        "end": 50.331,
+                        "score": 0.706
+                    },
+                    {
+                        "word": "mit",
+                        "start": 50.351,
+                        "end": 50.471,
+                        "score": 0.863
+                    },
+                    {
+                        "word": "dem",
+                        "start": 50.511,
+                        "end": 50.631,
+                        "score": 0.879
+                    },
+                    {
+                        "word": "Büro",
+                        "start": 50.651,
+                        "end": 51.471,
+                        "score": 0.93
+                    },
+                    {
+                        "word": "verbunden,",
+                        "start": 51.491,
+                        "end": 52.011,
+                        "score": 0.914
+                    },
+                    {
+                        "word": "korrekt?",
+                        "start": 52.052,
+                        "end": 53.812,
+                        "score": 0.901
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 48.483,
+                "end": 51.965,
+                "text": "Ja.",
+                "words": [
+                    {
+                        "word": "Ja.",
+                        "start": 48.483,
+                        "end": 51.965,
+                        "score": 0.843
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 52.065,
+                "end": 56.907,
+                "text": "Richtig, jawohl.",
+                "words": [
+                    {
+                        "word": "Richtig,",
+                        "start": 52.065,
+                        "end": 52.445,
+                        "score": 0.729
+                    },
+                    {
+                        "word": "jawohl.",
+                        "start": 52.505,
+                        "end": 56.907,
+                        "score": 0.557
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 53.832,
+                "end": 54.172,
+                "text": "Super.",
+                "words": [
+                    {
+                        "word": "Super.",
+                        "start": 53.832,
+                        "end": 54.172,
+                        "score": 0.576
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 54.192,
+                "end": 59.333,
+                "text": "Es geht um die 80 negativen Google-Bewertungen und Beschwerden der Kunden.",
+                "words": [
+                    {
+                        "word": "Es",
+                        "start": 54.192,
+                        "end": 54.272,
+                        "score": 0.78
+                    },
+                    {
+                        "word": "geht",
+                        "start": 54.292,
+                        "end": 54.452,
+                        "score": 0.975
+                    },
+                    {
+                        "word": "um",
+                        "start": 54.492,
+                        "end": 54.612,
+                        "score": 0.985
+                    },
+                    {
+                        "word": "die",
+                        "start": 54.632,
+                        "end": 54.712,
+                        "score": 0.833
+                    },
+                    {
+                        "word": "80"
+                    },
+                    {
+                        "word": "negativen",
+                        "start": 55.052,
+                        "end": 55.452,
+                        "score": 0.823
+                    },
+                    {
+                        "word": "Google-Bewertungen",
+                        "start": 55.492,
+                        "end": 56.292,
+                        "score": 0.808
+                    },
+                    {
+                        "word": "und",
+                        "start": 56.332,
+                        "end": 56.452,
+                        "score": 0.812
+                    },
+                    {
+                        "word": "Beschwerden",
+                        "start": 56.472,
+                        "end": 56.872,
+                        "score": 0.842
+                    },
+                    {
+                        "word": "der",
+                        "start": 56.912,
+                        "end": 57.052,
+                        "score": 0.844
+                    },
+                    {
+                        "word": "Kunden.",
+                        "start": 57.072,
+                        "end": 59.333,
+                        "score": 0.958
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 56.927,
+                "end": 58.348,
+                "text": "Das, da haben wir kein Interesse.",
+                "words": [
+                    {
+                        "word": "Das,",
+                        "start": 56.927,
+                        "end": 57.307,
+                        "score": 0.876
+                    },
+                    {
+                        "word": "da",
+                        "start": 57.328,
+                        "end": 57.488,
+                        "score": 0.855
+                    },
+                    {
+                        "word": "haben",
+                        "start": 57.528,
+                        "end": 57.648,
+                        "score": 0.854
+                    },
+                    {
+                        "word": "wir",
+                        "start": 57.668,
+                        "end": 57.788,
+                        "score": 0.694
+                    },
+                    {
+                        "word": "kein",
+                        "start": 57.808,
+                        "end": 57.928,
+                        "score": 0.927
+                    },
+                    {
+                        "word": "Interesse.",
+                        "start": 57.968,
+                        "end": 58.348,
+                        "score": 0.102
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 59.393,
+                "end": 60.813,
+                "text": "An was haben Sie denn kein Interesse?",
+                "words": [
+                    {
+                        "word": "An",
+                        "start": 59.393,
+                        "end": 59.533,
+                        "score": 0.712
+                    },
+                    {
+                        "word": "was",
+                        "start": 59.573,
+                        "end": 59.673,
+                        "score": 0.607
+                    },
+                    {
+                        "word": "haben",
+                        "start": 59.693,
+                        "end": 59.853,
+                        "score": 0.922
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 59.893,
+                        "end": 59.973,
+                        "score": 0.864
+                    },
+                    {
+                        "word": "denn",
+                        "start": 60.013,
+                        "end": 60.153,
+                        "score": 0.882
+                    },
+                    {
+                        "word": "kein",
+                        "start": 60.193,
+                        "end": 60.393,
+                        "score": 0.731
+                    },
+                    {
+                        "word": "Interesse?",
+                        "start": 60.433,
+                        "end": 60.813,
+                        "score": 0.981
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 60.573,
+                "end": 61.534,
+                "text": " Da haben wir kein Interesse.",
+                "words": [
+                    {
+                        "word": "Da",
+                        "start": 60.573,
+                        "end": 60.673,
+                        "score": 0.826
+                    },
+                    {
+                        "word": "haben",
+                        "start": 60.713,
+                        "end": 60.853,
+                        "score": 0.724
+                    },
+                    {
+                        "word": "wir",
+                        "start": 60.893,
+                        "end": 60.993,
+                        "score": 0.72
+                    },
+                    {
+                        "word": "kein",
+                        "start": 61.013,
+                        "end": 61.173,
+                        "score": 0.592
+                    },
+                    {
+                        "word": "Interesse.",
+                        "start": 61.213,
+                        "end": 61.534,
+                        "score": 0.779
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 61.554,
+                "end": 62.654,
+                "text": "Dankeschön.",
+                "words": [
+                    {
+                        "word": "Dankeschön.",
+                        "start": 61.554,
+                        "end": 62.654,
+                        "score": 0.446
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 62.674,
+                "end": 68.998,
+                "text": "Wenn Sie es uns kostenlos machen, können wir weiterreden und sonst nicht.",
+                "words": [
+                    {
+                        "word": "Wenn",
+                        "start": 62.674,
+                        "end": 62.814,
+                        "score": 0.92
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 62.854,
+                        "end": 62.934,
+                        "score": 0.793
+                    },
+                    {
+                        "word": "es",
+                        "start": 62.974,
+                        "end": 63.054,
+                        "score": 0.382
+                    },
+                    {
+                        "word": "uns",
+                        "start": 63.074,
+                        "end": 63.214,
+                        "score": 0.838
+                    },
+                    {
+                        "word": "kostenlos",
+                        "start": 63.255,
+                        "end": 63.755,
+                        "score": 0.894
+                    },
+                    {
+                        "word": "machen,",
+                        "start": 63.775,
+                        "end": 64.055,
+                        "score": 0.724
+                    },
+                    {
+                        "word": "können",
+                        "start": 64.075,
+                        "end": 64.235,
+                        "score": 0.886
+                    },
+                    {
+                        "word": "wir",
+                        "start": 64.275,
+                        "end": 64.395,
+                        "score": 0.81
+                    },
+                    {
+                        "word": "weiterreden",
+                        "start": 64.415,
+                        "end": 64.875,
+                        "score": 0.84
+                    },
+                    {
+                        "word": "und",
+                        "start": 64.895,
+                        "end": 65.055,
+                        "score": 0.843
+                    },
+                    {
+                        "word": "sonst",
+                        "start": 65.095,
+                        "end": 65.316,
+                        "score": 0.875
+                    },
+                    {
+                        "word": "nicht.",
+                        "start": 65.376,
+                        "end": 68.998,
+                        "score": 0.704
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 65.594,
+                "end": 69.455,
+                "text": "Na, es ist ja nichts mehr auf der Welt kostenlos, wie Sie wissen.",
+                "words": [
+                    {
+                        "word": "Na,",
+                        "start": 65.594,
+                        "end": 66.994,
+                        "score": 0.868
+                    },
+                    {
+                        "word": "es",
+                        "start": 67.034,
+                        "end": 67.154,
+                        "score": 0.425
+                    },
+                    {
+                        "word": "ist",
+                        "start": 67.194,
+                        "end": 67.314,
+                        "score": 0.734
+                    },
+                    {
+                        "word": "ja",
+                        "start": 67.334,
+                        "end": 67.494,
+                        "score": 0.966
+                    },
+                    {
+                        "word": "nichts",
+                        "start": 67.514,
+                        "end": 67.674,
+                        "score": 0.831
+                    },
+                    {
+                        "word": "mehr",
+                        "start": 67.734,
+                        "end": 67.834,
+                        "score": 0.721
+                    },
+                    {
+                        "word": "auf",
+                        "start": 67.874,
+                        "end": 67.974,
+                        "score": 0.906
+                    },
+                    {
+                        "word": "der",
+                        "start": 67.994,
+                        "end": 68.094,
+                        "score": 0.926
+                    },
+                    {
+                        "word": "Welt",
+                        "start": 68.134,
+                        "end": 68.315,
+                        "score": 0.942
+                    },
+                    {
+                        "word": "kostenlos,",
+                        "start": 68.335,
+                        "end": 68.855,
+                        "score": 0.694
+                    },
+                    {
+                        "word": "wie",
+                        "start": 68.895,
+                        "end": 69.075,
+                        "score": 0.511
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 69.115,
+                        "end": 69.235,
+                        "score": 0.87
+                    },
+                    {
+                        "word": "wissen.",
+                        "start": 69.275,
+                        "end": 69.455,
+                        "score": 0.938
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 69.038,
+                "end": 70.058,
+                "text": "Ganz genau.",
+                "words": [
+                    {
+                        "word": "Ganz",
+                        "start": 69.038,
+                        "end": 69.238,
+                        "score": 0.562
+                    },
+                    {
+                        "word": "genau.",
+                        "start": 69.258,
+                        "end": 70.058,
+                        "score": 0.518
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 70.138,
+                "end": 71.319,
+                "text": "Okay.",
+                "words": [
+                    {
+                        "word": "Okay.",
+                        "start": 70.138,
+                        "end": 71.319,
+                        "score": 0.48
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 70.535,
+                "end": 70.575,
+                "text": "Ja.",
+                "words": [
+                    {
+                        "word": "Ja.",
+                        "start": 70.535,
+                        "end": 70.575,
+                        "score": 0.026
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 71.359,
+                "end": 72.78,
+                "text": "Da haben wir wirklich kein Interesse.",
+                "words": [
+                    {
+                        "word": "Da",
+                        "start": 71.359,
+                        "end": 71.739,
+                        "score": 0.532
+                    },
+                    {
+                        "word": "haben",
+                        "start": 71.759,
+                        "end": 71.919,
+                        "score": 0.298
+                    },
+                    {
+                        "word": "wir",
+                        "start": 71.939,
+                        "end": 72.059,
+                        "score": 0.283
+                    },
+                    {
+                        "word": "wirklich",
+                        "start": 72.099,
+                        "end": 72.339,
+                        "score": 0.915
+                    },
+                    {
+                        "word": "kein",
+                        "start": 72.359,
+                        "end": 72.519,
+                        "score": 0.719
+                    },
+                    {
+                        "word": "Interesse.",
+                        "start": 72.559,
+                        "end": 72.78,
+                        "score": 0.931
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 72.82,
+                "end": 75.661,
+                "text": "Da brauchen wir gar nicht weiterzureden.",
+                "words": [
+                    {
+                        "word": "Da",
+                        "start": 72.82,
+                        "end": 72.88,
+                        "score": 0.508
+                    },
+                    {
+                        "word": "brauchen",
+                        "start": 72.9,
+                        "end": 73.06,
+                        "score": 0.242
+                    },
+                    {
+                        "word": "wir",
+                        "start": 73.08,
+                        "end": 73.18,
+                        "score": 0.226
+                    },
+                    {
+                        "word": "gar",
+                        "start": 73.2,
+                        "end": 73.3,
+                        "score": 0.724
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 73.32,
+                        "end": 73.42,
+                        "score": 0.806
+                    },
+                    {
+                        "word": "weiterzureden.",
+                        "start": 73.46,
+                        "end": 75.661,
+                        "score": 0.709
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 74.461,
+                "end": 78.324,
+                "text": " Aber wieso denn, wenn ich fragen darf?",
+                "words": [
+                    {
+                        "word": "Aber",
+                        "start": 74.461,
+                        "end": 74.621,
+                        "score": 0.602
+                    },
+                    {
+                        "word": "wieso",
+                        "start": 74.681,
+                        "end": 74.881,
+                        "score": 0.353
+                    },
+                    {
+                        "word": "denn,",
+                        "start": 74.901,
+                        "end": 75.062,
+                        "score": 0.36
+                    },
+                    {
+                        "word": "wenn",
+                        "start": 75.082,
+                        "end": 75.182,
+                        "score": 0.252
+                    },
+                    {
+                        "word": "ich",
+                        "start": 75.242,
+                        "end": 75.322,
+                        "score": 0.481
+                    },
+                    {
+                        "word": "fragen",
+                        "start": 75.342,
+                        "end": 75.882,
+                        "score": 0.714
+                    },
+                    {
+                        "word": "darf?",
+                        "start": 75.902,
+                        "end": 78.324,
+                        "score": 0.563
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 75.701,
+                "end": 77.302,
+                "text": "Weil wir das einfach nicht möchten.",
+                "words": [
+                    {
+                        "word": "Weil",
+                        "start": 75.701,
+                        "end": 75.781,
+                        "score": 0.556
+                    },
+                    {
+                        "word": "wir",
+                        "start": 75.861,
+                        "end": 75.921,
+                        "score": 0.292
+                    },
+                    {
+                        "word": "das",
+                        "start": 75.941,
+                        "end": 76.081,
+                        "score": 0.307
+                    },
+                    {
+                        "word": "einfach",
+                        "start": 76.121,
+                        "end": 76.341,
+                        "score": 0.556
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 76.361,
+                        "end": 76.541,
+                        "score": 0.449
+                    },
+                    {
+                        "word": "möchten.",
+                        "start": 76.561,
+                        "end": 77.302,
+                        "score": 0.9
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 77.342,
+                "end": 80.023,
+                "text": "Ja, genau.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 77.342,
+                        "end": 77.462,
+                        "score": 0.3
+                    },
+                    {
+                        "word": "genau.",
+                        "start": 77.582,
+                        "end": 80.023,
+                        "score": 0.503
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 78.364,
+                "end": 80.866,
+                "text": "Weil es kostet.",
+                "words": [
+                    {
+                        "word": "Weil",
+                        "start": 78.364,
+                        "end": 78.544,
+                        "score": 0.507
+                    },
+                    {
+                        "word": "es",
+                        "start": 78.584,
+                        "end": 78.724,
+                        "score": 0.722
+                    },
+                    {
+                        "word": "kostet.",
+                        "start": 78.764,
+                        "end": 80.866,
+                        "score": 0.87
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 80.043,
+                "end": 85.526,
+                "text": "Wir brauchen das nicht.",
+                "words": [
+                    {
+                        "word": "Wir",
+                        "start": 80.043,
+                        "end": 80.163,
+                        "score": 0.645
+                    },
+                    {
+                        "word": "brauchen",
+                        "start": 80.604,
+                        "end": 84.886,
+                        "score": 0.557
+                    },
+                    {
+                        "word": "das",
+                        "start": 84.926,
+                        "end": 85.066,
+                        "score": 0.404
+                    },
+                    {
+                        "word": "nicht.",
+                        "start": 85.186,
+                        "end": 85.526,
+                        "score": 0.525
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 80.926,
+                "end": 86.11,
+                "text": "Aber sie investieren und sie können ja daraus wieder profitieren, weil ihr Deutschland oder nicht.",
+                "words": [
+                    {
+                        "word": "Aber",
+                        "start": 80.926,
+                        "end": 81.086,
+                        "score": 0.857
+                    },
+                    {
+                        "word": "sie",
+                        "start": 81.126,
+                        "end": 81.286,
+                        "score": 0.816
+                    },
+                    {
+                        "word": "investieren",
+                        "start": 81.326,
+                        "end": 81.746,
+                        "score": 0.849
+                    },
+                    {
+                        "word": "und",
+                        "start": 81.786,
+                        "end": 81.906,
+                        "score": 0.84
+                    },
+                    {
+                        "word": "sie",
+                        "start": 81.927,
+                        "end": 82.027,
+                        "score": 0.813
+                    },
+                    {
+                        "word": "können",
+                        "start": 82.047,
+                        "end": 82.227,
+                        "score": 0.884
+                    },
+                    {
+                        "word": "ja",
+                        "start": 82.247,
+                        "end": 82.367,
+                        "score": 0.885
+                    },
+                    {
+                        "word": "daraus",
+                        "start": 82.407,
+                        "end": 82.687,
+                        "score": 0.751
+                    },
+                    {
+                        "word": "wieder",
+                        "start": 82.707,
+                        "end": 83.328,
+                        "score": 0.82
+                    },
+                    {
+                        "word": "profitieren,",
+                        "start": 84.268,
+                        "end": 84.869,
+                        "score": 0.823
+                    },
+                    {
+                        "word": "weil",
+                        "start": 84.909,
+                        "end": 85.209,
+                        "score": 0.536
+                    },
+                    {
+                        "word": "ihr",
+                        "start": 85.249,
+                        "end": 85.369,
+                        "score": 0.334
+                    },
+                    {
+                        "word": "Deutschland",
+                        "start": 85.389,
+                        "end": 85.709,
+                        "score": 0.201
+                    },
+                    {
+                        "word": "oder",
+                        "start": 85.749,
+                        "end": 85.949,
+                        "score": 0.368
+                    },
+                    {
+                        "word": "nicht.",
+                        "start": 85.969,
+                        "end": 86.11,
+                        "score": 0.117
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 85.566,
+                "end": 87.507,
+                "text": "Wir möchten das nicht.",
+                "words": [
+                    {
+                        "word": "Wir",
+                        "start": 85.566,
+                        "end": 85.686,
+                        "score": 0.626
+                    },
+                    {
+                        "word": "möchten",
+                        "start": 85.726,
+                        "end": 86.026,
+                        "score": 0.863
+                    },
+                    {
+                        "word": "das",
+                        "start": 86.066,
+                        "end": 86.247,
+                        "score": 0.803
+                    },
+                    {
+                        "word": "nicht.",
+                        "start": 86.267,
+                        "end": 87.507,
+                        "score": 0.878
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 86.13,
+                "end": 86.31,
+                "text": "Okay, ciao.",
+                "words": [
+                    {
+                        "word": "Okay,",
+                        "start": 86.13,
+                        "end": 86.21,
+                        "score": 0.007
+                    },
+                    {
+                        "word": "ciao.",
+                        "start": 86.23,
+                        "end": 86.31,
+                        "score": 0.026
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 87.547,
+                "end": 88.888,
+                "text": "Entschuldigung, wir möchten das nicht.",
+                "words": [
+                    {
+                        "word": "Entschuldigung,",
+                        "start": 87.547,
+                        "end": 88.088,
+                        "score": 0.834
+                    },
+                    {
+                        "word": "wir",
+                        "start": 88.108,
+                        "end": 88.248,
+                        "score": 0.649
+                    },
+                    {
+                        "word": "möchten",
+                        "start": 88.268,
+                        "end": 88.508,
+                        "score": 0.773
+                    },
+                    {
+                        "word": "das",
+                        "start": 88.548,
+                        "end": 88.688,
+                        "score": 0.414
+                    },
+                    {
+                        "word": "nicht.",
+                        "start": 88.708,
+                        "end": 88.888,
+                        "score": 0.249
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 89.669,
+                "end": 90.314,
+                "text": " Ja, bitte.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 89.669,
+                        "end": 89.972,
+                        "score": 0.819
+                    },
+                    {
+                        "word": "bitte.",
+                        "start": 90.032,
+                        "end": 90.314,
+                        "score": 0.613
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 90.334,
+                "end": 90.657,
+                "text": "Tschüss.",
+                "words": [
+                    {
+                        "word": "Tschüss.",
+                        "start": 90.334,
+                        "end": 90.657,
+                        "score": 0.277
+                    }
+                ],
+                "speaker": "client"
+            }
+        ],
+        "text": " Guten Tag, Sie sprechen mit der Braun und Röth Gastronomie in Bad Kreuznach. Um Reservierungen zu tätigen, gehen Sie entweder unter www.braunundröthgastronomie.com, dann können Sie direkt online buchen oder Sie drücken am Telefon die Taste 1 für das Brauwerk, die Taste 2 für das Salinas und die Taste 3 für Fritz die Schemba.  Sollten Sie mit dem Büro verbunden werden wollen, drücken Sie bitte einfach die Taste 4. Frauen und Weltgastronomie Klein, guten Tag.  Hallo, einen wunderschönen guten Tag. Dürra, mein Name ist von RepoVox. Grüße Sie. Hi. Ich bin gerade mit dem Büro verbunden, korrekt? Ja. Richtig, jawohl. Super. Es geht um die 80 negativen Google-Bewertungen und Beschwerden der Kunden. Das, da haben wir kein Interesse. An was haben Sie denn kein Interesse?  Da haben wir kein Interesse. Dankeschön. Wenn Sie es uns kostenlos machen, können wir weiterreden und sonst nicht. Na, es ist ja nichts mehr auf der Welt kostenlos, wie Sie wissen. Ganz genau. Okay. Ja. Da haben wir wirklich kein Interesse. Da brauchen wir gar nicht weiterzureden.  Aber wieso denn, wenn ich fragen darf? Weil wir das einfach nicht möchten. Ja, genau. Weil es kostet. Wir brauchen das nicht. Aber sie investieren und sie können ja daraus wieder profitieren, weil ihr Deutschland oder nicht. Wir möchten das nicht. Okay, ciao. Entschuldigung, wir möchten das nicht.  Ja, bitte. Tschüss."
+    }
+}
