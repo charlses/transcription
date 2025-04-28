@@ -4,7 +4,7 @@
   "description": "Process call recordings with transcription and segmentation",
   "main": "process-calls.js",
   "scripts": {
-    "start": "node process-calls.js",
+    "start": "node transcription-service.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

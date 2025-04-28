@@ -4,6 +4,7 @@ import tempfile
 import shutil
 import torch
 from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Dict, List, Any, Optional
 from .whisperx_transcription import WhisperXTranscription
@@ -28,6 +29,15 @@ app = FastAPI(
     title="Whisper Transcription API",
     description="API for transcribing audio using OpenAI's Whisper model",
     version="1.0.0"
+)
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows requests from any origin
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
 )
 
 # Initialize WhisperX transcription handler

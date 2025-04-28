@@ -57,27 +57,20 @@ async function fetchCallsNeedingTranscription(
     const url = new URL(`${RR_API_URL}/calls`)
 
     // Use Strapi's filter format: filters[field][operator]=value
-    url.searchParams.append(
-      'populate',
-      'recording,recordingLocal,recordingRemote'
-    )
-    url.searchParams.append('pagination[limit]', limit.toString())
+    url.searchParams.append('populate', 'recording,recordingLocal,recordingRemote')
+    url.searchParams.append('pagination[pageSize]', limit.toString())
     url.searchParams.append('pagination[page]', page.toString())
-
-    // Filter calls where transcription_status is not DONE
-    url.searchParams.append('filters[transcription_status][$ne]', 'DONE')
-
-    // Add sorting to get newest calls first (changed to sort by id desc)
+    url.searchParams.append('pagination[withCount]', 'true')
     url.searchParams.append('sort', 'id:desc')
 
     log(`Fetching page ${page} with limit ${limit} from ${url}`)
 
     const response = await fetch(url, {
+      method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${STRAPI_API_TOKEN}`
+        'Authorization': `Bearer ${STRAPI_API_TOKEN}`
       },
-      method: 'GET'
     })
 
     if (!response.ok) {
@@ -100,88 +93,166 @@ async function fetchCallsNeedingTranscription(
       throw new Error('Invalid response format from Strapi API')
     }
 
-    // Filter calls that have recording URLs
-    const validCalls = data.data.filter((call) => {
-      // Get the actual attributes from Strapi response
-      const attributes = call.attributes || call
-
-      return (
-        attributes.recordingLocal &&
-        attributes.recordingLocal.url &&
-        attributes.recordingRemote &&
-        attributes.recordingRemote.url
-      )
-    })
-
-    // If we're in initial scan and got no valid calls from a large page,
-    // reduce the page size for future scans
-    if (
-      isInitialScan &&
-      limit > SMALL_PAGE_SIZE &&
-      validCalls.length === 0 &&
-      data.data.length > 0
-    ) {
-      log(
-        `No calls with recordings found in a page of ${data.data.length} calls. Reducing page size for future scans.`,
-        'warn'
-      )
-      currentPageSize = SMALL_PAGE_SIZE
-    }
-
     log(
-      `Found ${validCalls.length} calls that need transcription (out of ${data.data.length} total calls on page ${page})`
+      `Found ${data.data.length} calls on page ${page}`
     )
 
-    // Return both the valid calls and pagination metadata
+    // Return all calls and pagination 
+    console.log(data.meta)
     return {
-      calls: validCalls,
-      pagination: data.meta
-        ? data.meta.pagination
-        : {
-            page,
-            pageSize: limit,
-            pageCount: Math.ceil(data.data.length / limit),
-            total: data.data.length
-          }
+      calls: data.data,
+      meta: data.meta
     }
   } catch (error) {
-    log(`Error fetching calls: ${error.message}`, 'error')
-    // Return empty result instead of throwing, to keep the continuous loop running
-    return { calls: [], pagination: { page, pageCount: 0, total: 0 } }
+    log(`Error in fetchCallsNeedingTranscription: ${error.message}`, 'error')
+    return { calls: [], meta: { pagination: { pageCount: 0 } } }
   }
 }
 
 /**
- * Configure WhisperX transcription parameters
- * @returns {Object} Configuration object for WhisperX
+ * Process a single call - transcribe and update
+ * @param {Object} call - Call object to process
+ * @returns {Promise<Object>} Updated call
  */
-function getTranscriptionConfig() {
-  return {
-    // Basic configuration
-    language: 'de', // ISO language code, null for auto-detection
-    compute_type: 'float16', // "float16", "float32", or "int8"
+async function processCall(call) {
+  const callId = call.id || call._id
 
-    // Transcription parameters
-    temperature: 0.0, // Lower temperature for more precision
-    beam_size: 5, // Beam size for beam search
-    word_timestamps: true, // Enable word-level timestamps
-    batch_size: 16, // Batch size for parallelization
-    condition_on_previous_text: true, // Use context for better accuracy
+  try {
+    const attributes = call.attributes || call
 
-    // Silence handling
-    vad_filter: true, // Enable voice activity detection
-    no_speech_threshold: 0.6, // Higher value = more aggressive with silence
-    compression_ratio_threshold: 2.4, // Higher value = more compression allowed
+    // Skip calls that already have DONE status
+    if (attributes.transcription_status === 'DONE') {
+      log(`Skipping call ${callId} - already has DONE status`, 'warn')
+      return call
+    }
 
-    // VAD parameters
-    vad_onset: 0.5, // VAD onset threshold
-    vad_offset: 0.363, // VAD offset threshold
-    // Removed min_silence_duration_ms and speech_pad_ms as per user's edits
+    // Skip calls without recordings
+    if (!attributes.recordingLocal?.data?.[0]?.attributes?.url || 
+        !attributes.recordingRemote?.data?.[0]?.attributes?.url) {
+      log(`Skipping call ${callId} - missing recordings`, 'warn')
+      return call
+    }
 
-    // Alignment
-    align_output: true // Whether to align output for word-level timestamps
+    // Set status to WAIT while processing
+    await fetch(`${RR_API_URL}/calls/${callId}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${STRAPI_API_TOKEN}`
+      },
+      body: JSON.stringify({
+        data: {
+          transcription_status: 'WAIT'
+        }
+      })
+    })
+
+    // Transcribe the call
+    const transcriptionData = await transcribeCall(call)
+
+    // Update the call with transcription results
+    const updatedCall = await updateCallWithTranscription(call, transcriptionData)
+
+    return updatedCall
+  } catch (error) {
+    log(`Error processing call ${callId}: ${error.message}`, 'error')
+    throw error
   }
 }
+
+/**
+ * Main function that runs continuously
+ */
+async function runContinuously() {
+  try {
+    // Start with the initial full scan
+    if (isInitialScan) {
+      log('Starting initial full scan of all pages...')
+      currentPageSize = INITIAL_PAGE_SIZE // Keep the large page size (1000) for initial scan
+      
+      // Get total records first
+      const initialResult = await fetchCallsNeedingTranscription(1, currentPageSize)
+      const totalRecords = initialResult.meta.pagination.total
+      const totalPages = initialResult.meta.pagination.pageCount
+      log(`Total records to scan: ${totalRecords}, will process in ${totalPages} pages with size ${currentPageSize}`)
+      
+      // Process all pages with large page size
+      let currentPage = 1
+      while (currentPage <= totalPages) {
+        const result = await fetchCallsNeedingTranscription(currentPage, currentPageSize)
+        log(`Processing page ${currentPage} of ${totalPages} (${result.calls.length} calls)`)
+        
+        // Process each call individually
+        for (const call of result.calls) {
+          try {
+            await processCall(call)
+          } catch (error) {
+            log(`Error processing call ${call.id}: ${error.message}`, 'error')
+            // Continue with next call even if this one fails
+          }
+        }
+        
+        currentPage++
+      }
+      
+      // Only after processing ALL pages, switch to continuous mode
+      log('Completed full database scan')
+      isInitialScan = false
+      currentPageSize = INITIAL_PAGE_SIZE // Keep using 1000 for continuous mode
+      log('Switching to continuous mode with 10-second intervals')
+    }
+    // In continuous mode, process all pages in sequence
+    else {
+      log('Starting continuous mode page scan...')
+      let currentPage = 1
+      let hasMorePages = true
+      
+      while (hasMorePages) {
+        const result = await fetchCallsNeedingTranscription(currentPage, currentPageSize)
+        const totalPages = result.meta.pagination.pageCount
+        const totalRecords = result.meta.pagination.total
+        
+        log(`Processing page ${currentPage} of ${totalPages} (${result.calls.length} calls, total records: ${totalRecords})`)
+        
+        if (result.calls.length === 0) {
+          hasMorePages = false
+          log('No more calls to process in this cycle')
+          break
+        }
+        
+        // Process each call individually
+        for (const call of result.calls) {
+          try {
+            await processCall(call)
+          } catch (error) {
+            log(`Error processing call ${call.id}: ${error.message}`, 'error')
+            // Continue with next call even if this one fails
+          }
+        }
+        
+        currentPage++
+        
+        // Only stop if we've processed all pages
+        if (currentPage > totalPages) {
+          hasMorePages = false
+          log(`Reached the last page (${totalPages}) in this cycle`)
+        } else {
+          log(`Moving to next page ${currentPage} of ${totalPages}`)
+        }
+      }
+    }
+  } catch (error) {
+    log(`Error in continuous processing: ${error.message}`, 'error')
+  }
+
+  // Schedule the next run regardless of success or failure
+  log(`Scheduling next run in ${LOOP_INTERVAL / 1000} seconds...`)
+  setTimeout(runContinuously, LOOP_INTERVAL)
+}
+
+// Start the continuous loop
+log('Starting transcription service in continuous mode')
+runContinuously()
 
 /**
  * Transcribe a call using the WhisperX configurable endpoint
@@ -199,8 +270,8 @@ async function transcribeCall(call) {
 
     // Prepare the transcription request with configurable parameters
     const transcriptionPayload = {
-      recording_local: attributes.recordingLocal.url,
-      recording_remote: attributes.recordingRemote.url,
+      recording_local: attributes.recordingLocal.data[0].attributes.url,
+      recording_remote: attributes.recordingRemote.data[0].attributes.url,
       config: getTranscriptionConfig()
     }
 
@@ -252,7 +323,6 @@ async function updateCallWithTranscription(call, transcriptionData) {
     log(`Updating call ${callId} with transcription results...`)
 
     // Create the update payload for Strapi
-    // Changed to save the entire transcript object as per user's edit
     const updatePayload = {
       data: {
         transcriptionLocal: transcriptionData.transcript_local,
@@ -317,167 +387,34 @@ async function updateCallWithTranscription(call, transcriptionData) {
 }
 
 /**
- * Process a single call - transcribe and update
- * @param {Object} call - Call object to process
- * @returns {Promise<Object>} Updated call
+ * Configure WhisperX transcription parameters
+ * @returns {Object} Configuration object for WhisperX
  */
-async function processCall(call) {
-  const callId = call.id || call._id
+function getTranscriptionConfig() {
+  return {
+    // Basic configuration
+    language: 'de', // ISO language code, null for auto-detection
+    compute_type: 'float16', // "float16", "float32", or "int8"
 
-  try {
-    const attributes = call.attributes || call
+    // Transcription parameters
+    temperature: 0.0, // Lower temperature for more precision
+    beam_size: 5, // Beam size for beam search
+    word_timestamps: true, // Enable word-level timestamps
+    batch_size: 16, // Batch size for parallelization
+    condition_on_previous_text: true, // Use context for better accuracy
 
-    // Skip calls that already have DONE status
-    if (attributes.transcription_status === 'DONE') {
-      log(`Skipping call ${callId} - already has DONE status`, 'warn')
-      return call
-    }
+    // Silence handling
+    vad_filter: true, // Enable voice activity detection
+    no_speech_threshold: 0.6, // Higher value = more aggressive with silence
+    compression_ratio_threshold: 2.4, // Higher value = more compression allowed
 
-    // Set status to WAIT while processing
-    await fetch(`${RR_API_URL}/calls/${callId}`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        data: {
-          transcription_status: 'WAIT'
-        }
-      })
-    })
+    // VAD parameters
+    vad_onset: 0.5, // VAD onset threshold
+    vad_offset: 0.363, // VAD offset threshold
 
-    // Transcribe the call
-    const transcriptionData = await transcribeCall(call)
-
-    // Update the call with transcription results
-    const updatedCall = await updateCallWithTranscription(
-      call,
-      transcriptionData
-    )
-
-    return updatedCall
-  } catch (error) {
-    log(`Error processing call ${callId}: ${error.message}`, 'error')
-    throw error
+    // Alignment
+    align_output: true // Whether to align output for word-level timestamps
   }
 }
 
-/**
- * Process all calls in a batch
- * @param {Array} calls - Array of call objects to process
- */
-async function processBatch(calls) {
-  if (calls.length === 0) {
-    log('No calls to process in this batch')
-    return
-  }
-
-  log(`Processing batch of ${calls.length} calls...`)
-
-  // Process each call with delay between them
-  for (let i = 0; i < calls.length; i++) {
-    const call = calls[i]
-
-    try {
-      await processCall(call)
-    } catch (error) {
-      // Log error but continue with next call
-      log(
-        `Failed to process call ${call.id}, continuing with next call`,
-        'error'
-      )
-    }
-
-    // Add delay between processing calls to avoid rate limiting
-    if (i < calls.length - 1) {
-      await delay(DELAY_BETWEEN_CALLS)
-    }
-  }
-
-  log(`Completed processing batch of ${calls.length} calls`, 'success')
-}
-
-/**
- * Process all pages of calls
- */
-async function processAllPages() {
-  try {
-    log('Starting full scan of all pages...')
-
-    let currentPage = 1
-    let hasMorePages = true
-    let totalProcessed = 0
-
-    // Process all pages
-    while (hasMorePages) {
-      const result = await fetchCallsNeedingTranscription(
-        currentPage,
-        currentPageSize
-      )
-
-      if (result.calls.length > 0) {
-        await processBatch(result.calls)
-        totalProcessed += result.calls.length
-      }
-
-      // Check if there are more pages
-      if (
-        result.pagination &&
-        result.pagination.page < result.pagination.pageCount
-      ) {
-        currentPage++
-        log(
-          `Moving to next page: ${currentPage} of ${result.pagination.pageCount}`
-        )
-      } else {
-        hasMorePages = false
-        log('Reached the last page')
-      }
-    }
-
-    log(
-      `Completed processing all pages. Total calls processed: ${totalProcessed}`
-    )
-    return totalProcessed
-  } catch (error) {
-    log(`Error processing all pages: ${error.message}`, 'error')
-    return 0
-  }
-}
-
-/**
- * Main function that runs continuously
- */
-async function runContinuously() {
-  try {
-    // Start with the initial full scan
-    if (isInitialScan) {
-      log('Starting initial full scan of all pages...')
-      await processAllPages()
-      isInitialScan = false
-      currentPageSize = SMALL_PAGE_SIZE // Switch to smaller page size for continuous mode
-      log(
-        'Completed initial scan, switching to continuous mode with 10-second intervals'
-      )
-    }
-
-    // In continuous mode, just check the first page of recent calls
-    else {
-      log('Checking recent calls in continuous mode...')
-      const result = await fetchCallsNeedingTranscription(1, currentPageSize)
-      if (result.calls.length > 0) {
-        await processBatch(result.calls)
-      }
-    }
-  } catch (error) {
-    log(`Error in continuous processing: ${error.message}`, 'error')
-  }
-
-  // Schedule the next run regardless of success or failure
-  log(`Scheduling next run in ${LOOP_INTERVAL / 1000} seconds...`)
-  setTimeout(runContinuously, LOOP_INTERVAL)
-}
-
-// Start the continuous loop
-log('Starting transcription service in continuous mode')
-runContinuously()
+// Rest of the file remains unchanged

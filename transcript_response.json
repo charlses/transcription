@@ -1,0 +1,4531 @@
+{
+    "transcript_remote": {
+        "segments": [
+            {
+                "start": 1.72,
+                "end": 6.561,
+                "text": " Tattoos ist das Hallo.",
+                "words": [
+                    {
+                        "word": "Tattoos",
+                        "start": 1.72,
+                        "end": 2.0,
+                        "score": 0.284
+                    },
+                    {
+                        "word": "ist",
+                        "start": 2.02,
+                        "end": 2.1,
+                        "score": 0.221
+                    },
+                    {
+                        "word": "das",
+                        "start": 2.12,
+                        "end": 2.28,
+                        "score": 0.497
+                    },
+                    {
+                        "word": "Hallo.",
+                        "start": 2.3,
+                        "end": 6.561,
+                        "score": 0.448
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 6.761,
+                "end": 9.241,
+                "text": "Hallo.",
+                "words": [
+                    {
+                        "word": "Hallo.",
+                        "start": 6.761,
+                        "end": 9.241,
+                        "score": 0.391
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 9.281,
+                "end": 20.043,
+                "text": "Genau.",
+                "words": [
+                    {
+                        "word": "Genau.",
+                        "start": 9.281,
+                        "end": 20.043,
+                        "score": 0.567
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 20.103,
+                "end": 20.464,
+                "text": "Genau.",
+                "words": [
+                    {
+                        "word": "Genau.",
+                        "start": 20.103,
+                        "end": 20.464,
+                        "score": 0.717
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 34.724,
+                "end": 36.705,
+                "text": " Ne, da habe ich kein Interesse.",
+                "words": [
+                    {
+                        "word": "Ne,",
+                        "start": 34.724,
+                        "end": 34.844,
+                        "score": 0.653
+                    },
+                    {
+                        "word": "da",
+                        "start": 34.884,
+                        "end": 35.044,
+                        "score": 0.758
+                    },
+                    {
+                        "word": "habe",
+                        "start": 35.124,
+                        "end": 35.505,
+                        "score": 0.697
+                    },
+                    {
+                        "word": "ich",
+                        "start": 35.545,
+                        "end": 35.845,
+                        "score": 0.738
+                    },
+                    {
+                        "word": "kein",
+                        "start": 35.865,
+                        "end": 36.025,
+                        "score": 0.905
+                    },
+                    {
+                        "word": "Interesse.",
+                        "start": 36.065,
+                        "end": 36.705,
+                        "score": 0.944
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 36.745,
+                "end": 46.589,
+                "text": "Ich werde nämlich so oft schon angerufen, deswegen da bin ich, ja, ja, alles gut.",
+                "words": [
+                    {
+                        "word": "Ich",
+                        "start": 36.745,
+                        "end": 36.825,
+                        "score": 0.841
+                    },
+                    {
+                        "word": "werde",
+                        "start": 36.865,
+                        "end": 37.025,
+                        "score": 0.861
+                    },
+                    {
+                        "word": "nämlich",
+                        "start": 37.045,
+                        "end": 37.285,
+                        "score": 0.865
+                    },
+                    {
+                        "word": "so",
+                        "start": 37.305,
+                        "end": 37.405,
+                        "score": 0.887
+                    },
+                    {
+                        "word": "oft",
+                        "start": 37.445,
+                        "end": 37.565,
+                        "score": 0.449
+                    },
+                    {
+                        "word": "schon",
+                        "start": 37.585,
+                        "end": 37.786,
+                        "score": 0.85
+                    },
+                    {
+                        "word": "angerufen,",
+                        "start": 37.806,
+                        "end": 38.226,
+                        "score": 0.896
+                    },
+                    {
+                        "word": "deswegen",
+                        "start": 38.266,
+                        "end": 39.386,
+                        "score": 0.775
+                    },
+                    {
+                        "word": "da",
+                        "start": 39.426,
+                        "end": 39.866,
+                        "score": 0.822
+                    },
+                    {
+                        "word": "bin",
+                        "start": 39.906,
+                        "end": 40.027,
+                        "score": 0.714
+                    },
+                    {
+                        "word": "ich,",
+                        "start": 40.067,
+                        "end": 40.447,
+                        "score": 0.803
+                    },
+                    {
+                        "word": "ja,",
+                        "start": 40.567,
+                        "end": 40.687,
+                        "score": 0.566
+                    },
+                    {
+                        "word": "ja,",
+                        "start": 40.707,
+                        "end": 40.807,
+                        "score": 0.548
+                    },
+                    {
+                        "word": "alles",
+                        "start": 40.847,
+                        "end": 41.107,
+                        "score": 0.683
+                    },
+                    {
+                        "word": "gut.",
+                        "start": 41.147,
+                        "end": 46.589,
+                        "score": 0.761
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 46.649,
+                "end": 48.25,
+                "text": "Ja, ich weiß, aber das macht mir nichts aus.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 46.649,
+                        "end": 46.85,
+                        "score": 0.732
+                    },
+                    {
+                        "word": "ich",
+                        "start": 46.91,
+                        "end": 46.99,
+                        "score": 0.976
+                    },
+                    {
+                        "word": "weiß,",
+                        "start": 47.03,
+                        "end": 47.21,
+                        "score": 0.977
+                    },
+                    {
+                        "word": "aber",
+                        "start": 47.25,
+                        "end": 47.41,
+                        "score": 0.747
+                    },
+                    {
+                        "word": "das",
+                        "start": 47.43,
+                        "end": 47.55,
+                        "score": 0.79
+                    },
+                    {
+                        "word": "macht",
+                        "start": 47.57,
+                        "end": 47.73,
+                        "score": 0.768
+                    },
+                    {
+                        "word": "mir",
+                        "start": 47.75,
+                        "end": 47.83,
+                        "score": 0.428
+                    },
+                    {
+                        "word": "nichts",
+                        "start": 47.85,
+                        "end": 48.11,
+                        "score": 0.486
+                    },
+                    {
+                        "word": "aus.",
+                        "start": 48.15,
+                        "end": 48.25,
+                        "score": 0.757
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 55.878,
+                "end": 60.639,
+                "text": " Ja, aber das Problem ist, es wird immer wieder Leute geben, die wieder solche Bewertungen machen.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 55.878,
+                        "end": 56.018,
+                        "score": 0.896
+                    },
+                    {
+                        "word": "aber",
+                        "start": 56.058,
+                        "end": 56.178,
+                        "score": 0.885
+                    },
+                    {
+                        "word": "das",
+                        "start": 56.198,
+                        "end": 56.278,
+                        "score": 0.506
+                    },
+                    {
+                        "word": "Problem",
+                        "start": 56.318,
+                        "end": 56.558,
+                        "score": 0.677
+                    },
+                    {
+                        "word": "ist,",
+                        "start": 56.598,
+                        "end": 56.678,
+                        "score": 0.917
+                    },
+                    {
+                        "word": "es",
+                        "start": 56.718,
+                        "end": 56.798,
+                        "score": 0.632
+                    },
+                    {
+                        "word": "wird",
+                        "start": 56.818,
+                        "end": 56.938,
+                        "score": 0.759
+                    },
+                    {
+                        "word": "immer",
+                        "start": 56.958,
+                        "end": 58.098,
+                        "score": 0.831
+                    },
+                    {
+                        "word": "wieder",
+                        "start": 58.138,
+                        "end": 58.318,
+                        "score": 0.803
+                    },
+                    {
+                        "word": "Leute",
+                        "start": 58.358,
+                        "end": 58.619,
+                        "score": 0.949
+                    },
+                    {
+                        "word": "geben,",
+                        "start": 58.639,
+                        "end": 58.839,
+                        "score": 0.933
+                    },
+                    {
+                        "word": "die",
+                        "start": 58.859,
+                        "end": 58.939,
+                        "score": 0.811
+                    },
+                    {
+                        "word": "wieder",
+                        "start": 58.959,
+                        "end": 59.599,
+                        "score": 0.76
+                    },
+                    {
+                        "word": "solche",
+                        "start": 59.619,
+                        "end": 59.899,
+                        "score": 0.926
+                    },
+                    {
+                        "word": "Bewertungen",
+                        "start": 59.939,
+                        "end": 60.399,
+                        "score": 0.799
+                    },
+                    {
+                        "word": "machen.",
+                        "start": 60.439,
+                        "end": 60.639,
+                        "score": 0.733
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 60.659,
+                "end": 64.24,
+                "text": "Deswegen, ich werde jetzt halt auch nicht Geld dafür bezahlen, um die rauszulöschen.",
+                "words": [
+                    {
+                        "word": "Deswegen,",
+                        "start": 60.659,
+                        "end": 61.339,
+                        "score": 0.827
+                    },
+                    {
+                        "word": "ich",
+                        "start": 61.379,
+                        "end": 61.459,
+                        "score": 0.839
+                    },
+                    {
+                        "word": "werde",
+                        "start": 61.499,
+                        "end": 61.659,
+                        "score": 0.583
+                    },
+                    {
+                        "word": "jetzt",
+                        "start": 61.679,
+                        "end": 61.799,
+                        "score": 0.07
+                    },
+                    {
+                        "word": "halt",
+                        "start": 61.819,
+                        "end": 61.919,
+                        "score": 0.241
+                    },
+                    {
+                        "word": "auch",
+                        "start": 61.939,
+                        "end": 62.419,
+                        "score": 0.853
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 62.459,
+                        "end": 62.699,
+                        "score": 0.888
+                    },
+                    {
+                        "word": "Geld",
+                        "start": 62.719,
+                        "end": 62.859,
+                        "score": 0.861
+                    },
+                    {
+                        "word": "dafür",
+                        "start": 62.879,
+                        "end": 63.119,
+                        "score": 0.836
+                    },
+                    {
+                        "word": "bezahlen,",
+                        "start": 63.159,
+                        "end": 63.439,
+                        "score": 0.792
+                    },
+                    {
+                        "word": "um",
+                        "start": 63.459,
+                        "end": 63.559,
+                        "score": 0.326
+                    },
+                    {
+                        "word": "die",
+                        "start": 63.579,
+                        "end": 63.639,
+                        "score": 0.982
+                    },
+                    {
+                        "word": "rauszulöschen.",
+                        "start": 63.699,
+                        "end": 64.24,
+                        "score": 0.609
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 64.28,
+                "end": 66.8,
+                "text": "Deswegen, ich lasse die drin und die Leute wissen, wer wir sind.",
+                "words": [
+                    {
+                        "word": "Deswegen,",
+                        "start": 64.28,
+                        "end": 64.58,
+                        "score": 0.841
+                    },
+                    {
+                        "word": "ich",
+                        "start": 64.62,
+                        "end": 64.7,
+                        "score": 0.822
+                    },
+                    {
+                        "word": "lasse",
+                        "start": 64.74,
+                        "end": 64.9,
+                        "score": 0.947
+                    },
+                    {
+                        "word": "die",
+                        "start": 64.92,
+                        "end": 65.02,
+                        "score": 0.733
+                    },
+                    {
+                        "word": "drin",
+                        "start": 65.04,
+                        "end": 65.26,
+                        "score": 0.602
+                    },
+                    {
+                        "word": "und",
+                        "start": 65.28,
+                        "end": 65.44,
+                        "score": 0.929
+                    },
+                    {
+                        "word": "die",
+                        "start": 65.46,
+                        "end": 65.54,
+                        "score": 0.838
+                    },
+                    {
+                        "word": "Leute",
+                        "start": 65.56,
+                        "end": 65.84,
+                        "score": 0.963
+                    },
+                    {
+                        "word": "wissen,",
+                        "start": 65.86,
+                        "end": 66.2,
+                        "score": 0.703
+                    },
+                    {
+                        "word": "wer",
+                        "start": 66.22,
+                        "end": 66.36,
+                        "score": 0.554
+                    },
+                    {
+                        "word": "wir",
+                        "start": 66.38,
+                        "end": 66.56,
+                        "score": 0.659
+                    },
+                    {
+                        "word": "sind.",
+                        "start": 66.58,
+                        "end": 66.8,
+                        "score": 0.939
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 66.84,
+                "end": 68.7,
+                "text": "Und deswegen, das passt schon so.",
+                "words": [
+                    {
+                        "word": "Und",
+                        "start": 66.84,
+                        "end": 67.72,
+                        "score": 0.948
+                    },
+                    {
+                        "word": "deswegen,",
+                        "start": 67.76,
+                        "end": 68.12,
+                        "score": 0.887
+                    },
+                    {
+                        "word": "das",
+                        "start": 68.14,
+                        "end": 68.26,
+                        "score": 0.579
+                    },
+                    {
+                        "word": "passt",
+                        "start": 68.3,
+                        "end": 68.44,
+                        "score": 0.23
+                    },
+                    {
+                        "word": "schon",
+                        "start": 68.46,
+                        "end": 68.62,
+                        "score": 0.243
+                    },
+                    {
+                        "word": "so.",
+                        "start": 68.64,
+                        "end": 68.7,
+                        "score": 0.232
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 68.72,
+                "end": 69.04,
+                "text": "Vielen Dank.",
+                "words": [
+                    {
+                        "word": "Vielen",
+                        "start": 68.72,
+                        "end": 68.86,
+                        "score": 0.098
+                    },
+                    {
+                        "word": "Dank.",
+                        "start": 68.88,
+                        "end": 69.04,
+                        "score": 0.296
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 87.899,
+                "end": 87.959,
+                "text": " Ja.",
+                "words": [
+                    {
+                        "word": "Ja.",
+                        "start": 87.899,
+                        "end": 87.959,
+                        "score": 0.124
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 87.979,
+                "end": 88.039,
+                "text": "Mhm.",
+                "words": [
+                    {
+                        "word": "Mhm.",
+                        "start": 87.979,
+                        "end": 88.039,
+                        "score": 0.019
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 113.845,
+                "end": 120.313,
+                "text": " Ja, nee, aber ich danke trotzdem für Ihr Angebot, aber da sage ich Danken ab.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 113.845,
+                        "end": 114.226,
+                        "score": 0.938
+                    },
+                    {
+                        "word": "nee,",
+                        "start": 114.267,
+                        "end": 114.467,
+                        "score": 0.753
+                    },
+                    {
+                        "word": "aber",
+                        "start": 114.508,
+                        "end": 114.849,
+                        "score": 0.928
+                    },
+                    {
+                        "word": "ich",
+                        "start": 114.889,
+                        "end": 114.99,
+                        "score": 0.893
+                    },
+                    {
+                        "word": "danke",
+                        "start": 115.03,
+                        "end": 115.271,
+                        "score": 0.495
+                    },
+                    {
+                        "word": "trotzdem",
+                        "start": 115.291,
+                        "end": 115.532,
+                        "score": 0.518
+                    },
+                    {
+                        "word": "für",
+                        "start": 115.552,
+                        "end": 115.633,
+                        "score": 0.31
+                    },
+                    {
+                        "word": "Ihr",
+                        "start": 115.673,
+                        "end": 115.773,
+                        "score": 0.278
+                    },
+                    {
+                        "word": "Angebot,",
+                        "start": 115.793,
+                        "end": 116.175,
+                        "score": 0.94
+                    },
+                    {
+                        "word": "aber",
+                        "start": 116.215,
+                        "end": 116.396,
+                        "score": 0.884
+                    },
+                    {
+                        "word": "da",
+                        "start": 116.818,
+                        "end": 117.32,
+                        "score": 0.818
+                    },
+                    {
+                        "word": "sage",
+                        "start": 117.34,
+                        "end": 117.481,
+                        "score": 0.843
+                    },
+                    {
+                        "word": "ich",
+                        "start": 117.501,
+                        "end": 117.581,
+                        "score": 0.855
+                    },
+                    {
+                        "word": "Danken",
+                        "start": 117.621,
+                        "end": 117.862,
+                        "score": 0.778
+                    },
+                    {
+                        "word": "ab.",
+                        "start": 117.903,
+                        "end": 120.313,
+                        "score": 0.898
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 120.374,
+                "end": 121.559,
+                "text": "Super, Dankeschön.",
+                "words": [
+                    {
+                        "word": "Super,",
+                        "start": 120.374,
+                        "end": 120.795,
+                        "score": 0.713
+                    },
+                    {
+                        "word": "Dankeschön.",
+                        "start": 120.836,
+                        "end": 121.559,
+                        "score": 0.674
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 121.599,
+                "end": 121.961,
+                "text": "Ebenso.",
+                "words": [
+                    {
+                        "word": "Ebenso.",
+                        "start": 121.599,
+                        "end": 121.961,
+                        "score": 0.91
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 122.081,
+                "end": 122.623,
+                "text": "Ciao.",
+                "words": [
+                    {
+                        "word": "Ciao.",
+                        "start": 122.081,
+                        "end": 122.623,
+                        "score": 0.447
+                    }
+                ],
+                "speaker": "client"
+            }
+        ],
+        "text": "Tattoos ist das Hallo. Hallo. Genau. Genau.  Ne, da habe ich kein Interesse. Ich werde nämlich so oft schon angerufen, deswegen da bin ich, ja, ja, alles gut. Ja, ich weiß, aber das macht mir nichts aus.  Ja, aber das Problem ist, es wird immer wieder Leute geben, die wieder solche Bewertungen machen. Deswegen, ich werde jetzt halt auch nicht Geld dafür bezahlen, um die rauszulöschen. Deswegen, ich lasse die drin und die Leute wissen, wer wir sind. Und deswegen, das passt schon so. Vielen Dank.  Ja. Mhm.  Ja, nee, aber ich danke trotzdem für Ihr Angebot, aber da sage ich Danken ab. Super, Dankeschön. Ebenso. Ciao."
+    },
+    "transcript_local": {
+        "segments": [
+            {
+                "start": 3.555,
+                "end": 10.18,
+                "text": " Hallo, schönen guten Tag, Pascal Dieffenbach, mein Name von der Firma MyWebWonders, grüße Sie.",
+                "words": [
+                    {
+                        "word": "Hallo,",
+                        "start": 3.555,
+                        "end": 3.935,
+                        "score": 0.457
+                    },
+                    {
+                        "word": "schönen",
+                        "start": 3.995,
+                        "end": 4.316,
+                        "score": 0.432
+                    },
+                    {
+                        "word": "guten",
+                        "start": 4.356,
+                        "end": 4.576,
+                        "score": 0.782
+                    },
+                    {
+                        "word": "Tag,",
+                        "start": 4.596,
+                        "end": 4.936,
+                        "score": 0.831
+                    },
+                    {
+                        "word": "Pascal",
+                        "start": 4.976,
+                        "end": 5.356,
+                        "score": 0.74
+                    },
+                    {
+                        "word": "Dieffenbach,",
+                        "start": 5.376,
+                        "end": 5.897,
+                        "score": 0.647
+                    },
+                    {
+                        "word": "mein",
+                        "start": 5.917,
+                        "end": 6.097,
+                        "score": 0.825
+                    },
+                    {
+                        "word": "Name",
+                        "start": 6.137,
+                        "end": 6.377,
+                        "score": 0.947
+                    },
+                    {
+                        "word": "von",
+                        "start": 6.397,
+                        "end": 6.497,
+                        "score": 0.812
+                    },
+                    {
+                        "word": "der",
+                        "start": 6.537,
+                        "end": 6.637,
+                        "score": 0.559
+                    },
+                    {
+                        "word": "Firma",
+                        "start": 6.657,
+                        "end": 6.937,
+                        "score": 0.672
+                    },
+                    {
+                        "word": "MyWebWonders,",
+                        "start": 6.957,
+                        "end": 7.738,
+                        "score": 0.65
+                    },
+                    {
+                        "word": "grüße",
+                        "start": 7.778,
+                        "end": 8.118,
+                        "score": 0.965
+                    },
+                    {
+                        "word": "Sie.",
+                        "start": 8.158,
+                        "end": 10.18,
+                        "score": 0.983
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 10.22,
+                "end": 20.887,
+                "text": "Und zwar, ich sollte Sie nochmal anrufen, ab 18 Uhr wurde mir gesagt, hatte auch mit dem Senior gesprochen, sind Sie die Geschäftsführerin?",
+                "words": [
+                    {
+                        "word": "Und",
+                        "start": 10.22,
+                        "end": 10.38,
+                        "score": 0.942
+                    },
+                    {
+                        "word": "zwar,",
+                        "start": 10.42,
+                        "end": 10.58,
+                        "score": 0.802
+                    },
+                    {
+                        "word": "ich",
+                        "start": 10.64,
+                        "end": 10.76,
+                        "score": 0.504
+                    },
+                    {
+                        "word": "sollte",
+                        "start": 10.78,
+                        "end": 10.98,
+                        "score": 0.829
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 11.02,
+                        "end": 11.12,
+                        "score": 0.795
+                    },
+                    {
+                        "word": "nochmal",
+                        "start": 11.14,
+                        "end": 11.46,
+                        "score": 0.868
+                    },
+                    {
+                        "word": "anrufen,",
+                        "start": 11.5,
+                        "end": 12.061,
+                        "score": 0.782
+                    },
+                    {
+                        "word": "ab",
+                        "start": 12.101,
+                        "end": 12.261,
+                        "score": 0.917
+                    },
+                    {
+                        "word": "18"
+                    },
+                    {
+                        "word": "Uhr",
+                        "start": 12.321,
+                        "end": 13.082,
+                        "score": 0.555
+                    },
+                    {
+                        "word": "wurde",
+                        "start": 13.122,
+                        "end": 13.362,
+                        "score": 0.638
+                    },
+                    {
+                        "word": "mir",
+                        "start": 13.382,
+                        "end": 13.562,
+                        "score": 0.84
+                    },
+                    {
+                        "word": "gesagt,",
+                        "start": 13.602,
+                        "end": 14.783,
+                        "score": 0.911
+                    },
+                    {
+                        "word": "hatte",
+                        "start": 14.823,
+                        "end": 15.123,
+                        "score": 0.922
+                    },
+                    {
+                        "word": "auch",
+                        "start": 15.163,
+                        "end": 15.363,
+                        "score": 0.92
+                    },
+                    {
+                        "word": "mit",
+                        "start": 15.383,
+                        "end": 15.523,
+                        "score": 0.894
+                    },
+                    {
+                        "word": "dem",
+                        "start": 15.543,
+                        "end": 15.703,
+                        "score": 0.958
+                    },
+                    {
+                        "word": "Senior",
+                        "start": 15.783,
+                        "end": 16.224,
+                        "score": 0.81
+                    },
+                    {
+                        "word": "gesprochen,",
+                        "start": 16.264,
+                        "end": 16.644,
+                        "score": 0.853
+                    },
+                    {
+                        "word": "sind",
+                        "start": 17.424,
+                        "end": 17.605,
+                        "score": 0.975
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 17.645,
+                        "end": 18.185,
+                        "score": 0.881
+                    },
+                    {
+                        "word": "die",
+                        "start": 18.225,
+                        "end": 18.325,
+                        "score": 0.876
+                    },
+                    {
+                        "word": "Geschäftsführerin?",
+                        "start": 18.365,
+                        "end": 20.887,
+                        "score": 0.876
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 20.927,
+                "end": 22.308,
+                "text": "Perfekt, perfekt.",
+                "words": [
+                    {
+                        "word": "Perfekt,",
+                        "start": 20.927,
+                        "end": 21.467,
+                        "score": 0.787
+                    },
+                    {
+                        "word": "perfekt.",
+                        "start": 21.487,
+                        "end": 22.308,
+                        "score": 0.764
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 22.348,
+                "end": 28.592,
+                "text": "Ich weiß nicht, ob Ihr Vater Ihnen schon was gesagt hat, ich habe mit ihm die letzte Woche gesprochen gehabt, vor den Feiertagen.",
+                "words": [
+                    {
+                        "word": "Ich",
+                        "start": 22.348,
+                        "end": 22.448,
+                        "score": 0.912
+                    },
+                    {
+                        "word": "weiß",
+                        "start": 22.488,
+                        "end": 22.648,
+                        "score": 0.954
+                    },
+                    {
+                        "word": "nicht,",
+                        "start": 22.668,
+                        "end": 22.828,
+                        "score": 0.636
+                    },
+                    {
+                        "word": "ob",
+                        "start": 23.168,
+                        "end": 23.248,
+                        "score": 0.984
+                    },
+                    {
+                        "word": "Ihr",
+                        "start": 23.288,
+                        "end": 23.448,
+                        "score": 0.921
+                    },
+                    {
+                        "word": "Vater",
+                        "start": 23.488,
+                        "end": 23.769,
+                        "score": 0.925
+                    },
+                    {
+                        "word": "Ihnen",
+                        "start": 23.809,
+                        "end": 23.989,
+                        "score": 0.815
+                    },
+                    {
+                        "word": "schon",
+                        "start": 24.009,
+                        "end": 24.189,
+                        "score": 0.826
+                    },
+                    {
+                        "word": "was",
+                        "start": 24.289,
+                        "end": 24.469,
+                        "score": 0.759
+                    },
+                    {
+                        "word": "gesagt",
+                        "start": 24.509,
+                        "end": 24.789,
+                        "score": 0.803
+                    },
+                    {
+                        "word": "hat,",
+                        "start": 24.829,
+                        "end": 24.969,
+                        "score": 0.967
+                    },
+                    {
+                        "word": "ich",
+                        "start": 25.009,
+                        "end": 25.07,
+                        "score": 0.065
+                    },
+                    {
+                        "word": "habe",
+                        "start": 25.13,
+                        "end": 25.25,
+                        "score": 0.446
+                    },
+                    {
+                        "word": "mit",
+                        "start": 25.27,
+                        "end": 25.33,
+                        "score": 0.898
+                    },
+                    {
+                        "word": "ihm",
+                        "start": 25.37,
+                        "end": 25.57,
+                        "score": 0.401
+                    },
+                    {
+                        "word": "die",
+                        "start": 25.61,
+                        "end": 25.67,
+                        "score": 0.993
+                    },
+                    {
+                        "word": "letzte",
+                        "start": 25.71,
+                        "end": 25.95,
+                        "score": 0.779
+                    },
+                    {
+                        "word": "Woche",
+                        "start": 25.97,
+                        "end": 26.21,
+                        "score": 0.918
+                    },
+                    {
+                        "word": "gesprochen",
+                        "start": 26.25,
+                        "end": 26.731,
+                        "score": 0.812
+                    },
+                    {
+                        "word": "gehabt,",
+                        "start": 26.771,
+                        "end": 27.691,
+                        "score": 0.944
+                    },
+                    {
+                        "word": "vor",
+                        "start": 27.711,
+                        "end": 27.831,
+                        "score": 0.89
+                    },
+                    {
+                        "word": "den",
+                        "start": 27.851,
+                        "end": 28.032,
+                        "score": 0.939
+                    },
+                    {
+                        "word": "Feiertagen.",
+                        "start": 28.072,
+                        "end": 28.592,
+                        "score": 0.869
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 29.533,
+                "end": 34.016,
+                "text": " Und zwar ging es um die Löschung der negativen Bewertungen bei Ihrem Google-Account.",
+                "words": [
+                    {
+                        "word": "Und",
+                        "start": 29.533,
+                        "end": 29.653,
+                        "score": 0.982
+                    },
+                    {
+                        "word": "zwar",
+                        "start": 29.693,
+                        "end": 29.913,
+                        "score": 0.887
+                    },
+                    {
+                        "word": "ging",
+                        "start": 29.933,
+                        "end": 30.074,
+                        "score": 0.947
+                    },
+                    {
+                        "word": "es",
+                        "start": 30.114,
+                        "end": 30.234,
+                        "score": 0.972
+                    },
+                    {
+                        "word": "um",
+                        "start": 30.274,
+                        "end": 30.434,
+                        "score": 0.926
+                    },
+                    {
+                        "word": "die",
+                        "start": 30.454,
+                        "end": 30.534,
+                        "score": 0.907
+                    },
+                    {
+                        "word": "Löschung",
+                        "start": 30.574,
+                        "end": 30.914,
+                        "score": 0.884
+                    },
+                    {
+                        "word": "der",
+                        "start": 30.934,
+                        "end": 31.034,
+                        "score": 0.989
+                    },
+                    {
+                        "word": "negativen",
+                        "start": 31.074,
+                        "end": 31.595,
+                        "score": 0.927
+                    },
+                    {
+                        "word": "Bewertungen",
+                        "start": 31.635,
+                        "end": 32.115,
+                        "score": 0.857
+                    },
+                    {
+                        "word": "bei",
+                        "start": 32.135,
+                        "end": 32.275,
+                        "score": 0.987
+                    },
+                    {
+                        "word": "Ihrem",
+                        "start": 32.315,
+                        "end": 32.555,
+                        "score": 0.804
+                    },
+                    {
+                        "word": "Google-Account.",
+                        "start": 32.595,
+                        "end": 34.016,
+                        "score": 0.744
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 34.056,
+                "end": 46.286,
+                "text": "Da haben Sie 7 mal 1 bis 2 Sterne Bewertung.",
+                "words": [
+                    {
+                        "word": "Da",
+                        "start": 34.056,
+                        "end": 42.142,
+                        "score": 0.838
+                    },
+                    {
+                        "word": "haben",
+                        "start": 42.263,
+                        "end": 42.423,
+                        "score": 0.83
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 42.463,
+                        "end": 42.623,
+                        "score": 0.955
+                    },
+                    {
+                        "word": "7"
+                    },
+                    {
+                        "word": "mal",
+                        "start": 43.744,
+                        "end": 43.944,
+                        "score": 0.862
+                    },
+                    {
+                        "word": "1"
+                    },
+                    {
+                        "word": "bis",
+                        "start": 44.184,
+                        "end": 44.404,
+                        "score": 0.687
+                    },
+                    {
+                        "word": "2"
+                    },
+                    {
+                        "word": "Sterne",
+                        "start": 44.684,
+                        "end": 45.025,
+                        "score": 0.822
+                    },
+                    {
+                        "word": "Bewertung.",
+                        "start": 45.065,
+                        "end": 46.286,
+                        "score": 0.841
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 46.326,
+                "end": 52.43,
+                "text": "Und negative Bewertung ist halt schlecht für die Neukunden, das sage ich Ihnen ehrlich.",
+                "words": [
+                    {
+                        "word": "Und",
+                        "start": 46.326,
+                        "end": 46.546,
+                        "score": 0.883
+                    },
+                    {
+                        "word": "negative",
+                        "start": 46.566,
+                        "end": 47.046,
+                        "score": 0.931
+                    },
+                    {
+                        "word": "Bewertung",
+                        "start": 47.086,
+                        "end": 49.288,
+                        "score": 0.944
+                    },
+                    {
+                        "word": "ist",
+                        "start": 49.348,
+                        "end": 49.428,
+                        "score": 0.386
+                    },
+                    {
+                        "word": "halt",
+                        "start": 49.468,
+                        "end": 50.068,
+                        "score": 0.784
+                    },
+                    {
+                        "word": "schlecht",
+                        "start": 50.128,
+                        "end": 50.429,
+                        "score": 0.873
+                    },
+                    {
+                        "word": "für",
+                        "start": 50.469,
+                        "end": 50.569,
+                        "score": 0.891
+                    },
+                    {
+                        "word": "die",
+                        "start": 50.589,
+                        "end": 50.909,
+                        "score": 0.906
+                    },
+                    {
+                        "word": "Neukunden,",
+                        "start": 50.929,
+                        "end": 51.449,
+                        "score": 0.873
+                    },
+                    {
+                        "word": "das",
+                        "start": 51.469,
+                        "end": 51.61,
+                        "score": 0.851
+                    },
+                    {
+                        "word": "sage",
+                        "start": 51.63,
+                        "end": 51.83,
+                        "score": 0.814
+                    },
+                    {
+                        "word": "ich",
+                        "start": 51.85,
+                        "end": 51.95,
+                        "score": 0.585
+                    },
+                    {
+                        "word": "Ihnen",
+                        "start": 51.99,
+                        "end": 52.13,
+                        "score": 0.442
+                    },
+                    {
+                        "word": "ehrlich.",
+                        "start": 52.15,
+                        "end": 52.43,
+                        "score": 0.753
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 52.45,
+                "end": 54.832,
+                "text": "Weil Neukunden schauen sich immer die negativen Bewertungen an.",
+                "words": [
+                    {
+                        "word": "Weil",
+                        "start": 52.45,
+                        "end": 52.65,
+                        "score": 0.883
+                    },
+                    {
+                        "word": "Neukunden",
+                        "start": 52.67,
+                        "end": 53.031,
+                        "score": 0.857
+                    },
+                    {
+                        "word": "schauen",
+                        "start": 53.071,
+                        "end": 53.291,
+                        "score": 0.9
+                    },
+                    {
+                        "word": "sich",
+                        "start": 53.311,
+                        "end": 53.431,
+                        "score": 0.836
+                    },
+                    {
+                        "word": "immer",
+                        "start": 53.471,
+                        "end": 53.651,
+                        "score": 0.925
+                    },
+                    {
+                        "word": "die",
+                        "start": 53.691,
+                        "end": 53.771,
+                        "score": 0.876
+                    },
+                    {
+                        "word": "negativen",
+                        "start": 53.811,
+                        "end": 54.252,
+                        "score": 0.951
+                    },
+                    {
+                        "word": "Bewertungen",
+                        "start": 54.292,
+                        "end": 54.732,
+                        "score": 0.814
+                    },
+                    {
+                        "word": "an.",
+                        "start": 54.792,
+                        "end": 54.832,
+                        "score": 0.0
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 69.756,
+                "end": 71.397,
+                "text": " Was denken Sie denn, was das kostet?",
+                "words": [
+                    {
+                        "word": "Was",
+                        "start": 69.756,
+                        "end": 69.896,
+                        "score": 0.987
+                    },
+                    {
+                        "word": "denken",
+                        "start": 69.956,
+                        "end": 70.196,
+                        "score": 0.937
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 70.236,
+                        "end": 70.356,
+                        "score": 0.838
+                    },
+                    {
+                        "word": "denn,",
+                        "start": 70.376,
+                        "end": 70.576,
+                        "score": 0.67
+                    },
+                    {
+                        "word": "was",
+                        "start": 70.616,
+                        "end": 70.736,
+                        "score": 0.871
+                    },
+                    {
+                        "word": "das",
+                        "start": 70.756,
+                        "end": 70.957,
+                        "score": 0.899
+                    },
+                    {
+                        "word": "kostet?",
+                        "start": 70.977,
+                        "end": 71.397,
+                        "score": 0.865
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 71.437,
+                "end": 75.378,
+                "text": "Weil bei uns kostet das nur 29 Euro pro Stück.",
+                "words": [
+                    {
+                        "word": "Weil",
+                        "start": 71.437,
+                        "end": 71.897,
+                        "score": 0.835
+                    },
+                    {
+                        "word": "bei",
+                        "start": 71.937,
+                        "end": 72.097,
+                        "score": 0.979
+                    },
+                    {
+                        "word": "uns",
+                        "start": 72.137,
+                        "end": 72.317,
+                        "score": 0.982
+                    },
+                    {
+                        "word": "kostet",
+                        "start": 72.357,
+                        "end": 72.637,
+                        "score": 0.929
+                    },
+                    {
+                        "word": "das",
+                        "start": 72.657,
+                        "end": 72.877,
+                        "score": 0.795
+                    },
+                    {
+                        "word": "nur",
+                        "start": 72.917,
+                        "end": 73.077,
+                        "score": 0.749
+                    },
+                    {
+                        "word": "29"
+                    },
+                    {
+                        "word": "Euro",
+                        "start": 73.157,
+                        "end": 74.158,
+                        "score": 0.801
+                    },
+                    {
+                        "word": "pro",
+                        "start": 74.178,
+                        "end": 74.358,
+                        "score": 0.846
+                    },
+                    {
+                        "word": "Stück.",
+                        "start": 74.398,
+                        "end": 75.378,
+                        "score": 0.964
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 75.398,
+                "end": 76.919,
+                "text": "Wir nehmen auch keine Vorkasse.",
+                "words": [
+                    {
+                        "word": "Wir",
+                        "start": 75.398,
+                        "end": 75.538,
+                        "score": 0.835
+                    },
+                    {
+                        "word": "nehmen",
+                        "start": 75.579,
+                        "end": 75.779,
+                        "score": 0.867
+                    },
+                    {
+                        "word": "auch",
+                        "start": 75.799,
+                        "end": 76.039,
+                        "score": 0.813
+                    },
+                    {
+                        "word": "keine",
+                        "start": 76.059,
+                        "end": 76.339,
+                        "score": 0.858
+                    },
+                    {
+                        "word": "Vorkasse.",
+                        "start": 76.379,
+                        "end": 76.919,
+                        "score": 0.959
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 76.939,
+                "end": 82.461,
+                "text": "Das bedeutet, Sie bekommen eine Rechnung, erst nachdem die Bewertungen gelöscht sind, erfolgreich gelöscht sind.",
+                "words": [
+                    {
+                        "word": "Das",
+                        "start": 76.939,
+                        "end": 77.099,
+                        "score": 0.916
+                    },
+                    {
+                        "word": "bedeutet,",
+                        "start": 77.139,
+                        "end": 77.479,
+                        "score": 0.926
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 77.499,
+                        "end": 77.599,
+                        "score": 0.742
+                    },
+                    {
+                        "word": "bekommen",
+                        "start": 77.639,
+                        "end": 77.98,
+                        "score": 0.856
+                    },
+                    {
+                        "word": "eine",
+                        "start": 78.0,
+                        "end": 78.18,
+                        "score": 0.771
+                    },
+                    {
+                        "word": "Rechnung,",
+                        "start": 78.24,
+                        "end": 78.56,
+                        "score": 0.78
+                    },
+                    {
+                        "word": "erst",
+                        "start": 78.6,
+                        "end": 78.82,
+                        "score": 0.941
+                    },
+                    {
+                        "word": "nachdem",
+                        "start": 78.86,
+                        "end": 79.24,
+                        "score": 0.867
+                    },
+                    {
+                        "word": "die",
+                        "start": 79.26,
+                        "end": 79.34,
+                        "score": 0.978
+                    },
+                    {
+                        "word": "Bewertungen",
+                        "start": 79.38,
+                        "end": 79.82,
+                        "score": 0.819
+                    },
+                    {
+                        "word": "gelöscht",
+                        "start": 79.84,
+                        "end": 80.22,
+                        "score": 0.482
+                    },
+                    {
+                        "word": "sind,",
+                        "start": 80.26,
+                        "end": 80.521,
+                        "score": 0.633
+                    },
+                    {
+                        "word": "erfolgreich",
+                        "start": 80.561,
+                        "end": 81.101,
+                        "score": 0.88
+                    },
+                    {
+                        "word": "gelöscht",
+                        "start": 81.121,
+                        "end": 81.481,
+                        "score": 0.813
+                    },
+                    {
+                        "word": "sind.",
+                        "start": 81.521,
+                        "end": 82.461,
+                        "score": 0.908
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 82.581,
+                "end": 92.446,
+                "text": "Und zum Beispiel sehe ich gerade, Sie haben auch Ein-Sterne-Bewertungen vom Jahre 2019 und 2020, also was auch schon 5, 6 Jahre her ist.",
+                "words": [
+                    {
+                        "word": "Und",
+                        "start": 82.581,
+                        "end": 83.382,
+                        "score": 0.965
+                    },
+                    {
+                        "word": "zum",
+                        "start": 83.422,
+                        "end": 83.602,
+                        "score": 0.882
+                    },
+                    {
+                        "word": "Beispiel",
+                        "start": 83.622,
+                        "end": 84.082,
+                        "score": 0.929
+                    },
+                    {
+                        "word": "sehe",
+                        "start": 84.122,
+                        "end": 84.242,
+                        "score": 0.84
+                    },
+                    {
+                        "word": "ich",
+                        "start": 84.282,
+                        "end": 84.422,
+                        "score": 0.918
+                    },
+                    {
+                        "word": "gerade,",
+                        "start": 84.462,
+                        "end": 84.822,
+                        "score": 0.919
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 84.842,
+                        "end": 84.962,
+                        "score": 0.875
+                    },
+                    {
+                        "word": "haben",
+                        "start": 85.002,
+                        "end": 85.483,
+                        "score": 0.956
+                    },
+                    {
+                        "word": "auch",
+                        "start": 85.523,
+                        "end": 86.003,
+                        "score": 0.896
+                    },
+                    {
+                        "word": "Ein-Sterne-Bewertungen",
+                        "start": 86.043,
+                        "end": 87.243,
+                        "score": 0.844
+                    },
+                    {
+                        "word": "vom",
+                        "start": 87.263,
+                        "end": 87.503,
+                        "score": 0.956
+                    },
+                    {
+                        "word": "Jahre",
+                        "start": 87.543,
+                        "end": 87.944,
+                        "score": 0.945
+                    },
+                    {
+                        "word": "2019"
+                    },
+                    {
+                        "word": "und",
+                        "start": 88.324,
+                        "end": 89.144,
+                        "score": 0.552
+                    },
+                    {
+                        "word": "2020,"
+                    },
+                    {
+                        "word": "also",
+                        "start": 89.764,
+                        "end": 89.944,
+                        "score": 0.8
+                    },
+                    {
+                        "word": "was",
+                        "start": 90.005,
+                        "end": 90.145,
+                        "score": 0.756
+                    },
+                    {
+                        "word": "auch",
+                        "start": 90.165,
+                        "end": 90.305,
+                        "score": 0.808
+                    },
+                    {
+                        "word": "schon",
+                        "start": 90.325,
+                        "end": 90.585,
+                        "score": 0.864
+                    },
+                    {
+                        "word": "5,"
+                    },
+                    {
+                        "word": "6"
+                    },
+                    {
+                        "word": "Jahre",
+                        "start": 91.065,
+                        "end": 91.325,
+                        "score": 0.883
+                    },
+                    {
+                        "word": "her",
+                        "start": 91.365,
+                        "end": 91.605,
+                        "score": 0.784
+                    },
+                    {
+                        "word": "ist.",
+                        "start": 91.645,
+                        "end": 92.446,
+                        "score": 0.945
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 92.486,
+                "end": 93.186,
+                "text": "Das bedeutet...",
+                "words": [
+                    {
+                        "word": "Das",
+                        "start": 92.486,
+                        "end": 92.706,
+                        "score": 0.848
+                    },
+                    {
+                        "word": "bedeutet...",
+                        "start": 92.726,
+                        "end": 93.186,
+                        "score": 0.909
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 94.315,
+                "end": 98.317,
+                "text": " Sie bekommen sowieso nicht so viele negative Bewertungen.",
+                "words": [
+                    {
+                        "word": "Sie",
+                        "start": 94.315,
+                        "end": 94.415,
+                        "score": 0.867
+                    },
+                    {
+                        "word": "bekommen",
+                        "start": 94.455,
+                        "end": 94.855,
+                        "score": 0.864
+                    },
+                    {
+                        "word": "sowieso",
+                        "start": 94.895,
+                        "end": 95.356,
+                        "score": 0.823
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 95.396,
+                        "end": 95.616,
+                        "score": 0.881
+                    },
+                    {
+                        "word": "so",
+                        "start": 95.656,
+                        "end": 95.836,
+                        "score": 0.94
+                    },
+                    {
+                        "word": "viele",
+                        "start": 95.876,
+                        "end": 96.796,
+                        "score": 0.814
+                    },
+                    {
+                        "word": "negative",
+                        "start": 96.836,
+                        "end": 97.356,
+                        "score": 0.941
+                    },
+                    {
+                        "word": "Bewertungen.",
+                        "start": 97.396,
+                        "end": 98.317,
+                        "score": 0.833
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 98.337,
+                "end": 110.422,
+                "text": "Wenn wir jetzt sieben Stück oder sagen wir mal drei, vier Stück löschen, damit auch Ihr Durchschnitt etwas höher steigt, bedeutet das ja, dass Sie nicht direkt sofort negative Bewertungen reinbekommen.",
+                "words": [
+                    {
+                        "word": "Wenn",
+                        "start": 98.337,
+                        "end": 98.497,
+                        "score": 0.964
+                    },
+                    {
+                        "word": "wir",
+                        "start": 98.537,
+                        "end": 98.737,
+                        "score": 0.982
+                    },
+                    {
+                        "word": "jetzt",
+                        "start": 98.757,
+                        "end": 99.177,
+                        "score": 0.925
+                    },
+                    {
+                        "word": "sieben",
+                        "start": 99.197,
+                        "end": 99.457,
+                        "score": 0.924
+                    },
+                    {
+                        "word": "Stück",
+                        "start": 99.497,
+                        "end": 99.777,
+                        "score": 0.884
+                    },
+                    {
+                        "word": "oder",
+                        "start": 99.797,
+                        "end": 100.578,
+                        "score": 0.975
+                    },
+                    {
+                        "word": "sagen",
+                        "start": 100.598,
+                        "end": 100.798,
+                        "score": 0.895
+                    },
+                    {
+                        "word": "wir",
+                        "start": 100.838,
+                        "end": 100.938,
+                        "score": 0.813
+                    },
+                    {
+                        "word": "mal",
+                        "start": 101.018,
+                        "end": 101.298,
+                        "score": 0.811
+                    },
+                    {
+                        "word": "drei,",
+                        "start": 101.338,
+                        "end": 101.518,
+                        "score": 0.991
+                    },
+                    {
+                        "word": "vier",
+                        "start": 101.558,
+                        "end": 101.758,
+                        "score": 0.84
+                    },
+                    {
+                        "word": "Stück",
+                        "start": 101.798,
+                        "end": 102.459,
+                        "score": 0.892
+                    },
+                    {
+                        "word": "löschen,",
+                        "start": 102.519,
+                        "end": 102.899,
+                        "score": 0.879
+                    },
+                    {
+                        "word": "damit",
+                        "start": 102.919,
+                        "end": 103.159,
+                        "score": 0.921
+                    },
+                    {
+                        "word": "auch",
+                        "start": 103.199,
+                        "end": 103.339,
+                        "score": 0.87
+                    },
+                    {
+                        "word": "Ihr",
+                        "start": 103.379,
+                        "end": 103.559,
+                        "score": 0.719
+                    },
+                    {
+                        "word": "Durchschnitt",
+                        "start": 103.579,
+                        "end": 104.219,
+                        "score": 0.858
+                    },
+                    {
+                        "word": "etwas",
+                        "start": 104.259,
+                        "end": 104.58,
+                        "score": 0.993
+                    },
+                    {
+                        "word": "höher",
+                        "start": 104.62,
+                        "end": 104.82,
+                        "score": 0.522
+                    },
+                    {
+                        "word": "steigt,",
+                        "start": 104.88,
+                        "end": 105.68,
+                        "score": 0.989
+                    },
+                    {
+                        "word": "bedeutet",
+                        "start": 105.7,
+                        "end": 106.1,
+                        "score": 0.968
+                    },
+                    {
+                        "word": "das",
+                        "start": 106.14,
+                        "end": 106.74,
+                        "score": 0.904
+                    },
+                    {
+                        "word": "ja,",
+                        "start": 106.76,
+                        "end": 107.001,
+                        "score": 0.91
+                    },
+                    {
+                        "word": "dass",
+                        "start": 107.041,
+                        "end": 107.181,
+                        "score": 0.883
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 107.201,
+                        "end": 107.361,
+                        "score": 0.924
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 107.381,
+                        "end": 107.581,
+                        "score": 0.884
+                    },
+                    {
+                        "word": "direkt",
+                        "start": 107.601,
+                        "end": 108.061,
+                        "score": 0.94
+                    },
+                    {
+                        "word": "sofort",
+                        "start": 108.101,
+                        "end": 108.821,
+                        "score": 0.981
+                    },
+                    {
+                        "word": "negative",
+                        "start": 108.861,
+                        "end": 109.322,
+                        "score": 0.976
+                    },
+                    {
+                        "word": "Bewertungen",
+                        "start": 109.362,
+                        "end": 109.762,
+                        "score": 0.861
+                    },
+                    {
+                        "word": "reinbekommen.",
+                        "start": 109.842,
+                        "end": 110.422,
+                        "score": 0.929
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 118.586,
+                "end": 120.006,
+                "text": "Alles klar, okay, kein Problem.",
+                "words": [
+                    {
+                        "word": "Alles",
+                        "start": 118.586,
+                        "end": 118.866,
+                        "score": 0.764
+                    },
+                    {
+                        "word": "klar,",
+                        "start": 118.906,
+                        "end": 119.046,
+                        "score": 0.414
+                    },
+                    {
+                        "word": "okay,",
+                        "start": 119.086,
+                        "end": 119.386,
+                        "score": 0.369
+                    },
+                    {
+                        "word": "kein",
+                        "start": 119.406,
+                        "end": 119.586,
+                        "score": 0.906
+                    },
+                    {
+                        "word": "Problem.",
+                        "start": 119.626,
+                        "end": 120.006,
+                        "score": 0.846
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 120.026,
+                "end": 120.987,
+                "text": "Schönen Tag wünsche ich noch.",
+                "words": [
+                    {
+                        "word": "Schönen",
+                        "start": 120.026,
+                        "end": 120.246,
+                        "score": 0.703
+                    },
+                    {
+                        "word": "Tag",
+                        "start": 120.266,
+                        "end": 120.466,
+                        "score": 0.922
+                    },
+                    {
+                        "word": "wünsche",
+                        "start": 120.486,
+                        "end": 120.666,
+                        "score": 0.633
+                    },
+                    {
+                        "word": "ich",
+                        "start": 120.686,
+                        "end": 120.806,
+                        "score": 0.621
+                    },
+                    {
+                        "word": "noch.",
+                        "start": 120.827,
+                        "end": 120.987,
+                        "score": 0.408
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 121.047,
+                "end": 121.547,
+                "text": "Auf Wiedersehen.",
+                "words": [
+                    {
+                        "word": "Auf",
+                        "start": 121.047,
+                        "end": 121.127,
+                        "score": 0.143
+                    },
+                    {
+                        "word": "Wiedersehen.",
+                        "start": 121.147,
+                        "end": 121.547,
+                        "score": 0.252
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 121.567,
+                "end": 121.827,
+                "text": "Tschüss.",
+                "words": [
+                    {
+                        "word": "Tschüss.",
+                        "start": 121.567,
+                        "end": 121.827,
+                        "score": 0.347
+                    }
+                ],
+                "speaker": "agent"
+            }
+        ],
+        "text": "Hallo, schönen guten Tag, Pascal Dieffenbach, mein Name von der Firma MyWebWonders, grüße Sie. Und zwar, ich sollte Sie nochmal anrufen, ab 18 Uhr wurde mir gesagt, hatte auch mit dem Senior gesprochen, sind Sie die Geschäftsführerin? Perfekt, perfekt. Ich weiß nicht, ob Ihr Vater Ihnen schon was gesagt hat, ich habe mit ihm die letzte Woche gesprochen gehabt, vor den Feiertagen.  Und zwar ging es um die Löschung der negativen Bewertungen bei Ihrem Google-Account. Da haben Sie 7 mal 1 bis 2 Sterne Bewertung. Und negative Bewertung ist halt schlecht für die Neukunden, das sage ich Ihnen ehrlich. Weil Neukunden schauen sich immer die negativen Bewertungen an.  Was denken Sie denn, was das kostet? Weil bei uns kostet das nur 29 Euro pro Stück. Wir nehmen auch keine Vorkasse. Das bedeutet, Sie bekommen eine Rechnung, erst nachdem die Bewertungen gelöscht sind, erfolgreich gelöscht sind. Und zum Beispiel sehe ich gerade, Sie haben auch Ein-Sterne-Bewertungen vom Jahre 2019 und 2020, also was auch schon 5, 6 Jahre her ist. Das bedeutet...  Sie bekommen sowieso nicht so viele negative Bewertungen. Wenn wir jetzt sieben Stück oder sagen wir mal drei, vier Stück löschen, damit auch Ihr Durchschnitt etwas höher steigt, bedeutet das ja, dass Sie nicht direkt sofort negative Bewertungen reinbekommen. Alles klar, okay, kein Problem. Schönen Tag wünsche ich noch. Auf Wiedersehen. Tschüss."
+    },
+    "transcript_combined": {
+        "segments": [
+            {
+                "start": 1.72,
+                "end": 6.561,
+                "text": " Tattoos ist das Hallo.",
+                "words": [
+                    {
+                        "word": "Tattoos",
+                        "start": 1.72,
+                        "end": 2.0,
+                        "score": 0.284
+                    },
+                    {
+                        "word": "ist",
+                        "start": 2.02,
+                        "end": 2.1,
+                        "score": 0.221
+                    },
+                    {
+                        "word": "das",
+                        "start": 2.12,
+                        "end": 2.28,
+                        "score": 0.497
+                    },
+                    {
+                        "word": "Hallo.",
+                        "start": 2.3,
+                        "end": 6.561,
+                        "score": 0.448
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 3.555,
+                "end": 10.18,
+                "text": " Hallo, schönen guten Tag, Pascal Dieffenbach, mein Name von der Firma MyWebWonders, grüße Sie.",
+                "words": [
+                    {
+                        "word": "Hallo,",
+                        "start": 3.555,
+                        "end": 3.935,
+                        "score": 0.457
+                    },
+                    {
+                        "word": "schönen",
+                        "start": 3.995,
+                        "end": 4.316,
+                        "score": 0.432
+                    },
+                    {
+                        "word": "guten",
+                        "start": 4.356,
+                        "end": 4.576,
+                        "score": 0.782
+                    },
+                    {
+                        "word": "Tag,",
+                        "start": 4.596,
+                        "end": 4.936,
+                        "score": 0.831
+                    },
+                    {
+                        "word": "Pascal",
+                        "start": 4.976,
+                        "end": 5.356,
+                        "score": 0.74
+                    },
+                    {
+                        "word": "Dieffenbach,",
+                        "start": 5.376,
+                        "end": 5.897,
+                        "score": 0.647
+                    },
+                    {
+                        "word": "mein",
+                        "start": 5.917,
+                        "end": 6.097,
+                        "score": 0.825
+                    },
+                    {
+                        "word": "Name",
+                        "start": 6.137,
+                        "end": 6.377,
+                        "score": 0.947
+                    },
+                    {
+                        "word": "von",
+                        "start": 6.397,
+                        "end": 6.497,
+                        "score": 0.812
+                    },
+                    {
+                        "word": "der",
+                        "start": 6.537,
+                        "end": 6.637,
+                        "score": 0.559
+                    },
+                    {
+                        "word": "Firma",
+                        "start": 6.657,
+                        "end": 6.937,
+                        "score": 0.672
+                    },
+                    {
+                        "word": "MyWebWonders,",
+                        "start": 6.957,
+                        "end": 7.738,
+                        "score": 0.65
+                    },
+                    {
+                        "word": "grüße",
+                        "start": 7.778,
+                        "end": 8.118,
+                        "score": 0.965
+                    },
+                    {
+                        "word": "Sie.",
+                        "start": 8.158,
+                        "end": 10.18,
+                        "score": 0.983
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 6.761,
+                "end": 9.241,
+                "text": "Hallo.",
+                "words": [
+                    {
+                        "word": "Hallo.",
+                        "start": 6.761,
+                        "end": 9.241,
+                        "score": 0.391
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 9.281,
+                "end": 20.043,
+                "text": "Genau.",
+                "words": [
+                    {
+                        "word": "Genau.",
+                        "start": 9.281,
+                        "end": 20.043,
+                        "score": 0.567
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 10.22,
+                "end": 20.887,
+                "text": "Und zwar, ich sollte Sie nochmal anrufen, ab 18 Uhr wurde mir gesagt, hatte auch mit dem Senior gesprochen, sind Sie die Geschäftsführerin?",
+                "words": [
+                    {
+                        "word": "Und",
+                        "start": 10.22,
+                        "end": 10.38,
+                        "score": 0.942
+                    },
+                    {
+                        "word": "zwar,",
+                        "start": 10.42,
+                        "end": 10.58,
+                        "score": 0.802
+                    },
+                    {
+                        "word": "ich",
+                        "start": 10.64,
+                        "end": 10.76,
+                        "score": 0.504
+                    },
+                    {
+                        "word": "sollte",
+                        "start": 10.78,
+                        "end": 10.98,
+                        "score": 0.829
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 11.02,
+                        "end": 11.12,
+                        "score": 0.795
+                    },
+                    {
+                        "word": "nochmal",
+                        "start": 11.14,
+                        "end": 11.46,
+                        "score": 0.868
+                    },
+                    {
+                        "word": "anrufen,",
+                        "start": 11.5,
+                        "end": 12.061,
+                        "score": 0.782
+                    },
+                    {
+                        "word": "ab",
+                        "start": 12.101,
+                        "end": 12.261,
+                        "score": 0.917
+                    },
+                    {
+                        "word": "18"
+                    },
+                    {
+                        "word": "Uhr",
+                        "start": 12.321,
+                        "end": 13.082,
+                        "score": 0.555
+                    },
+                    {
+                        "word": "wurde",
+                        "start": 13.122,
+                        "end": 13.362,
+                        "score": 0.638
+                    },
+                    {
+                        "word": "mir",
+                        "start": 13.382,
+                        "end": 13.562,
+                        "score": 0.84
+                    },
+                    {
+                        "word": "gesagt,",
+                        "start": 13.602,
+                        "end": 14.783,
+                        "score": 0.911
+                    },
+                    {
+                        "word": "hatte",
+                        "start": 14.823,
+                        "end": 15.123,
+                        "score": 0.922
+                    },
+                    {
+                        "word": "auch",
+                        "start": 15.163,
+                        "end": 15.363,
+                        "score": 0.92
+                    },
+                    {
+                        "word": "mit",
+                        "start": 15.383,
+                        "end": 15.523,
+                        "score": 0.894
+                    },
+                    {
+                        "word": "dem",
+                        "start": 15.543,
+                        "end": 15.703,
+                        "score": 0.958
+                    },
+                    {
+                        "word": "Senior",
+                        "start": 15.783,
+                        "end": 16.224,
+                        "score": 0.81
+                    },
+                    {
+                        "word": "gesprochen,",
+                        "start": 16.264,
+                        "end": 16.644,
+                        "score": 0.853
+                    },
+                    {
+                        "word": "sind",
+                        "start": 17.424,
+                        "end": 17.605,
+                        "score": 0.975
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 17.645,
+                        "end": 18.185,
+                        "score": 0.881
+                    },
+                    {
+                        "word": "die",
+                        "start": 18.225,
+                        "end": 18.325,
+                        "score": 0.876
+                    },
+                    {
+                        "word": "Geschäftsführerin?",
+                        "start": 18.365,
+                        "end": 20.887,
+                        "score": 0.876
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 20.103,
+                "end": 20.464,
+                "text": "Genau.",
+                "words": [
+                    {
+                        "word": "Genau.",
+                        "start": 20.103,
+                        "end": 20.464,
+                        "score": 0.717
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 20.927,
+                "end": 22.308,
+                "text": "Perfekt, perfekt.",
+                "words": [
+                    {
+                        "word": "Perfekt,",
+                        "start": 20.927,
+                        "end": 21.467,
+                        "score": 0.787
+                    },
+                    {
+                        "word": "perfekt.",
+                        "start": 21.487,
+                        "end": 22.308,
+                        "score": 0.764
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 22.348,
+                "end": 28.592,
+                "text": "Ich weiß nicht, ob Ihr Vater Ihnen schon was gesagt hat, ich habe mit ihm die letzte Woche gesprochen gehabt, vor den Feiertagen.",
+                "words": [
+                    {
+                        "word": "Ich",
+                        "start": 22.348,
+                        "end": 22.448,
+                        "score": 0.912
+                    },
+                    {
+                        "word": "weiß",
+                        "start": 22.488,
+                        "end": 22.648,
+                        "score": 0.954
+                    },
+                    {
+                        "word": "nicht,",
+                        "start": 22.668,
+                        "end": 22.828,
+                        "score": 0.636
+                    },
+                    {
+                        "word": "ob",
+                        "start": 23.168,
+                        "end": 23.248,
+                        "score": 0.984
+                    },
+                    {
+                        "word": "Ihr",
+                        "start": 23.288,
+                        "end": 23.448,
+                        "score": 0.921
+                    },
+                    {
+                        "word": "Vater",
+                        "start": 23.488,
+                        "end": 23.769,
+                        "score": 0.925
+                    },
+                    {
+                        "word": "Ihnen",
+                        "start": 23.809,
+                        "end": 23.989,
+                        "score": 0.815
+                    },
+                    {
+                        "word": "schon",
+                        "start": 24.009,
+                        "end": 24.189,
+                        "score": 0.826
+                    },
+                    {
+                        "word": "was",
+                        "start": 24.289,
+                        "end": 24.469,
+                        "score": 0.759
+                    },
+                    {
+                        "word": "gesagt",
+                        "start": 24.509,
+                        "end": 24.789,
+                        "score": 0.803
+                    },
+                    {
+                        "word": "hat,",
+                        "start": 24.829,
+                        "end": 24.969,
+                        "score": 0.967
+                    },
+                    {
+                        "word": "ich",
+                        "start": 25.009,
+                        "end": 25.07,
+                        "score": 0.065
+                    },
+                    {
+                        "word": "habe",
+                        "start": 25.13,
+                        "end": 25.25,
+                        "score": 0.446
+                    },
+                    {
+                        "word": "mit",
+                        "start": 25.27,
+                        "end": 25.33,
+                        "score": 0.898
+                    },
+                    {
+                        "word": "ihm",
+                        "start": 25.37,
+                        "end": 25.57,
+                        "score": 0.401
+                    },
+                    {
+                        "word": "die",
+                        "start": 25.61,
+                        "end": 25.67,
+                        "score": 0.993
+                    },
+                    {
+                        "word": "letzte",
+                        "start": 25.71,
+                        "end": 25.95,
+                        "score": 0.779
+                    },
+                    {
+                        "word": "Woche",
+                        "start": 25.97,
+                        "end": 26.21,
+                        "score": 0.918
+                    },
+                    {
+                        "word": "gesprochen",
+                        "start": 26.25,
+                        "end": 26.731,
+                        "score": 0.812
+                    },
+                    {
+                        "word": "gehabt,",
+                        "start": 26.771,
+                        "end": 27.691,
+                        "score": 0.944
+                    },
+                    {
+                        "word": "vor",
+                        "start": 27.711,
+                        "end": 27.831,
+                        "score": 0.89
+                    },
+                    {
+                        "word": "den",
+                        "start": 27.851,
+                        "end": 28.032,
+                        "score": 0.939
+                    },
+                    {
+                        "word": "Feiertagen.",
+                        "start": 28.072,
+                        "end": 28.592,
+                        "score": 0.869
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 29.533,
+                "end": 34.016,
+                "text": " Und zwar ging es um die Löschung der negativen Bewertungen bei Ihrem Google-Account.",
+                "words": [
+                    {
+                        "word": "Und",
+                        "start": 29.533,
+                        "end": 29.653,
+                        "score": 0.982
+                    },
+                    {
+                        "word": "zwar",
+                        "start": 29.693,
+                        "end": 29.913,
+                        "score": 0.887
+                    },
+                    {
+                        "word": "ging",
+                        "start": 29.933,
+                        "end": 30.074,
+                        "score": 0.947
+                    },
+                    {
+                        "word": "es",
+                        "start": 30.114,
+                        "end": 30.234,
+                        "score": 0.972
+                    },
+                    {
+                        "word": "um",
+                        "start": 30.274,
+                        "end": 30.434,
+                        "score": 0.926
+                    },
+                    {
+                        "word": "die",
+                        "start": 30.454,
+                        "end": 30.534,
+                        "score": 0.907
+                    },
+                    {
+                        "word": "Löschung",
+                        "start": 30.574,
+                        "end": 30.914,
+                        "score": 0.884
+                    },
+                    {
+                        "word": "der",
+                        "start": 30.934,
+                        "end": 31.034,
+                        "score": 0.989
+                    },
+                    {
+                        "word": "negativen",
+                        "start": 31.074,
+                        "end": 31.595,
+                        "score": 0.927
+                    },
+                    {
+                        "word": "Bewertungen",
+                        "start": 31.635,
+                        "end": 32.115,
+                        "score": 0.857
+                    },
+                    {
+                        "word": "bei",
+                        "start": 32.135,
+                        "end": 32.275,
+                        "score": 0.987
+                    },
+                    {
+                        "word": "Ihrem",
+                        "start": 32.315,
+                        "end": 32.555,
+                        "score": 0.804
+                    },
+                    {
+                        "word": "Google-Account.",
+                        "start": 32.595,
+                        "end": 34.016,
+                        "score": 0.744
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 34.056,
+                "end": 46.286,
+                "text": "Da haben Sie 7 mal 1 bis 2 Sterne Bewertung.",
+                "words": [
+                    {
+                        "word": "Da",
+                        "start": 34.056,
+                        "end": 42.142,
+                        "score": 0.838
+                    },
+                    {
+                        "word": "haben",
+                        "start": 42.263,
+                        "end": 42.423,
+                        "score": 0.83
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 42.463,
+                        "end": 42.623,
+                        "score": 0.955
+                    },
+                    {
+                        "word": "7"
+                    },
+                    {
+                        "word": "mal",
+                        "start": 43.744,
+                        "end": 43.944,
+                        "score": 0.862
+                    },
+                    {
+                        "word": "1"
+                    },
+                    {
+                        "word": "bis",
+                        "start": 44.184,
+                        "end": 44.404,
+                        "score": 0.687
+                    },
+                    {
+                        "word": "2"
+                    },
+                    {
+                        "word": "Sterne",
+                        "start": 44.684,
+                        "end": 45.025,
+                        "score": 0.822
+                    },
+                    {
+                        "word": "Bewertung.",
+                        "start": 45.065,
+                        "end": 46.286,
+                        "score": 0.841
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 34.724,
+                "end": 36.705,
+                "text": " Ne, da habe ich kein Interesse.",
+                "words": [
+                    {
+                        "word": "Ne,",
+                        "start": 34.724,
+                        "end": 34.844,
+                        "score": 0.653
+                    },
+                    {
+                        "word": "da",
+                        "start": 34.884,
+                        "end": 35.044,
+                        "score": 0.758
+                    },
+                    {
+                        "word": "habe",
+                        "start": 35.124,
+                        "end": 35.505,
+                        "score": 0.697
+                    },
+                    {
+                        "word": "ich",
+                        "start": 35.545,
+                        "end": 35.845,
+                        "score": 0.738
+                    },
+                    {
+                        "word": "kein",
+                        "start": 35.865,
+                        "end": 36.025,
+                        "score": 0.905
+                    },
+                    {
+                        "word": "Interesse.",
+                        "start": 36.065,
+                        "end": 36.705,
+                        "score": 0.944
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 36.745,
+                "end": 46.589,
+                "text": "Ich werde nämlich so oft schon angerufen, deswegen da bin ich, ja, ja, alles gut.",
+                "words": [
+                    {
+                        "word": "Ich",
+                        "start": 36.745,
+                        "end": 36.825,
+                        "score": 0.841
+                    },
+                    {
+                        "word": "werde",
+                        "start": 36.865,
+                        "end": 37.025,
+                        "score": 0.861
+                    },
+                    {
+                        "word": "nämlich",
+                        "start": 37.045,
+                        "end": 37.285,
+                        "score": 0.865
+                    },
+                    {
+                        "word": "so",
+                        "start": 37.305,
+                        "end": 37.405,
+                        "score": 0.887
+                    },
+                    {
+                        "word": "oft",
+                        "start": 37.445,
+                        "end": 37.565,
+                        "score": 0.449
+                    },
+                    {
+                        "word": "schon",
+                        "start": 37.585,
+                        "end": 37.786,
+                        "score": 0.85
+                    },
+                    {
+                        "word": "angerufen,",
+                        "start": 37.806,
+                        "end": 38.226,
+                        "score": 0.896
+                    },
+                    {
+                        "word": "deswegen",
+                        "start": 38.266,
+                        "end": 39.386,
+                        "score": 0.775
+                    },
+                    {
+                        "word": "da",
+                        "start": 39.426,
+                        "end": 39.866,
+                        "score": 0.822
+                    },
+                    {
+                        "word": "bin",
+                        "start": 39.906,
+                        "end": 40.027,
+                        "score": 0.714
+                    },
+                    {
+                        "word": "ich,",
+                        "start": 40.067,
+                        "end": 40.447,
+                        "score": 0.803
+                    },
+                    {
+                        "word": "ja,",
+                        "start": 40.567,
+                        "end": 40.687,
+                        "score": 0.566
+                    },
+                    {
+                        "word": "ja,",
+                        "start": 40.707,
+                        "end": 40.807,
+                        "score": 0.548
+                    },
+                    {
+                        "word": "alles",
+                        "start": 40.847,
+                        "end": 41.107,
+                        "score": 0.683
+                    },
+                    {
+                        "word": "gut.",
+                        "start": 41.147,
+                        "end": 46.589,
+                        "score": 0.761
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 46.326,
+                "end": 52.43,
+                "text": "Und negative Bewertung ist halt schlecht für die Neukunden, das sage ich Ihnen ehrlich.",
+                "words": [
+                    {
+                        "word": "Und",
+                        "start": 46.326,
+                        "end": 46.546,
+                        "score": 0.883
+                    },
+                    {
+                        "word": "negative",
+                        "start": 46.566,
+                        "end": 47.046,
+                        "score": 0.931
+                    },
+                    {
+                        "word": "Bewertung",
+                        "start": 47.086,
+                        "end": 49.288,
+                        "score": 0.944
+                    },
+                    {
+                        "word": "ist",
+                        "start": 49.348,
+                        "end": 49.428,
+                        "score": 0.386
+                    },
+                    {
+                        "word": "halt",
+                        "start": 49.468,
+                        "end": 50.068,
+                        "score": 0.784
+                    },
+                    {
+                        "word": "schlecht",
+                        "start": 50.128,
+                        "end": 50.429,
+                        "score": 0.873
+                    },
+                    {
+                        "word": "für",
+                        "start": 50.469,
+                        "end": 50.569,
+                        "score": 0.891
+                    },
+                    {
+                        "word": "die",
+                        "start": 50.589,
+                        "end": 50.909,
+                        "score": 0.906
+                    },
+                    {
+                        "word": "Neukunden,",
+                        "start": 50.929,
+                        "end": 51.449,
+                        "score": 0.873
+                    },
+                    {
+                        "word": "das",
+                        "start": 51.469,
+                        "end": 51.61,
+                        "score": 0.851
+                    },
+                    {
+                        "word": "sage",
+                        "start": 51.63,
+                        "end": 51.83,
+                        "score": 0.814
+                    },
+                    {
+                        "word": "ich",
+                        "start": 51.85,
+                        "end": 51.95,
+                        "score": 0.585
+                    },
+                    {
+                        "word": "Ihnen",
+                        "start": 51.99,
+                        "end": 52.13,
+                        "score": 0.442
+                    },
+                    {
+                        "word": "ehrlich.",
+                        "start": 52.15,
+                        "end": 52.43,
+                        "score": 0.753
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 46.649,
+                "end": 48.25,
+                "text": "Ja, ich weiß, aber das macht mir nichts aus.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 46.649,
+                        "end": 46.85,
+                        "score": 0.732
+                    },
+                    {
+                        "word": "ich",
+                        "start": 46.91,
+                        "end": 46.99,
+                        "score": 0.976
+                    },
+                    {
+                        "word": "weiß,",
+                        "start": 47.03,
+                        "end": 47.21,
+                        "score": 0.977
+                    },
+                    {
+                        "word": "aber",
+                        "start": 47.25,
+                        "end": 47.41,
+                        "score": 0.747
+                    },
+                    {
+                        "word": "das",
+                        "start": 47.43,
+                        "end": 47.55,
+                        "score": 0.79
+                    },
+                    {
+                        "word": "macht",
+                        "start": 47.57,
+                        "end": 47.73,
+                        "score": 0.768
+                    },
+                    {
+                        "word": "mir",
+                        "start": 47.75,
+                        "end": 47.83,
+                        "score": 0.428
+                    },
+                    {
+                        "word": "nichts",
+                        "start": 47.85,
+                        "end": 48.11,
+                        "score": 0.486
+                    },
+                    {
+                        "word": "aus.",
+                        "start": 48.15,
+                        "end": 48.25,
+                        "score": 0.757
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 52.45,
+                "end": 54.832,
+                "text": "Weil Neukunden schauen sich immer die negativen Bewertungen an.",
+                "words": [
+                    {
+                        "word": "Weil",
+                        "start": 52.45,
+                        "end": 52.65,
+                        "score": 0.883
+                    },
+                    {
+                        "word": "Neukunden",
+                        "start": 52.67,
+                        "end": 53.031,
+                        "score": 0.857
+                    },
+                    {
+                        "word": "schauen",
+                        "start": 53.071,
+                        "end": 53.291,
+                        "score": 0.9
+                    },
+                    {
+                        "word": "sich",
+                        "start": 53.311,
+                        "end": 53.431,
+                        "score": 0.836
+                    },
+                    {
+                        "word": "immer",
+                        "start": 53.471,
+                        "end": 53.651,
+                        "score": 0.925
+                    },
+                    {
+                        "word": "die",
+                        "start": 53.691,
+                        "end": 53.771,
+                        "score": 0.876
+                    },
+                    {
+                        "word": "negativen",
+                        "start": 53.811,
+                        "end": 54.252,
+                        "score": 0.951
+                    },
+                    {
+                        "word": "Bewertungen",
+                        "start": 54.292,
+                        "end": 54.732,
+                        "score": 0.814
+                    },
+                    {
+                        "word": "an.",
+                        "start": 54.792,
+                        "end": 54.832,
+                        "score": 0.0
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 55.878,
+                "end": 60.639,
+                "text": " Ja, aber das Problem ist, es wird immer wieder Leute geben, die wieder solche Bewertungen machen.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 55.878,
+                        "end": 56.018,
+                        "score": 0.896
+                    },
+                    {
+                        "word": "aber",
+                        "start": 56.058,
+                        "end": 56.178,
+                        "score": 0.885
+                    },
+                    {
+                        "word": "das",
+                        "start": 56.198,
+                        "end": 56.278,
+                        "score": 0.506
+                    },
+                    {
+                        "word": "Problem",
+                        "start": 56.318,
+                        "end": 56.558,
+                        "score": 0.677
+                    },
+                    {
+                        "word": "ist,",
+                        "start": 56.598,
+                        "end": 56.678,
+                        "score": 0.917
+                    },
+                    {
+                        "word": "es",
+                        "start": 56.718,
+                        "end": 56.798,
+                        "score": 0.632
+                    },
+                    {
+                        "word": "wird",
+                        "start": 56.818,
+                        "end": 56.938,
+                        "score": 0.759
+                    },
+                    {
+                        "word": "immer",
+                        "start": 56.958,
+                        "end": 58.098,
+                        "score": 0.831
+                    },
+                    {
+                        "word": "wieder",
+                        "start": 58.138,
+                        "end": 58.318,
+                        "score": 0.803
+                    },
+                    {
+                        "word": "Leute",
+                        "start": 58.358,
+                        "end": 58.619,
+                        "score": 0.949
+                    },
+                    {
+                        "word": "geben,",
+                        "start": 58.639,
+                        "end": 58.839,
+                        "score": 0.933
+                    },
+                    {
+                        "word": "die",
+                        "start": 58.859,
+                        "end": 58.939,
+                        "score": 0.811
+                    },
+                    {
+                        "word": "wieder",
+                        "start": 58.959,
+                        "end": 59.599,
+                        "score": 0.76
+                    },
+                    {
+                        "word": "solche",
+                        "start": 59.619,
+                        "end": 59.899,
+                        "score": 0.926
+                    },
+                    {
+                        "word": "Bewertungen",
+                        "start": 59.939,
+                        "end": 60.399,
+                        "score": 0.799
+                    },
+                    {
+                        "word": "machen.",
+                        "start": 60.439,
+                        "end": 60.639,
+                        "score": 0.733
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 60.659,
+                "end": 64.24,
+                "text": "Deswegen, ich werde jetzt halt auch nicht Geld dafür bezahlen, um die rauszulöschen.",
+                "words": [
+                    {
+                        "word": "Deswegen,",
+                        "start": 60.659,
+                        "end": 61.339,
+                        "score": 0.827
+                    },
+                    {
+                        "word": "ich",
+                        "start": 61.379,
+                        "end": 61.459,
+                        "score": 0.839
+                    },
+                    {
+                        "word": "werde",
+                        "start": 61.499,
+                        "end": 61.659,
+                        "score": 0.583
+                    },
+                    {
+                        "word": "jetzt",
+                        "start": 61.679,
+                        "end": 61.799,
+                        "score": 0.07
+                    },
+                    {
+                        "word": "halt",
+                        "start": 61.819,
+                        "end": 61.919,
+                        "score": 0.241
+                    },
+                    {
+                        "word": "auch",
+                        "start": 61.939,
+                        "end": 62.419,
+                        "score": 0.853
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 62.459,
+                        "end": 62.699,
+                        "score": 0.888
+                    },
+                    {
+                        "word": "Geld",
+                        "start": 62.719,
+                        "end": 62.859,
+                        "score": 0.861
+                    },
+                    {
+                        "word": "dafür",
+                        "start": 62.879,
+                        "end": 63.119,
+                        "score": 0.836
+                    },
+                    {
+                        "word": "bezahlen,",
+                        "start": 63.159,
+                        "end": 63.439,
+                        "score": 0.792
+                    },
+                    {
+                        "word": "um",
+                        "start": 63.459,
+                        "end": 63.559,
+                        "score": 0.326
+                    },
+                    {
+                        "word": "die",
+                        "start": 63.579,
+                        "end": 63.639,
+                        "score": 0.982
+                    },
+                    {
+                        "word": "rauszulöschen.",
+                        "start": 63.699,
+                        "end": 64.24,
+                        "score": 0.609
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 64.28,
+                "end": 66.8,
+                "text": "Deswegen, ich lasse die drin und die Leute wissen, wer wir sind.",
+                "words": [
+                    {
+                        "word": "Deswegen,",
+                        "start": 64.28,
+                        "end": 64.58,
+                        "score": 0.841
+                    },
+                    {
+                        "word": "ich",
+                        "start": 64.62,
+                        "end": 64.7,
+                        "score": 0.822
+                    },
+                    {
+                        "word": "lasse",
+                        "start": 64.74,
+                        "end": 64.9,
+                        "score": 0.947
+                    },
+                    {
+                        "word": "die",
+                        "start": 64.92,
+                        "end": 65.02,
+                        "score": 0.733
+                    },
+                    {
+                        "word": "drin",
+                        "start": 65.04,
+                        "end": 65.26,
+                        "score": 0.602
+                    },
+                    {
+                        "word": "und",
+                        "start": 65.28,
+                        "end": 65.44,
+                        "score": 0.929
+                    },
+                    {
+                        "word": "die",
+                        "start": 65.46,
+                        "end": 65.54,
+                        "score": 0.838
+                    },
+                    {
+                        "word": "Leute",
+                        "start": 65.56,
+                        "end": 65.84,
+                        "score": 0.963
+                    },
+                    {
+                        "word": "wissen,",
+                        "start": 65.86,
+                        "end": 66.2,
+                        "score": 0.703
+                    },
+                    {
+                        "word": "wer",
+                        "start": 66.22,
+                        "end": 66.36,
+                        "score": 0.554
+                    },
+                    {
+                        "word": "wir",
+                        "start": 66.38,
+                        "end": 66.56,
+                        "score": 0.659
+                    },
+                    {
+                        "word": "sind.",
+                        "start": 66.58,
+                        "end": 66.8,
+                        "score": 0.939
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 66.84,
+                "end": 68.7,
+                "text": "Und deswegen, das passt schon so.",
+                "words": [
+                    {
+                        "word": "Und",
+                        "start": 66.84,
+                        "end": 67.72,
+                        "score": 0.948
+                    },
+                    {
+                        "word": "deswegen,",
+                        "start": 67.76,
+                        "end": 68.12,
+                        "score": 0.887
+                    },
+                    {
+                        "word": "das",
+                        "start": 68.14,
+                        "end": 68.26,
+                        "score": 0.579
+                    },
+                    {
+                        "word": "passt",
+                        "start": 68.3,
+                        "end": 68.44,
+                        "score": 0.23
+                    },
+                    {
+                        "word": "schon",
+                        "start": 68.46,
+                        "end": 68.62,
+                        "score": 0.243
+                    },
+                    {
+                        "word": "so.",
+                        "start": 68.64,
+                        "end": 68.7,
+                        "score": 0.232
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 68.72,
+                "end": 69.04,
+                "text": "Vielen Dank.",
+                "words": [
+                    {
+                        "word": "Vielen",
+                        "start": 68.72,
+                        "end": 68.86,
+                        "score": 0.098
+                    },
+                    {
+                        "word": "Dank.",
+                        "start": 68.88,
+                        "end": 69.04,
+                        "score": 0.296
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 69.756,
+                "end": 71.397,
+                "text": " Was denken Sie denn, was das kostet?",
+                "words": [
+                    {
+                        "word": "Was",
+                        "start": 69.756,
+                        "end": 69.896,
+                        "score": 0.987
+                    },
+                    {
+                        "word": "denken",
+                        "start": 69.956,
+                        "end": 70.196,
+                        "score": 0.937
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 70.236,
+                        "end": 70.356,
+                        "score": 0.838
+                    },
+                    {
+                        "word": "denn,",
+                        "start": 70.376,
+                        "end": 70.576,
+                        "score": 0.67
+                    },
+                    {
+                        "word": "was",
+                        "start": 70.616,
+                        "end": 70.736,
+                        "score": 0.871
+                    },
+                    {
+                        "word": "das",
+                        "start": 70.756,
+                        "end": 70.957,
+                        "score": 0.899
+                    },
+                    {
+                        "word": "kostet?",
+                        "start": 70.977,
+                        "end": 71.397,
+                        "score": 0.865
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 71.437,
+                "end": 75.378,
+                "text": "Weil bei uns kostet das nur 29 Euro pro Stück.",
+                "words": [
+                    {
+                        "word": "Weil",
+                        "start": 71.437,
+                        "end": 71.897,
+                        "score": 0.835
+                    },
+                    {
+                        "word": "bei",
+                        "start": 71.937,
+                        "end": 72.097,
+                        "score": 0.979
+                    },
+                    {
+                        "word": "uns",
+                        "start": 72.137,
+                        "end": 72.317,
+                        "score": 0.982
+                    },
+                    {
+                        "word": "kostet",
+                        "start": 72.357,
+                        "end": 72.637,
+                        "score": 0.929
+                    },
+                    {
+                        "word": "das",
+                        "start": 72.657,
+                        "end": 72.877,
+                        "score": 0.795
+                    },
+                    {
+                        "word": "nur",
+                        "start": 72.917,
+                        "end": 73.077,
+                        "score": 0.749
+                    },
+                    {
+                        "word": "29"
+                    },
+                    {
+                        "word": "Euro",
+                        "start": 73.157,
+                        "end": 74.158,
+                        "score": 0.801
+                    },
+                    {
+                        "word": "pro",
+                        "start": 74.178,
+                        "end": 74.358,
+                        "score": 0.846
+                    },
+                    {
+                        "word": "Stück.",
+                        "start": 74.398,
+                        "end": 75.378,
+                        "score": 0.964
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 75.398,
+                "end": 76.919,
+                "text": "Wir nehmen auch keine Vorkasse.",
+                "words": [
+                    {
+                        "word": "Wir",
+                        "start": 75.398,
+                        "end": 75.538,
+                        "score": 0.835
+                    },
+                    {
+                        "word": "nehmen",
+                        "start": 75.579,
+                        "end": 75.779,
+                        "score": 0.867
+                    },
+                    {
+                        "word": "auch",
+                        "start": 75.799,
+                        "end": 76.039,
+                        "score": 0.813
+                    },
+                    {
+                        "word": "keine",
+                        "start": 76.059,
+                        "end": 76.339,
+                        "score": 0.858
+                    },
+                    {
+                        "word": "Vorkasse.",
+                        "start": 76.379,
+                        "end": 76.919,
+                        "score": 0.959
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 76.939,
+                "end": 82.461,
+                "text": "Das bedeutet, Sie bekommen eine Rechnung, erst nachdem die Bewertungen gelöscht sind, erfolgreich gelöscht sind.",
+                "words": [
+                    {
+                        "word": "Das",
+                        "start": 76.939,
+                        "end": 77.099,
+                        "score": 0.916
+                    },
+                    {
+                        "word": "bedeutet,",
+                        "start": 77.139,
+                        "end": 77.479,
+                        "score": 0.926
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 77.499,
+                        "end": 77.599,
+                        "score": 0.742
+                    },
+                    {
+                        "word": "bekommen",
+                        "start": 77.639,
+                        "end": 77.98,
+                        "score": 0.856
+                    },
+                    {
+                        "word": "eine",
+                        "start": 78.0,
+                        "end": 78.18,
+                        "score": 0.771
+                    },
+                    {
+                        "word": "Rechnung,",
+                        "start": 78.24,
+                        "end": 78.56,
+                        "score": 0.78
+                    },
+                    {
+                        "word": "erst",
+                        "start": 78.6,
+                        "end": 78.82,
+                        "score": 0.941
+                    },
+                    {
+                        "word": "nachdem",
+                        "start": 78.86,
+                        "end": 79.24,
+                        "score": 0.867
+                    },
+                    {
+                        "word": "die",
+                        "start": 79.26,
+                        "end": 79.34,
+                        "score": 0.978
+                    },
+                    {
+                        "word": "Bewertungen",
+                        "start": 79.38,
+                        "end": 79.82,
+                        "score": 0.819
+                    },
+                    {
+                        "word": "gelöscht",
+                        "start": 79.84,
+                        "end": 80.22,
+                        "score": 0.482
+                    },
+                    {
+                        "word": "sind,",
+                        "start": 80.26,
+                        "end": 80.521,
+                        "score": 0.633
+                    },
+                    {
+                        "word": "erfolgreich",
+                        "start": 80.561,
+                        "end": 81.101,
+                        "score": 0.88
+                    },
+                    {
+                        "word": "gelöscht",
+                        "start": 81.121,
+                        "end": 81.481,
+                        "score": 0.813
+                    },
+                    {
+                        "word": "sind.",
+                        "start": 81.521,
+                        "end": 82.461,
+                        "score": 0.908
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 82.581,
+                "end": 92.446,
+                "text": "Und zum Beispiel sehe ich gerade, Sie haben auch Ein-Sterne-Bewertungen vom Jahre 2019 und 2020, also was auch schon 5, 6 Jahre her ist.",
+                "words": [
+                    {
+                        "word": "Und",
+                        "start": 82.581,
+                        "end": 83.382,
+                        "score": 0.965
+                    },
+                    {
+                        "word": "zum",
+                        "start": 83.422,
+                        "end": 83.602,
+                        "score": 0.882
+                    },
+                    {
+                        "word": "Beispiel",
+                        "start": 83.622,
+                        "end": 84.082,
+                        "score": 0.929
+                    },
+                    {
+                        "word": "sehe",
+                        "start": 84.122,
+                        "end": 84.242,
+                        "score": 0.84
+                    },
+                    {
+                        "word": "ich",
+                        "start": 84.282,
+                        "end": 84.422,
+                        "score": 0.918
+                    },
+                    {
+                        "word": "gerade,",
+                        "start": 84.462,
+                        "end": 84.822,
+                        "score": 0.919
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 84.842,
+                        "end": 84.962,
+                        "score": 0.875
+                    },
+                    {
+                        "word": "haben",
+                        "start": 85.002,
+                        "end": 85.483,
+                        "score": 0.956
+                    },
+                    {
+                        "word": "auch",
+                        "start": 85.523,
+                        "end": 86.003,
+                        "score": 0.896
+                    },
+                    {
+                        "word": "Ein-Sterne-Bewertungen",
+                        "start": 86.043,
+                        "end": 87.243,
+                        "score": 0.844
+                    },
+                    {
+                        "word": "vom",
+                        "start": 87.263,
+                        "end": 87.503,
+                        "score": 0.956
+                    },
+                    {
+                        "word": "Jahre",
+                        "start": 87.543,
+                        "end": 87.944,
+                        "score": 0.945
+                    },
+                    {
+                        "word": "2019"
+                    },
+                    {
+                        "word": "und",
+                        "start": 88.324,
+                        "end": 89.144,
+                        "score": 0.552
+                    },
+                    {
+                        "word": "2020,"
+                    },
+                    {
+                        "word": "also",
+                        "start": 89.764,
+                        "end": 89.944,
+                        "score": 0.8
+                    },
+                    {
+                        "word": "was",
+                        "start": 90.005,
+                        "end": 90.145,
+                        "score": 0.756
+                    },
+                    {
+                        "word": "auch",
+                        "start": 90.165,
+                        "end": 90.305,
+                        "score": 0.808
+                    },
+                    {
+                        "word": "schon",
+                        "start": 90.325,
+                        "end": 90.585,
+                        "score": 0.864
+                    },
+                    {
+                        "word": "5,"
+                    },
+                    {
+                        "word": "6"
+                    },
+                    {
+                        "word": "Jahre",
+                        "start": 91.065,
+                        "end": 91.325,
+                        "score": 0.883
+                    },
+                    {
+                        "word": "her",
+                        "start": 91.365,
+                        "end": 91.605,
+                        "score": 0.784
+                    },
+                    {
+                        "word": "ist.",
+                        "start": 91.645,
+                        "end": 92.446,
+                        "score": 0.945
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 87.899,
+                "end": 87.959,
+                "text": " Ja.",
+                "words": [
+                    {
+                        "word": "Ja.",
+                        "start": 87.899,
+                        "end": 87.959,
+                        "score": 0.124
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 87.979,
+                "end": 88.039,
+                "text": "Mhm.",
+                "words": [
+                    {
+                        "word": "Mhm.",
+                        "start": 87.979,
+                        "end": 88.039,
+                        "score": 0.019
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 92.486,
+                "end": 93.186,
+                "text": "Das bedeutet...",
+                "words": [
+                    {
+                        "word": "Das",
+                        "start": 92.486,
+                        "end": 92.706,
+                        "score": 0.848
+                    },
+                    {
+                        "word": "bedeutet...",
+                        "start": 92.726,
+                        "end": 93.186,
+                        "score": 0.909
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 94.315,
+                "end": 98.317,
+                "text": " Sie bekommen sowieso nicht so viele negative Bewertungen.",
+                "words": [
+                    {
+                        "word": "Sie",
+                        "start": 94.315,
+                        "end": 94.415,
+                        "score": 0.867
+                    },
+                    {
+                        "word": "bekommen",
+                        "start": 94.455,
+                        "end": 94.855,
+                        "score": 0.864
+                    },
+                    {
+                        "word": "sowieso",
+                        "start": 94.895,
+                        "end": 95.356,
+                        "score": 0.823
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 95.396,
+                        "end": 95.616,
+                        "score": 0.881
+                    },
+                    {
+                        "word": "so",
+                        "start": 95.656,
+                        "end": 95.836,
+                        "score": 0.94
+                    },
+                    {
+                        "word": "viele",
+                        "start": 95.876,
+                        "end": 96.796,
+                        "score": 0.814
+                    },
+                    {
+                        "word": "negative",
+                        "start": 96.836,
+                        "end": 97.356,
+                        "score": 0.941
+                    },
+                    {
+                        "word": "Bewertungen.",
+                        "start": 97.396,
+                        "end": 98.317,
+                        "score": 0.833
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 98.337,
+                "end": 110.422,
+                "text": "Wenn wir jetzt sieben Stück oder sagen wir mal drei, vier Stück löschen, damit auch Ihr Durchschnitt etwas höher steigt, bedeutet das ja, dass Sie nicht direkt sofort negative Bewertungen reinbekommen.",
+                "words": [
+                    {
+                        "word": "Wenn",
+                        "start": 98.337,
+                        "end": 98.497,
+                        "score": 0.964
+                    },
+                    {
+                        "word": "wir",
+                        "start": 98.537,
+                        "end": 98.737,
+                        "score": 0.982
+                    },
+                    {
+                        "word": "jetzt",
+                        "start": 98.757,
+                        "end": 99.177,
+                        "score": 0.925
+                    },
+                    {
+                        "word": "sieben",
+                        "start": 99.197,
+                        "end": 99.457,
+                        "score": 0.924
+                    },
+                    {
+                        "word": "Stück",
+                        "start": 99.497,
+                        "end": 99.777,
+                        "score": 0.884
+                    },
+                    {
+                        "word": "oder",
+                        "start": 99.797,
+                        "end": 100.578,
+                        "score": 0.975
+                    },
+                    {
+                        "word": "sagen",
+                        "start": 100.598,
+                        "end": 100.798,
+                        "score": 0.895
+                    },
+                    {
+                        "word": "wir",
+                        "start": 100.838,
+                        "end": 100.938,
+                        "score": 0.813
+                    },
+                    {
+                        "word": "mal",
+                        "start": 101.018,
+                        "end": 101.298,
+                        "score": 0.811
+                    },
+                    {
+                        "word": "drei,",
+                        "start": 101.338,
+                        "end": 101.518,
+                        "score": 0.991
+                    },
+                    {
+                        "word": "vier",
+                        "start": 101.558,
+                        "end": 101.758,
+                        "score": 0.84
+                    },
+                    {
+                        "word": "Stück",
+                        "start": 101.798,
+                        "end": 102.459,
+                        "score": 0.892
+                    },
+                    {
+                        "word": "löschen,",
+                        "start": 102.519,
+                        "end": 102.899,
+                        "score": 0.879
+                    },
+                    {
+                        "word": "damit",
+                        "start": 102.919,
+                        "end": 103.159,
+                        "score": 0.921
+                    },
+                    {
+                        "word": "auch",
+                        "start": 103.199,
+                        "end": 103.339,
+                        "score": 0.87
+                    },
+                    {
+                        "word": "Ihr",
+                        "start": 103.379,
+                        "end": 103.559,
+                        "score": 0.719
+                    },
+                    {
+                        "word": "Durchschnitt",
+                        "start": 103.579,
+                        "end": 104.219,
+                        "score": 0.858
+                    },
+                    {
+                        "word": "etwas",
+                        "start": 104.259,
+                        "end": 104.58,
+                        "score": 0.993
+                    },
+                    {
+                        "word": "höher",
+                        "start": 104.62,
+                        "end": 104.82,
+                        "score": 0.522
+                    },
+                    {
+                        "word": "steigt,",
+                        "start": 104.88,
+                        "end": 105.68,
+                        "score": 0.989
+                    },
+                    {
+                        "word": "bedeutet",
+                        "start": 105.7,
+                        "end": 106.1,
+                        "score": 0.968
+                    },
+                    {
+                        "word": "das",
+                        "start": 106.14,
+                        "end": 106.74,
+                        "score": 0.904
+                    },
+                    {
+                        "word": "ja,",
+                        "start": 106.76,
+                        "end": 107.001,
+                        "score": 0.91
+                    },
+                    {
+                        "word": "dass",
+                        "start": 107.041,
+                        "end": 107.181,
+                        "score": 0.883
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 107.201,
+                        "end": 107.361,
+                        "score": 0.924
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 107.381,
+                        "end": 107.581,
+                        "score": 0.884
+                    },
+                    {
+                        "word": "direkt",
+                        "start": 107.601,
+                        "end": 108.061,
+                        "score": 0.94
+                    },
+                    {
+                        "word": "sofort",
+                        "start": 108.101,
+                        "end": 108.821,
+                        "score": 0.981
+                    },
+                    {
+                        "word": "negative",
+                        "start": 108.861,
+                        "end": 109.322,
+                        "score": 0.976
+                    },
+                    {
+                        "word": "Bewertungen",
+                        "start": 109.362,
+                        "end": 109.762,
+                        "score": 0.861
+                    },
+                    {
+                        "word": "reinbekommen.",
+                        "start": 109.842,
+                        "end": 110.422,
+                        "score": 0.929
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 113.845,
+                "end": 120.313,
+                "text": " Ja, nee, aber ich danke trotzdem für Ihr Angebot, aber da sage ich Danken ab.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 113.845,
+                        "end": 114.226,
+                        "score": 0.938
+                    },
+                    {
+                        "word": "nee,",
+                        "start": 114.267,
+                        "end": 114.467,
+                        "score": 0.753
+                    },
+                    {
+                        "word": "aber",
+                        "start": 114.508,
+                        "end": 114.849,
+                        "score": 0.928
+                    },
+                    {
+                        "word": "ich",
+                        "start": 114.889,
+                        "end": 114.99,
+                        "score": 0.893
+                    },
+                    {
+                        "word": "danke",
+                        "start": 115.03,
+                        "end": 115.271,
+                        "score": 0.495
+                    },
+                    {
+                        "word": "trotzdem",
+                        "start": 115.291,
+                        "end": 115.532,
+                        "score": 0.518
+                    },
+                    {
+                        "word": "für",
+                        "start": 115.552,
+                        "end": 115.633,
+                        "score": 0.31
+                    },
+                    {
+                        "word": "Ihr",
+                        "start": 115.673,
+                        "end": 115.773,
+                        "score": 0.278
+                    },
+                    {
+                        "word": "Angebot,",
+                        "start": 115.793,
+                        "end": 116.175,
+                        "score": 0.94
+                    },
+                    {
+                        "word": "aber",
+                        "start": 116.215,
+                        "end": 116.396,
+                        "score": 0.884
+                    },
+                    {
+                        "word": "da",
+                        "start": 116.818,
+                        "end": 117.32,
+                        "score": 0.818
+                    },
+                    {
+                        "word": "sage",
+                        "start": 117.34,
+                        "end": 117.481,
+                        "score": 0.843
+                    },
+                    {
+                        "word": "ich",
+                        "start": 117.501,
+                        "end": 117.581,
+                        "score": 0.855
+                    },
+                    {
+                        "word": "Danken",
+                        "start": 117.621,
+                        "end": 117.862,
+                        "score": 0.778
+                    },
+                    {
+                        "word": "ab.",
+                        "start": 117.903,
+                        "end": 120.313,
+                        "score": 0.898
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 118.586,
+                "end": 120.006,
+                "text": "Alles klar, okay, kein Problem.",
+                "words": [
+                    {
+                        "word": "Alles",
+                        "start": 118.586,
+                        "end": 118.866,
+                        "score": 0.764
+                    },
+                    {
+                        "word": "klar,",
+                        "start": 118.906,
+                        "end": 119.046,
+                        "score": 0.414
+                    },
+                    {
+                        "word": "okay,",
+                        "start": 119.086,
+                        "end": 119.386,
+                        "score": 0.369
+                    },
+                    {
+                        "word": "kein",
+                        "start": 119.406,
+                        "end": 119.586,
+                        "score": 0.906
+                    },
+                    {
+                        "word": "Problem.",
+                        "start": 119.626,
+                        "end": 120.006,
+                        "score": 0.846
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 120.026,
+                "end": 120.987,
+                "text": "Schönen Tag wünsche ich noch.",
+                "words": [
+                    {
+                        "word": "Schönen",
+                        "start": 120.026,
+                        "end": 120.246,
+                        "score": 0.703
+                    },
+                    {
+                        "word": "Tag",
+                        "start": 120.266,
+                        "end": 120.466,
+                        "score": 0.922
+                    },
+                    {
+                        "word": "wünsche",
+                        "start": 120.486,
+                        "end": 120.666,
+                        "score": 0.633
+                    },
+                    {
+                        "word": "ich",
+                        "start": 120.686,
+                        "end": 120.806,
+                        "score": 0.621
+                    },
+                    {
+                        "word": "noch.",
+                        "start": 120.827,
+                        "end": 120.987,
+                        "score": 0.408
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 120.374,
+                "end": 121.559,
+                "text": "Super, Dankeschön.",
+                "words": [
+                    {
+                        "word": "Super,",
+                        "start": 120.374,
+                        "end": 120.795,
+                        "score": 0.713
+                    },
+                    {
+                        "word": "Dankeschön.",
+                        "start": 120.836,
+                        "end": 121.559,
+                        "score": 0.674
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 121.047,
+                "end": 121.547,
+                "text": "Auf Wiedersehen.",
+                "words": [
+                    {
+                        "word": "Auf",
+                        "start": 121.047,
+                        "end": 121.127,
+                        "score": 0.143
+                    },
+                    {
+                        "word": "Wiedersehen.",
+                        "start": 121.147,
+                        "end": 121.547,
+                        "score": 0.252
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 121.567,
+                "end": 121.827,
+                "text": "Tschüss.",
+                "words": [
+                    {
+                        "word": "Tschüss.",
+                        "start": 121.567,
+                        "end": 121.827,
+                        "score": 0.347
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 121.599,
+                "end": 121.961,
+                "text": "Ebenso.",
+                "words": [
+                    {
+                        "word": "Ebenso.",
+                        "start": 121.599,
+                        "end": 121.961,
+                        "score": 0.91
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 122.081,
+                "end": 122.623,
+                "text": "Ciao.",
+                "words": [
+                    {
+                        "word": "Ciao.",
+                        "start": 122.081,
+                        "end": 122.623,
+                        "score": 0.447
+                    }
+                ],
+                "speaker": "client"
+            }
+        ],
+        "text": " Tattoos ist das Hallo.  Hallo, schönen guten Tag, Pascal Dieffenbach, mein Name von der Firma MyWebWonders, grüße Sie. Hallo. Genau. Und zwar, ich sollte Sie nochmal anrufen, ab 18 Uhr wurde mir gesagt, hatte auch mit dem Senior gesprochen, sind Sie die Geschäftsführerin? Genau. Perfekt, perfekt. Ich weiß nicht, ob Ihr Vater Ihnen schon was gesagt hat, ich habe mit ihm die letzte Woche gesprochen gehabt, vor den Feiertagen.  Und zwar ging es um die Löschung der negativen Bewertungen bei Ihrem Google-Account. Da haben Sie 7 mal 1 bis 2 Sterne Bewertung.  Ne, da habe ich kein Interesse. Ich werde nämlich so oft schon angerufen, deswegen da bin ich, ja, ja, alles gut. Und negative Bewertung ist halt schlecht für die Neukunden, das sage ich Ihnen ehrlich. Ja, ich weiß, aber das macht mir nichts aus. Weil Neukunden schauen sich immer die negativen Bewertungen an.  Ja, aber das Problem ist, es wird immer wieder Leute geben, die wieder solche Bewertungen machen. Deswegen, ich werde jetzt halt auch nicht Geld dafür bezahlen, um die rauszulöschen. Deswegen, ich lasse die drin und die Leute wissen, wer wir sind. Und deswegen, das passt schon so. Vielen Dank.  Was denken Sie denn, was das kostet? Weil bei uns kostet das nur 29 Euro pro Stück. Wir nehmen auch keine Vorkasse. Das bedeutet, Sie bekommen eine Rechnung, erst nachdem die Bewertungen gelöscht sind, erfolgreich gelöscht sind. Und zum Beispiel sehe ich gerade, Sie haben auch Ein-Sterne-Bewertungen vom Jahre 2019 und 2020, also was auch schon 5, 6 Jahre her ist.  Ja. Mhm. Das bedeutet...  Sie bekommen sowieso nicht so viele negative Bewertungen. Wenn wir jetzt sieben Stück oder sagen wir mal drei, vier Stück löschen, damit auch Ihr Durchschnitt etwas höher steigt, bedeutet das ja, dass Sie nicht direkt sofort negative Bewertungen reinbekommen.  Ja, nee, aber ich danke trotzdem für Ihr Angebot, aber da sage ich Danken ab. Alles klar, okay, kein Problem. Schönen Tag wünsche ich noch. Super, Dankeschön. Auf Wiedersehen. Tschüss. Ebenso. Ciao."
+    }
+}

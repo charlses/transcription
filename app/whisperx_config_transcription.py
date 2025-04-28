@@ -34,8 +34,6 @@ class TranscriptionConfig(BaseModel):
     # VAD parameters
     vad_onset: float = 0.500  # VAD onset threshold
     vad_offset: float = 0.363  # VAD offset threshold
-    min_silence_duration_ms: int = 500  # Minimum silence duration
-    speech_pad_ms: int = 100  # Padding around speech segments
     
     # Alignment
     align_output: bool = True  # Whether to align output for accurate word-level timestamps
@@ -84,8 +82,6 @@ class WhisperXConfigurableTranscription:
                 vad_options = {
                     "vad_onset": config.vad_onset,
                     "vad_offset": config.vad_offset,
-                    "min_silence_duration_ms": config.min_silence_duration_ms,
-                    "speech_pad_ms": config.speech_pad_ms
                 }
             
             # Load the model with the specified options
@@ -217,6 +213,7 @@ class WhisperXConfigurableTranscription:
             # Add speaker label to segments and combine text
             full_text = ""
             for segment in result_segments:
+                # Assign speaker label based on input parameter
                 segment["speaker"] = "agent" if speaker == "local" else "client"
                 full_text += " " + segment.get("text", "")
             
@@ -248,23 +245,23 @@ class WhisperXConfigurableTranscription:
             
             # Transcribe remote recording
             logger.info("Starting remote recording transcription")
-            transcript_remote = await self.transcribe_audio(remote_audio_path, "client", config)
+            transcript_remote = await self.transcribe_audio(remote_audio_path, "remote", config)
             
             # Transcribe local recording
             logger.info("Starting local recording transcription")
-            transcript_local = await self.transcribe_audio(local_audio_path, "agent", config)
+            transcript_local = await self.transcribe_audio(local_audio_path, "local", config)
             
             # Combine and sort segments by start time
             all_segments = []
             
             # Add remote segments with client tag
             for segment in transcript_remote["segments"]:
-                segment["speaker"] = "client"
+                segment["speaker"] = "client"  # Remote audio is from client
                 all_segments.append(segment)
                 
             # Add local segments with agent tag
             for segment in transcript_local["segments"]:
-                segment["speaker"] = "agent"
+                segment["speaker"] = "agent"  # Local audio is from agent
                 all_segments.append(segment)
             
             # Sort segments by start time
