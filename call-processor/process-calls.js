@@ -1,10 +1,5 @@
 require('dotenv').config()
 const fetch = require('node-fetch')
-const fs = require('fs')
-const path = require('path')
-const { exec } = require('child_process')
-const { promisify } = require('util')
-const execAsync = promisify(exec)
 const AWS = require('aws-sdk')
 
 // Validate required environment variables
@@ -34,21 +29,39 @@ AWS.config.update({
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
 })
 
-const s3 = new AWS.S3()
-
 // Constants
 const API_BASE_URL =
   process.env.API_BASE_URL || 'https://whisper-training-prep.tess-dev.de/api'
 const TRANSCRIPTION_API_URL =
-  process.env.TRANSCRIPTION_API_URL || 'http://localhost:8000/transcribe'
-const S3_BUCKET = process.env.AWS_S3_BUCKET
-
+  process.env.TRANSCRIPTION_API_URL || 'http://localhost:8000/transcribe/configurable'
 const RR_API_URL = process.env.RR_API_URL
 
-// Create temp directory if it doesn't exist
-const tempDir = path.join(__dirname, 'temp')
-if (!fs.existsSync(tempDir)) {
-  fs.mkdirSync(tempDir)
+// Transcription configuration
+const transcriptionConfig = {
+  // Basic configuration
+  language: 'de', // ISO language code, null for auto-detection
+  compute_type: 'float32', // "float16", "float32", or "int8"
+
+  // Transcription parameters
+  temperature: 0.0, // Lower temperature for more precision
+  beam_size: 5, // Beam size for beam search
+  word_timestamps: true, // Enable word-level timestamps
+  batch_size: 16, // Batch size for parallelization
+  condition_on_previous_text: true, // Use context for better accuracy
+
+  // Silence handling
+  vad_filter: true, // Enable voice activity detection
+  no_speech_threshold: 0.4, // Lowered from 0.6 to be less aggressive with silence detection
+  compression_ratio_threshold: 2.4, // Higher value = more compression allowed
+
+  // VAD parameters
+  vad_onset: 0.5, // VAD onset threshold
+  vad_offset: 0.363, // VAD offset threshold
+  min_silence_duration_ms: 1000, // Increased from 500ms to 1000ms to better handle longer silences
+  speech_pad_ms: 200, // Increased from 100ms to 200ms to capture more context around speech
+
+  // Alignment
+  align_output: true // Whether to align output for word-level timestamps
 }
 
 // Add timestamp to log messages
@@ -71,305 +84,6 @@ function log(message, type = 'info') {
   }
 }
 
-async function downloadFile(url, outputPath) {
-  try {
-    const response = await fetch(url)
-    if (!response.ok) {
-      throw new Error(`Failed to download file: ${response.statusText}`)
-    }
-    const buffer = await response.buffer()
-    fs.writeFileSync(outputPath, buffer)
-    return outputPath
-  } catch (error) {
-    console.error(`Error downloading file from ${url}:`, error)
-    throw error
-  }
-}
-
-async function uploadToS3(filePath, key) {
-  try {
-    if (!fs.existsSync(filePath)) {
-      throw new Error(`File not found: ${filePath}`)
-    }
-
-    const fileContent = fs.readFileSync(filePath)
-    const params = {
-      Bucket: S3_BUCKET,
-      Key: key,
-      Body: fileContent,
-      ContentType: 'audio/webm'
-    }
-
-    const result = await s3.upload(params).promise()
-    return result.Location
-  } catch (error) {
-    console.error(`Error uploading file to S3: ${filePath}`, error)
-    throw error
-  }
-}
-
-async function cutAudio(inputPath, startTime, endTime, outputPath) {
-  try {
-    // Check if input file exists and get its duration
-    if (!fs.existsSync(inputPath)) {
-      throw new Error(`Input file not found: ${inputPath}`)
-    }
-
-    // Get audio duration using ffprobe
-    const probeCommand = `ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${inputPath}"`
-    const { stdout: durationStr } = await execAsync(probeCommand)
-    const audioDuration = parseFloat(durationStr)
-
-    // Validate times
-    if (startTime < 0) {
-      log(`Warning: Start time ${startTime} is negative, setting to 0`, 'warn')
-      startTime = 0
-    }
-    if (endTime > audioDuration) {
-      log(
-        `Warning: End time ${endTime} exceeds audio duration ${audioDuration}, setting to duration`,
-        'warn'
-      )
-      endTime = audioDuration
-    }
-    if (startTime >= endTime) {
-      throw new Error(
-        `Invalid segment times: start (${startTime}) must be less than end (${endTime})`
-      )
-    }
-
-    // Escape Windows paths and wrap in quotes
-    const escapedInputPath = `"${inputPath.replace(/\\/g, '/')}"`
-    const escapedOutputPath = `"${outputPath.replace(/\\/g, '/')}"`
-
-    // Use more precise timing control with -ss and -to
-    // Add -avoid_negative_ts 1 to prevent negative timestamps
-    // Add -copyts to preserve timestamps
-    const command = `ffmpeg -y -i ${escapedInputPath} -ss ${startTime} -to ${endTime} -avoid_negative_ts 1 -copyts -c:a copy -c:v copy ${escapedOutputPath}`
-    log(`Executing ffmpeg command: ${command}`)
-
-    const { stdout, stderr } = await execAsync(command)
-
-    if (stderr) {
-      log(`FFmpeg stderr: ${stderr}`, 'warn')
-      // Check if the error is critical
-      if (
-        stderr.includes('Error') ||
-        stderr.includes('Invalid') ||
-        stderr.includes('Failed')
-      ) {
-        throw new Error(`FFmpeg error: ${stderr}`)
-      }
-    }
-
-    // Verify the output file
-    if (!fs.existsSync(outputPath)) {
-      throw new Error(`Output file was not created: ${outputPath}`)
-    }
-
-    // Verify the output duration
-    const { stdout: outputDurationStr } = await execAsync(
-      `ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${outputPath}"`
-    )
-    const outputDuration = parseFloat(outputDurationStr)
-    const expectedDuration = endTime - startTime
-    const durationDiff = Math.abs(outputDuration - expectedDuration)
-
-    if (durationDiff > 0.1) {
-      // Allow 100ms tolerance
-      log(
-        `Warning: Output duration (${outputDuration.toFixed(
-          2
-        )}s) differs from expected (${expectedDuration.toFixed(
-          2
-        )}s) by ${durationDiff.toFixed(2)}s`,
-        'warn'
-      )
-    }
-
-    return outputPath
-  } catch (error) {
-    log(`Error cutting audio: ${error.message}`, 'error')
-    // Clean up any partial output file
-    try {
-      if (fs.existsSync(outputPath)) {
-        fs.unlinkSync(outputPath)
-      }
-    } catch (cleanupError) {
-      log(
-        `Error cleaning up failed output file: ${cleanupError.message}`,
-        'warn'
-      )
-    }
-    throw error
-  }
-}
-
-async function processSegments(
-  audioPath,
-  segments,
-  outputDir,
-  callId,
-  isLocal = true
-) {
-  const segmentFiles = []
-  let currentSegments = []
-  let segmentIndex = 0
-  const PADDING = 0.2 // 200ms padding for audio cutting only
-  const segmentType = isLocal ? 'local' : 'remote'
-
-  try {
-    log(
-      `Starting ${segmentType} segment processing for ${path.basename(
-        audioPath
-      )} (${segments.length} segments)`
-    )
-
-    // Validate segments structure
-    if (!Array.isArray(segments)) {
-      throw new Error(`Invalid segments structure for ${segmentType} audio`)
-    }
-
-    // Sort segments by start time to ensure chronological order
-    segments.sort((a, b) => a.start - b.start)
-
-    // Validate segment times
-    for (const segment of segments) {
-      if (
-        typeof segment.start !== 'number' ||
-        typeof segment.end !== 'number' ||
-        segment.start >= segment.end ||
-        segment.start < 0
-      ) {
-        throw new Error(
-          `Invalid segment times: start=${segment.start}, end=${segment.end}`
-        )
-      }
-    }
-
-    for (let i = 0; i < segments.length; i++) {
-      const segment = segments[i]
-
-      // Add current segment to the group
-      currentSegments.push(segment)
-
-      // Check if we should create a new segment file
-      const isLastSegment = i === segments.length - 1
-      const nextSegment = !isLastSegment ? segments[i + 1] : null
-      const currentGroupDuration =
-        currentSegments[currentSegments.length - 1].end -
-        currentSegments[0].start
-
-      // Create new segment if:
-      // 1. This is the last segment, or
-      // 2. Adding the next segment would make the current group too long
-      if (
-        isLastSegment ||
-        (nextSegment && nextSegment.end - currentSegments[0].start > 30)
-      ) {
-        // Use padding only for audio cutting, not for segment timings
-        const audioCutStart = Math.max(0, currentSegments[0].start - PADDING)
-        const audioCutEnd =
-          currentSegments[currentSegments.length - 1].end + PADDING
-
-        log(
-          `Processing ${segmentType} segment group ${
-            segmentIndex + 1
-          }/${Math.ceil(segments.length / 30)} (${audioCutStart.toFixed(
-            2
-          )}s to ${audioCutEnd.toFixed(2)}s, duration: ${(
-            audioCutEnd - audioCutStart
-          ).toFixed(2)}s)`
-        )
-        log(`Group contains ${currentSegments.length} segments`)
-
-        // Create segment file with call ID and segment type in the name
-        const outputPath = path.join(
-          outputDir,
-          `segment_${segmentIndex}_${segmentType}_call_${callId}.webm`
-        )
-        log(`Cutting audio segment to ${outputPath}`)
-
-        try {
-          await cutAudio(audioPath, audioCutStart, audioCutEnd, outputPath)
-        } catch (error) {
-          log(
-            `Error cutting ${segmentType} segment group ${segmentIndex + 1}: ${
-              error.message
-            }`,
-            'error'
-          )
-          throw error
-        }
-
-        // Upload to S3
-        const s3Key = `segments/${path.basename(outputPath)}`
-        log(
-          `Uploading ${segmentType} segment group ${
-            segmentIndex + 1
-          } to S3: ${s3Key}`
-        )
-
-        try {
-          const s3Url = await uploadToS3(outputPath, s3Key)
-
-          // Store cut audio segment information
-          segmentFiles.push({
-            start: audioCutStart, // Start time with padding
-            end: audioCutEnd, // End time with padding
-            url: s3Url,
-            originalSegments: currentSegments.map((seg) => ({
-              start: seg.start,
-              end: seg.end,
-              text: seg.text,
-              speaker: seg.speaker,
-              words: seg.words
-                ? seg.words.map((word) => ({
-                    word: word.word,
-                    start: word.start,
-                    end: word.end,
-                    score: word.score
-                  }))
-                : []
-            }))
-          })
-
-          log(
-            `${segmentType} segment group ${
-              segmentIndex + 1
-            } completed and uploaded successfully`
-          )
-        } catch (error) {
-          log(
-            `Error uploading ${segmentType} segment group ${
-              segmentIndex + 1
-            } to S3: ${error.message}`,
-            'error'
-          )
-          throw error
-        }
-
-        // Reset for next group
-        currentSegments = []
-        segmentIndex++
-      }
-    }
-
-    log(
-      `Completed processing all ${segmentType} segments for ${path.basename(
-        audioPath
-      )} (${segmentFiles.length} segment groups created)`
-    )
-    return segmentFiles
-  } catch (error) {
-    log(
-      `Error processing ${segmentType} segments for ${audioPath}: ${error.message}`,
-      'error'
-    )
-    throw error
-  }
-}
-
 async function processCall(call) {
   const startTime = Date.now()
   try {
@@ -378,40 +92,10 @@ async function processCall(call) {
       `Call details: Duration=${call.duration}s, Type=${call.type}, Number=${call.number}`
     )
 
-    // Create temporary directory for this call
-    const tempDir = path.join(__dirname, 'temp', call._id)
-    fs.mkdirSync(tempDir, { recursive: true })
-    log(`Created temporary directory: ${tempDir}`)
-
-    // Download audio files
-    const localAudioPath = path.join(tempDir, 'local.webm')
-    const remoteAudioPath = path.join(tempDir, 'remote.webm')
-
-    log('Downloading local recording...')
-    await downloadFile(call.recordingLocal.url, localAudioPath)
-
-    log('Downloading remote recording...')
-    await downloadFile(call.recordingRemote.url, remoteAudioPath)
-
     // Transcribe audio
     log('Starting transcription...')
     let transcriptionData
     try {
-      // Check if files exist and have content before sending to transcription
-      const localStats = fs.statSync(localAudioPath)
-      const remoteStats = fs.statSync(remoteAudioPath)
-
-      if (localStats.size === 0 || remoteStats.size === 0) {
-        throw new Error(
-          `Audio file is empty: ${localStats.size === 0 ? 'local' : 'remote'}`
-        )
-      }
-
-      log(`Local audio size: ${(localStats.size / 1024 / 1024).toFixed(2)} MB`)
-      log(
-        `Remote audio size: ${(remoteStats.size / 1024 / 1024).toFixed(2)} MB`
-      )
-
       const transcriptionResponse = await fetch(TRANSCRIPTION_API_URL, {
         method: 'POST',
         headers: {
@@ -419,7 +103,8 @@ async function processCall(call) {
         },
         body: JSON.stringify({
           recording_local: call.recordingLocal.url,
-          recording_remote: call.recordingRemote.url
+          recording_remote: call.recordingRemote.url,
+          config: transcriptionConfig
         })
       })
 
@@ -475,36 +160,6 @@ async function processCall(call) {
       throw error
     }
 
-    // Process segments and create audio files only if there are segments
-    let cutAudioLocal = []
-    let cutAudioRemote = []
-
-    if (transcriptionData.transcript_local.segments.length > 0) {
-      log('Processing local segments...')
-      cutAudioLocal = await processSegments(
-        localAudioPath,
-        transcriptionData.transcript_local.segments,
-        tempDir,
-        call.sql_id,
-        true
-      )
-    } else {
-      log('No local segments to process', 'warn')
-    }
-
-    if (transcriptionData.transcript_remote.segments.length > 0) {
-      log('Processing remote segments...')
-      cutAudioRemote = await processSegments(
-        remoteAudioPath,
-        transcriptionData.transcript_remote.segments,
-        tempDir,
-        call.sql_id,
-        false
-      )
-    } else {
-      log('No remote segments to process', 'warn')
-    }
-
     // Update call in API
     log('Updating call record in API...')
     const updateUrl = `${API_BASE_URL}/calls/${call._id}/transcripts`
@@ -522,8 +177,6 @@ async function processCall(call) {
         segmentsLocal: transcriptionData.transcript_local.segments,
         segmentsRemote: transcriptionData.transcript_remote.segments,
         segmentsCombined: transcriptionData.transcript_combined.segments,
-        cutAudioLocal: cutAudioLocal,
-        cutAudioRemote: cutAudioRemote,
         transcribed: true
       })
     })
@@ -564,11 +217,6 @@ async function processCall(call) {
       `Successfully processed call ${call._id} in ${processingTime}s`,
       'success'
     )
-
-    // Clean up
-    log('Cleaning up temporary files...')
-    fs.rmSync(tempDir, { recursive: true, force: true })
-    log('Cleanup completed')
   } catch (error) {
     log(`Error processing call ${call._id}: ${error.message}`, 'error')
     // Don't throw the error, just log it and continue with the next call
@@ -652,34 +300,9 @@ async function processPage(page, limit = BATCH_SIZE) {
       }
     }
 
-    // Clean up temp directory after processing the page
-    try {
-      if (fs.existsSync(tempDir)) {
-        fs.rmSync(tempDir, { recursive: true, force: true })
-        log('Cleaned up temp directory after page processing')
-      }
-    } catch (cleanupError) {
-      log(
-        `Warning: Failed to clean up temp directory: ${cleanupError.message}`,
-        'warn'
-      )
-    }
-
     return data.pagination
   } catch (error) {
     log(`Error processing page ${page}: ${error.message}`, 'error')
-    // Try to clean up even if there was an error
-    try {
-      if (fs.existsSync(tempDir)) {
-        fs.rmSync(tempDir, { recursive: true, force: true })
-        log('Cleaned up temp directory after error')
-      }
-    } catch (cleanupError) {
-      log(
-        `Warning: Failed to clean up temp directory after error: ${cleanupError.message}`,
-        'warn'
-      )
-    }
     return null
   }
 }
@@ -735,34 +358,9 @@ async function main() {
       'success'
     )
 
-    // Final cleanup of temp directory
-    try {
-      if (fs.existsSync(tempDir)) {
-        fs.rmSync(tempDir, { recursive: true, force: true })
-        log('Final cleanup of temp directory completed')
-      }
-    } catch (cleanupError) {
-      log(
-        `Warning: Failed to clean up temp directory in final cleanup: ${cleanupError.message}`,
-        'warn'
-      )
-    }
-
     main()
   } catch (error) {
     log(`Error in main process: ${error.message}`, 'error')
-    // Try to clean up even if there was an error in main
-    try {
-      if (fs.existsSync(tempDir)) {
-        fs.rmSync(tempDir, { recursive: true, force: true })
-        log('Cleaned up temp directory after main process error')
-      }
-    } catch (cleanupError) {
-      log(
-        `Warning: Failed to clean up temp directory after main error: ${cleanupError.message}`,
-        'warn'
-      )
-    }
     main()
   }
 }

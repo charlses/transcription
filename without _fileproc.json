@@ -1,0 +1,4719 @@
+{
+    "transcript_remote": {
+        "segments": [
+            {
+                "start": 1.306,
+                "end": 1.586,
+                "text": " Ja, hallo.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 1.306,
+                        "end": 1.426,
+                        "score": 0.359
+                    },
+                    {
+                        "word": "hallo.",
+                        "start": 1.446,
+                        "end": 1.586,
+                        "score": 0.08
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 1.606,
+                "end": 2.026,
+                "text": "Hallo, Christian.",
+                "words": [
+                    {
+                        "word": "Hallo,",
+                        "start": 1.606,
+                        "end": 1.786,
+                        "score": 0.22
+                    },
+                    {
+                        "word": "Christian.",
+                        "start": 1.806,
+                        "end": 2.026,
+                        "score": 0.068
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 2.046,
+                "end": 2.086,
+                "text": "Ja.",
+                "words": [
+                    {
+                        "word": "Ja.",
+                        "start": 2.046,
+                        "end": 2.086,
+                        "score": 0.011
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 2.106,
+                "end": 2.166,
+                "text": "Mhm.",
+                "words": [
+                    {
+                        "word": "Mhm.",
+                        "start": 2.106,
+                        "end": 2.166,
+                        "score": 0.017
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 54.347,
+                "end": 58.248,
+                "text": " Können Sie mir gerne mal schicken, schaue ich mir gerne an, das hört sich auf jeden Fall ganz gut an.",
+                "words": [
+                    {
+                        "word": "Können",
+                        "start": 54.347,
+                        "end": 54.487,
+                        "score": 0.254
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 54.507,
+                        "end": 54.608,
+                        "score": 0.252
+                    },
+                    {
+                        "word": "mir",
+                        "start": 54.628,
+                        "end": 54.728,
+                        "score": 0.325
+                    },
+                    {
+                        "word": "gerne",
+                        "start": 54.748,
+                        "end": 54.928,
+                        "score": 0.322
+                    },
+                    {
+                        "word": "mal",
+                        "start": 54.968,
+                        "end": 55.048,
+                        "score": 0.158
+                    },
+                    {
+                        "word": "schicken,",
+                        "start": 55.068,
+                        "end": 55.628,
+                        "score": 0.242
+                    },
+                    {
+                        "word": "schaue",
+                        "start": 55.648,
+                        "end": 55.808,
+                        "score": 0.381
+                    },
+                    {
+                        "word": "ich",
+                        "start": 55.828,
+                        "end": 55.888,
+                        "score": 0.032
+                    },
+                    {
+                        "word": "mir",
+                        "start": 55.908,
+                        "end": 56.008,
+                        "score": 0.65
+                    },
+                    {
+                        "word": "gerne",
+                        "start": 56.028,
+                        "end": 56.208,
+                        "score": 0.737
+                    },
+                    {
+                        "word": "an,",
+                        "start": 56.268,
+                        "end": 56.488,
+                        "score": 0.7
+                    },
+                    {
+                        "word": "das",
+                        "start": 56.528,
+                        "end": 56.808,
+                        "score": 0.427
+                    },
+                    {
+                        "word": "hört",
+                        "start": 56.828,
+                        "end": 56.968,
+                        "score": 0.541
+                    },
+                    {
+                        "word": "sich",
+                        "start": 56.988,
+                        "end": 57.088,
+                        "score": 0.626
+                    },
+                    {
+                        "word": "auf",
+                        "start": 57.108,
+                        "end": 57.188,
+                        "score": 0.387
+                    },
+                    {
+                        "word": "jeden",
+                        "start": 57.208,
+                        "end": 57.348,
+                        "score": 0.456
+                    },
+                    {
+                        "word": "Fall",
+                        "start": 57.388,
+                        "end": 57.808,
+                        "score": 0.672
+                    },
+                    {
+                        "word": "ganz",
+                        "start": 57.848,
+                        "end": 58.028,
+                        "score": 0.486
+                    },
+                    {
+                        "word": "gut",
+                        "start": 58.048,
+                        "end": 58.148,
+                        "score": 0.767
+                    },
+                    {
+                        "word": "an.",
+                        "start": 58.188,
+                        "end": 58.248,
+                        "score": 0.466
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 67.733,
+                "end": 68.854,
+                "text": " Ja, okay.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 67.733,
+                        "end": 67.853,
+                        "score": 0.524
+                    },
+                    {
+                        "word": "okay.",
+                        "start": 68.293,
+                        "end": 68.854,
+                        "score": 0.463
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 68.874,
+                "end": 77.04,
+                "text": "Schicken Sie mir gerne zu.",
+                "words": [
+                    {
+                        "word": "Schicken",
+                        "start": 68.874,
+                        "end": 69.074,
+                        "score": 0.584
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 69.094,
+                        "end": 69.194,
+                        "score": 0.438
+                    },
+                    {
+                        "word": "mir",
+                        "start": 69.214,
+                        "end": 69.294,
+                        "score": 0.539
+                    },
+                    {
+                        "word": "gerne",
+                        "start": 69.314,
+                        "end": 69.514,
+                        "score": 0.809
+                    },
+                    {
+                        "word": "zu.",
+                        "start": 69.554,
+                        "end": 77.04,
+                        "score": 0.839
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 77.08,
+                "end": 79.082,
+                "text": "Ne, eins und zwei eigentlich, genau.",
+                "words": [
+                    {
+                        "word": "Ne,",
+                        "start": 77.08,
+                        "end": 77.24,
+                        "score": 0.446
+                    },
+                    {
+                        "word": "eins",
+                        "start": 77.3,
+                        "end": 77.44,
+                        "score": 0.58
+                    },
+                    {
+                        "word": "und",
+                        "start": 77.48,
+                        "end": 77.621,
+                        "score": 0.83
+                    },
+                    {
+                        "word": "zwei",
+                        "start": 77.641,
+                        "end": 77.821,
+                        "score": 0.89
+                    },
+                    {
+                        "word": "eigentlich,",
+                        "start": 77.841,
+                        "end": 78.181,
+                        "score": 0.847
+                    },
+                    {
+                        "word": "genau.",
+                        "start": 78.201,
+                        "end": 79.082,
+                        "score": 0.88
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 79.122,
+                "end": 82.364,
+                "text": "Also gibt es erstmal eine Info jetzt dazu oder was läuft jetzt?",
+                "words": [
+                    {
+                        "word": "Also",
+                        "start": 79.122,
+                        "end": 79.402,
+                        "score": 0.724
+                    },
+                    {
+                        "word": "gibt",
+                        "start": 79.422,
+                        "end": 79.522,
+                        "score": 0.983
+                    },
+                    {
+                        "word": "es",
+                        "start": 79.582,
+                        "end": 80.082,
+                        "score": 0.637
+                    },
+                    {
+                        "word": "erstmal",
+                        "start": 80.122,
+                        "end": 80.363,
+                        "score": 0.628
+                    },
+                    {
+                        "word": "eine",
+                        "start": 80.383,
+                        "end": 80.503,
+                        "score": 0.622
+                    },
+                    {
+                        "word": "Info",
+                        "start": 80.543,
+                        "end": 80.703,
+                        "score": 0.666
+                    },
+                    {
+                        "word": "jetzt",
+                        "start": 80.723,
+                        "end": 80.883,
+                        "score": 0.403
+                    },
+                    {
+                        "word": "dazu",
+                        "start": 80.903,
+                        "end": 81.103,
+                        "score": 0.776
+                    },
+                    {
+                        "word": "oder",
+                        "start": 81.143,
+                        "end": 81.283,
+                        "score": 0.77
+                    },
+                    {
+                        "word": "was",
+                        "start": 81.724,
+                        "end": 82.044,
+                        "score": 0.756
+                    },
+                    {
+                        "word": "läuft",
+                        "start": 82.084,
+                        "end": 82.184,
+                        "score": 0.079
+                    },
+                    {
+                        "word": "jetzt?",
+                        "start": 82.224,
+                        "end": 82.364,
+                        "score": 0.237
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 82.424,
+                "end": 89.85,
+                "text": "Einmal im Monat.",
+                "words": [
+                    {
+                        "word": "Einmal",
+                        "start": 82.424,
+                        "end": 89.49,
+                        "score": 0.605
+                    },
+                    {
+                        "word": "im",
+                        "start": 89.53,
+                        "end": 89.59,
+                        "score": 0.262
+                    },
+                    {
+                        "word": "Monat.",
+                        "start": 89.61,
+                        "end": 89.85,
+                        "score": 0.493
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 97.553,
+                "end": 98.436,
+                "text": " Okay, schicken Sie mir zu.",
+                "words": [
+                    {
+                        "word": "Okay,",
+                        "start": 97.553,
+                        "end": 97.814,
+                        "score": 0.247
+                    },
+                    {
+                        "word": "schicken",
+                        "start": 97.834,
+                        "end": 98.055,
+                        "score": 0.334
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 98.075,
+                        "end": 98.195,
+                        "score": 0.303
+                    },
+                    {
+                        "word": "mir",
+                        "start": 98.215,
+                        "end": 98.296,
+                        "score": 0.223
+                    },
+                    {
+                        "word": "zu.",
+                        "start": 98.316,
+                        "end": 98.436,
+                        "score": 0.168
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 98.456,
+                "end": 100.082,
+                "text": "Ich schaue es mir morgen an und melde mich bei Ihnen.",
+                "words": [
+                    {
+                        "word": "Ich",
+                        "start": 98.456,
+                        "end": 98.516,
+                        "score": 0.138
+                    },
+                    {
+                        "word": "schaue",
+                        "start": 98.536,
+                        "end": 98.677,
+                        "score": 0.215
+                    },
+                    {
+                        "word": "es",
+                        "start": 98.697,
+                        "end": 98.737,
+                        "score": 0.198
+                    },
+                    {
+                        "word": "mir",
+                        "start": 98.757,
+                        "end": 98.878,
+                        "score": 0.19
+                    },
+                    {
+                        "word": "morgen",
+                        "start": 98.898,
+                        "end": 99.119,
+                        "score": 0.555
+                    },
+                    {
+                        "word": "an",
+                        "start": 99.139,
+                        "end": 99.319,
+                        "score": 0.481
+                    },
+                    {
+                        "word": "und",
+                        "start": 99.359,
+                        "end": 99.58,
+                        "score": 0.433
+                    },
+                    {
+                        "word": "melde",
+                        "start": 99.6,
+                        "end": 99.741,
+                        "score": 0.259
+                    },
+                    {
+                        "word": "mich",
+                        "start": 99.761,
+                        "end": 99.841,
+                        "score": 0.19
+                    },
+                    {
+                        "word": "bei",
+                        "start": 99.881,
+                        "end": 99.942,
+                        "score": 0.179
+                    },
+                    {
+                        "word": "Ihnen.",
+                        "start": 99.962,
+                        "end": 100.082,
+                        "score": 0.218
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 100.102,
+                "end": 100.423,
+                "text": "Alles klar, danke.",
+                "words": [
+                    {
+                        "word": "Alles",
+                        "start": 100.102,
+                        "end": 100.203,
+                        "score": 0.035
+                    },
+                    {
+                        "word": "klar,",
+                        "start": 100.223,
+                        "end": 100.303,
+                        "score": 0.026
+                    },
+                    {
+                        "word": "danke.",
+                        "start": 100.323,
+                        "end": 100.423,
+                        "score": 0.04
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 100.443,
+                "end": 100.604,
+                "text": "Bis dann.",
+                "words": [
+                    {
+                        "word": "Bis",
+                        "start": 100.443,
+                        "end": 100.504,
+                        "score": 0.032
+                    },
+                    {
+                        "word": "dann.",
+                        "start": 100.524,
+                        "end": 100.604,
+                        "score": 0.042
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 100.624,
+                "end": 100.765,
+                "text": "Tschüss.",
+                "words": [
+                    {
+                        "word": "Tschüss.",
+                        "start": 100.624,
+                        "end": 100.765,
+                        "score": 0.026
+                    }
+                ],
+                "speaker": "client"
+            }
+        ],
+        "text": "Ja, hallo. Hallo, Christian. Ja. Mhm.  Können Sie mir gerne mal schicken, schaue ich mir gerne an, das hört sich auf jeden Fall ganz gut an.  Ja, okay. Schicken Sie mir gerne zu. Ne, eins und zwei eigentlich, genau. Also gibt es erstmal eine Info jetzt dazu oder was läuft jetzt? Einmal im Monat.  Okay, schicken Sie mir zu. Ich schaue es mir morgen an und melde mich bei Ihnen. Alles klar, danke. Bis dann. Tschüss."
+    },
+    "transcript_local": {
+        "segments": [
+            {
+                "start": 2.362,
+                "end": 3.383,
+                "text": " Hallo, einen schönen Abend.",
+                "words": [
+                    {
+                        "word": "Hallo,",
+                        "start": 2.362,
+                        "end": 2.582,
+                        "score": 0.773
+                    },
+                    {
+                        "word": "einen",
+                        "start": 2.602,
+                        "end": 2.722,
+                        "score": 0.494
+                    },
+                    {
+                        "word": "schönen",
+                        "start": 2.763,
+                        "end": 2.963,
+                        "score": 0.388
+                    },
+                    {
+                        "word": "Abend.",
+                        "start": 3.023,
+                        "end": 3.383,
+                        "score": 0.846
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 3.423,
+                "end": 5.085,
+                "text": "Marina Stern von der Firma Rufschmied.",
+                "words": [
+                    {
+                        "word": "Marina",
+                        "start": 3.423,
+                        "end": 3.804,
+                        "score": 0.916
+                    },
+                    {
+                        "word": "Stern",
+                        "start": 3.844,
+                        "end": 4.124,
+                        "score": 0.853
+                    },
+                    {
+                        "word": "von",
+                        "start": 4.144,
+                        "end": 4.244,
+                        "score": 0.944
+                    },
+                    {
+                        "word": "der",
+                        "start": 4.264,
+                        "end": 4.344,
+                        "score": 0.807
+                    },
+                    {
+                        "word": "Firma",
+                        "start": 4.384,
+                        "end": 4.624,
+                        "score": 0.732
+                    },
+                    {
+                        "word": "Rufschmied.",
+                        "start": 4.664,
+                        "end": 5.085,
+                        "score": 0.792
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 5.105,
+                "end": 5.986,
+                "text": "Ich grüße Sie.",
+                "words": [
+                    {
+                        "word": "Ich",
+                        "start": 5.105,
+                        "end": 5.185,
+                        "score": 0.983
+                    },
+                    {
+                        "word": "grüße",
+                        "start": 5.245,
+                        "end": 5.525,
+                        "score": 0.919
+                    },
+                    {
+                        "word": "Sie.",
+                        "start": 5.565,
+                        "end": 5.986,
+                        "score": 0.837
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 6.026,
+                "end": 7.047,
+                "text": "Ich spreche mit Herrn Schuld.",
+                "words": [
+                    {
+                        "word": "Ich",
+                        "start": 6.026,
+                        "end": 6.106,
+                        "score": 0.946
+                    },
+                    {
+                        "word": "spreche",
+                        "start": 6.146,
+                        "end": 6.386,
+                        "score": 0.918
+                    },
+                    {
+                        "word": "mit",
+                        "start": 6.426,
+                        "end": 6.526,
+                        "score": 0.994
+                    },
+                    {
+                        "word": "Herrn",
+                        "start": 6.566,
+                        "end": 6.766,
+                        "score": 0.817
+                    },
+                    {
+                        "word": "Schuld.",
+                        "start": 6.787,
+                        "end": 7.047,
+                        "score": 0.83
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 8.772,
+                "end": 12.475,
+                "text": " Herr Schult, ich wollte kurz anfragen, ich habe hier Ihre E-Mail erhalten.",
+                "words": [
+                    {
+                        "word": "Herr",
+                        "start": 8.772,
+                        "end": 9.312,
+                        "score": 0.414
+                    },
+                    {
+                        "word": "Schult,",
+                        "start": 9.332,
+                        "end": 9.553,
+                        "score": 0.76
+                    },
+                    {
+                        "word": "ich",
+                        "start": 9.593,
+                        "end": 9.713,
+                        "score": 0.619
+                    },
+                    {
+                        "word": "wollte",
+                        "start": 9.733,
+                        "end": 10.053,
+                        "score": 0.915
+                    },
+                    {
+                        "word": "kurz",
+                        "start": 10.093,
+                        "end": 10.313,
+                        "score": 0.851
+                    },
+                    {
+                        "word": "anfragen,",
+                        "start": 10.353,
+                        "end": 10.733,
+                        "score": 0.712
+                    },
+                    {
+                        "word": "ich",
+                        "start": 10.754,
+                        "end": 10.834,
+                        "score": 0.832
+                    },
+                    {
+                        "word": "habe",
+                        "start": 10.854,
+                        "end": 10.974,
+                        "score": 0.955
+                    },
+                    {
+                        "word": "hier",
+                        "start": 10.994,
+                        "end": 11.154,
+                        "score": 0.401
+                    },
+                    {
+                        "word": "Ihre",
+                        "start": 11.174,
+                        "end": 11.394,
+                        "score": 0.831
+                    },
+                    {
+                        "word": "E-Mail",
+                        "start": 11.434,
+                        "end": 11.794,
+                        "score": 0.462
+                    },
+                    {
+                        "word": "erhalten.",
+                        "start": 11.854,
+                        "end": 12.475,
+                        "score": 0.881
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 12.515,
+                "end": 24.084,
+                "text": "Wir haben jetzt für unsere Stammkunden ein Abo-Modell aufgebaut, also es ist kein Vertrag verbindliches, sondern nur ein Abo-Modell, dass wir dieses E-Mail-Verkehr nicht ständig haben.",
+                "words": [
+                    {
+                        "word": "Wir",
+                        "start": 12.515,
+                        "end": 12.655,
+                        "score": 0.934
+                    },
+                    {
+                        "word": "haben",
+                        "start": 12.695,
+                        "end": 12.935,
+                        "score": 0.915
+                    },
+                    {
+                        "word": "jetzt",
+                        "start": 12.955,
+                        "end": 13.175,
+                        "score": 0.912
+                    },
+                    {
+                        "word": "für",
+                        "start": 13.195,
+                        "end": 13.396,
+                        "score": 0.977
+                    },
+                    {
+                        "word": "unsere",
+                        "start": 13.476,
+                        "end": 13.936,
+                        "score": 0.862
+                    },
+                    {
+                        "word": "Stammkunden",
+                        "start": 13.996,
+                        "end": 15.137,
+                        "score": 0.946
+                    },
+                    {
+                        "word": "ein",
+                        "start": 15.177,
+                        "end": 15.337,
+                        "score": 0.614
+                    },
+                    {
+                        "word": "Abo-Modell",
+                        "start": 15.377,
+                        "end": 16.018,
+                        "score": 0.904
+                    },
+                    {
+                        "word": "aufgebaut,",
+                        "start": 16.038,
+                        "end": 16.618,
+                        "score": 0.902
+                    },
+                    {
+                        "word": "also",
+                        "start": 16.658,
+                        "end": 16.818,
+                        "score": 0.763
+                    },
+                    {
+                        "word": "es",
+                        "start": 16.878,
+                        "end": 16.918,
+                        "score": 0.369
+                    },
+                    {
+                        "word": "ist",
+                        "start": 16.938,
+                        "end": 17.078,
+                        "score": 0.55
+                    },
+                    {
+                        "word": "kein",
+                        "start": 17.118,
+                        "end": 17.319,
+                        "score": 0.791
+                    },
+                    {
+                        "word": "Vertrag",
+                        "start": 17.359,
+                        "end": 17.779,
+                        "score": 0.897
+                    },
+                    {
+                        "word": "verbindliches,",
+                        "start": 17.819,
+                        "end": 19.06,
+                        "score": 0.872
+                    },
+                    {
+                        "word": "sondern",
+                        "start": 19.08,
+                        "end": 19.44,
+                        "score": 0.845
+                    },
+                    {
+                        "word": "nur",
+                        "start": 19.48,
+                        "end": 19.62,
+                        "score": 0.991
+                    },
+                    {
+                        "word": "ein",
+                        "start": 19.66,
+                        "end": 19.8,
+                        "score": 0.75
+                    },
+                    {
+                        "word": "Abo-Modell,",
+                        "start": 19.84,
+                        "end": 20.481,
+                        "score": 0.861
+                    },
+                    {
+                        "word": "dass",
+                        "start": 20.521,
+                        "end": 20.681,
+                        "score": 0.965
+                    },
+                    {
+                        "word": "wir",
+                        "start": 20.721,
+                        "end": 20.841,
+                        "score": 0.992
+                    },
+                    {
+                        "word": "dieses",
+                        "start": 20.881,
+                        "end": 21.201,
+                        "score": 0.782
+                    },
+                    {
+                        "word": "E-Mail-Verkehr",
+                        "start": 21.242,
+                        "end": 21.882,
+                        "score": 0.708
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 21.902,
+                        "end": 22.042,
+                        "score": 0.731
+                    },
+                    {
+                        "word": "ständig",
+                        "start": 22.082,
+                        "end": 22.583,
+                        "score": 0.906
+                    },
+                    {
+                        "word": "haben.",
+                        "start": 22.623,
+                        "end": 24.084,
+                        "score": 0.931
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 24.124,
+                "end": 25.885,
+                "text": "Darf ich Ihnen das mal zuschicken?",
+                "words": [
+                    {
+                        "word": "Darf",
+                        "start": 24.124,
+                        "end": 24.304,
+                        "score": 0.914
+                    },
+                    {
+                        "word": "ich",
+                        "start": 24.344,
+                        "end": 24.424,
+                        "score": 0.859
+                    },
+                    {
+                        "word": "Ihnen",
+                        "start": 24.464,
+                        "end": 24.564,
+                        "score": 0.5
+                    },
+                    {
+                        "word": "das",
+                        "start": 24.584,
+                        "end": 24.684,
+                        "score": 0.798
+                    },
+                    {
+                        "word": "mal",
+                        "start": 24.764,
+                        "end": 24.924,
+                        "score": 0.71
+                    },
+                    {
+                        "word": "zuschicken?",
+                        "start": 24.944,
+                        "end": 25.885,
+                        "score": 0.847
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 25.905,
+                "end": 32.11,
+                "text": "Das geht dann darum, dass ich mich einfach automatisch einmal im Monat oder alle zwei Wochen, wie Sie es gerne hätten,",
+                "words": [
+                    {
+                        "word": "Das",
+                        "start": 25.905,
+                        "end": 26.045,
+                        "score": 0.546
+                    },
+                    {
+                        "word": "geht",
+                        "start": 26.065,
+                        "end": 26.225,
+                        "score": 0.847
+                    },
+                    {
+                        "word": "dann",
+                        "start": 26.245,
+                        "end": 26.486,
+                        "score": 0.849
+                    },
+                    {
+                        "word": "darum,",
+                        "start": 26.526,
+                        "end": 26.906,
+                        "score": 0.996
+                    },
+                    {
+                        "word": "dass",
+                        "start": 26.946,
+                        "end": 27.166,
+                        "score": 0.937
+                    },
+                    {
+                        "word": "ich",
+                        "start": 27.206,
+                        "end": 27.346,
+                        "score": 0.765
+                    },
+                    {
+                        "word": "mich",
+                        "start": 27.386,
+                        "end": 27.626,
+                        "score": 0.996
+                    },
+                    {
+                        "word": "einfach",
+                        "start": 27.666,
+                        "end": 28.027,
+                        "score": 0.872
+                    },
+                    {
+                        "word": "automatisch",
+                        "start": 28.067,
+                        "end": 29.088,
+                        "score": 0.842
+                    },
+                    {
+                        "word": "einmal",
+                        "start": 29.128,
+                        "end": 29.388,
+                        "score": 0.94
+                    },
+                    {
+                        "word": "im",
+                        "start": 29.428,
+                        "end": 29.528,
+                        "score": 0.568
+                    },
+                    {
+                        "word": "Monat",
+                        "start": 29.568,
+                        "end": 29.928,
+                        "score": 0.916
+                    },
+                    {
+                        "word": "oder",
+                        "start": 29.968,
+                        "end": 30.108,
+                        "score": 0.894
+                    },
+                    {
+                        "word": "alle",
+                        "start": 30.148,
+                        "end": 30.409,
+                        "score": 0.961
+                    },
+                    {
+                        "word": "zwei",
+                        "start": 30.429,
+                        "end": 30.669,
+                        "score": 0.803
+                    },
+                    {
+                        "word": "Wochen,",
+                        "start": 30.709,
+                        "end": 31.009,
+                        "score": 0.853
+                    },
+                    {
+                        "word": "wie",
+                        "start": 31.049,
+                        "end": 31.169,
+                        "score": 0.968
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 31.209,
+                        "end": 31.329,
+                        "score": 0.809
+                    },
+                    {
+                        "word": "es",
+                        "start": 31.369,
+                        "end": 31.509,
+                        "score": 0.647
+                    },
+                    {
+                        "word": "gerne",
+                        "start": 31.529,
+                        "end": 31.85,
+                        "score": 0.855
+                    },
+                    {
+                        "word": "hätten,",
+                        "start": 31.89,
+                        "end": 32.11,
+                        "score": 0.874
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 32.698,
+                "end": 41.44,
+                "text": " einfach Ihre ganzen Standorte mal durchschaue und wenn dann neue Bewertungen, 1- und 2-Sterne-Bewertungen drin sind, würde ich mich direkt darum kümmern.",
+                "words": [
+                    {
+                        "word": "einfach",
+                        "start": 32.698,
+                        "end": 33.078,
+                        "score": 0.815
+                    },
+                    {
+                        "word": "Ihre",
+                        "start": 33.118,
+                        "end": 33.478,
+                        "score": 0.959
+                    },
+                    {
+                        "word": "ganzen",
+                        "start": 33.498,
+                        "end": 33.838,
+                        "score": 0.914
+                    },
+                    {
+                        "word": "Standorte",
+                        "start": 33.898,
+                        "end": 34.438,
+                        "score": 0.879
+                    },
+                    {
+                        "word": "mal",
+                        "start": 34.498,
+                        "end": 34.678,
+                        "score": 0.86
+                    },
+                    {
+                        "word": "durchschaue",
+                        "start": 34.718,
+                        "end": 35.639,
+                        "score": 0.792
+                    },
+                    {
+                        "word": "und",
+                        "start": 35.659,
+                        "end": 35.939,
+                        "score": 0.829
+                    },
+                    {
+                        "word": "wenn",
+                        "start": 35.959,
+                        "end": 36.119,
+                        "score": 0.911
+                    },
+                    {
+                        "word": "dann",
+                        "start": 36.139,
+                        "end": 36.379,
+                        "score": 0.507
+                    },
+                    {
+                        "word": "neue",
+                        "start": 36.419,
+                        "end": 36.699,
+                        "score": 0.802
+                    },
+                    {
+                        "word": "Bewertungen,",
+                        "start": 36.759,
+                        "end": 37.399,
+                        "score": 0.873
+                    },
+                    {
+                        "word": "1-",
+                        "start": 37.419,
+                        "end": 37.619,
+                        "score": 0.447
+                    },
+                    {
+                        "word": "und",
+                        "start": 37.639,
+                        "end": 37.759,
+                        "score": 0.811
+                    },
+                    {
+                        "word": "2-Sterne-Bewertungen",
+                        "start": 37.779,
+                        "end": 38.899,
+                        "score": 0.829
+                    },
+                    {
+                        "word": "drin",
+                        "start": 38.939,
+                        "end": 39.199,
+                        "score": 0.786
+                    },
+                    {
+                        "word": "sind,",
+                        "start": 39.239,
+                        "end": 39.919,
+                        "score": 0.978
+                    },
+                    {
+                        "word": "würde",
+                        "start": 39.959,
+                        "end": 40.16,
+                        "score": 0.902
+                    },
+                    {
+                        "word": "ich",
+                        "start": 40.18,
+                        "end": 40.28,
+                        "score": 0.886
+                    },
+                    {
+                        "word": "mich",
+                        "start": 40.32,
+                        "end": 40.48,
+                        "score": 0.862
+                    },
+                    {
+                        "word": "direkt",
+                        "start": 40.52,
+                        "end": 40.78,
+                        "score": 0.893
+                    },
+                    {
+                        "word": "darum",
+                        "start": 40.8,
+                        "end": 41.12,
+                        "score": 0.912
+                    },
+                    {
+                        "word": "kümmern.",
+                        "start": 41.16,
+                        "end": 41.44,
+                        "score": 0.887
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 41.46,
+                "end": 45.541,
+                "text": "Dann würden Sie nur eine Auftragsbestätigung von mir bekommen, dass ich mich darum kümmere.",
+                "words": [
+                    {
+                        "word": "Dann",
+                        "start": 41.46,
+                        "end": 41.64,
+                        "score": 0.92
+                    },
+                    {
+                        "word": "würden",
+                        "start": 41.66,
+                        "end": 41.9,
+                        "score": 0.806
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 41.92,
+                        "end": 42.06,
+                        "score": 0.937
+                    },
+                    {
+                        "word": "nur",
+                        "start": 42.08,
+                        "end": 42.22,
+                        "score": 0.889
+                    },
+                    {
+                        "word": "eine",
+                        "start": 42.24,
+                        "end": 42.38,
+                        "score": 0.794
+                    },
+                    {
+                        "word": "Auftragsbestätigung",
+                        "start": 42.4,
+                        "end": 43.34,
+                        "score": 0.876
+                    },
+                    {
+                        "word": "von",
+                        "start": 43.36,
+                        "end": 43.5,
+                        "score": 0.761
+                    },
+                    {
+                        "word": "mir",
+                        "start": 43.52,
+                        "end": 43.66,
+                        "score": 0.791
+                    },
+                    {
+                        "word": "bekommen,",
+                        "start": 43.68,
+                        "end": 44.02,
+                        "score": 0.891
+                    },
+                    {
+                        "word": "dass",
+                        "start": 44.04,
+                        "end": 44.18,
+                        "score": 0.934
+                    },
+                    {
+                        "word": "ich",
+                        "start": 44.22,
+                        "end": 44.32,
+                        "score": 0.704
+                    },
+                    {
+                        "word": "mich",
+                        "start": 44.34,
+                        "end": 44.48,
+                        "score": 0.86
+                    },
+                    {
+                        "word": "darum",
+                        "start": 44.5,
+                        "end": 44.8,
+                        "score": 0.86
+                    },
+                    {
+                        "word": "kümmere.",
+                        "start": 44.84,
+                        "end": 45.541,
+                        "score": 0.919
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 45.561,
+                "end": 47.841,
+                "text": "Dann hätten wir dieses ganze E-Mail-Verkehr nicht.",
+                "words": [
+                    {
+                        "word": "Dann",
+                        "start": 45.561,
+                        "end": 45.721,
+                        "score": 0.788
+                    },
+                    {
+                        "word": "hätten",
+                        "start": 45.761,
+                        "end": 45.941,
+                        "score": 0.932
+                    },
+                    {
+                        "word": "wir",
+                        "start": 45.961,
+                        "end": 46.101,
+                        "score": 0.747
+                    },
+                    {
+                        "word": "dieses",
+                        "start": 46.121,
+                        "end": 46.401,
+                        "score": 0.764
+                    },
+                    {
+                        "word": "ganze",
+                        "start": 46.421,
+                        "end": 46.701,
+                        "score": 0.974
+                    },
+                    {
+                        "word": "E-Mail-Verkehr",
+                        "start": 46.741,
+                        "end": 47.441,
+                        "score": 0.75
+                    },
+                    {
+                        "word": "nicht.",
+                        "start": 47.481,
+                        "end": 47.841,
+                        "score": 0.871
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 47.881,
+                "end": 51.362,
+                "text": "Ich schicke Ihnen Angebot, Sie müssen mir Bestätigung zurückschicken.",
+                "words": [
+                    {
+                        "word": "Ich",
+                        "start": 47.881,
+                        "end": 47.961,
+                        "score": 0.877
+                    },
+                    {
+                        "word": "schicke",
+                        "start": 48.001,
+                        "end": 48.241,
+                        "score": 0.742
+                    },
+                    {
+                        "word": "Ihnen",
+                        "start": 48.281,
+                        "end": 48.441,
+                        "score": 0.677
+                    },
+                    {
+                        "word": "Angebot,",
+                        "start": 48.461,
+                        "end": 48.981,
+                        "score": 0.909
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 49.021,
+                        "end": 49.121,
+                        "score": 0.763
+                    },
+                    {
+                        "word": "müssen",
+                        "start": 49.161,
+                        "end": 49.381,
+                        "score": 0.912
+                    },
+                    {
+                        "word": "mir",
+                        "start": 49.401,
+                        "end": 49.501,
+                        "score": 0.423
+                    },
+                    {
+                        "word": "Bestätigung",
+                        "start": 49.541,
+                        "end": 50.142,
+                        "score": 0.791
+                    },
+                    {
+                        "word": "zurückschicken.",
+                        "start": 50.162,
+                        "end": 51.362,
+                        "score": 0.867
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 51.402,
+                "end": 56.783,
+                "text": "Wäre das interessant für Sie?",
+                "words": [
+                    {
+                        "word": "Wäre",
+                        "start": 51.402,
+                        "end": 51.722,
+                        "score": 0.937
+                    },
+                    {
+                        "word": "das",
+                        "start": 51.742,
+                        "end": 51.942,
+                        "score": 0.966
+                    },
+                    {
+                        "word": "interessant",
+                        "start": 51.982,
+                        "end": 52.442,
+                        "score": 0.905
+                    },
+                    {
+                        "word": "für",
+                        "start": 52.482,
+                        "end": 52.622,
+                        "score": 0.662
+                    },
+                    {
+                        "word": "Sie?",
+                        "start": 52.662,
+                        "end": 56.783,
+                        "score": 0.857
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 56.863,
+                "end": 57.163,
+                "text": "Okay.",
+                "words": [
+                    {
+                        "word": "Okay.",
+                        "start": 56.863,
+                        "end": 57.163,
+                        "score": 0.458
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 58.82,
+                "end": 60.841,
+                "text": " Also es ist auch nicht irgendwie verbindlich.",
+                "words": [
+                    {
+                        "word": "Also",
+                        "start": 58.82,
+                        "end": 59.02,
+                        "score": 0.523
+                    },
+                    {
+                        "word": "es",
+                        "start": 59.04,
+                        "end": 59.1,
+                        "score": 0.768
+                    },
+                    {
+                        "word": "ist",
+                        "start": 59.14,
+                        "end": 59.24,
+                        "score": 0.74
+                    },
+                    {
+                        "word": "auch",
+                        "start": 59.26,
+                        "end": 59.4,
+                        "score": 0.811
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 59.44,
+                        "end": 59.58,
+                        "score": 0.89
+                    },
+                    {
+                        "word": "irgendwie",
+                        "start": 59.62,
+                        "end": 59.96,
+                        "score": 0.852
+                    },
+                    {
+                        "word": "verbindlich.",
+                        "start": 59.98,
+                        "end": 60.841,
+                        "score": 0.861
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 60.881,
+                "end": 66.762,
+                "text": "Sie können da jederzeit sagen, wenn Sie heute sagen, ich möchte das nicht mehr, dann ist das auch für uns in dem Moment gleich erledigt.",
+                "words": [
+                    {
+                        "word": "Sie",
+                        "start": 60.881,
+                        "end": 61.081,
+                        "score": 0.865
+                    },
+                    {
+                        "word": "können",
+                        "start": 61.121,
+                        "end": 61.281,
+                        "score": 0.905
+                    },
+                    {
+                        "word": "da",
+                        "start": 61.321,
+                        "end": 61.441,
+                        "score": 0.788
+                    },
+                    {
+                        "word": "jederzeit",
+                        "start": 61.461,
+                        "end": 62.301,
+                        "score": 0.852
+                    },
+                    {
+                        "word": "sagen,",
+                        "start": 62.321,
+                        "end": 62.621,
+                        "score": 0.876
+                    },
+                    {
+                        "word": "wenn",
+                        "start": 62.661,
+                        "end": 62.801,
+                        "score": 0.922
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 62.841,
+                        "end": 62.961,
+                        "score": 0.893
+                    },
+                    {
+                        "word": "heute",
+                        "start": 62.981,
+                        "end": 63.261,
+                        "score": 0.891
+                    },
+                    {
+                        "word": "sagen,",
+                        "start": 63.301,
+                        "end": 63.541,
+                        "score": 0.877
+                    },
+                    {
+                        "word": "ich",
+                        "start": 63.581,
+                        "end": 63.681,
+                        "score": 0.881
+                    },
+                    {
+                        "word": "möchte",
+                        "start": 63.701,
+                        "end": 63.941,
+                        "score": 0.918
+                    },
+                    {
+                        "word": "das",
+                        "start": 63.981,
+                        "end": 64.142,
+                        "score": 0.893
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 64.182,
+                        "end": 64.302,
+                        "score": 0.924
+                    },
+                    {
+                        "word": "mehr,",
+                        "start": 64.342,
+                        "end": 64.462,
+                        "score": 0.964
+                    },
+                    {
+                        "word": "dann",
+                        "start": 64.482,
+                        "end": 64.622,
+                        "score": 0.883
+                    },
+                    {
+                        "word": "ist",
+                        "start": 64.642,
+                        "end": 64.742,
+                        "score": 0.711
+                    },
+                    {
+                        "word": "das",
+                        "start": 64.762,
+                        "end": 64.882,
+                        "score": 0.688
+                    },
+                    {
+                        "word": "auch",
+                        "start": 64.922,
+                        "end": 65.022,
+                        "score": 0.652
+                    },
+                    {
+                        "word": "für",
+                        "start": 65.042,
+                        "end": 65.122,
+                        "score": 0.889
+                    },
+                    {
+                        "word": "uns",
+                        "start": 65.162,
+                        "end": 65.422,
+                        "score": 0.87
+                    },
+                    {
+                        "word": "in",
+                        "start": 65.482,
+                        "end": 65.582,
+                        "score": 0.589
+                    },
+                    {
+                        "word": "dem",
+                        "start": 65.602,
+                        "end": 65.762,
+                        "score": 0.676
+                    },
+                    {
+                        "word": "Moment",
+                        "start": 65.782,
+                        "end": 66.082,
+                        "score": 0.962
+                    },
+                    {
+                        "word": "gleich",
+                        "start": 66.122,
+                        "end": 66.302,
+                        "score": 0.428
+                    },
+                    {
+                        "word": "erledigt.",
+                        "start": 66.362,
+                        "end": 66.762,
+                        "score": 0.697
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 68.243,
+                "end": 70.903,
+                "text": "Also Sie sind da irgendwie nicht vertraglich gebunden.",
+                "words": [
+                    {
+                        "word": "Also",
+                        "start": 68.243,
+                        "end": 68.383,
+                        "score": 0.573
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 68.403,
+                        "end": 68.503,
+                        "score": 0.324
+                    },
+                    {
+                        "word": "sind",
+                        "start": 68.523,
+                        "end": 68.623,
+                        "score": 0.619
+                    },
+                    {
+                        "word": "da",
+                        "start": 68.643,
+                        "end": 68.743,
+                        "score": 0.631
+                    },
+                    {
+                        "word": "irgendwie",
+                        "start": 68.763,
+                        "end": 69.043,
+                        "score": 0.706
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 69.063,
+                        "end": 69.183,
+                        "score": 0.469
+                    },
+                    {
+                        "word": "vertraglich",
+                        "start": 69.223,
+                        "end": 69.983,
+                        "score": 0.863
+                    },
+                    {
+                        "word": "gebunden.",
+                        "start": 70.023,
+                        "end": 70.903,
+                        "score": 0.92
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 70.943,
+                "end": 73.144,
+                "text": "Dann würde ich sagen, ich schicke Ihnen das Abo-Modell.",
+                "words": [
+                    {
+                        "word": "Dann",
+                        "start": 70.943,
+                        "end": 71.143,
+                        "score": 0.945
+                    },
+                    {
+                        "word": "würde",
+                        "start": 71.163,
+                        "end": 71.323,
+                        "score": 0.916
+                    },
+                    {
+                        "word": "ich",
+                        "start": 71.343,
+                        "end": 71.483,
+                        "score": 0.784
+                    },
+                    {
+                        "word": "sagen,",
+                        "start": 71.503,
+                        "end": 71.784,
+                        "score": 0.956
+                    },
+                    {
+                        "word": "ich",
+                        "start": 71.824,
+                        "end": 71.924,
+                        "score": 0.879
+                    },
+                    {
+                        "word": "schicke",
+                        "start": 71.964,
+                        "end": 72.264,
+                        "score": 0.845
+                    },
+                    {
+                        "word": "Ihnen",
+                        "start": 72.284,
+                        "end": 72.444,
+                        "score": 0.727
+                    },
+                    {
+                        "word": "das",
+                        "start": 72.484,
+                        "end": 72.664,
+                        "score": 0.869
+                    },
+                    {
+                        "word": "Abo-Modell.",
+                        "start": 72.704,
+                        "end": 73.144,
+                        "score": 0.512
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 73.164,
+                "end": 75.144,
+                "text": "Also Sie wollen immer 1 und 2 Sterne, oder?",
+                "words": [
+                    {
+                        "word": "Also",
+                        "start": 73.164,
+                        "end": 73.404,
+                        "score": 0.366
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 73.424,
+                        "end": 73.484,
+                        "score": 0.938
+                    },
+                    {
+                        "word": "wollen",
+                        "start": 73.504,
+                        "end": 73.704,
+                        "score": 0.854
+                    },
+                    {
+                        "word": "immer",
+                        "start": 73.744,
+                        "end": 73.944,
+                        "score": 0.913
+                    },
+                    {
+                        "word": "1"
+                    },
+                    {
+                        "word": "und",
+                        "start": 74.164,
+                        "end": 74.284,
+                        "score": 0.883
+                    },
+                    {
+                        "word": "2"
+                    },
+                    {
+                        "word": "Sterne,",
+                        "start": 74.564,
+                        "end": 74.884,
+                        "score": 0.651
+                    },
+                    {
+                        "word": "oder?",
+                        "start": 74.904,
+                        "end": 75.144,
+                        "score": 0.961
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 75.164,
+                "end": 75.925,
+                "text": "3 Sterne nicht.",
+                "words": [
+                    {
+                        "word": "3"
+                    },
+                    {
+                        "word": "Sterne",
+                        "start": 75.385,
+                        "end": 75.725,
+                        "score": 0.632
+                    },
+                    {
+                        "word": "nicht.",
+                        "start": 75.765,
+                        "end": 75.925,
+                        "score": 0.892
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 78.865,
+                "end": 81.346,
+                "text": "Okay.",
+                "words": [
+                    {
+                        "word": "Okay.",
+                        "start": 78.865,
+                        "end": 81.346,
+                        "score": 0.672
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 81.386,
+                "end": 83.107,
+                "text": "Ja, gibt es sofort.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 81.386,
+                        "end": 81.806,
+                        "score": 0.867
+                    },
+                    {
+                        "word": "gibt",
+                        "start": 81.846,
+                        "end": 82.046,
+                        "score": 0.834
+                    },
+                    {
+                        "word": "es",
+                        "start": 82.106,
+                        "end": 82.246,
+                        "score": 0.904
+                    },
+                    {
+                        "word": "sofort.",
+                        "start": 82.286,
+                        "end": 83.107,
+                        "score": 0.908
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 83.147,
+                "end": 85.327,
+                "text": "Ich möchte nur alles mit reinschreiben.",
+                "words": [
+                    {
+                        "word": "Ich",
+                        "start": 83.147,
+                        "end": 83.307,
+                        "score": 0.815
+                    },
+                    {
+                        "word": "möchte",
+                        "start": 83.347,
+                        "end": 83.627,
+                        "score": 0.844
+                    },
+                    {
+                        "word": "nur",
+                        "start": 83.647,
+                        "end": 83.787,
+                        "score": 0.852
+                    },
+                    {
+                        "word": "alles",
+                        "start": 83.827,
+                        "end": 84.087,
+                        "score": 0.853
+                    },
+                    {
+                        "word": "mit",
+                        "start": 84.127,
+                        "end": 84.247,
+                        "score": 0.691
+                    },
+                    {
+                        "word": "reinschreiben.",
+                        "start": 84.287,
+                        "end": 85.327,
+                        "score": 0.89
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 85.367,
+                "end": 87.508,
+                "text": "Einmal im Monat verfolgen oder alle zwei Wochen.",
+                "words": [
+                    {
+                        "word": "Einmal",
+                        "start": 85.367,
+                        "end": 85.627,
+                        "score": 0.92
+                    },
+                    {
+                        "word": "im",
+                        "start": 85.667,
+                        "end": 85.767,
+                        "score": 0.892
+                    },
+                    {
+                        "word": "Monat",
+                        "start": 85.787,
+                        "end": 86.047,
+                        "score": 0.923
+                    },
+                    {
+                        "word": "verfolgen",
+                        "start": 86.067,
+                        "end": 86.548,
+                        "score": 0.877
+                    },
+                    {
+                        "word": "oder",
+                        "start": 86.588,
+                        "end": 86.728,
+                        "score": 0.87
+                    },
+                    {
+                        "word": "alle",
+                        "start": 86.768,
+                        "end": 87.008,
+                        "score": 0.902
+                    },
+                    {
+                        "word": "zwei",
+                        "start": 87.028,
+                        "end": 87.208,
+                        "score": 0.857
+                    },
+                    {
+                        "word": "Wochen.",
+                        "start": 87.248,
+                        "end": 87.508,
+                        "score": 0.856
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 87.548,
+                "end": 88.228,
+                "text": "Was hätten Sie gerne?",
+                "words": [
+                    {
+                        "word": "Was",
+                        "start": 87.548,
+                        "end": 87.648,
+                        "score": 0.979
+                    },
+                    {
+                        "word": "hätten",
+                        "start": 87.688,
+                        "end": 87.908,
+                        "score": 0.898
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 87.948,
+                        "end": 88.028,
+                        "score": 0.86
+                    },
+                    {
+                        "word": "gerne?",
+                        "start": 88.068,
+                        "end": 88.228,
+                        "score": 0.281
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 90.222,
+                "end": 91.965,
+                "text": " Einmal im Monat schreibe ich alles mit rein.",
+                "words": [
+                    {
+                        "word": "Einmal",
+                        "start": 90.222,
+                        "end": 90.483,
+                        "score": 0.849
+                    },
+                    {
+                        "word": "im",
+                        "start": 90.503,
+                        "end": 90.603,
+                        "score": 0.507
+                    },
+                    {
+                        "word": "Monat",
+                        "start": 90.623,
+                        "end": 90.863,
+                        "score": 0.92
+                    },
+                    {
+                        "word": "schreibe",
+                        "start": 90.883,
+                        "end": 91.104,
+                        "score": 0.454
+                    },
+                    {
+                        "word": "ich",
+                        "start": 91.124,
+                        "end": 91.244,
+                        "score": 0.751
+                    },
+                    {
+                        "word": "alles",
+                        "start": 91.264,
+                        "end": 91.564,
+                        "score": 0.968
+                    },
+                    {
+                        "word": "mit",
+                        "start": 91.605,
+                        "end": 91.745,
+                        "score": 0.599
+                    },
+                    {
+                        "word": "rein.",
+                        "start": 91.765,
+                        "end": 91.965,
+                        "score": 0.838
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 92.005,
+                "end": 96.272,
+                "text": "Wenn Sie mir das bestätigen und zurückschicken, dann kümmere ich mich immer um alle Standorte.",
+                "words": [
+                    {
+                        "word": "Wenn",
+                        "start": 92.005,
+                        "end": 92.145,
+                        "score": 0.927
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 92.185,
+                        "end": 92.286,
+                        "score": 0.817
+                    },
+                    {
+                        "word": "mir",
+                        "start": 92.326,
+                        "end": 92.426,
+                        "score": 0.962
+                    },
+                    {
+                        "word": "das",
+                        "start": 92.466,
+                        "end": 92.646,
+                        "score": 0.979
+                    },
+                    {
+                        "word": "bestätigen",
+                        "start": 92.686,
+                        "end": 93.227,
+                        "score": 0.93
+                    },
+                    {
+                        "word": "und",
+                        "start": 93.267,
+                        "end": 93.407,
+                        "score": 0.809
+                    },
+                    {
+                        "word": "zurückschicken,",
+                        "start": 93.427,
+                        "end": 94.028,
+                        "score": 0.933
+                    },
+                    {
+                        "word": "dann",
+                        "start": 94.069,
+                        "end": 94.229,
+                        "score": 0.936
+                    },
+                    {
+                        "word": "kümmere",
+                        "start": 94.269,
+                        "end": 94.489,
+                        "score": 0.776
+                    },
+                    {
+                        "word": "ich",
+                        "start": 94.529,
+                        "end": 94.629,
+                        "score": 0.664
+                    },
+                    {
+                        "word": "mich",
+                        "start": 94.649,
+                        "end": 94.77,
+                        "score": 0.905
+                    },
+                    {
+                        "word": "immer",
+                        "start": 94.81,
+                        "end": 95.391,
+                        "score": 0.963
+                    },
+                    {
+                        "word": "um",
+                        "start": 95.431,
+                        "end": 95.551,
+                        "score": 0.99
+                    },
+                    {
+                        "word": "alle",
+                        "start": 95.591,
+                        "end": 95.751,
+                        "score": 0.977
+                    },
+                    {
+                        "word": "Standorte.",
+                        "start": 95.791,
+                        "end": 96.272,
+                        "score": 0.889
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 96.312,
+                "end": 100.479,
+                "text": "Ja, okay.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 96.312,
+                        "end": 98.516,
+                        "score": 0.813
+                    },
+                    {
+                        "word": "okay.",
+                        "start": 98.596,
+                        "end": 100.479,
+                        "score": 0.64
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 100.559,
+                "end": 103.123,
+                "text": "Okay, danke schön.",
+                "words": [
+                    {
+                        "word": "Okay,",
+                        "start": 100.559,
+                        "end": 100.859,
+                        "score": 0.573
+                    },
+                    {
+                        "word": "danke",
+                        "start": 100.9,
+                        "end": 101.12,
+                        "score": 0.385
+                    },
+                    {
+                        "word": "schön.",
+                        "start": 101.16,
+                        "end": 103.123,
+                        "score": 0.493
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 103.183,
+                "end": 103.804,
+                "text": "Schönen Abend.",
+                "words": [
+                    {
+                        "word": "Schönen",
+                        "start": 103.183,
+                        "end": 103.404,
+                        "score": 0.235
+                    },
+                    {
+                        "word": "Abend.",
+                        "start": 103.464,
+                        "end": 103.804,
+                        "score": 0.52
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 103.844,
+                "end": 104.205,
+                "text": "Tschüss.",
+                "words": [
+                    {
+                        "word": "Tschüss.",
+                        "start": 103.844,
+                        "end": 104.205,
+                        "score": 0.264
+                    }
+                ],
+                "speaker": "agent"
+            }
+        ],
+        "text": "Hallo, einen schönen Abend. Marina Stern von der Firma Rufschmied. Ich grüße Sie. Ich spreche mit Herrn Schuld.  Herr Schult, ich wollte kurz anfragen, ich habe hier Ihre E-Mail erhalten. Wir haben jetzt für unsere Stammkunden ein Abo-Modell aufgebaut, also es ist kein Vertrag verbindliches, sondern nur ein Abo-Modell, dass wir dieses E-Mail-Verkehr nicht ständig haben. Darf ich Ihnen das mal zuschicken? Das geht dann darum, dass ich mich einfach automatisch einmal im Monat oder alle zwei Wochen, wie Sie es gerne hätten,  einfach Ihre ganzen Standorte mal durchschaue und wenn dann neue Bewertungen, 1- und 2-Sterne-Bewertungen drin sind, würde ich mich direkt darum kümmern. Dann würden Sie nur eine Auftragsbestätigung von mir bekommen, dass ich mich darum kümmere. Dann hätten wir dieses ganze E-Mail-Verkehr nicht. Ich schicke Ihnen Angebot, Sie müssen mir Bestätigung zurückschicken. Wäre das interessant für Sie? Okay.  Also es ist auch nicht irgendwie verbindlich. Sie können da jederzeit sagen, wenn Sie heute sagen, ich möchte das nicht mehr, dann ist das auch für uns in dem Moment gleich erledigt. Also Sie sind da irgendwie nicht vertraglich gebunden. Dann würde ich sagen, ich schicke Ihnen das Abo-Modell. Also Sie wollen immer 1 und 2 Sterne, oder? 3 Sterne nicht. Okay. Ja, gibt es sofort. Ich möchte nur alles mit reinschreiben. Einmal im Monat verfolgen oder alle zwei Wochen. Was hätten Sie gerne?  Einmal im Monat schreibe ich alles mit rein. Wenn Sie mir das bestätigen und zurückschicken, dann kümmere ich mich immer um alle Standorte. Ja, okay. Okay, danke schön. Schönen Abend. Tschüss."
+    },
+    "transcript_combined": {
+        "segments": [
+            {
+                "start": 1.306,
+                "end": 1.586,
+                "text": " Ja, hallo.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 1.306,
+                        "end": 1.426,
+                        "score": 0.359
+                    },
+                    {
+                        "word": "hallo.",
+                        "start": 1.446,
+                        "end": 1.586,
+                        "score": 0.08
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 1.606,
+                "end": 2.026,
+                "text": "Hallo, Christian.",
+                "words": [
+                    {
+                        "word": "Hallo,",
+                        "start": 1.606,
+                        "end": 1.786,
+                        "score": 0.22
+                    },
+                    {
+                        "word": "Christian.",
+                        "start": 1.806,
+                        "end": 2.026,
+                        "score": 0.068
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 2.046,
+                "end": 2.086,
+                "text": "Ja.",
+                "words": [
+                    {
+                        "word": "Ja.",
+                        "start": 2.046,
+                        "end": 2.086,
+                        "score": 0.011
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 2.106,
+                "end": 2.166,
+                "text": "Mhm.",
+                "words": [
+                    {
+                        "word": "Mhm.",
+                        "start": 2.106,
+                        "end": 2.166,
+                        "score": 0.017
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 2.362,
+                "end": 3.383,
+                "text": " Hallo, einen schönen Abend.",
+                "words": [
+                    {
+                        "word": "Hallo,",
+                        "start": 2.362,
+                        "end": 2.582,
+                        "score": 0.773
+                    },
+                    {
+                        "word": "einen",
+                        "start": 2.602,
+                        "end": 2.722,
+                        "score": 0.494
+                    },
+                    {
+                        "word": "schönen",
+                        "start": 2.763,
+                        "end": 2.963,
+                        "score": 0.388
+                    },
+                    {
+                        "word": "Abend.",
+                        "start": 3.023,
+                        "end": 3.383,
+                        "score": 0.846
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 3.423,
+                "end": 5.085,
+                "text": "Marina Stern von der Firma Rufschmied.",
+                "words": [
+                    {
+                        "word": "Marina",
+                        "start": 3.423,
+                        "end": 3.804,
+                        "score": 0.916
+                    },
+                    {
+                        "word": "Stern",
+                        "start": 3.844,
+                        "end": 4.124,
+                        "score": 0.853
+                    },
+                    {
+                        "word": "von",
+                        "start": 4.144,
+                        "end": 4.244,
+                        "score": 0.944
+                    },
+                    {
+                        "word": "der",
+                        "start": 4.264,
+                        "end": 4.344,
+                        "score": 0.807
+                    },
+                    {
+                        "word": "Firma",
+                        "start": 4.384,
+                        "end": 4.624,
+                        "score": 0.732
+                    },
+                    {
+                        "word": "Rufschmied.",
+                        "start": 4.664,
+                        "end": 5.085,
+                        "score": 0.792
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 5.105,
+                "end": 5.986,
+                "text": "Ich grüße Sie.",
+                "words": [
+                    {
+                        "word": "Ich",
+                        "start": 5.105,
+                        "end": 5.185,
+                        "score": 0.983
+                    },
+                    {
+                        "word": "grüße",
+                        "start": 5.245,
+                        "end": 5.525,
+                        "score": 0.919
+                    },
+                    {
+                        "word": "Sie.",
+                        "start": 5.565,
+                        "end": 5.986,
+                        "score": 0.837
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 6.026,
+                "end": 7.047,
+                "text": "Ich spreche mit Herrn Schuld.",
+                "words": [
+                    {
+                        "word": "Ich",
+                        "start": 6.026,
+                        "end": 6.106,
+                        "score": 0.946
+                    },
+                    {
+                        "word": "spreche",
+                        "start": 6.146,
+                        "end": 6.386,
+                        "score": 0.918
+                    },
+                    {
+                        "word": "mit",
+                        "start": 6.426,
+                        "end": 6.526,
+                        "score": 0.994
+                    },
+                    {
+                        "word": "Herrn",
+                        "start": 6.566,
+                        "end": 6.766,
+                        "score": 0.817
+                    },
+                    {
+                        "word": "Schuld.",
+                        "start": 6.787,
+                        "end": 7.047,
+                        "score": 0.83
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 8.772,
+                "end": 12.475,
+                "text": " Herr Schult, ich wollte kurz anfragen, ich habe hier Ihre E-Mail erhalten.",
+                "words": [
+                    {
+                        "word": "Herr",
+                        "start": 8.772,
+                        "end": 9.312,
+                        "score": 0.414
+                    },
+                    {
+                        "word": "Schult,",
+                        "start": 9.332,
+                        "end": 9.553,
+                        "score": 0.76
+                    },
+                    {
+                        "word": "ich",
+                        "start": 9.593,
+                        "end": 9.713,
+                        "score": 0.619
+                    },
+                    {
+                        "word": "wollte",
+                        "start": 9.733,
+                        "end": 10.053,
+                        "score": 0.915
+                    },
+                    {
+                        "word": "kurz",
+                        "start": 10.093,
+                        "end": 10.313,
+                        "score": 0.851
+                    },
+                    {
+                        "word": "anfragen,",
+                        "start": 10.353,
+                        "end": 10.733,
+                        "score": 0.712
+                    },
+                    {
+                        "word": "ich",
+                        "start": 10.754,
+                        "end": 10.834,
+                        "score": 0.832
+                    },
+                    {
+                        "word": "habe",
+                        "start": 10.854,
+                        "end": 10.974,
+                        "score": 0.955
+                    },
+                    {
+                        "word": "hier",
+                        "start": 10.994,
+                        "end": 11.154,
+                        "score": 0.401
+                    },
+                    {
+                        "word": "Ihre",
+                        "start": 11.174,
+                        "end": 11.394,
+                        "score": 0.831
+                    },
+                    {
+                        "word": "E-Mail",
+                        "start": 11.434,
+                        "end": 11.794,
+                        "score": 0.462
+                    },
+                    {
+                        "word": "erhalten.",
+                        "start": 11.854,
+                        "end": 12.475,
+                        "score": 0.881
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 12.515,
+                "end": 24.084,
+                "text": "Wir haben jetzt für unsere Stammkunden ein Abo-Modell aufgebaut, also es ist kein Vertrag verbindliches, sondern nur ein Abo-Modell, dass wir dieses E-Mail-Verkehr nicht ständig haben.",
+                "words": [
+                    {
+                        "word": "Wir",
+                        "start": 12.515,
+                        "end": 12.655,
+                        "score": 0.934
+                    },
+                    {
+                        "word": "haben",
+                        "start": 12.695,
+                        "end": 12.935,
+                        "score": 0.915
+                    },
+                    {
+                        "word": "jetzt",
+                        "start": 12.955,
+                        "end": 13.175,
+                        "score": 0.912
+                    },
+                    {
+                        "word": "für",
+                        "start": 13.195,
+                        "end": 13.396,
+                        "score": 0.977
+                    },
+                    {
+                        "word": "unsere",
+                        "start": 13.476,
+                        "end": 13.936,
+                        "score": 0.862
+                    },
+                    {
+                        "word": "Stammkunden",
+                        "start": 13.996,
+                        "end": 15.137,
+                        "score": 0.946
+                    },
+                    {
+                        "word": "ein",
+                        "start": 15.177,
+                        "end": 15.337,
+                        "score": 0.614
+                    },
+                    {
+                        "word": "Abo-Modell",
+                        "start": 15.377,
+                        "end": 16.018,
+                        "score": 0.904
+                    },
+                    {
+                        "word": "aufgebaut,",
+                        "start": 16.038,
+                        "end": 16.618,
+                        "score": 0.902
+                    },
+                    {
+                        "word": "also",
+                        "start": 16.658,
+                        "end": 16.818,
+                        "score": 0.763
+                    },
+                    {
+                        "word": "es",
+                        "start": 16.878,
+                        "end": 16.918,
+                        "score": 0.369
+                    },
+                    {
+                        "word": "ist",
+                        "start": 16.938,
+                        "end": 17.078,
+                        "score": 0.55
+                    },
+                    {
+                        "word": "kein",
+                        "start": 17.118,
+                        "end": 17.319,
+                        "score": 0.791
+                    },
+                    {
+                        "word": "Vertrag",
+                        "start": 17.359,
+                        "end": 17.779,
+                        "score": 0.897
+                    },
+                    {
+                        "word": "verbindliches,",
+                        "start": 17.819,
+                        "end": 19.06,
+                        "score": 0.872
+                    },
+                    {
+                        "word": "sondern",
+                        "start": 19.08,
+                        "end": 19.44,
+                        "score": 0.845
+                    },
+                    {
+                        "word": "nur",
+                        "start": 19.48,
+                        "end": 19.62,
+                        "score": 0.991
+                    },
+                    {
+                        "word": "ein",
+                        "start": 19.66,
+                        "end": 19.8,
+                        "score": 0.75
+                    },
+                    {
+                        "word": "Abo-Modell,",
+                        "start": 19.84,
+                        "end": 20.481,
+                        "score": 0.861
+                    },
+                    {
+                        "word": "dass",
+                        "start": 20.521,
+                        "end": 20.681,
+                        "score": 0.965
+                    },
+                    {
+                        "word": "wir",
+                        "start": 20.721,
+                        "end": 20.841,
+                        "score": 0.992
+                    },
+                    {
+                        "word": "dieses",
+                        "start": 20.881,
+                        "end": 21.201,
+                        "score": 0.782
+                    },
+                    {
+                        "word": "E-Mail-Verkehr",
+                        "start": 21.242,
+                        "end": 21.882,
+                        "score": 0.708
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 21.902,
+                        "end": 22.042,
+                        "score": 0.731
+                    },
+                    {
+                        "word": "ständig",
+                        "start": 22.082,
+                        "end": 22.583,
+                        "score": 0.906
+                    },
+                    {
+                        "word": "haben.",
+                        "start": 22.623,
+                        "end": 24.084,
+                        "score": 0.931
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 24.124,
+                "end": 25.885,
+                "text": "Darf ich Ihnen das mal zuschicken?",
+                "words": [
+                    {
+                        "word": "Darf",
+                        "start": 24.124,
+                        "end": 24.304,
+                        "score": 0.914
+                    },
+                    {
+                        "word": "ich",
+                        "start": 24.344,
+                        "end": 24.424,
+                        "score": 0.859
+                    },
+                    {
+                        "word": "Ihnen",
+                        "start": 24.464,
+                        "end": 24.564,
+                        "score": 0.5
+                    },
+                    {
+                        "word": "das",
+                        "start": 24.584,
+                        "end": 24.684,
+                        "score": 0.798
+                    },
+                    {
+                        "word": "mal",
+                        "start": 24.764,
+                        "end": 24.924,
+                        "score": 0.71
+                    },
+                    {
+                        "word": "zuschicken?",
+                        "start": 24.944,
+                        "end": 25.885,
+                        "score": 0.847
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 25.905,
+                "end": 32.11,
+                "text": "Das geht dann darum, dass ich mich einfach automatisch einmal im Monat oder alle zwei Wochen, wie Sie es gerne hätten,",
+                "words": [
+                    {
+                        "word": "Das",
+                        "start": 25.905,
+                        "end": 26.045,
+                        "score": 0.546
+                    },
+                    {
+                        "word": "geht",
+                        "start": 26.065,
+                        "end": 26.225,
+                        "score": 0.847
+                    },
+                    {
+                        "word": "dann",
+                        "start": 26.245,
+                        "end": 26.486,
+                        "score": 0.849
+                    },
+                    {
+                        "word": "darum,",
+                        "start": 26.526,
+                        "end": 26.906,
+                        "score": 0.996
+                    },
+                    {
+                        "word": "dass",
+                        "start": 26.946,
+                        "end": 27.166,
+                        "score": 0.937
+                    },
+                    {
+                        "word": "ich",
+                        "start": 27.206,
+                        "end": 27.346,
+                        "score": 0.765
+                    },
+                    {
+                        "word": "mich",
+                        "start": 27.386,
+                        "end": 27.626,
+                        "score": 0.996
+                    },
+                    {
+                        "word": "einfach",
+                        "start": 27.666,
+                        "end": 28.027,
+                        "score": 0.872
+                    },
+                    {
+                        "word": "automatisch",
+                        "start": 28.067,
+                        "end": 29.088,
+                        "score": 0.842
+                    },
+                    {
+                        "word": "einmal",
+                        "start": 29.128,
+                        "end": 29.388,
+                        "score": 0.94
+                    },
+                    {
+                        "word": "im",
+                        "start": 29.428,
+                        "end": 29.528,
+                        "score": 0.568
+                    },
+                    {
+                        "word": "Monat",
+                        "start": 29.568,
+                        "end": 29.928,
+                        "score": 0.916
+                    },
+                    {
+                        "word": "oder",
+                        "start": 29.968,
+                        "end": 30.108,
+                        "score": 0.894
+                    },
+                    {
+                        "word": "alle",
+                        "start": 30.148,
+                        "end": 30.409,
+                        "score": 0.961
+                    },
+                    {
+                        "word": "zwei",
+                        "start": 30.429,
+                        "end": 30.669,
+                        "score": 0.803
+                    },
+                    {
+                        "word": "Wochen,",
+                        "start": 30.709,
+                        "end": 31.009,
+                        "score": 0.853
+                    },
+                    {
+                        "word": "wie",
+                        "start": 31.049,
+                        "end": 31.169,
+                        "score": 0.968
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 31.209,
+                        "end": 31.329,
+                        "score": 0.809
+                    },
+                    {
+                        "word": "es",
+                        "start": 31.369,
+                        "end": 31.509,
+                        "score": 0.647
+                    },
+                    {
+                        "word": "gerne",
+                        "start": 31.529,
+                        "end": 31.85,
+                        "score": 0.855
+                    },
+                    {
+                        "word": "hätten,",
+                        "start": 31.89,
+                        "end": 32.11,
+                        "score": 0.874
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 32.698,
+                "end": 41.44,
+                "text": " einfach Ihre ganzen Standorte mal durchschaue und wenn dann neue Bewertungen, 1- und 2-Sterne-Bewertungen drin sind, würde ich mich direkt darum kümmern.",
+                "words": [
+                    {
+                        "word": "einfach",
+                        "start": 32.698,
+                        "end": 33.078,
+                        "score": 0.815
+                    },
+                    {
+                        "word": "Ihre",
+                        "start": 33.118,
+                        "end": 33.478,
+                        "score": 0.959
+                    },
+                    {
+                        "word": "ganzen",
+                        "start": 33.498,
+                        "end": 33.838,
+                        "score": 0.914
+                    },
+                    {
+                        "word": "Standorte",
+                        "start": 33.898,
+                        "end": 34.438,
+                        "score": 0.879
+                    },
+                    {
+                        "word": "mal",
+                        "start": 34.498,
+                        "end": 34.678,
+                        "score": 0.86
+                    },
+                    {
+                        "word": "durchschaue",
+                        "start": 34.718,
+                        "end": 35.639,
+                        "score": 0.792
+                    },
+                    {
+                        "word": "und",
+                        "start": 35.659,
+                        "end": 35.939,
+                        "score": 0.829
+                    },
+                    {
+                        "word": "wenn",
+                        "start": 35.959,
+                        "end": 36.119,
+                        "score": 0.911
+                    },
+                    {
+                        "word": "dann",
+                        "start": 36.139,
+                        "end": 36.379,
+                        "score": 0.507
+                    },
+                    {
+                        "word": "neue",
+                        "start": 36.419,
+                        "end": 36.699,
+                        "score": 0.802
+                    },
+                    {
+                        "word": "Bewertungen,",
+                        "start": 36.759,
+                        "end": 37.399,
+                        "score": 0.873
+                    },
+                    {
+                        "word": "1-",
+                        "start": 37.419,
+                        "end": 37.619,
+                        "score": 0.447
+                    },
+                    {
+                        "word": "und",
+                        "start": 37.639,
+                        "end": 37.759,
+                        "score": 0.811
+                    },
+                    {
+                        "word": "2-Sterne-Bewertungen",
+                        "start": 37.779,
+                        "end": 38.899,
+                        "score": 0.829
+                    },
+                    {
+                        "word": "drin",
+                        "start": 38.939,
+                        "end": 39.199,
+                        "score": 0.786
+                    },
+                    {
+                        "word": "sind,",
+                        "start": 39.239,
+                        "end": 39.919,
+                        "score": 0.978
+                    },
+                    {
+                        "word": "würde",
+                        "start": 39.959,
+                        "end": 40.16,
+                        "score": 0.902
+                    },
+                    {
+                        "word": "ich",
+                        "start": 40.18,
+                        "end": 40.28,
+                        "score": 0.886
+                    },
+                    {
+                        "word": "mich",
+                        "start": 40.32,
+                        "end": 40.48,
+                        "score": 0.862
+                    },
+                    {
+                        "word": "direkt",
+                        "start": 40.52,
+                        "end": 40.78,
+                        "score": 0.893
+                    },
+                    {
+                        "word": "darum",
+                        "start": 40.8,
+                        "end": 41.12,
+                        "score": 0.912
+                    },
+                    {
+                        "word": "kümmern.",
+                        "start": 41.16,
+                        "end": 41.44,
+                        "score": 0.887
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 41.46,
+                "end": 45.541,
+                "text": "Dann würden Sie nur eine Auftragsbestätigung von mir bekommen, dass ich mich darum kümmere.",
+                "words": [
+                    {
+                        "word": "Dann",
+                        "start": 41.46,
+                        "end": 41.64,
+                        "score": 0.92
+                    },
+                    {
+                        "word": "würden",
+                        "start": 41.66,
+                        "end": 41.9,
+                        "score": 0.806
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 41.92,
+                        "end": 42.06,
+                        "score": 0.937
+                    },
+                    {
+                        "word": "nur",
+                        "start": 42.08,
+                        "end": 42.22,
+                        "score": 0.889
+                    },
+                    {
+                        "word": "eine",
+                        "start": 42.24,
+                        "end": 42.38,
+                        "score": 0.794
+                    },
+                    {
+                        "word": "Auftragsbestätigung",
+                        "start": 42.4,
+                        "end": 43.34,
+                        "score": 0.876
+                    },
+                    {
+                        "word": "von",
+                        "start": 43.36,
+                        "end": 43.5,
+                        "score": 0.761
+                    },
+                    {
+                        "word": "mir",
+                        "start": 43.52,
+                        "end": 43.66,
+                        "score": 0.791
+                    },
+                    {
+                        "word": "bekommen,",
+                        "start": 43.68,
+                        "end": 44.02,
+                        "score": 0.891
+                    },
+                    {
+                        "word": "dass",
+                        "start": 44.04,
+                        "end": 44.18,
+                        "score": 0.934
+                    },
+                    {
+                        "word": "ich",
+                        "start": 44.22,
+                        "end": 44.32,
+                        "score": 0.704
+                    },
+                    {
+                        "word": "mich",
+                        "start": 44.34,
+                        "end": 44.48,
+                        "score": 0.86
+                    },
+                    {
+                        "word": "darum",
+                        "start": 44.5,
+                        "end": 44.8,
+                        "score": 0.86
+                    },
+                    {
+                        "word": "kümmere.",
+                        "start": 44.84,
+                        "end": 45.541,
+                        "score": 0.919
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 45.561,
+                "end": 47.841,
+                "text": "Dann hätten wir dieses ganze E-Mail-Verkehr nicht.",
+                "words": [
+                    {
+                        "word": "Dann",
+                        "start": 45.561,
+                        "end": 45.721,
+                        "score": 0.788
+                    },
+                    {
+                        "word": "hätten",
+                        "start": 45.761,
+                        "end": 45.941,
+                        "score": 0.932
+                    },
+                    {
+                        "word": "wir",
+                        "start": 45.961,
+                        "end": 46.101,
+                        "score": 0.747
+                    },
+                    {
+                        "word": "dieses",
+                        "start": 46.121,
+                        "end": 46.401,
+                        "score": 0.764
+                    },
+                    {
+                        "word": "ganze",
+                        "start": 46.421,
+                        "end": 46.701,
+                        "score": 0.974
+                    },
+                    {
+                        "word": "E-Mail-Verkehr",
+                        "start": 46.741,
+                        "end": 47.441,
+                        "score": 0.75
+                    },
+                    {
+                        "word": "nicht.",
+                        "start": 47.481,
+                        "end": 47.841,
+                        "score": 0.871
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 47.881,
+                "end": 51.362,
+                "text": "Ich schicke Ihnen Angebot, Sie müssen mir Bestätigung zurückschicken.",
+                "words": [
+                    {
+                        "word": "Ich",
+                        "start": 47.881,
+                        "end": 47.961,
+                        "score": 0.877
+                    },
+                    {
+                        "word": "schicke",
+                        "start": 48.001,
+                        "end": 48.241,
+                        "score": 0.742
+                    },
+                    {
+                        "word": "Ihnen",
+                        "start": 48.281,
+                        "end": 48.441,
+                        "score": 0.677
+                    },
+                    {
+                        "word": "Angebot,",
+                        "start": 48.461,
+                        "end": 48.981,
+                        "score": 0.909
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 49.021,
+                        "end": 49.121,
+                        "score": 0.763
+                    },
+                    {
+                        "word": "müssen",
+                        "start": 49.161,
+                        "end": 49.381,
+                        "score": 0.912
+                    },
+                    {
+                        "word": "mir",
+                        "start": 49.401,
+                        "end": 49.501,
+                        "score": 0.423
+                    },
+                    {
+                        "word": "Bestätigung",
+                        "start": 49.541,
+                        "end": 50.142,
+                        "score": 0.791
+                    },
+                    {
+                        "word": "zurückschicken.",
+                        "start": 50.162,
+                        "end": 51.362,
+                        "score": 0.867
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 51.402,
+                "end": 56.783,
+                "text": "Wäre das interessant für Sie?",
+                "words": [
+                    {
+                        "word": "Wäre",
+                        "start": 51.402,
+                        "end": 51.722,
+                        "score": 0.937
+                    },
+                    {
+                        "word": "das",
+                        "start": 51.742,
+                        "end": 51.942,
+                        "score": 0.966
+                    },
+                    {
+                        "word": "interessant",
+                        "start": 51.982,
+                        "end": 52.442,
+                        "score": 0.905
+                    },
+                    {
+                        "word": "für",
+                        "start": 52.482,
+                        "end": 52.622,
+                        "score": 0.662
+                    },
+                    {
+                        "word": "Sie?",
+                        "start": 52.662,
+                        "end": 56.783,
+                        "score": 0.857
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 54.347,
+                "end": 58.248,
+                "text": " Können Sie mir gerne mal schicken, schaue ich mir gerne an, das hört sich auf jeden Fall ganz gut an.",
+                "words": [
+                    {
+                        "word": "Können",
+                        "start": 54.347,
+                        "end": 54.487,
+                        "score": 0.254
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 54.507,
+                        "end": 54.608,
+                        "score": 0.252
+                    },
+                    {
+                        "word": "mir",
+                        "start": 54.628,
+                        "end": 54.728,
+                        "score": 0.325
+                    },
+                    {
+                        "word": "gerne",
+                        "start": 54.748,
+                        "end": 54.928,
+                        "score": 0.322
+                    },
+                    {
+                        "word": "mal",
+                        "start": 54.968,
+                        "end": 55.048,
+                        "score": 0.158
+                    },
+                    {
+                        "word": "schicken,",
+                        "start": 55.068,
+                        "end": 55.628,
+                        "score": 0.242
+                    },
+                    {
+                        "word": "schaue",
+                        "start": 55.648,
+                        "end": 55.808,
+                        "score": 0.381
+                    },
+                    {
+                        "word": "ich",
+                        "start": 55.828,
+                        "end": 55.888,
+                        "score": 0.032
+                    },
+                    {
+                        "word": "mir",
+                        "start": 55.908,
+                        "end": 56.008,
+                        "score": 0.65
+                    },
+                    {
+                        "word": "gerne",
+                        "start": 56.028,
+                        "end": 56.208,
+                        "score": 0.737
+                    },
+                    {
+                        "word": "an,",
+                        "start": 56.268,
+                        "end": 56.488,
+                        "score": 0.7
+                    },
+                    {
+                        "word": "das",
+                        "start": 56.528,
+                        "end": 56.808,
+                        "score": 0.427
+                    },
+                    {
+                        "word": "hört",
+                        "start": 56.828,
+                        "end": 56.968,
+                        "score": 0.541
+                    },
+                    {
+                        "word": "sich",
+                        "start": 56.988,
+                        "end": 57.088,
+                        "score": 0.626
+                    },
+                    {
+                        "word": "auf",
+                        "start": 57.108,
+                        "end": 57.188,
+                        "score": 0.387
+                    },
+                    {
+                        "word": "jeden",
+                        "start": 57.208,
+                        "end": 57.348,
+                        "score": 0.456
+                    },
+                    {
+                        "word": "Fall",
+                        "start": 57.388,
+                        "end": 57.808,
+                        "score": 0.672
+                    },
+                    {
+                        "word": "ganz",
+                        "start": 57.848,
+                        "end": 58.028,
+                        "score": 0.486
+                    },
+                    {
+                        "word": "gut",
+                        "start": 58.048,
+                        "end": 58.148,
+                        "score": 0.767
+                    },
+                    {
+                        "word": "an.",
+                        "start": 58.188,
+                        "end": 58.248,
+                        "score": 0.466
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 56.863,
+                "end": 57.163,
+                "text": "Okay.",
+                "words": [
+                    {
+                        "word": "Okay.",
+                        "start": 56.863,
+                        "end": 57.163,
+                        "score": 0.458
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 58.82,
+                "end": 60.841,
+                "text": " Also es ist auch nicht irgendwie verbindlich.",
+                "words": [
+                    {
+                        "word": "Also",
+                        "start": 58.82,
+                        "end": 59.02,
+                        "score": 0.523
+                    },
+                    {
+                        "word": "es",
+                        "start": 59.04,
+                        "end": 59.1,
+                        "score": 0.768
+                    },
+                    {
+                        "word": "ist",
+                        "start": 59.14,
+                        "end": 59.24,
+                        "score": 0.74
+                    },
+                    {
+                        "word": "auch",
+                        "start": 59.26,
+                        "end": 59.4,
+                        "score": 0.811
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 59.44,
+                        "end": 59.58,
+                        "score": 0.89
+                    },
+                    {
+                        "word": "irgendwie",
+                        "start": 59.62,
+                        "end": 59.96,
+                        "score": 0.852
+                    },
+                    {
+                        "word": "verbindlich.",
+                        "start": 59.98,
+                        "end": 60.841,
+                        "score": 0.861
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 60.881,
+                "end": 66.762,
+                "text": "Sie können da jederzeit sagen, wenn Sie heute sagen, ich möchte das nicht mehr, dann ist das auch für uns in dem Moment gleich erledigt.",
+                "words": [
+                    {
+                        "word": "Sie",
+                        "start": 60.881,
+                        "end": 61.081,
+                        "score": 0.865
+                    },
+                    {
+                        "word": "können",
+                        "start": 61.121,
+                        "end": 61.281,
+                        "score": 0.905
+                    },
+                    {
+                        "word": "da",
+                        "start": 61.321,
+                        "end": 61.441,
+                        "score": 0.788
+                    },
+                    {
+                        "word": "jederzeit",
+                        "start": 61.461,
+                        "end": 62.301,
+                        "score": 0.852
+                    },
+                    {
+                        "word": "sagen,",
+                        "start": 62.321,
+                        "end": 62.621,
+                        "score": 0.876
+                    },
+                    {
+                        "word": "wenn",
+                        "start": 62.661,
+                        "end": 62.801,
+                        "score": 0.922
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 62.841,
+                        "end": 62.961,
+                        "score": 0.893
+                    },
+                    {
+                        "word": "heute",
+                        "start": 62.981,
+                        "end": 63.261,
+                        "score": 0.891
+                    },
+                    {
+                        "word": "sagen,",
+                        "start": 63.301,
+                        "end": 63.541,
+                        "score": 0.877
+                    },
+                    {
+                        "word": "ich",
+                        "start": 63.581,
+                        "end": 63.681,
+                        "score": 0.881
+                    },
+                    {
+                        "word": "möchte",
+                        "start": 63.701,
+                        "end": 63.941,
+                        "score": 0.918
+                    },
+                    {
+                        "word": "das",
+                        "start": 63.981,
+                        "end": 64.142,
+                        "score": 0.893
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 64.182,
+                        "end": 64.302,
+                        "score": 0.924
+                    },
+                    {
+                        "word": "mehr,",
+                        "start": 64.342,
+                        "end": 64.462,
+                        "score": 0.964
+                    },
+                    {
+                        "word": "dann",
+                        "start": 64.482,
+                        "end": 64.622,
+                        "score": 0.883
+                    },
+                    {
+                        "word": "ist",
+                        "start": 64.642,
+                        "end": 64.742,
+                        "score": 0.711
+                    },
+                    {
+                        "word": "das",
+                        "start": 64.762,
+                        "end": 64.882,
+                        "score": 0.688
+                    },
+                    {
+                        "word": "auch",
+                        "start": 64.922,
+                        "end": 65.022,
+                        "score": 0.652
+                    },
+                    {
+                        "word": "für",
+                        "start": 65.042,
+                        "end": 65.122,
+                        "score": 0.889
+                    },
+                    {
+                        "word": "uns",
+                        "start": 65.162,
+                        "end": 65.422,
+                        "score": 0.87
+                    },
+                    {
+                        "word": "in",
+                        "start": 65.482,
+                        "end": 65.582,
+                        "score": 0.589
+                    },
+                    {
+                        "word": "dem",
+                        "start": 65.602,
+                        "end": 65.762,
+                        "score": 0.676
+                    },
+                    {
+                        "word": "Moment",
+                        "start": 65.782,
+                        "end": 66.082,
+                        "score": 0.962
+                    },
+                    {
+                        "word": "gleich",
+                        "start": 66.122,
+                        "end": 66.302,
+                        "score": 0.428
+                    },
+                    {
+                        "word": "erledigt.",
+                        "start": 66.362,
+                        "end": 66.762,
+                        "score": 0.697
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 67.733,
+                "end": 68.854,
+                "text": " Ja, okay.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 67.733,
+                        "end": 67.853,
+                        "score": 0.524
+                    },
+                    {
+                        "word": "okay.",
+                        "start": 68.293,
+                        "end": 68.854,
+                        "score": 0.463
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 68.243,
+                "end": 70.903,
+                "text": "Also Sie sind da irgendwie nicht vertraglich gebunden.",
+                "words": [
+                    {
+                        "word": "Also",
+                        "start": 68.243,
+                        "end": 68.383,
+                        "score": 0.573
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 68.403,
+                        "end": 68.503,
+                        "score": 0.324
+                    },
+                    {
+                        "word": "sind",
+                        "start": 68.523,
+                        "end": 68.623,
+                        "score": 0.619
+                    },
+                    {
+                        "word": "da",
+                        "start": 68.643,
+                        "end": 68.743,
+                        "score": 0.631
+                    },
+                    {
+                        "word": "irgendwie",
+                        "start": 68.763,
+                        "end": 69.043,
+                        "score": 0.706
+                    },
+                    {
+                        "word": "nicht",
+                        "start": 69.063,
+                        "end": 69.183,
+                        "score": 0.469
+                    },
+                    {
+                        "word": "vertraglich",
+                        "start": 69.223,
+                        "end": 69.983,
+                        "score": 0.863
+                    },
+                    {
+                        "word": "gebunden.",
+                        "start": 70.023,
+                        "end": 70.903,
+                        "score": 0.92
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 68.874,
+                "end": 77.04,
+                "text": "Schicken Sie mir gerne zu.",
+                "words": [
+                    {
+                        "word": "Schicken",
+                        "start": 68.874,
+                        "end": 69.074,
+                        "score": 0.584
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 69.094,
+                        "end": 69.194,
+                        "score": 0.438
+                    },
+                    {
+                        "word": "mir",
+                        "start": 69.214,
+                        "end": 69.294,
+                        "score": 0.539
+                    },
+                    {
+                        "word": "gerne",
+                        "start": 69.314,
+                        "end": 69.514,
+                        "score": 0.809
+                    },
+                    {
+                        "word": "zu.",
+                        "start": 69.554,
+                        "end": 77.04,
+                        "score": 0.839
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 70.943,
+                "end": 73.144,
+                "text": "Dann würde ich sagen, ich schicke Ihnen das Abo-Modell.",
+                "words": [
+                    {
+                        "word": "Dann",
+                        "start": 70.943,
+                        "end": 71.143,
+                        "score": 0.945
+                    },
+                    {
+                        "word": "würde",
+                        "start": 71.163,
+                        "end": 71.323,
+                        "score": 0.916
+                    },
+                    {
+                        "word": "ich",
+                        "start": 71.343,
+                        "end": 71.483,
+                        "score": 0.784
+                    },
+                    {
+                        "word": "sagen,",
+                        "start": 71.503,
+                        "end": 71.784,
+                        "score": 0.956
+                    },
+                    {
+                        "word": "ich",
+                        "start": 71.824,
+                        "end": 71.924,
+                        "score": 0.879
+                    },
+                    {
+                        "word": "schicke",
+                        "start": 71.964,
+                        "end": 72.264,
+                        "score": 0.845
+                    },
+                    {
+                        "word": "Ihnen",
+                        "start": 72.284,
+                        "end": 72.444,
+                        "score": 0.727
+                    },
+                    {
+                        "word": "das",
+                        "start": 72.484,
+                        "end": 72.664,
+                        "score": 0.869
+                    },
+                    {
+                        "word": "Abo-Modell.",
+                        "start": 72.704,
+                        "end": 73.144,
+                        "score": 0.512
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 73.164,
+                "end": 75.144,
+                "text": "Also Sie wollen immer 1 und 2 Sterne, oder?",
+                "words": [
+                    {
+                        "word": "Also",
+                        "start": 73.164,
+                        "end": 73.404,
+                        "score": 0.366
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 73.424,
+                        "end": 73.484,
+                        "score": 0.938
+                    },
+                    {
+                        "word": "wollen",
+                        "start": 73.504,
+                        "end": 73.704,
+                        "score": 0.854
+                    },
+                    {
+                        "word": "immer",
+                        "start": 73.744,
+                        "end": 73.944,
+                        "score": 0.913
+                    },
+                    {
+                        "word": "1"
+                    },
+                    {
+                        "word": "und",
+                        "start": 74.164,
+                        "end": 74.284,
+                        "score": 0.883
+                    },
+                    {
+                        "word": "2"
+                    },
+                    {
+                        "word": "Sterne,",
+                        "start": 74.564,
+                        "end": 74.884,
+                        "score": 0.651
+                    },
+                    {
+                        "word": "oder?",
+                        "start": 74.904,
+                        "end": 75.144,
+                        "score": 0.961
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 75.164,
+                "end": 75.925,
+                "text": "3 Sterne nicht.",
+                "words": [
+                    {
+                        "word": "3"
+                    },
+                    {
+                        "word": "Sterne",
+                        "start": 75.385,
+                        "end": 75.725,
+                        "score": 0.632
+                    },
+                    {
+                        "word": "nicht.",
+                        "start": 75.765,
+                        "end": 75.925,
+                        "score": 0.892
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 77.08,
+                "end": 79.082,
+                "text": "Ne, eins und zwei eigentlich, genau.",
+                "words": [
+                    {
+                        "word": "Ne,",
+                        "start": 77.08,
+                        "end": 77.24,
+                        "score": 0.446
+                    },
+                    {
+                        "word": "eins",
+                        "start": 77.3,
+                        "end": 77.44,
+                        "score": 0.58
+                    },
+                    {
+                        "word": "und",
+                        "start": 77.48,
+                        "end": 77.621,
+                        "score": 0.83
+                    },
+                    {
+                        "word": "zwei",
+                        "start": 77.641,
+                        "end": 77.821,
+                        "score": 0.89
+                    },
+                    {
+                        "word": "eigentlich,",
+                        "start": 77.841,
+                        "end": 78.181,
+                        "score": 0.847
+                    },
+                    {
+                        "word": "genau.",
+                        "start": 78.201,
+                        "end": 79.082,
+                        "score": 0.88
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 78.865,
+                "end": 81.346,
+                "text": "Okay.",
+                "words": [
+                    {
+                        "word": "Okay.",
+                        "start": 78.865,
+                        "end": 81.346,
+                        "score": 0.672
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 79.122,
+                "end": 82.364,
+                "text": "Also gibt es erstmal eine Info jetzt dazu oder was läuft jetzt?",
+                "words": [
+                    {
+                        "word": "Also",
+                        "start": 79.122,
+                        "end": 79.402,
+                        "score": 0.724
+                    },
+                    {
+                        "word": "gibt",
+                        "start": 79.422,
+                        "end": 79.522,
+                        "score": 0.983
+                    },
+                    {
+                        "word": "es",
+                        "start": 79.582,
+                        "end": 80.082,
+                        "score": 0.637
+                    },
+                    {
+                        "word": "erstmal",
+                        "start": 80.122,
+                        "end": 80.363,
+                        "score": 0.628
+                    },
+                    {
+                        "word": "eine",
+                        "start": 80.383,
+                        "end": 80.503,
+                        "score": 0.622
+                    },
+                    {
+                        "word": "Info",
+                        "start": 80.543,
+                        "end": 80.703,
+                        "score": 0.666
+                    },
+                    {
+                        "word": "jetzt",
+                        "start": 80.723,
+                        "end": 80.883,
+                        "score": 0.403
+                    },
+                    {
+                        "word": "dazu",
+                        "start": 80.903,
+                        "end": 81.103,
+                        "score": 0.776
+                    },
+                    {
+                        "word": "oder",
+                        "start": 81.143,
+                        "end": 81.283,
+                        "score": 0.77
+                    },
+                    {
+                        "word": "was",
+                        "start": 81.724,
+                        "end": 82.044,
+                        "score": 0.756
+                    },
+                    {
+                        "word": "läuft",
+                        "start": 82.084,
+                        "end": 82.184,
+                        "score": 0.079
+                    },
+                    {
+                        "word": "jetzt?",
+                        "start": 82.224,
+                        "end": 82.364,
+                        "score": 0.237
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 81.386,
+                "end": 83.107,
+                "text": "Ja, gibt es sofort.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 81.386,
+                        "end": 81.806,
+                        "score": 0.867
+                    },
+                    {
+                        "word": "gibt",
+                        "start": 81.846,
+                        "end": 82.046,
+                        "score": 0.834
+                    },
+                    {
+                        "word": "es",
+                        "start": 82.106,
+                        "end": 82.246,
+                        "score": 0.904
+                    },
+                    {
+                        "word": "sofort.",
+                        "start": 82.286,
+                        "end": 83.107,
+                        "score": 0.908
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 82.424,
+                "end": 89.85,
+                "text": "Einmal im Monat.",
+                "words": [
+                    {
+                        "word": "Einmal",
+                        "start": 82.424,
+                        "end": 89.49,
+                        "score": 0.605
+                    },
+                    {
+                        "word": "im",
+                        "start": 89.53,
+                        "end": 89.59,
+                        "score": 0.262
+                    },
+                    {
+                        "word": "Monat.",
+                        "start": 89.61,
+                        "end": 89.85,
+                        "score": 0.493
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 83.147,
+                "end": 85.327,
+                "text": "Ich möchte nur alles mit reinschreiben.",
+                "words": [
+                    {
+                        "word": "Ich",
+                        "start": 83.147,
+                        "end": 83.307,
+                        "score": 0.815
+                    },
+                    {
+                        "word": "möchte",
+                        "start": 83.347,
+                        "end": 83.627,
+                        "score": 0.844
+                    },
+                    {
+                        "word": "nur",
+                        "start": 83.647,
+                        "end": 83.787,
+                        "score": 0.852
+                    },
+                    {
+                        "word": "alles",
+                        "start": 83.827,
+                        "end": 84.087,
+                        "score": 0.853
+                    },
+                    {
+                        "word": "mit",
+                        "start": 84.127,
+                        "end": 84.247,
+                        "score": 0.691
+                    },
+                    {
+                        "word": "reinschreiben.",
+                        "start": 84.287,
+                        "end": 85.327,
+                        "score": 0.89
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 85.367,
+                "end": 87.508,
+                "text": "Einmal im Monat verfolgen oder alle zwei Wochen.",
+                "words": [
+                    {
+                        "word": "Einmal",
+                        "start": 85.367,
+                        "end": 85.627,
+                        "score": 0.92
+                    },
+                    {
+                        "word": "im",
+                        "start": 85.667,
+                        "end": 85.767,
+                        "score": 0.892
+                    },
+                    {
+                        "word": "Monat",
+                        "start": 85.787,
+                        "end": 86.047,
+                        "score": 0.923
+                    },
+                    {
+                        "word": "verfolgen",
+                        "start": 86.067,
+                        "end": 86.548,
+                        "score": 0.877
+                    },
+                    {
+                        "word": "oder",
+                        "start": 86.588,
+                        "end": 86.728,
+                        "score": 0.87
+                    },
+                    {
+                        "word": "alle",
+                        "start": 86.768,
+                        "end": 87.008,
+                        "score": 0.902
+                    },
+                    {
+                        "word": "zwei",
+                        "start": 87.028,
+                        "end": 87.208,
+                        "score": 0.857
+                    },
+                    {
+                        "word": "Wochen.",
+                        "start": 87.248,
+                        "end": 87.508,
+                        "score": 0.856
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 87.548,
+                "end": 88.228,
+                "text": "Was hätten Sie gerne?",
+                "words": [
+                    {
+                        "word": "Was",
+                        "start": 87.548,
+                        "end": 87.648,
+                        "score": 0.979
+                    },
+                    {
+                        "word": "hätten",
+                        "start": 87.688,
+                        "end": 87.908,
+                        "score": 0.898
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 87.948,
+                        "end": 88.028,
+                        "score": 0.86
+                    },
+                    {
+                        "word": "gerne?",
+                        "start": 88.068,
+                        "end": 88.228,
+                        "score": 0.281
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 90.222,
+                "end": 91.965,
+                "text": " Einmal im Monat schreibe ich alles mit rein.",
+                "words": [
+                    {
+                        "word": "Einmal",
+                        "start": 90.222,
+                        "end": 90.483,
+                        "score": 0.849
+                    },
+                    {
+                        "word": "im",
+                        "start": 90.503,
+                        "end": 90.603,
+                        "score": 0.507
+                    },
+                    {
+                        "word": "Monat",
+                        "start": 90.623,
+                        "end": 90.863,
+                        "score": 0.92
+                    },
+                    {
+                        "word": "schreibe",
+                        "start": 90.883,
+                        "end": 91.104,
+                        "score": 0.454
+                    },
+                    {
+                        "word": "ich",
+                        "start": 91.124,
+                        "end": 91.244,
+                        "score": 0.751
+                    },
+                    {
+                        "word": "alles",
+                        "start": 91.264,
+                        "end": 91.564,
+                        "score": 0.968
+                    },
+                    {
+                        "word": "mit",
+                        "start": 91.605,
+                        "end": 91.745,
+                        "score": 0.599
+                    },
+                    {
+                        "word": "rein.",
+                        "start": 91.765,
+                        "end": 91.965,
+                        "score": 0.838
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 92.005,
+                "end": 96.272,
+                "text": "Wenn Sie mir das bestätigen und zurückschicken, dann kümmere ich mich immer um alle Standorte.",
+                "words": [
+                    {
+                        "word": "Wenn",
+                        "start": 92.005,
+                        "end": 92.145,
+                        "score": 0.927
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 92.185,
+                        "end": 92.286,
+                        "score": 0.817
+                    },
+                    {
+                        "word": "mir",
+                        "start": 92.326,
+                        "end": 92.426,
+                        "score": 0.962
+                    },
+                    {
+                        "word": "das",
+                        "start": 92.466,
+                        "end": 92.646,
+                        "score": 0.979
+                    },
+                    {
+                        "word": "bestätigen",
+                        "start": 92.686,
+                        "end": 93.227,
+                        "score": 0.93
+                    },
+                    {
+                        "word": "und",
+                        "start": 93.267,
+                        "end": 93.407,
+                        "score": 0.809
+                    },
+                    {
+                        "word": "zurückschicken,",
+                        "start": 93.427,
+                        "end": 94.028,
+                        "score": 0.933
+                    },
+                    {
+                        "word": "dann",
+                        "start": 94.069,
+                        "end": 94.229,
+                        "score": 0.936
+                    },
+                    {
+                        "word": "kümmere",
+                        "start": 94.269,
+                        "end": 94.489,
+                        "score": 0.776
+                    },
+                    {
+                        "word": "ich",
+                        "start": 94.529,
+                        "end": 94.629,
+                        "score": 0.664
+                    },
+                    {
+                        "word": "mich",
+                        "start": 94.649,
+                        "end": 94.77,
+                        "score": 0.905
+                    },
+                    {
+                        "word": "immer",
+                        "start": 94.81,
+                        "end": 95.391,
+                        "score": 0.963
+                    },
+                    {
+                        "word": "um",
+                        "start": 95.431,
+                        "end": 95.551,
+                        "score": 0.99
+                    },
+                    {
+                        "word": "alle",
+                        "start": 95.591,
+                        "end": 95.751,
+                        "score": 0.977
+                    },
+                    {
+                        "word": "Standorte.",
+                        "start": 95.791,
+                        "end": 96.272,
+                        "score": 0.889
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 96.312,
+                "end": 100.479,
+                "text": "Ja, okay.",
+                "words": [
+                    {
+                        "word": "Ja,",
+                        "start": 96.312,
+                        "end": 98.516,
+                        "score": 0.813
+                    },
+                    {
+                        "word": "okay.",
+                        "start": 98.596,
+                        "end": 100.479,
+                        "score": 0.64
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 97.553,
+                "end": 98.436,
+                "text": " Okay, schicken Sie mir zu.",
+                "words": [
+                    {
+                        "word": "Okay,",
+                        "start": 97.553,
+                        "end": 97.814,
+                        "score": 0.247
+                    },
+                    {
+                        "word": "schicken",
+                        "start": 97.834,
+                        "end": 98.055,
+                        "score": 0.334
+                    },
+                    {
+                        "word": "Sie",
+                        "start": 98.075,
+                        "end": 98.195,
+                        "score": 0.303
+                    },
+                    {
+                        "word": "mir",
+                        "start": 98.215,
+                        "end": 98.296,
+                        "score": 0.223
+                    },
+                    {
+                        "word": "zu.",
+                        "start": 98.316,
+                        "end": 98.436,
+                        "score": 0.168
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 98.456,
+                "end": 100.082,
+                "text": "Ich schaue es mir morgen an und melde mich bei Ihnen.",
+                "words": [
+                    {
+                        "word": "Ich",
+                        "start": 98.456,
+                        "end": 98.516,
+                        "score": 0.138
+                    },
+                    {
+                        "word": "schaue",
+                        "start": 98.536,
+                        "end": 98.677,
+                        "score": 0.215
+                    },
+                    {
+                        "word": "es",
+                        "start": 98.697,
+                        "end": 98.737,
+                        "score": 0.198
+                    },
+                    {
+                        "word": "mir",
+                        "start": 98.757,
+                        "end": 98.878,
+                        "score": 0.19
+                    },
+                    {
+                        "word": "morgen",
+                        "start": 98.898,
+                        "end": 99.119,
+                        "score": 0.555
+                    },
+                    {
+                        "word": "an",
+                        "start": 99.139,
+                        "end": 99.319,
+                        "score": 0.481
+                    },
+                    {
+                        "word": "und",
+                        "start": 99.359,
+                        "end": 99.58,
+                        "score": 0.433
+                    },
+                    {
+                        "word": "melde",
+                        "start": 99.6,
+                        "end": 99.741,
+                        "score": 0.259
+                    },
+                    {
+                        "word": "mich",
+                        "start": 99.761,
+                        "end": 99.841,
+                        "score": 0.19
+                    },
+                    {
+                        "word": "bei",
+                        "start": 99.881,
+                        "end": 99.942,
+                        "score": 0.179
+                    },
+                    {
+                        "word": "Ihnen.",
+                        "start": 99.962,
+                        "end": 100.082,
+                        "score": 0.218
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 100.102,
+                "end": 100.423,
+                "text": "Alles klar, danke.",
+                "words": [
+                    {
+                        "word": "Alles",
+                        "start": 100.102,
+                        "end": 100.203,
+                        "score": 0.035
+                    },
+                    {
+                        "word": "klar,",
+                        "start": 100.223,
+                        "end": 100.303,
+                        "score": 0.026
+                    },
+                    {
+                        "word": "danke.",
+                        "start": 100.323,
+                        "end": 100.423,
+                        "score": 0.04
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 100.443,
+                "end": 100.604,
+                "text": "Bis dann.",
+                "words": [
+                    {
+                        "word": "Bis",
+                        "start": 100.443,
+                        "end": 100.504,
+                        "score": 0.032
+                    },
+                    {
+                        "word": "dann.",
+                        "start": 100.524,
+                        "end": 100.604,
+                        "score": 0.042
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 100.559,
+                "end": 103.123,
+                "text": "Okay, danke schön.",
+                "words": [
+                    {
+                        "word": "Okay,",
+                        "start": 100.559,
+                        "end": 100.859,
+                        "score": 0.573
+                    },
+                    {
+                        "word": "danke",
+                        "start": 100.9,
+                        "end": 101.12,
+                        "score": 0.385
+                    },
+                    {
+                        "word": "schön.",
+                        "start": 101.16,
+                        "end": 103.123,
+                        "score": 0.493
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 100.624,
+                "end": 100.765,
+                "text": "Tschüss.",
+                "words": [
+                    {
+                        "word": "Tschüss.",
+                        "start": 100.624,
+                        "end": 100.765,
+                        "score": 0.026
+                    }
+                ],
+                "speaker": "client"
+            },
+            {
+                "start": 103.183,
+                "end": 103.804,
+                "text": "Schönen Abend.",
+                "words": [
+                    {
+                        "word": "Schönen",
+                        "start": 103.183,
+                        "end": 103.404,
+                        "score": 0.235
+                    },
+                    {
+                        "word": "Abend.",
+                        "start": 103.464,
+                        "end": 103.804,
+                        "score": 0.52
+                    }
+                ],
+                "speaker": "agent"
+            },
+            {
+                "start": 103.844,
+                "end": 104.205,
+                "text": "Tschüss.",
+                "words": [
+                    {
+                        "word": "Tschüss.",
+                        "start": 103.844,
+                        "end": 104.205,
+                        "score": 0.264
+                    }
+                ],
+                "speaker": "agent"
+            }
+        ],
+        "text": " Ja, hallo. Hallo, Christian. Ja. Mhm.  Hallo, einen schönen Abend. Marina Stern von der Firma Rufschmied. Ich grüße Sie. Ich spreche mit Herrn Schuld.  Herr Schult, ich wollte kurz anfragen, ich habe hier Ihre E-Mail erhalten. Wir haben jetzt für unsere Stammkunden ein Abo-Modell aufgebaut, also es ist kein Vertrag verbindliches, sondern nur ein Abo-Modell, dass wir dieses E-Mail-Verkehr nicht ständig haben. Darf ich Ihnen das mal zuschicken? Das geht dann darum, dass ich mich einfach automatisch einmal im Monat oder alle zwei Wochen, wie Sie es gerne hätten,  einfach Ihre ganzen Standorte mal durchschaue und wenn dann neue Bewertungen, 1- und 2-Sterne-Bewertungen drin sind, würde ich mich direkt darum kümmern. Dann würden Sie nur eine Auftragsbestätigung von mir bekommen, dass ich mich darum kümmere. Dann hätten wir dieses ganze E-Mail-Verkehr nicht. Ich schicke Ihnen Angebot, Sie müssen mir Bestätigung zurückschicken. Wäre das interessant für Sie?  Können Sie mir gerne mal schicken, schaue ich mir gerne an, das hört sich auf jeden Fall ganz gut an. Okay.  Also es ist auch nicht irgendwie verbindlich. Sie können da jederzeit sagen, wenn Sie heute sagen, ich möchte das nicht mehr, dann ist das auch für uns in dem Moment gleich erledigt.  Ja, okay. Also Sie sind da irgendwie nicht vertraglich gebunden. Schicken Sie mir gerne zu. Dann würde ich sagen, ich schicke Ihnen das Abo-Modell. Also Sie wollen immer 1 und 2 Sterne, oder? 3 Sterne nicht. Ne, eins und zwei eigentlich, genau. Okay. Also gibt es erstmal eine Info jetzt dazu oder was läuft jetzt? Ja, gibt es sofort. Einmal im Monat. Ich möchte nur alles mit reinschreiben. Einmal im Monat verfolgen oder alle zwei Wochen. Was hätten Sie gerne?  Einmal im Monat schreibe ich alles mit rein. Wenn Sie mir das bestätigen und zurückschicken, dann kümmere ich mich immer um alle Standorte. Ja, okay.  Okay, schicken Sie mir zu. Ich schaue es mir morgen an und melde mich bei Ihnen. Alles klar, danke. Bis dann. Okay, danke schön. Tschüss. Schönen Abend. Tschüss."
+    }
+}

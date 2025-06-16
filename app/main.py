@@ -3,6 +3,7 @@ import uuid
 import tempfile
 import shutil
 import torch
+import subprocess
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -16,6 +17,7 @@ import time
 import platform
 import sys
 import fastapi
+from pathlib import Path
 
 # Configure logging
 logging.basicConfig(
@@ -23,6 +25,10 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger("transcription")
+
+# Create output directory for processed files
+OUTPUT_DIR = Path("/app/output")  # This will be mounted to your local machine
+OUTPUT_DIR.mkdir(exist_ok=True)
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -91,6 +97,83 @@ async def download_file(url: str, path: str):
                         break
                     f.write(chunk)
 
+async def process_audio_file(input_path: str, output_path: str) -> str:
+    """
+    Process audio file using ffmpeg to ensure correct format and headers.
+    Converts the input file to MP3 format with standard parameters.
+    
+    Args:
+        input_path: Path to input audio file
+        output_path: Path where processed file should be saved
+        
+    Returns:
+        Path to the processed file
+    """
+    try:
+        # FFmpeg command to process the audio file
+        # -y: Overwrite output file if it exists
+        # -i: Input file
+        # -acodec libmp3lame: Use LAME MP3 encoder
+        # -b:a 128k: Set bitrate to 128kbps (good quality for speech)
+        # -ar 16000: Set sample rate to 16kHz (good for speech)
+        # -ac 1: Convert to mono
+        # -q:a 2: Set quality to high (0-9, where 0 is highest)
+        cmd = [
+            'ffmpeg', '-y',
+            '-i', input_path,
+            '-acodec', 'libmp3lame',
+            '-b:a', '128k',
+            '-ar', '16000',
+            '-ac', '1',
+            '-q:a', '2',
+            output_path
+        ]
+        
+        # Run ffmpeg command
+        process = await asyncio.create_subprocess_exec(
+            *cmd,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE
+        )
+        
+        stdout, stderr = await process.communicate()
+        
+        if process.returncode != 0:
+            error_msg = stderr.decode() if stderr else "Unknown error"
+            raise Exception(f"FFmpeg processing failed: {error_msg}")
+            
+        return output_path
+        
+    except Exception as e:
+        logger.error(f"Error processing audio file: {str(e)}", exc_info=True)
+        raise HTTPException(status_code=500, detail=f"Error processing audio file: {str(e)}")
+
+async def save_processed_file(processed_path: str, original_filename: str) -> str:
+    """
+    Save the processed file to the output directory with a descriptive name.
+    
+    Args:
+        processed_path: Path to the processed file
+        original_filename: Original filename for reference
+        
+    Returns:
+        Path to the saved file
+    """
+    try:
+        # Create a descriptive filename
+        timestamp = time.strftime("%Y%m%d_%H%M%S")
+        filename = f"{timestamp}_{Path(original_filename).stem}_processed.mp3"
+        output_path = OUTPUT_DIR / filename
+        
+        # Copy the file to the output directory
+        shutil.copy2(processed_path, output_path)
+        logger.info(f"Saved processed file to: {output_path}")
+        
+        return str(output_path)
+    except Exception as e:
+        logger.error(f"Error saving processed file: {str(e)}", exc_info=True)
+        raise HTTPException(status_code=500, detail=f"Error saving processed file: {str(e)}")
+
 @app.post("/transcribe")
 async def transcribe(
     background_tasks: BackgroundTasks,
@@ -117,12 +200,22 @@ async def transcribe(
         logger.info(f"Downloading local recording to {local_path}")
         await download_file(request.recording_local, local_path)
         
+        # Process the audio files
+        processed_remote_path = os.path.join(temp_dir, f"processed_remote_{job_id}.wav")
+        processed_local_path = os.path.join(temp_dir, f"processed_local_{job_id}.wav")
+        
+        logger.info("Processing remote recording")
+        await process_audio_file(remote_path, processed_remote_path)
+        
+        logger.info("Processing local recording")
+        await process_audio_file(local_path, processed_local_path)
+        
         # Transcribe both recordings
         logger.info("Starting remote recording transcription")
-        transcript_remote = await whisperx_transcriber.transcribe_audio(remote_path, "client")
+        transcript_remote = await whisperx_transcriber.transcribe_audio(processed_remote_path, "client")
         
         logger.info("Starting local recording transcription")
-        transcript_local = await whisperx_transcriber.transcribe_audio(local_path, "agent")
+        transcript_local = await whisperx_transcriber.transcribe_audio(processed_local_path, "agent")
         
         # Combine and sort segments by start time
         all_segments = []
@@ -190,16 +283,36 @@ async def transcribe_configurable(
         logger.info(f"Downloading local recording to {local_path}")
         await download_file(request.recording_local, local_path)
         
+        # Process the audio files with ffmpeg
+        processed_remote_path = os.path.join(temp_dir, f"processed_remote_{job_id}.mp3")
+        processed_local_path = os.path.join(temp_dir, f"processed_local_{job_id}.mp3")
+        
+        logger.info("Processing remote recording with ffmpeg")
+        await process_audio_file(remote_path, processed_remote_path)
+        
+        logger.info("Processing local recording with ffmpeg")
+        await process_audio_file(local_path, processed_local_path)
+        
+        # Save processed files to output directory
+        saved_remote_path = await save_processed_file(processed_remote_path, f"remote_{job_id}.webm")
+        saved_local_path = await save_processed_file(processed_local_path, f"local_{job_id}.webm")
+        
         # Log configuration settings
         logger.info(f"Using custom transcription configuration: language={request.config.language}, "
                    f"temperature={request.config.temperature}, vad_filter={request.config.vad_filter}")
         
         # Transcribe both recordings with the provided configuration
         result = await configurable_whisperx_transcriber.transcribe_audio_combined(
-            local_path, 
-            remote_path, 
+            processed_local_path, 
+            processed_remote_path, 
             request.config
         )
+        
+        # Add saved file paths to the result
+        result["processed_files"] = {
+            "remote": saved_remote_path,
+            "local": saved_local_path
+        }
         
         # Cleanup temp files in the background
         background_tasks.add_task(lambda: shutil.rmtree(temp_dir, ignore_errors=True))

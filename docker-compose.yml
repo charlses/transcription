@@ -38,6 +38,7 @@ services:
       - huggingface_cache:/app/huggingface
       - pyannote_cache:/app/pyannote_cache
       - ./app:/app/app # Mount the app directory for development
+      - ./output:/app/output # Mount the output directory for processed files
     working_dir: /app
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload --reload-dir /app/app
 
