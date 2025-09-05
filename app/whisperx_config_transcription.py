@@ -21,7 +21,7 @@ class TranscriptionConfig(BaseModel):
     """Configuration parameters for WhisperX transcription."""
     # Basic
     language: Optional[str] = "de"
-    compute_type: str = "float32"          # "float16", "float32", "int8"
+    compute_type: str = "float16"          # Default to float16 for better GPU performance
     model_name: str = "large-v3"
 
     # Transcription
@@ -57,17 +57,16 @@ class WhisperXConfigurableTranscription:
     """
 
     def __init__(self, use_gpu: bool = True):
-        self.device = (
-            "cuda" if (use_gpu and torch.cuda.is_available()) else "cpu"
-        )
-
-        if self.device == "cuda":
-            try:
-                gpu_name = torch.cuda.get_device_name(0)
-                total_mem = torch.cuda.get_device_properties(0).total_memory / 2**30
-                logger.info(f"Using GPU: {gpu_name} ({total_mem:.1f} GB)")
-            except Exception:  # rare on multi-GPU mis-configs
-                logger.warning("CUDA detected but device query failed.")
+        # Set device based on CUDA availability and use_gpu parameter
+        if use_gpu and torch.cuda.is_available():
+            self.device = "cuda"
+            logger.info(f"Running with CUDA on device: {torch.cuda.get_device_name(0)}")
+        else:
+            self.device = "cpu"
+            if use_gpu:
+                logger.warning("CUDA requested but not available - falling back to CPU")
+            else:
+                logger.info("Running in CPU-only mode")
 
         # mutable shared state guarded by asyncio locks
         self.model = None
@@ -83,6 +82,9 @@ class WhisperXConfigurableTranscription:
                 config.compute_type,
             )
             config.compute_type = "float32"
+        elif self.device == "cuda" and config.compute_type == "float32":
+            logger.info("Switching to float16 for better GPU performance")
+            config.compute_type = "float16"
 
     def _load_model(self, config: TranscriptionConfig):
         """Blocking model loader – run in executor."""
@@ -234,7 +236,7 @@ class WhisperXConfigurableTranscription:
         """
         Transcribe two mono recordings (local+remote) and merge chronologically.
         """
-        # parallel launch – they’ll share the cached model
+        # parallel launch – they'll share the cached model
         local_task = asyncio.create_task(
             self.transcribe_audio(local_audio_path, "local", config)
         )

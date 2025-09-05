@@ -1,4 +1,4 @@
-version: '3.9'
+version: "3.9"
 
 services:
   whisper-api:
@@ -6,7 +6,7 @@ services:
     container_name: whisper_transcription
     restart: always
     ports:
-      - '8000:8000'
+      - "8000:8000"
     environment:
       # Configurations for GPU usage
       NVIDIA_VISIBLE_DEVICES: all
@@ -14,18 +14,18 @@ services:
       CPATH: /usr/local/include
       LIBRARY_PATH: /usr/local/lib
       PYTHONUNBUFFERED: 1
-      WATCHFILES_FORCE_POLLING: 'true'
-      
+      WATCHFILES_FORCE_POLLING: "true"
+
       # Hugging Face token and cache paths
       HF_TOKEN: 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
       HF_HOME: /app/huggingface
       TRANSFORMERS_CACHE: /app/huggingface/transformers
       PYANNOTE_CACHE: /app/pyannote_cache
-      
+
       # WhisperX configuration
       WHISPERX_MODEL_SIZE: large-v3
       WHISPERX_LANGUAGE: de
-      WHISPERX_COMPUTE_TYPE: float16  # Use float16 for better performance on GPU
+      WHISPERX_COMPUTE_TYPE: float16 # Use float16 for better performance on GPU
     deploy:
       resources:
         reservations:
@@ -38,7 +38,7 @@ services:
       - huggingface_cache:/app/huggingface
       - pyannote_cache:/app/pyannote_cache
       - ./app:/app/app # Mount the app directory for development
-      - ./output:/app/output # Mount the output directory for processed files
+      # - ./output:/app/output # Mount the output directory for processed files
     working_dir: /app
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload --reload-dir /app/app
 

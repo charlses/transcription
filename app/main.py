@@ -49,14 +49,15 @@ app.add_middleware(
 # Initialize WhisperX transcription handler
 cuda_available = torch.cuda.is_available()
 if cuda_available:
-    logger.info("CUDA is available. Initializing WhisperX with GPU acceleration.")
+    logger.info(f"CUDA is available. Found device: {torch.cuda.get_device_name(0)}")
+    logger.info(f"CUDA version: {torch.version.cuda}")
+    logger.info(f"PyTorch CUDA version: {torch.__version__}")
 else:
     logger.warning("CUDA is not available! WhisperX will run much slower on CPU.")
     
-whisperx_transcriber = WhisperXTranscription(use_gpu=True)  # Always request GPU, will fallback to CPU if not available
-
-# Initialize configurable WhisperX transcription handler
-configurable_whisperx_transcriber = WhisperXConfigurableTranscription(use_gpu=True)  # Use GPU if available, fallback to CPU
+# Initialize transcription handlers with GPU support
+whisperx_transcriber = WhisperXTranscription(use_gpu=True)  # Will use GPU if available
+configurable_whisperx_transcriber = WhisperXConfigurableTranscription(use_gpu=True)  # Will use GPU if available
 
 # Load models before starting the server
 logger.info("Loading WhisperX models...")
@@ -71,6 +72,9 @@ except Exception as e:
 CUDA_AVAILABLE = cuda_available
 if CUDA_AVAILABLE:
     logger.info(f"CUDA is available. Found device: {torch.cuda.get_device_name(0)}")
+    # Log GPU memory info
+    logger.info(f"GPU Memory allocated: {torch.cuda.memory_allocated(0) / 1024**2:.2f} MB")
+    logger.info(f"GPU Memory cached: {torch.cuda.memory_reserved(0) / 1024**2:.2f} MB")
 else:
     logger.warning("CUDA is not available. Running on CPU mode.")
 
@@ -236,8 +240,15 @@ async def transcribe(
         # Create combined transcript text
         combined_text = " ".join(segment["text"] for segment in all_segments)
         
-        # Cleanup temp files in the background
-        background_tasks.add_task(lambda: shutil.rmtree(temp_dir, ignore_errors=True))
+        # Cleanup temp files immediately after transcription is complete
+        logger.info(f"Cleaning up temporary directory: {temp_dir}")
+        try:
+            shutil.rmtree(temp_dir, ignore_errors=True)
+            logger.info(f"Successfully cleaned up temporary directory: {temp_dir}")
+        except Exception as cleanup_error:
+            logger.warning(f"Failed to cleanup temporary directory {temp_dir}: {cleanup_error}")
+            # Schedule cleanup as background task as fallback
+            background_tasks.add_task(lambda: shutil.rmtree(temp_dir, ignore_errors=True))
         
         return {
             "transcript_remote": transcript_remote,
@@ -309,13 +320,20 @@ async def transcribe_configurable(
         )
         
         # Add saved file paths to the result
-        result["processed_files"] = {
-            "remote": saved_remote_path,
-            "local": saved_local_path
-        }
+        # result["processed_files"] = {
+        #     "remote": saved_remote_path,
+        #     "local": saved_local_path
+        # }
         
-        # Cleanup temp files in the background
-        background_tasks.add_task(lambda: shutil.rmtree(temp_dir, ignore_errors=True))
+        # Cleanup temp files immediately after transcription is complete
+        logger.info(f"Cleaning up temporary directory: {temp_dir}")
+        try:
+            shutil.rmtree(temp_dir, ignore_errors=True)
+            logger.info(f"Successfully cleaned up temporary directory: {temp_dir}")
+        except Exception as cleanup_error:
+            logger.warning(f"Failed to cleanup temporary directory {temp_dir}: {cleanup_error}")
+            # Schedule cleanup as background task as fallback
+            background_tasks.add_task(lambda: shutil.rmtree(temp_dir, ignore_errors=True))
         
         return result
         
